@@ -1,0 +1,53 @@
+##################
+#
+# EpicQuest
+# DOFLinx force feedback FX3 configuration file v3
+#
+##################
+
+[STARTUP]
+FF_ROM=fx2_epicquest
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Lime_Green,Dodger_Blue,Yellow_Green,Cyan
+BUTTON_COLOUR_CHANGE=BUT_LF,Lime_Green,BUT_RF,Lime_Green,BUT_ML,Dodger_Blue,BUT_MR,Dodger_Blue
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random|FF_B2S B2SStartAnimation Title|FF_DOF E424,-1
+LeftFlipper|On|FF_Dev DV_LF,10000|FF_DOF E101,-1
+LeftFlipper|OFF|FF_Dev DV_LF,0|FF_DOF E101,0
+RightFlipper|On|FF_Dev DV_RF,10000|FF_DOF E102,-1
+RightFlipper|OFF|FF_Dev DV_RF,0|FF_DOF E102,0
+MENUMODE|On|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations
+LAUNCHMODE|On|FF_Button BUT_LB,BA_FL,10000,500|FF_DOF E310,-1
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0|FF_DOF E310,0
+NudgeLeft|On|FF_Dev DV_SH,4000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLIL,FL_ON,1,1,100,Red|FF_DOF E403,-1|FF_B2S B2SStartAnimation,ChickenEye
+NudgeLeft|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Red
+NudgeRight|On|FF_Dev DV_SH,4000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_Flasher DV_FLIR,FL_ON,1,1,100,Red|FF_DOF E404,-1|FF_B2S B2SStartAnimation,ChickenEye
+NudgeRight|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Red
+NudgeForward|On|FF_Dev DV_SH,4000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_DOF E405,-1|FF_B2S B2SStartAnimation,ChickenEye
+NudgeForward|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_DOF E132,-1|FF_B2S B2SStartAnimation Title
+
+BUMPER_01|ON|FF_Dev DV_BR,-1|FF_DOF E120,-1
+BUMPER_02|ON|FF_Dev DV_BL,-1|FF_DOF E121,-1
+BUMPER_03|ON|FF_Dev DV_BC,-1|FF_DOF E122,-1
+SLINGSHOT_LEFT|ON|FF_Dev DV_LS,-1|FF_DOF E110,-1
+SLINGSHOT_RIGHT|ON|FF_Dev DV_RS,-1|FF_DOF E111,-1
+BUMPER_FLASH01|ON|FF_Flasher DV_FLIL,FL_TT,1,100,100,Yellow|FF_B2S B2SStartAnimation HorseEyes
+BUMPER_FLASH02|ON|FF_Flasher DV_FLIR,FL_TT,1,100,100,Cyan|FF_B2S B2SStartAnimation HorseTeeth
+BUMPER_FLASH03|ON|FF_Flasher DV_FLCN,FL_TT,1,100,100,Red|FF_B2S B2SStartAnimation KnightTeeth
+SLINGSHOT_FLASHER_LEFT|ON|FF_Colour White,RGB_TT,125|FF_Flasher DV_FLOL,FL_TT,1,100,100,Random|FF_B2S B2SStartAnimation KnightEye
+SLINGSHOT_FLASHER_RIGHT|ON|FF_Colour White,RGB_TT,125|FF_Flasher DV_FLOR,FL_TT,1,100,100,Random|FF_B2S B2SStartAnimation Castle
+sensor_shieldramp_head|ON|FF_Flasher DV_FLOL,FL_TT,1,200,100,Lime_green|FF_DOF E410,-1|FF_B2S B2SStartAnimation Tree1
+sensor_orbit_left|ON|FF_Flasher DV_FLIL,FL_TT,1,200,100,Yellow_green|FF_DOF E411,-1|FF_B2S B2SStartAnimation Tree2
+sensor_knightorbit_head|ON|FF_Flasher DV_FLCN,FL_TT,1,200,100,Lime_green|FF_DOF E412,-1|FF_B2S B2SStartAnimation Tree3
+sensor_orbit_right|ON|FF_Flasher DV_FLIR,FL_TT,1,200,100,Yellow_green|FF_DOF E413,-1|FF_B2S B2SStartAnimation ChickenEye
+sensor_swordramp_head|ON|FF_Flasher DV_FLOR,FL_TT,1,200,100,Lime_green|FF_DOF E414,-1|FF_B2S B2SStartAnimation HorseEyes
+sensor_egg|ON|FF_DOF E415,-1|FF_Dev DV_FN,750|FF_B2S B2SStartAnimation HorseEyes
+sensor_miniplayfield|ON|FF_DOF E416,-1|FF_Dev DV_BK,2000
+sensor_monster_hole|ON|FF_Dev DV_GR,500|FF_DOF E417,-1
+sensor_loothole_safe|ON|FF_Dev DV_GR,500|FF_DOF E417,-1
+sensor_valitarget_hole|ON|FF_Dev DV_GR,500|FF_DOF E417,-1
+sensor_millwheel|ON|FF_Dev DV_GR,1000|FF_DOF E418,-1|FF_B2S B2SStartAnimation Tree1
+sensor_carnivore_spit|ON|FF_DOF E419,-1|FF_Dev DV_SH,750|FF_B2S B2SStartAnimation Tree2
+sensor_cave_safe|ON|FF_DOF E419,-1|FF_Dev DV_SR,1250|FF_B2S B2SStartAnimation,Jewel
