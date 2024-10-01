@@ -1,6 +1,0 @@
-DOFLinx and the MAME version enabling live scores is developed and maintained by DDH69, a member of the arcade and pinball community.
-
-To help cover the costs of equipment and tools required for the ongoing development please donate what you feel is appropriate and affordable to you.
-
-
-https://www.paypal.com/donate?hosted_button_id=YEPCTUYFX5KDE
