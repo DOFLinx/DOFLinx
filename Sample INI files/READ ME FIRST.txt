@@ -1,0 +1,22 @@
+This folder contains a series of sample INI files for use with DOFLinx.  You *** WILL *** need to customise your INI file for use on your system.
+
+Remember to read the guide provided for full details on INI files and the setting contained within them.  This little readme explaining the files is not a substitute for the guide.
+
+There are two types of INI files for use with DOFLinx.
+1. DOFLinx.INI, this file is your base configuration and is by default in the same directory as the DOFLinx.EXE.
+   With the addition of a command line parameter it can be located anywhere.
+   This INI file contains all of the essential stuff to get DOFLinx to start up.
+   There is only one of these files per setup.
+
+2. Sup.INI, well in fact anyname.INI
+   You can have multiple 'supplimentary' INI files that alter DOFLinx behaviour while its running.
+   They are normally used with 'Launch before' and / or 'Launch after' options from your front end menu (ie PinballX) to setup something specific like a fixed game name, turning on certain button lights, etc.
+   There can be multiple supplimentary INI files within your setup.
+
+In this folder the samples will all start with "DOFLinx" or "Sup" corresponding to the two types above.  They then have a "-explanation" to explain the sample being provided.
+Remove the "-explaination" if you decide to copy one of these files and modifiy it to be your own.
+
+INI files can have comments, in fact, with a memory like mine I highly recommend them.  Comment lines start with a #
+In some sample files some parameters are there but commented out with the # symbol.  If you want to use that line, just edit out the #
+
+Most importantly, have fun, and head over to VPForums.org for the DOFLinx support forums.

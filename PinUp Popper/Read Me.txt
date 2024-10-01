@@ -1,0 +1,5 @@
+Use these files in your PinUp Popper installation if you want DOFLinx to drive any of your topys as you navigate the Popper menu.
+
+Actions are set in the Menu.ini file
+
+Remember to make a backup copy of your Popper files before replacing with these.
