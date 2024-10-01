@@ -1,0 +1,989 @@
+8.12
+- An update to all guides.  All instructions, and just about all images should now be current.
+- New finish the set of FX files
+- Fix menu label for testing buttons to be both XBox and Joystick
+- New enable input selection entry for XBox and joystick buttons in the input config screen
+- New improve configuration screen for INI to include SSF tab and a tab for editing manual entries, DOF2DMD
+- New DOFLinxConfig utility to check the setup and access the configuration editor
+- New keeping of a 9 INI file cycle when using the built in configuration editor
+- Update to remove the need for Extensions.dll and B2SServer.dll
+- Fix DOF2DMD that I broke in V8.11 - sorry about that!
+- New allow loading of DirectOutput.dll from any location.  A valid DLL will be sought in order from 
+    1. User set via DOF_PATH= on the command line at startup
+    2. If a DLL is in the same startup folder as DOFLinx.EXE
+    3. As defined by teh DOF CLSID entry
+    4. As defined by the regsitry entry for DOF
+    5. by checking C: to F: drive in \DirectOutput, and the appropriate folder of \DirectOutput\x32 and \DirectOutput\x64
+
+8.11 30/8/24
+- New 25 MAME files (5 games plus variants) -- thanks junkyard
+- New FX files, all Star Wars and DS9, My Little Pony, Sky Pirates, Wrath of the Elder Gods, Kung Fu Panda,Brothers in Arms, Godzilla, Godzilla v Kong, Crypt of the Necrodancer
+- New command line parameter of DOF2DMD= can be YES (default, so why would you) or NO to suppress the startup of the DOF2DMD utility at startup avoiding overlaying of any current DMD image.  Will startup when first called by DOFLinx, ie starting a MAME game
+- New real-time command of STOP_DOF2DMD to neatly shutdown DOF2DMD.  Likely used from a front end menu after a MAME game before returning to s front end that has MAME and pinball stuff that also uses the DMD
+- Fix bug where DOFLinx was not disconnecting from MAME and Pinball FX processes at the end of a game
+- New support for updated score format in DOF2DMD
+- Fix FP link working with the 64 bit version of DOFLinx
+- New support for the very neat and nice Dude's Cab output device
+- New check and display the version of DirectOutput.dll at startup
+- New add detection of Pinball FX Goat Simulator and Princess Bride plus FX files
+
+8.10 1/8/24
+- New for DOF2DMD when displaying banners while navigating front end menus, restore the past known good banner if a particular game fails to display
+- Fix loop error when using a retry count with a PinOne device
+- New for Attract Mode add a colour of "Morph" to change through a HSV colour range
+- Fix plunger translation from analogue plunger to ball launch for Pinball FX3 and PinballFX
+- New FX files for many Star Wars games
+
+8.09 19/7/24
+- New, support for DMD2DOF for placing MAME marquee images on a FlexDMD device
+  PATH_DOF2DMD= the path to where DOF2DMD and its configuration file settings.ini can be found
+- New right-click test menu for DOF2DMD
+- New FX effect additions for skillshot, SSF for left and right kickbacks (ALL_Pre.FX)
+- New where FX table has "Ramp/sensor_" as a trigger convert it to "sensor_" to avoid duplicate triggers.  Remember to load updates FX files because of this.
+- New allow an semicolon ";" to be used at the end of a line in INI files to indicate that the parameter continues on the next line.  Mainly introduced to allow attract mode strings to be neatly broken down.
+- New allow attract mode to use both DOOO and device names, ie BUT_ST, DV_LF, DV_FLIR, BUT_B6, etc
+- New ATTRACT_START_DELAY= if set and above zero, this is the number of milliseconds to indicate the inactivity time until DOFLinx starts and Attract Mode button / LED pattern
+- New ATTRACT_MARQUEE_TIME= if set and above zero, the number of milliseconds between random marquee changes once Attract Mode is triggered
+- New right-click menu option to start Attract Mode for testing
+- A stack of updates and new FX files, the full Marvel suite and a start on Star Wars
+
+8.08 22/6/24
+- Force the animation name to upper case in the b2s test screen
+- Fix, checking of PinballFX and MAME EXE when 32 bit application
+- Fix, the Pinball FX "Right Flipper" issue
+
+8.07 10/6/24
+- New design events and action processing engine to add speed of processing during games
+- New FX files for Garfield, WorldWarZ, Noir, Trolls, Dragons, Kong, Noir, Twighlight Zone, Borderlands, Curse Mummy, Addams, Fish Tales, Bride of Pinbot
+- Fix Test B2S reloading the backglass every test when its the same backglass
+- New Improve the warning messages around DOFLinxkeys.exe not being in place
+- New Allow for 32 bit users when trying to check PinballFX setup details, essentially skip the step
+- New Add a message about being 32 bit when trying to check Mame operation and setup details
+- Fix cascading nudge keys to work even when acelerometer nudging is disabled
+
+8.06 26/5/24
+- New, add a check for the correct setup in the mame.ini file and warn if it looks wrong
+- Fix, making the message thread wait to ensure CPU usage doesn't report as high
+- More FX files, GrimmTales, Adventiureland, Han Solo, Knight Rider, Jurasic Park, 2 x South Park, Pacific Rim, Castle Storm, Pasha, Rome, Secrets of the Deep, Son of Zues
+- Skip messages for FX game changes if there is a flood coming in and go straight to the last
+- New MENU_NAVIGATION= message from front end systems to have DOFLinx perform navigation actions that are in Menu.INI
+  The guide on how to setup PinUp Popper for this has been updated to show how to send this message
+- New Menu.INI file that contains actions that you want when the front end navigates or changes playlists, ie Mame / PinballFX
+  So Have DOFlinx drive actions on the cabinet as you navigate your front end menu system
+- Initial speed up the FX processing loops
+- Fix All_Pre.FX to get undercab lighting working again
+
+8.05 19/5/24
+- New, check for running of pixelweb for pixelcade devices each time a MAME game starts, start it if its not running
+- Improve the speed of the DOFLinx pipe for general messaging
+- Skip FX game change messages that come in too fast for processing, ie when flying through the built in FX menu
+- Skip front end menu messages for navigation super fast allowing the current marquee or B2S to be displayed in a more timely manner
+- FX file for Biolab and the new (great) B2S that's FX specific by brewedenhell/BrewedVFX, plus Xena, Attack from Mars
+- New, give focus after a B2S start for FX the same as FX2, FX3, and Mame
+- Add game number recognition for Xena, Knight Rider, BattleStar Galactica, SL Football and Pacific Rim for Pinball FX
+- With the building of FX files you will need to update your DOF config as the doflinx ROM has been updated for addressable LEDs
+- Fix nudge with FX3 and get working with FX
+
+8.04 5/5/24
+- Fix the checking in the DOFLinxSettings.ini for PinballFX that caused some false logging, nothing operational
+- Unimprove the way that PinballFX table event alias work to avoid double triggering, because it caused trouble
+- Sort out the PinballFX Play / Menu / InLane logic
+- Make the PinballFX event processing faster
+- FX files for CivilWar, Fish Tales, Marvels Women of Power A Force
+
+8.03 1/5/24
+- Fix, get checking for plunger and nudge working for PinballFX , still not convinced that its driving through to FX or FX3 though
+- New, Add the MAX_SCORE_CHANGE= as an option the game.MAME files in the [STARTUP] section
+- New, SD=delay mS:commands option in the [SCORE] section of game.MAME files to execute commands a set time after the last score change
+  To be used to do things like restore a marquee after game scores stop changing, ie "game over"
+- New for MAME high scores add logic to use the supplied MAME_HISCORE_FOLDER= then Mame\hiscore then \hi
+  Most people will not need to set this parameter
+- Improve the way that PinballFX table event alias work to avoid double triggering
+- Improve start process when you don't get PROCESSES= quite right
+- More checking for the correct setup in PinballFX
+- Fix up the SSF volume percentage to be based of current volume not full volume
+
+8.02 29/4/24
+- Add more variables to the variable log dump option
+- Make attract mode save the values of the devices at start and restore upon stop
+- Shorten the retry loop for connecting to MAME
+- Add path selection to the B2S test screen
+- Add checking for DOFLinxTrigger.dll in the PinballFX-Win64-Shipping.exe folder when Pinball FX startup routine runs
+- Fix make the TCP connection loop for MAME more robust
+- Make SSF_LOAD= specify speaker(s) to load the sound for as opposed to 3D coordinates
+  Note, you will need to replace your All_Pre.FX file
+- Get the SSF volume working correctly
+
+8.01 26/4/24
+- Fix a couple of SSF bugs that were causing grief for most to get it running
+- Add FF_RUN, FF_SSF and FF_PC for MAME and FX3 as actions avaible from game.xx files
+- New Attract Mode that can be run when your emulator is not to run a pattern of outputs meaning that LEDs, and buttons can be cycled
+- New ATTRACT_MODE= 0 or 1 being off / on
+- New ATTRACT_SETUP= being the pattern to display
+- Remove FX file loading looking for a Default.fx as there will never be one given common items are in All_Pre.FX
+- A quick and dirty Fantastic Four.FX file
+
+8.00 22/4/24
+- New full integration with Zen's Pinball FX.  Triggers coming direcdtly from Pinball FX (thanks Zen and freezy).  A new DLL (DOFLinxTrigger.dll) in Pinball FX will send table events to DOFLinx. 
+- New DOFLINX.INI parameter PATH_FX= .  This is the Path to your FX (Pinball FX) files thast link Pinball FX table events to output actions.  Likely to have the shipped FX files within it.
+- New DOFLinx.INI parameter PATH_FX_B2S= .  This is the path to your B2S active backglasses for PinballFX.
+- Make DOFLinx.LOG writing for DEBUG > 0 a shitload faster
+- Add configuration parameters for Pinball FX to Create INI menu option
+- FX files for all basic Pinball FX items - bumpers, flippers, slings
+- Specific FX files for Indiana Jones, Addams Family, Sorcerer's Lair, Wild West Rampage
+- Add a new right click test option to test by device name, ie "Left Flipper", "Right Slingshot", etc.  This will test all ports associated with that device which is handy when you have mutltiple toys linked to the same logical device or are simply chasing some wierd arse fault.
+- New FF_PROC as a new action type.  This can be used to start a background process from an event.  Usage is FF_PROC Command,Argument, ie FF_PROC SomeBatch.bat,Data
+  If you use this do so carefully, you could spawn a lot of processes quickly and that can bog your machine down
+  This was requested by some people trying to do tricky stuff on their cabinet.
+- New add command line parameter EDIT_INI=YES to force DOFLinx to go straight to the DOFLinx.INI parameter editor
+- New DOFLinx.INI parameter PATH_HI2TXT= .  This is the path where Hi2Txt utility for getting MAME high scores has been placed. I'm using C:\Hi2Txt\ . Leave it out or blank if you don't have / want this.
+- Add a new right click test option for Pixelcade devices and MAME high scores
+- Add COLOUR_FILE= parameter to add clarity for non pinball users.  Its exectly the same as DIRECTOUTPUTCONFIG= but makes more sense if you can have COLOURS=Colours.ini  (and yes my North American friends, that's how you spell colour! :-) )
+- Fix the default flipper key action logging to obey the debug flag setting
+- New integration with Pixelcade devices, LCD / LED marquees, dot matrix dispays, etc
+  Show marquees when MAME games start
+  Show marquees and optionally hi scores when cycling through PinUp Popper menu
+  Use Hi2Txt to get MAME high scores
+- Updates to many MAME files to drive Pixelcade devices
+- New PATH_PIXELCADE= parameter.  This points to the Pixelcade folder where the Settings.ini file is stored.
+- New Pixelcade test screen from right-click menu when in debug
+- New PIXELCADE_MENU_HISCORE= parameter.  When displaying marquees while selecting from the front-end menu use =1 to have marquees alternate with hi scores and =0 to only show the marquees
+- New PIXELCADE_GAME_START_HIGHSCORE= parameter.  Determines if when a MAME game is started if high scores are shown in addition to the marquee
+- NEW PIXELCADE_REPLACE_LED_MARQUEE_AFTER_ANIMATION= . Possibly the longest parameter name yet.  Used to choose if after an animation is shown on the LED display if the marquee is put back afterward.  Good to have set to 1 (yes) if you only have an LED display, but probably 0 (no) if you've got LCD and LED displays.
+*** Note you need the DOFLinx MAME version 0.263 or later with DOFLinx V8 or later
+- New ability for Popper to send menu event chages to DOFLinx so that MAME game names and high scores can be displayed on either the Pixelcade device or built in MAME score screen
+  There is a guide on how to set this up
+- Updated the built in DOFLinx MAME score screen to look a lot better
+- New addition of in built SSF - thanks NailBuster for the push and start, TerryRed for a lot of info and contextualisation
+- SSF 7.1 has been setup as standard for Pinball FX within the table.FX file, mainly the All_Pre.FX so far
+  SSF can load multiple sounds for a named event then cycle through those sounds to achieve variety
+  Volume, X, Y and Z coordinates are set per sound
+  I am sure this is not perfect as I do not have a full 7.1 setup
+- New SSF_ENABLED= 0 or 1 , 0 is the default being disabled, 1 is enabled
+- New SSF_DEVICE= default is -1 being the default sound device
+  For a differnt saound device simply get the Windows sounds device #, to help DOFLinx will list all available devices and their ID's at startup if you have DEBUG= set to 1 or 2
+- New SSF_SOUND_PATH= this is the path where the necessary sound files are stored
+  While you can set all of your own sounds if you want, DOFLinx is using Fleep sounds and they are in the \sounds folder of the standard installation ZIP
+
+7.46 20/1/24
+- Some minor PinOne message typos fixed
+- Create x86 and x64 bit versions
+  Remember you will need either the 32bit or 64 bit versions of DirectOutput.dll, B2SBackglassServer.dll and Extensions.dll all from DOF in the same folder as DOFLinx.EXE
+
+7.45 1/6/23
+- Add suport for PinOne output device.  Note you will need the DirectOutput.dll with PinOne added for a PinOne device to work
+- Move to dotnet framework 4.8.1
+- Report on 'special' MAME game names of Unknown and ___empty and don't try to process them as valid ROMs
+- Fix loading LINK_BUT_XX with 0000 and MONO
+- New addition of LINK_BUT_P3 and LINK_BUT_P4
+
+7.44 27/3/22
+- Fix FX3 file for Monster Bash where a few items were not working properly
+- Fix flipper trigger for latest FX3 update
+- New FX3 file for FX3 Indiana Jones
+
+7.43 14/3/22
+- New, add a version check and report for MAME from v0.239
+- New, add parameters PROCESSES_ADD= and PROCESSES_DEL= at Nailbusters request to more easily add and delete processes being monitored from menu before and after scripts
+- Update to work with FX3 release of 11/3/22
+
+7.41 15/1/22
+- Fix LT and RT buttons on XBox controllers, they just weren't working before
+- Fix FX3 file for SFF for Black Rose and Party Zone
+- Fix FX3 LAUCHMODE going to off as sime FX3 internal triggers seem to have changed
+- New, duckhunt MAME file
+
+7.40 10/12/21
+- Update to work with FX3 release of 10/12/21
+- New, add SCORE_SCREEN= parameter with a default of 0
+  0 = do not show, 1 = show
+  This screen will show MAME scores, shots, hits and hit ratio.
+  It can be dragged and resized to the required location. Double click to make it dragable and resizable, double click again to revert.  
+  Screen, location and size will be saved upon closing DOFLinx.
+- Add MAME capability to read shots, hits, determine if a game is active.
+- New MAME file for duckhunt supporting score, shots fired, hits an hit ratio
+- Fix, deactivation error with MAME when there is no B2S installed
+- Fix, requests causing MAME to crash when there is no valid game.MAME file
+- New, add MAME_FOCUS= parameter with a default of 1
+  0 = do not try to focus the MAME process, 1 = do try to focus it - handy if you have a front end menu and sometimes manage to switch away from MAME (easily done with a light gun on a second screen)
+
+7.33 14/5/21
+- New, add FX3_TRIGGER_RELEASE_DELAY= parameter with a default of zero and able to set the number of milliseconds after a trigger in FX3 stops before the triggered action is recognised as stopped.
+  Designed for use where the odd situation of false un-triggering occurs.
+  A value of 50 should be enough, but it will delay the stop events, ie turning off a solenoid after the flipper key is lifted by 50mS
+  Still testing this out to see if it does in fact help normal operation.  I have seen improvements in false launch ball triggering, logically this shouldn't happen, but then along came reality!
+
+7.32 19/2/21
+- Fix, the MAME player number in the static message on the DEBUG window for players >1
+- New, added Green Beret MAME file, thanks denetor
+- Fix, where the open ROM in DOF was on occasion thought by DOFLinx to still be open after a front end menu system had used DOF
+
+7.30 30/1/21
+- Make the linking to the running FX3 process far more rugged and trap more errors
+- Changed, FX3 files to have more unencrypted information
+- New, add a default button colour internally so that colour buttons can return to the initially set colour after being changed by a specific game configuration file
+- New, use the COLOUR_PALETTE= in FX3 files in preference to the GAME_COLOUR= in the base DOFLinx.INI file
+  If you use the default colours shipped with DOFLinx then remove all GAME_COLOUR= lines from your DOFLinx.INI to clean it up
+  If you have customised the colours in DOFLinx.INI then just leave those customised lines in there and they will be used
+- New, add the setting of RGB button colours from within FX3 game files
+- New, add BUTTON_LIGHT_ACTION= parameter.  Allows a button LED to be linked to triggers in the game file
+  Lets the button light do things like pulse when the flipper or nudge is activated
+- New, BUTTON_LIGHT_ACTION_ADDED= to add additional actions without clearing the list of button action
+  BUTTON_LIGHT_ACTION= is used in the All_Pre file and BUTTON_LIGHT_ACTION_ADDED= adds to this list in the individual game file
+- Update all FX3 files to drive RGB buttons should they be in use
+- Include MAME 228
+
+7.24 20/12/20
+- Fix and error with analogue nudge not being properly selected in the case where you cascade the L-Ctrl and R-Ctrl keys
+- Add the PayPal donate option to the About screen and a button to access that on the main screen
+- New, allow the use of 10 MX functions from the DOF ROM for FX3 games that will not interfere with operations
+  Please read the included short guide to understand this further
+
+7.23 2/12/20
+- Fix the incorrect button definitions for left and right flippers
+- Expand the possible ports per device past 99
+  Now Dxx and Dxxx function for all device and port combinations
+- Update for FX3.EXE 2/12/20 release
+
+7.22 3/11/20
+- Fix the checking of the JOY_PORT= parameter to allow joystick ports from 1 to 16
+
+7.21 23/10/20
+- Make work with FX3 circa 21/10/20 release for Williams Pack #6
+- Add FX3 files for Dr Dude, Space Station and Fun House
+- New, allow LINK_xx devices to be removed by having a LINK_xx= (blank) line in a supplimentary INI file.
+  Put in place to allow the removal of devices and readding to change the device / ouput for a LINK_xx= device
+
+7.20 12/9/20
+- Add analogue to digital nudge for FP
+- Fix an error with Chime #3 working from FP.  Updated doflinx.vbs
+- New screen to help create a basic DOFLinx.INI file
+  This can be accessed via the right click menu when DEBUG is active, or, it will start automatically if no DOFLinx.INI exists.
+- New, allow the PROCESSES= parameter to be adjusted while DOFLinx is running.
+  This allows emulators to be added / subtracted from front end menus
+- Added a new FX3 file for V2 of the IronMan FX3 backglass
+  Now if you want to use the V1 backglass you will need to rename the IronMan V1 Backglass.FX3 to IronMax.FX3
+
+7.16 21/7/20
+- Fix, Running of XBox rumble from FP
+- Fix, Move the code to load the doflinx ROM in DOF when starting FP to before the link is detected to speed things up a little.
+- New, avoid reloading a ROM if its already loaded
+- New, add parameter CLOSE_ROMS=1/0 (default =1)
+  This allows you to determine of DOFLinx will close the ROM in DOF in between games
+  For a pinball cabinet you will most likely want the default 1 = yes close them, which is the way it has always worked
+  For an arcade cabinet when you are not having the front end run DOF events you may want to this as 0 = no don't close them.
+  Given that all MAME files so far use the doflinx ROM it can easily be left open thus saving 5-10 seconds every load and providing more contunuity and ablity to easily use effects outside of when the emulator (MAME, Daphne, ePSX) is running.
+- Suppress the loading of duplicate colours and modified colours from DirectOutputConfigxx.INI files
+
+7.15 9/5/20
+- Add a "Reverse4" option for formatting scores from 1 bit MAME games
+- Fix the conversion of hex based MAME scores
+- Fix to MAME v218 to handle very high address requests (Big Bout Boxing)
+- A shit load more MAME files
+  A big thanks to D@VS0ut0 for the work on so many of the MAME files.
+- Make the existing MAME files display the game manufacturer when started on the Back MX Effects then stop when Coin / P1 / P2 buttons are pressed
+- Updated DOFLinxMsg to return a an error code of 1 for timeout and 2 for failed write
+  This adds options for batch files sending messages to DOFLinx
+
+V7.14 5/4/20
+- Fix issue where mutiple buttons of the one type were not being handled for KEY_TO_COMMAND
+- Fix doubling of loading fixed key illumination for MAME
+- New KEY_TO_COMMAND_ADDED= for adding additional commands in ALL_Post.MAME
+- Allow the LINK_BUT_xx three part parameter to have a device / output of 000 for when you do not have output toys but need to define a button
+- Fix the suppression of the cheat_status message from MAME
+- More MAME files
+- A couple of MAME files for Nintento Entertainment System - NES.
+  I have still have the original machine, so had to get these working via MAME with some flashers and MX LEDs !
+- Add the ability to read Hex based scores from mame games (Hello NES Tetris 2)
+
+V7.13 21/3/20
+- Fix issue with AUTO_MX=1 causing strange MX effects in FX3
+
+V7.12 15/3/20
+- Fix FP issue with PUP, this was part of the issue introduced in V7.10
+
+V7.11 14/3/20
+- Fix the error introduced in V7.10 whereby DOFLinx was not starting up the DOF ROM for MX effects and doing the PUP init calls causing addressable LEDs and PUP not to work with FX3
+- New test screen to test out loaded trigger actions.  Accessible fromt he right-click menu
+- Fix bug with loading of the new LINK_BUT_xx for MONO buttons
+- MAME files for frogger, pacman  (and derivatives)
+  Updated MAME files for other games
+- Have the MAME checking routine habdle the new "reset", "cheat" and "cheat_status" messages 
+- Reduce the on screen DEBUG log from 1000 lines to 500 for a bit more speed while in debug mode - everything is still in the LOG file
+- Fix, add another couple of missing variables to the Show Variables funtion
+- Updated version of MAME218
+
+V7.10 7/3/20
+- New, Add a default FX3 backglass called FX3Logo that will be displayed if FX3 doesn't have a currently active game name
+  This occurs if you enter FX3 and use the menu without a game parsed as a parameter
+- Add an error trapping layer around the call to the B2S server
+- New, allow all standard parameters to be used in the [STARTUP] section of FX3 files
+  This allows buttons to turned on, etc per game
+- New, Add TRIGGER_DEBOUNCE_TIME= to optionally set the minimum amount of time in milliseconds between when a trigger can retrigger.
+  Put in to help with FX3 fast retriggering, but applies to triggers no matter what emulator generates them.
+  Default 200Ms
+- Improved error checking for BUTTON_ONS= and BUTTONS_ON_COLOUR= parameters
+- Depricate the BUTTONS_ON= and replace with FIXED_OUTPUTS=
+- Depricate the BUTTONS_ON_COLOUR= and replace with FIXED_OUTPUTS_COLOUR=
+  Both of the new formats above only accept D00, dropped these from accepting buttons.  Now use BUTTONS_LIT=
+- Add BUTTONS_LIT= for button LEDs, mono or RGB based.
+  Having one parameter for mono and RGB means that cabinet setups are irrelevant when setting up FX3 and MAME files
+- New, add command of BUTTON_COLOUR_CHANGE= to change the colour set for a LINK_ button device
+- An initial set of MAME files for Space Invaders, Truxton, Galage and variants of these
+- Add some missing variables to the variable dump option relating to buttons
+- Fix bug with loading correct colour for RGB buttons
+- Fix bug with RGB button on / off / fade / blink and incorrect output port usage
+- New command LIGHT_BUTTONS_NOW to allow the lighting of buttons in the BUTTONS_LIT list at any time, for example via script while the front end is running
+- New command OUTPUTS_OFF to allow all outputs to be turned off at any time.  Handy for when you exit your front end and want everything off as you go to the OS
+- New way to define buttons and more button types.
+  LINK_BUT_xx= allows the output port, output LED (mono or RGB colour), plus the input key code when the button is pressed to be defined
+  Defining the input key code allows button alias (ie BUT_P1) to be used in configuration files like FX3 and MAME with one cetral definition of the key code
+  Doing this ensures that scripts and game configuration files are fully portable
+- A heap of new button definitions, LINK_BUT_xx where xx = RE,B1 - B8
+- New, a shitload of stuff to make the MAME link work .... read the guide - its good!
+- Inclusion of new folder in the release with a 64 bit compiled version of MAME that respondes to DOFLinx polling
+- A new parameter for KEY_TO_COMMAND=
+  This allows a key code to trigger a command setup in an FX3 or MAME file
+  Very handy if you want to define something like your "Fire" button LINK_BUT_FR or LINK_BUT_1 to trigger a command each time its pressed, ie a dash on the addressable LED array
+  Format is KEY_TO_COMMAND=bbb,cccc[,bbb,ccc] where bbb = BUT-1, BUT_ST, etc and ccc is an action you define in the FX3 or MAME file in the [COMMAND] section
+
+V7.04 25/1/20
+- Fix fault when using FR, BE, C1, C2, or C3 devices
+
+V7.03 18/1/20
+- Fix MX LEDs working with FP.  A problem introduced in V7.0 (thanks Outhere for your help)
+  Note this requires the corresponding DOFLinx.vbs to be replaced in the FP\Scripts folder
+
+V7.02 12/12/19
+- Update for new FX3.EXE released for the Williams Pack #5
+- New FX3 files games being Cirqus Voltaire, Tales of the Arabian Night and No Good Gofers
+
+V7.01
+- Speed up the checking for FX3 triggers
+- Fix error message for failed link button loading
+- Fix bug with loading LINK_xx buttons where V7 was supposed to not require "MONO" for a single button device
+- Fix invalid error message with BUTTONS_ON= and BUTTON_ON_COLOUR= when DOO was used
+- New FX3 file update for Star Wars Han Solo for the new B2S backglass
+- New FX3 file for Monster Bash with some more toys being triggered
+
+V7.0A 2/11/19
+- Fix small error in Medieval Madness FX3 which would not allow the Beacon device to run
+- Fix the sample INI files to use commas instead of spaces - a hangover from V2 !
+
+V7.00 1/11/19
+- Note this version target the .NETFramework v 4.6.1
+- Note the introduction of DOFLinxExt.dll - place it in the same folder as DOFLinx.exe
+  DOFLinx will warn if the DLL is missing or blocked and abort
+- Add MAME as a trigger to DOFLinx actions
+  Requires MAME > version 0.107 (when the network output was added), but only tested with 0.212
+  In the mame.ini file within the "OSD Output Options" section set "output network"
+- Add MAME_PROCESS= for this add your MAME emulator to the normal PROCESSES= line, but also add the MAME process to MAME_PROCESS=
+  This enables DOFLinx to understand that this is your MAME emulator and to try and link to that when it causes DOFLinx to activate by being one of the processes in the PROCESSES= line
+  Many people use differnt MAME emulators, so provided its > 0.107 and has the network output enabled all should be good
+- Add PATH_MAME=, this is where the *.MAME files can be found, probably C:\DirectOutput\DOFLINX_MAME\
+- Add MAME_TRIGGER_OUTPUT_PATH=, this doesn't have to be, but can be set, to provide an output file of all the triggers found in any MAME game that is run
+  Setting this means that you can go back and find the triggers available for a given game and create a meaningful *.MAME file
+  If a MAME game has no triggers then a blank file is saved in a subdirectory of this path called "NoTriggers" just so that you know
+- Add *.MAME files to define parmeters, triggers and actions per MAME game
+- Add LINK_P1, LINK_P2, LINK_PS (Player 1, Player 2, Pause)
+- Add the ability for BUTTONS_ON= command to accept BUT_xx arguments as well as DOO numeric arguments
+- ** CHANGED ** - The format of the LINK_xx for buttons has changed
+  The format is now LINK_xx=D00,CCCC  where CCCC is the colour for a RGB button, or set to MONO or left blank for a single LED illuminated button
+- Add COLOUR_PALETTE= where a list of colours can be set for the current palette in use for all RGB effects
+  Most likely used in the STARTUP section of MAME files to set the colours for RGB devices
+- Cut down the number of messages each time devices are activated, ie the X type Y devices found, only show those intialised
+- Add the ability to view DEBUG information on another networked computer in real time via TCP connection
+  Set DEBUG_TCP_PORT= to the port you wish to use, I suggest 8001
+  Ideally place this parameter on the command line when you are starting DOFLinx, although it will also work if placed in DOFLinx.INI, just a little later after startup
+  Setup something to monitor and read this port on your cabinet machine IP, I've written a small utility TCPReader.  You could use NC which is freely available
+  The messages output on this port will be the same as those sent to DOFLinx.LOG
+  Using DEBUG=2 and displaying debug information on a remote machine will stop you needing DOFLinx on a cabinet screen when debugging / monitoring
+  Remember set DEBUG=0 when you are not chasing an issue, don't run it all the time
+- ** CHANGED ** - Analogue plunger opertion for FX3
+  The plunger key is pressed when the pull trigger point is reached then released when the plunger release point is reached
+- Added a new parameter HOLD_ACTIVATION=1/0
+  Used as a message via DOFLinxMsg or a vbs stcipt you may use to send messages to the DOFLinx pipe
+  This will cause DOFLinx to stop any current processing and completely ignore any programs listed in your PROCESSES= list
+  Essentially you can "pause" DOFLinx from activating
+  It is the same as the right click option to "Stop Hold Restart"
+- Improve the error checking for all LINK_xx= parameters to avoid errors with bad data in the configuration
+  The parameter will not load, but will report as such if DEBUG= is set to other than 0
+- Make the FP link checking 3X faster
+- Add support for the FX3.EXE released for Halloween Monsters
+- Add WMS Monster Bash and BALLY Creature from the Black Lagoon
+
+V6.84 17/8/19
+- Improved Jaws.FX3 for better DOF during play
+- Fixed FX3 commands for BE, C1,C2 and C3
+- Fixed error created in FP DOFLinx tables when you have Chime #3 enabled in your DOFLinx.ini file
+
+V6.82 22/7/19
+- Add Bell, Chime 1,2 and 3 as devices (BE, C1, C2, C3)
+  DV_BE, DV_C1, DV_C2, DV_C3
+  Be sure to install the new DOFLinx.vbs if you are using FP DOFLinx tables
+- Make the right-click screens appear in the centre of the current monitor - I just got sick of dragging the damn things from monitor 1 to monitor 4!
+- Fix error for Test Joystick and Test Output -> Input Loopback where it would crash if you have a SainSMart device or CLOSE_DEVICES_BETWEEN_ACTIVE=1 and have not pressed "Fake Emulation ON"
+- Stop the Test Joystick option crashing if JOY_PORT= had not been set
+- Add a message during device startup if the LEDWiz appears to be an emulated device as opposed to the genuine article (try to warn people about using emulated devices and assigning toys beyond the ports they actually have)
+- Add some error logging to the test joystick screen
+- Fix error in ShowVariables where it could fail on FixedOutputs
+- Improvements to the PUPlayer opening and closing routines
+- Fix where the Test Device Cycle screen would error if you simply entered then exited
+
+V6.81 29/5/19
+- Don't test for L/R Ctrl FX3 nudge keys if analogue nudge is enabled and the L/R nudge input keys are not set to L/R Ctrl
+- Reduce the FX3 nudge shaker action from 10 seconds to 4 seconds
+- Rename the All.FX3 file to All_Pre.FX3 the functionality is the same, it still processes commands for all FX3 games before the table commands are loaded
+- Add All_Post.FX3 for processing commands for all tables after the table commands are loaded
+- Add a [CLEAR COMMANDS] section to the FX3 files to delete commands from the loaded set to allow for more detailed personalisation of settings
+  Intended for use in the All_Post.FX3 file to remove unwanted effects
+  Normally blank unless specific effects are desired
+  So if you don't like any specific effects setup in the standard FX3 files you can remove it and optionally add your own
+- Fix bug with analgue nudge where the ON effect for nudge was being incorrectly triggered again at nudge OFF resulting in flashers staying on and other devices running too long.
+- Updated FX3 file for Star Wars Masters of the Force for the new active backglass
+- Add required support for Steam Zen Williams Volume 4, Hurricane, White Water, Road Show
+  New GAME_COLOUR= lines into the sample INI files
+
+V6.80 12/5/19
+- Fix an issue where DOFLinx failed ugly when the number of output devices caused a SainSmart (FTDI) device to be detected at or beyond device #4
+- Add a more comprehensive close command for the PUPlayer on advice from NailBuster
+- Add some separators to the right-click popup test menu
+- Rename the Test Controller Respose Time test option
+- Add a test menu for an output device loopback
+- Add KEY_TO_XBOX_RUMBLE=KK,C,M,SS,DDD[,KK,C,M,SS,DDD] - KK=Key, C=Controller (1-4), M=Motor L/R, SS=Speed (0 to 65,535), DDD=Duration in milliseconds
+
+V6.71 22/3/19
+- Add required support for Steam Zen Williams Volume 3 (Bally), Safe Cracker, Theatre of Magic, The Champion Pub
+  New GAME_COLOUR= lines into the INI files
+
+V6.70 16/3/19
+- Add test function to time from output activation to actioning that activation
+  This function measures delay of the output controller.  It requires some custom hardware to use
+- Add functionality for XBox rumble to be activated for any device, ie LF, ML, FN, etc
+  New parameter is XBOX_RUMBLE=XX,C,M,SS,DDD[,XX,C,M,SS,DDD] - XX=Device ID, LS, ML, BR, SH, FN, etc, C=Controller (1-4), M=Motor L/R, SS=Speed (0 to 65,535), DDD=Duration in milliseconds
+- Add in the FX3 redcupX naming for Solo, Calrissian Chronicles and Battle of Mimban
+- New GAME_COLOUR= for the above games in the sample INI files
+
+V6.62B 17/2/19
+- Add FX3 files for Shaman and Sorcerer's Lair
+
+V6.62 27/1/19
+- Fix error whereby the left flipper was also triggering the knocker (fat finger problem by me when editing constants in the code)
+
+V6.61 27/1/19
+- Fix error where Jxxyy was not correctly being detected as a key press
+
+V6.60 26/1/19
+- Add the detection of connected joysticks at startup
+- Allow the use of joystick buttons as keys
+  Format is JCCBB, J is fixed for joystick, CC is the joystick number from 01 to 16 (note leading zero) 
+  BB is the button 01 - 32 (again leading zero)
+  DD can be a DPAD item, DD, DU, DL or DR
+- Add a right click GamePad tester when in DEBUG mode
+  Shows the connected XBox controllers and Joysticks
+  Shows the pressed buttons for easy identification
+- Add the ability to select any of the 16 valid joystick ports in the joystick test screen
+- Add showing Z-Axis current position in the joystick testing screen
+
+V6.54 6/1/19
+- Add PacDrive support - thanks Bjonne for testing
+- Make the PacLED64 detection automatic - thanks to dramaone for testing this
+  PACLED64= command line arguments redundant and no longer supported
+- Allow DEBUG=2 to log all messages without showing the debug window
+  Very handy to log details without impacting focus of windows while playing
+  Also a bit faster because there are no screen updates in the DOFLinx window
+- Make the joystick testing routine sample faster to get better results
+- Add right click option to show key variables in debug window and to the LOG file
+  Debugging aid
+- Add SHOW_VARIABLES command to display key variables in the DOFLinx.LOG file and to screen
+  This is the same as the right click menu option but can be done from the command line without DOFLinx being displayed, ie with DEBUG=2 set
+- Add some missing stuff to the guide (parameters from previous updates)
+
+V6.53 8/12/18
+- Fix joystick port numbering
+- Fix BlackRose and Party Zone FX3 file ROM names
+- Add more sample SUP INI files thanks to TerryRed
+
+V6.52 5/12/18
+- Add new RGB_STYLE of RAINBOW_ALTERNATE
+  This is the same as RAINBOW except every second device in RGB_OUTPUT is set to the same colour and two colours are used from the sequence
+- Add new SKIP_RGB_FLASHER_TEST parameter
+  Allow the skipping of the test that removes RGB devices from the list that are also configured as flashers.
+  Only use this parameter if you really know why you are doing it, it overrides default DOFLinx behaviour.
+- Fix key down / up behaviour of KEY_TO_ROM and KEY_TO_PUP_EVENT
+- Add key up events to KEY_TO_ROM and KEY_TO_PUP_EVENT
+  If you are using these parameters then the format has changed to incorporate the key up events
+- Document the KEY_TO_PUP_EVENT parameter that was added some time back
+- Improve the testing of keyboard key presses
+- Adjust to work with new FX3.EXE that came with the Williams volume 2 tables
+- Add FX3 files and B2S for FX3 Attack from Mars, BlackRose and Party Zone
+
+V6.51 4/11/18
+- Update for the FX3 Williams update EXE
+- Correction to FX3 file for Star Wars Droids
+- FX3 files for Fish Tales, Junkyard, Medieval Madness and Getaway
+
+V6.50 15/9/18
+- Add support for Pincontrol 1 output device
+- Remove the need for setting up PINCONTROL2_UNIVERSE= and PINCONTROL2_BROADCAST= parameters for Pincontrol 2
+  These will now pick up from your cabinet.xml file
+- Fix bug with default value of the FX Nudge keys
+- Additional FX3 files vor V12, Wild West, XMen, Han Solo, Droids, Masters of the Force, Return of the Jedi
+- Some more logging for FX3 nudging
+- Handle the FX3.EXE of 14/9/18
+- Make nudge keys other than L-Ctrl and R-Ctrl used with joystick nudge trigger the nudge actions of shake and red flashers
+
+V6.40 19/8/18
+- Tidy up the code around determining which FX3.EXE is running and cater for older versions (from now, not retrospective) should someone keep one of these
+- Add using Pinscape (joystick) analogue nudge to trigger FX3 Left, Right and Forward nudge
+  JOY_PORT=    (1 is the first port)
+  JOY_X_OFFSET=
+  JOY_Y_OFFSET=
+  FX_LEFT_NUDGE_POINT=
+  FX_RIGHT_NUDGE_POINT=
+  FX_FORWARD_NUDGE_POINT=
+  FX_LEFT_NUDGE_KEY=
+  FX_RIGHT_NUDGE_KEY=
+  FX_FORWARD_NUDGE_KEY=
+  FX_LEFT_NUDGE_INPUT=
+  FX_RIGHT_NUDGE_INPUT=
+  FX_FORWARD_NUDGE_INPUT=
+- Add test functionality to test and get trigger values for Pinscape accelerometer (joystick) - Test Joy Stick
+  With no movement use "Get Offset" to find the resting position
+  Nudge your cabinet and look at the min / max values and decide on your trigger points
+  Nudge again and see if you trigger the L / R / F points
+  Reset and repeat until you get some values you are happy with
+- New FX files for EpicQuest, IronMan and Pasha
+
+V6.31 8/7/18
+- Include a better standard FX3 and PUP FX3 files for Aliens Pinball
+- A new DOFLinx.vbs for FP to fix a message error when using MX effects
+- Fix issue where some effects were not being cleared between FP games
+- Update to cater for FX3 EXE of 7/7/18
+- New FX3 file for Eldorado
+
+V6.30 17/6/18
+- Add support for PinControl2
+- New parameter PINCONTROL2_UNIVERSE=  Default is 0
+- New parameter PINCONTROL2_BROADCAST= 
+  This is the IP address of the PinControl2 device, normally 192.168.178.50
+  Having an address set causes the Pincontrol2 (ArtNet) device to try to be opened
+- Reverse the load order of FX3 startup files, initially for PUP versions for ROM intialisation, load ALL.FX3 before TABLE.FX3
+- New test feature to cycle through a number of ports turning them on / off until you stop it
+- New test feature to manually mix a colour on an RGB device, allows dynamic colour change testing.  Fade your RBG device in / out.
+- New included in the release pack a second set of FX3 files for use with the TerryRed developed set of PUPlayer SSF videos
+  To use these simply place them in your FX3 folder instead of the set supplied in the FX3 folder within the release.  You onyl use one set of FX3 files.
+- Add more logging for PacLED64 startup
+- New FX3 files for Biolab, Boba Fett, Castle Storm, Earth Defense (all using FX2 backglasses)
+- New parameter SHOW_IN_TASKBAR=
+  The default is 0 (false),  if you do want DOFLinx in your taskbar (ie during testing, etc), add SHOW_IN_TASKBAR=1
+- A couple more sample INI files - thanks TerryRed
+
+V6.27 28/5/18
+- Improve the FX3 backglass checking to be smarter
+- Fix problem with FP link where it may only partially connect
+- Increase the number of FP <-> DOFLinx memory slots for communication
+- Make FP PUP messages cycle to avoid loss of multiple quick messages
+- Slow down the Setting key press check to avoid possible conflict with other applications
+
+V6.26B 13/5/18
+- New FX3 file for Deadpool
+
+V6.26 28/4/18
+- New to work with FX3 27/4/18 release
+- Fix initial FX3 memory reads thus removing some odd behaviour at startup
+- Add checking for backglass loads in FX3 for games that have them available.  Log if its not loading the B2S and is set in cabinet mode.
+
+V6.25 21/4/18
+- New ensure new versions of FX3.EXE do not allow DOFLinx to crash, rather report the unknown version and disable the link
+- New detection of the Last Jedi and Ahch-To Island games
+- New to work with FX3 17/4/18 release (Star Wars Last Jedi and Ahch-To Island)
+- Note, for FX3 remember to add the two new GAME_COLOUR= lines to the end of your DOFLinx.ini if you want the colours as designed
+
+V6.24 8/4/18
+- Fix an error with FX3 file loads that were causing the default ROM to load not the correct one.  This caused the wrong MX effects.
+- New FX3 files for Spiderman, Star Wars IV & V, Star Wars Clone Wars
+
+V6.23 21/3/18
+- Fix (again, or perhaps properly) the situation where registry X and Y positions saved for DOFLinx in debug mode could be silly values making it effectively invisible
+- Fix a bug with the FF_COLOUR command for FX
+  This will have stopped Undercab RGB working properly (or perhaps at all) for most people
+- Add two new parameters for use in INI files
+  FX2_FOCUS=1/0 - default =1
+  FX3_FOCUS=1/0 - default =1
+  Setting wither of the above to 0 (off) will make DOFLinx NOT try to refocus to FX2/3 after starting a B2S backglass
+- FX3 files for Women of Power Champions, Guardians of the Galaxy, Darth Vader, Star Fighter Assault, The Walking Dead
+
+
+V6.22 23/2/18
+- Update to work with FX3 version released 21/2/18 for the Jurassic tables
+- FX3 files for Jurassic World, Jurassic Park, Jurassic Mayhem, Fantastic Four, Ghost Rider, Antman, Age of Ultron, Avengers, Women of Power A Force
+
+V6.20 4/2/18
+!!!!! YOU MUST CHANGE TO DOF R3++ TO USE DOFLINX FROM THIS VERSION !!!!!!
+- Change to use the mjr DOF R3++ version  http://www.vpforums.org/index.php?showtopic=39557&hl=%2Bgrand+%2Bunified
+- Fix saving of screen position to not save if the positions are illogical
+- Add a number of sample INI files to the release zip for more choice and hopefully clarity
+- New FX3 files for Aliens vs Predator, Blade, Bob's Burgers, Captain America, Civil War, Dr Strange, Excalibur, Fallout, Moon Knight, Portal, Secrets of the Deep, Rogue One
+- Now at 50% of FX3 games with FULL custom FX3 files, full forcefeedback, MX LEDs and B2S backglasses
+
+V6.12 26/1/18
+- Fix the saving of DOFLinx screen position to not occur when exiting after a load error and therefore saving a bad position that requires registry clearing
+- Imprive the FX3 launch ball and launch mode logic
+
+V6.11 7/1/18
+- Fix a couple of FX3 game name conversions to ensure the correct FX3 and B2S file is picked up
+- Add Family Guy, Doom, Fear Itself, Paranormal, Star Wars Rebels, Star Wars Force Awakens to the FX3 full force feedback and B2S back glass
+
+V6.10 1/1/18
+- Suppress the game name message at process detection for FX3 as its no longer required
+- Add the concept of an ALL.FX3 file to enable common items across games
+- Added FX3 files for Venom, Infinity Gauntlet, SkyRim, Thor, ET, Jaws, Back to the Future, Archer, Alien Isolation, American Dad
+- Updates to many FX3 MX effects
+
+V6.01 23/12/17
+- Drop the default test time on from 1000 to 100mS to stop solenoids being on too long by accident
+- Removed the FX2 files from the distribution package, contact me direct if you need them
+- Fix crash when B2S path was not set and no C:\VP\ path exists
+- Fixed spelling of SonofZeus in the GAME_COLOUR= of the sample DOFLinx.INI - If you copied this, either manually fix it or recopy
+- Rebuilt the TestB2S function
+- Fixed a couple of instances where the FX2 B2S path was being used when it should have been the FX3 B2S path
+- Added FX3 files for Wolverine and World War Hulk
+
+V6 20/12/17
+- Fix Xbox controller making the X and Y buttons work
+- Add support for FX3 full force feedback
+- Have DOFLinx recognise games as selected from the grid, not just from menu launch such as PinballX.  so still works as per FX2, but has new capability.
+- Default support (ie flippers, bumper and slings) for all games
+- Full support for Son of Zeus, Adventure Land, Aliens and Mars
+A HUGE THANKS TO GIGALULA FOR HIS INPUT !!!
+.... a lot of FX3 config files and B2S still to come!
+
+V5.4 25/11/17
+- Add support for PUPlayer
+- Drop the default wait between key presses for KEY_TO_COLOUR, KEY_TO_OUTPUT_TIMER, KEY_TO_COLOUR_TIMER commands from 1000mS to 500mS
+- Add the ability to set the wait time between key presses via the new parameter DELAY_BETWEEN_KEY_PRESS=
+- Add two new commands FF_ROM= and KEY_TO_ROM= for use with other emulators, ie MAME, to use MX commands from assigned keys
+- Fix the FX2 startup to be the same as FP where RGB devices declared as flashers are temporarily removed as RGB devices to avoid off colour displays
+- Fix startup issue if you didn't have B2S installed
+
+V5.22 14/10/2017
+- Expand the SETTING= item to allow it to use two differnt device outputs allowing for latching on / off of control devices
+- Fix a stack impbalance with the sleep command causing erratic results (DOFLinx popping up when a process activates, strange DEBUG triggering)
+- Fix issue with all outputs not returning to an off (0) state when an activating process disappears
+- Fix issue with DOFLinx becoming visible when FX2 or FP trigered it
+- Remove DOFLinx from the taskbar
+
+V5.20 24/9/17
+- Update FX2 memory triggers to handle Pinball FX2.exe update circa 23/9/17
+- Add new optional parameter DIRECTOUTPUTGLOBAL=
+  If you have a DOF global config file, use this parameter to point to it
+  DIRECTOUTPUTGLOBAL=c:\DirectOutput\Config\GLobalConfig_b2sServer.xml
+- Add detection of Teensy addressable LED controller
+- Add test routine for any DOF configured ROM and element
+- Tidy up some logging messages
+- Add support for addressable LED commands from FX2 and FP
+  FX2 will require new FX2 files, only some games have been updated so far, new FX2 files will keep coming
+  FP will require the replacement of the DOFLinx.vbs file in your \FP\scripts\ folder
+- New parameter AUTO_MX=
+  Default is 0, being off
+  Set to 1 "AUTO_MX=1" to enable some MX functionality for FP and FX2 games not yet fully scripted
+
+V5.12B 27/8/17
+- Added 5 new FX2 files for back glasses, Dr Strange, Aliens, Alien Isolation, Blade, Civil War
+
+V5.12 16/8/17
+- Fix the message when FTDI=NO
+- Fix the message when PINSCAPE=NO
+- Fix NightMode issue with the Settings menu where it did not start up correctly
+- Tidied up the XBox failure message by removing the ugly looking detail of the error
+
+V5.10 13/8/17
+- Add support for XBox controllers
+  Keys can now be defined as per previous with keycodes, or starting with X for XBox, then the number of the controller, then the key code
+  ie X1LS is Xbox controller 1 Left Shoulder button.
+  Valid buttons are DU, DD, DL, DR, ST, BK, LT, RT, LS, RS, A, B, X, Y
+- Fix minor button size / text issue on main screen
+- Add new command line parameter of FTDI=
+  Setting this to NO stops the checking for FTDI devices.  Beneficial if you have non-pinball based FTDI devices connected
+- Improve error checking of parameters in the INI files to avoid an observed crash when the = sign was missing
+
+V5.01 9/7/17
+- Fix bug with B2SStopAnimation command
+
+V5.0 7/7/17
+- Fix bug where DOFLinx crashes if no output devices are detected
+- Allow DOFLinx to run, but warn, without any valid output devices being detected
+- Save the position and size upon exit and restart in the same spot and size next time
+- Allow DOFLinx to run without having L_FLIPPER_OUTPUT and R_FLIPPER_OUTPUT defined
+- Improve handling of memory read when waiting for FP link to establish
+- Pinscape controllers are now detected as Pinscape controllers.  If you have LEDWiz emulation they will also detect as LEDWiz devices making it look like you have two devices.
+  Use the Pinscape controller as the PWM divisions are far more accurate, ie 255 divisions as opposed to 49.
+  One day I'll find out how to tell a real LEDWiz from an emulated one and suppress the emulated one.
+  You will need to have the Pinscape capable version of DOF R3 from mjr loaded for Pinscape controllers to work
+  If you decide to stick with the non Pinscape DOF R3 Framework then simply add PINSCAPE=NO to the command line when you start DOFLinx otherwise you will get a .NET framework error
+- DOFLinx now writes some settings to the registry
+  This is mentioned just in case you strike security issues with the registry and the user you are running DOFLinx under
+  Ideally you would have DOFLinx set to run as administrator
+- New parameter PATH_FX2_B2S= This is the location of any FX2 B2S files
+  Default will be the executing directory
+- New parameter PATH_B2S_SERVER= This is the location of the B2SServerEXE.exe on your machine
+  Default is C:\VP\
+- Fix issue where the log file could drift into another folder as opposed to the one where DOFLix starts
+- Add new command for FX2 being FF_B2S
+  Used to command the B2S backglass for the FX2 game, ie "FF_B2S B2SSetData 2,1" to turn on lamp #2
+  Valid B2S commands are B2SSetData, B2SStartAnimation, B2SStartAnimationReverse, B2SStopAnimation, B2SStapAllAnimations
+- Improve the timing of the process activation detection
+- Add detection of Ultimate I/O board for outputs
+- Add a new command KILL=xxx to stop another pocess on your cabinet
+  ie send a message on exiting PinballFX2 to ensure its closed via launch after in PinballX
+  DOFLinxMsg "KILL=Pinball FX2"  (The double quotes are only required due to the space in the name
+- Fix Test Device and Test RGB where trying to go beyond the number of devices you have connected would cause a dot net error
+
+V4.30 4/6/17
+- Add the ability to set the intensity (0 - 255) for LINK_XX devices (LF, RF, LS, RS, ML, MC, MR, BL, BC, BR, SH, GR, KN, FN, SR, BK)
+  This change introduces a new format for all of the LINK_XX commands in the line above.  Each of those lines in your DOFLinx.INI will require updating.
+  To retain functionality exactly as it was in previous versions just add ",255" (without the quotes) to each LINK_XX line where XX is in the above group.
+  Note, not all LINK_XX lines are changing, only those listed above.
+
+V4.23 3/5/17
+- Fix the selection of RANDOM colours when using fade commands.  The colour was re-randoming every iteration of the fade instead of locking to a random colour first
+- Minor fix to RogueOne FX2 file for Bumper2
+
+V4.22C 26/2/17
+- Completed the FX2 file set with all 70 done!
+- New FX2 files Bobafett, Darth Vader, Empire Strikes Back, Might of the First Order, Force Awakens, Star Fighter Assault, Clone Wars, XMen
+
+V4.22B 1/2/17
+- New FX2 files for Rogue One, SpiderMan, Tesla, Thor, V12 and Wolverine
+- New FX2 GAME_COLOUR= for Rogue One
+
+V4.22  22/1/17 
+- Fix the default DOFLinx.ini to remove a couple of spaces causing errors in the Game_Colour area
+- Fix program to ignore leading or trailing spaces in colour names within GAME_COLOUR= parameters
+- New FX2 files for Shaman, Paranormal, MsSplosionMan
+
+V4.21 4/1/17
+- Improve the performance of memory checks when monitoring Pinball FX2
+- Fix error with size of memory addresses and masks for Pinball FX2 files 
+  (you wouldn't see this unless you used FX2 files included with this package on an older exe)
+- Fix some false triggerings of LAUCHBALL with Pinball FX2
+- Add Nudge to all FX2 files
+- Improved 1 x FX2 files for AntMan
+- Created 15 x New FX2 files for Doctor Strange, Earth Defense, Eldorado, Excalibur, Fantastic Four, Ghost Rider, Portal, Secrets of the Deep, 
+  Infinity Gauntlet, Wild West Rampage, World War Hulk, Mars, IronMan, Mars, Moon Knight
+
+V4.20B 18/12/16
+- Add new FX2 game colours into sample DOFLinx.INI
+  I suggest you replace the GAME_COLOUR= section of your INI file with the new one supplied
+  It has the new 5 games and the various foorball permutations in it
+- Fix Default.FX2 file which could cause DOFLinx to crash
+- Upgraded 12 x FX2 files to use full flasher synchonisation
+  BioLab, CastleStorm, Deadpool, EpicQuest, FearItself, Guardians of the Galaxy, Sorcer's Lair, Super Leaugue, The Walking Dead, Venom, Pasha, Plants vs Zombies
+- Created new 14 x FX2 files for full force feedback
+  Blade, Captain America, Doom, Fallout, Ant-man, A-Force, Rome, Return of the Jedi, Droids, A New Hope, Han Solo, Masters of the Force, Rebels, Skyrim
+
+V4.20 7/12/16
+- Update to cope with the new Pinball FX2 release
+  Will now work with both versions
+- New FX2 files for American Dad and Archer
+- Improved FX2 files for The Avengers, Bob's Burgers, Age of Ultron, Archer and Civil War to mirror flashers
+
+V4.10 27/11/16
+- Add additional debug message to report details on the FX2 executable file
+  Help to give an indication if a person having difficulties is actually running the Steam version or not
+- Add a new mode to FX2 memory mapped files of SCOREMODE, this allows for devices to be turned off once a game is complete and entry of scores is being wait on
+- New FX2 files SouthPark1 and 2, Aliens, Aliens v Predator, Alien Isolation
+  All of these new FX2 files are more advanced than previous ones.  They mirror flashers from the game instead of using timers ... its the way of the future!
+
+V4.05B 20/11/16
+- New FX2 files, Super League (soccer) and Guardians of the Galaxy
+
+V4.05 13/11/16
+- Remove duplicit log message when loading FX2 memory map file
+- Add milliseconds to the LOG time
+- Add the facility for a "default.fx2" memory map file
+  This allows for better flipper operation, ball launch, some flashers - essentially a bit more than just the basics for those tables not mapped yet
+- New FX2 files, Fear ItSelf, Plants Vs Zombies, Civil War, Castle Storm, DeadPool
+
+Still V4.04 11/11/16
+- New FX2 files, Avengers Age of Ultron, The Avengers
+- Fix Age of Ultron GAME_NAME= in the sample DOFLinx.INI
+- Add a commented out FP_LINK_WAIT_TIME= to the default DOFLinx.INI file for easy editing by those with link timeout issues
+
+V4.04 7/11/16
+- Make flasher fading smoother by not updating the controlling device as often
+- New FX2 files, The Walking Dead, Sorcerer's Lair
+
+V4.03 6/11/16
+- Additional message to show when a flasher is sent an invalid colour from FP
+- Improved process of checking for FP link to use less CPU and reduce end of memory errors
+
+V4.01 24/10/16
+- Additional debug logging around process discovery and activation
+- Improve port parameter checking so that RGB based devices can only be set to the devices maximum ports -2 to avoid errors with port +1 for Greeen and port +2 for Blue
+- Make the wait for FX2 window activation, and hence game name more robust
+
+V4.0 22/10/16
+- Add support for full DOF with Pinball FX2
+- Add parameter for PATH_INI= being the default path for INI files
+  The path can be absolute C:\DOFLinx\INI\ or relative from where the program is located DOFLinx_INI\
+  The path needs to end with a backslash \
+  This is also a command line parameter allowing the default DOFLinx.INI to also be placed in the PATH_INI folder
+- Add parameter for PATH_FX2= being the default path for FX2 configuration files
+  The path can be absolute C:\DOFLinx\FX2\ or relative from where the program is located DOFLinx_FX2\
+  The path needs to end with a backslash \
+- Add parameter FP_LINK_WAIT_TIME= to configure how long DOFLinx waits from process detection until giving up looking for a FP table running DOFLinx code
+  The default is 40 seconds (was 30 seconds prior to V4), which should be enough.
+  You can make it shorter or longer then the default in milliseconds (default is 40000)
+- Before opening up the test device or test RGB / flasher screens check that output devices are available to avoid a horrible mess
+- Add support for memory mapped FX2 triggers
+  Thanks to gigalula for inspiration, encouragement and talking about this with me when my intial idea hit problems - I hope your project continues to do well too
+  A setup file for each table can be stored in the PATH_FX2 folder, or the default EXE directory if you prefer (set the folder path, its neater!)
+  Read the guide about how to edit, or even create these setup files
+- FX2 game names automatically found from window titles now have no charaters other than numbers aand letters, ie 0-9 A-Z a-z
+  This will require editing out the character;    space ! , . : ' -      from Game Names in your INI file
+  Sorry for the change, but in using the Game Name for FX2 disk files some of the extra characters are not allowed, others are a PITA
+  You can cut and paste a replacement for the Game Colours setup by Vizzini into your own INI from the supplied default INI
+  I've edited the names in the supplied default DOFLinx.INI
+
+V3.05 27/9/16
+- Fix bug where RANDOM as a colour was not working correctly for FL_FD and FL_FL based flasher commands from FP script
+- Include missing command instructions for KEY_TO_COLOUR_TIMER and KEY_TO_OUTPUT_TIMER in the guide
+
+V3.03 
+- Fix fading for LED button abd flashers from FP table link with low fade times
+
+V3.02 20/9/16
+- Added check that the DOFLinx process has administrator rights when trying to link to a FP coded table
+  DOFLinx will not attempt to link if it does not have sufficient rights
+- Added more checks and logging around the type of FP process, FP version, etc
+- Added FF_FlasherForMs command for FP scripting.  Ensure DOFLinx.vbs in 'Future Pinball\Scripts' is replaced
+- Fixed bug whereby the FP Link establishment could miss the end of memory when modified FP versions are in use
+
+V3.0 13/9/16
+Change name to DOFLinx
+- Add a link with FP to allow FP to send messages and use a reasonable level of DOF
+  New parameter FP_ATTEMPT_LINK=  1 for on, 0 for off, default is off.
+  Setting this parameter will cause DOFLinx to try and link to a FP DOF'ed table.  The table must be coded to support this.
+  New parameters (LINK_ ) to setup devices and buttons for FP.  Read the guide to set them all.
+- Add parameter CLOSE_DEVICES_BETWEEN_ACTIVE=
+  Can be set to 1 to turn on.  Default is off.
+  When set this will cause DOFLinx to close the devices and re-open when it activates again.  This action occurs automatically for SainSmart devices - you can't change that.
+  This is only for specific use when there is interference between running programs using DOF.  Don't set this for fun.
+- A new option for RGB_STYLE= is now RANDOM_DIFF.  This will display a random colour on each RGB output device listed (have fun GInsonic)
+- Fix bug where KEY_TO_COLOUR_TIMER would override and stuff up KEY_TO_COLOUR_TOGGLE
+- Fix bug where LedWiz devices with higher numbers (and the KL25Z - device #8) would not work properly.
+- Add the ability to process GAME_NAME as a message
+- Allow the special colour name of "Random" for colour based operations.
+  It will display a random colour from the currently active palette.
+- Make the window resizable to allow better veiwing of messages
+- Fix issue caused by FX2 having non printable characters in the window name and therefore not matching GAME_GOLOUR= names
+- Add BUTTON_ON_COLOUR=DOO,CCCCC to turn on RGB button LEDs to the selected colour.  The RGB equivalent of BUTTON_ON=
+- Add parameter NIGHT_MODE=1/0, this will disable noise making devices for night time operation.
+
+V2.0 18/8/16
+- !!!! LOOK HERE !!!! ---->>>> Change all parameter lists in the INI file from space to comma separated
+- Lots of improvements to memory handling
+- Convert arrays to lists, thus removing limits like 10 processes and 50 keys
+- Remove some remaining additional logging messages from PacLed64 testing
+- Add INI parameter KEY_TO_OUTPUT_TIMER=KK,DOO,MMMM,KK,DOO,MMMM   where MMMM=time to keep the ouput on in milliseconds
+  This allows you to turn on the output, ie shaker, button LED, blower for a set time when a key is pressed for MMMM milliseconds
+  Nice for adding a bit of shake when you press the nudge keys
+- Add INI parameter KEY_TO_COLOUR_TIMER=KK,DOO,CCCC,MMMM,KK,DOO,CCCC,MMMM   where MMMM=time to keep the ouput on in milliseconds
+  This will set your RGB to colour CCCC for MMMM millisends.
+  RGB_OUTPUT colours will be suspended for this output during MMMM.
+  The RGB output will revert to the current RGB_OUT colour after MMMM time has passed.  This is the same behaviour as KEY_TO_COLOUR_TOGGLE
+- Add the ability to send DOFFX2 interprocess messages while running to change many parameters and issue immediate commands
+  The new immediate commands are:
+  QUIT - this gets DOFFX2 to stop operationa nd exit straight away
+  GAME_FLAG_FILE=PPP\FFFF - where PPP is the path and FFFF is the file name with no extension.  See usage below
+  OUTPUT_NOW_TIMER=DOO,MMMM,DOO,MMMM, etc - this turns on device / output DOO for MMMM milliseconds
+  (Nb.  this will not work for a SainSmart controller unless DOFFX2 is "awake" via a valid process running or FORCE_ACTIVE=1 given that the controller board can only have one master at a time)
+  COLOUR_NOW_TIMER=DOO,MMMM,CCCC,DOO,MMMM,CCCC - this turns RGB device with RED at device / output DOO to colour CCCC for MMMM milliseconds
+  Messages can be sent to DOFFX2 with the utility program DOFFX2Msg in the format
+  DOFFX2Msg OUTPUT_NOW_TIMER=DOO,MMMM,CCCC#COLOUR_NOW_TIMER=DOO,MMMM,CCCC  - multiple commands are separated by a #  character
+- Add the GAME_FLAG_FILE=PPP\FFFF immediate parameter, PPP is the full path, FFF is the file name with no extension, ie C:\VP\TABLES\SomeTableName
+  If the FFFF file, with an extension of ".DOFFX2" exists, then DOFFX2 will activate.  (you must also have the process in the PROCESSES list)
+  Why, well if you provide the GAME_FILE_NAME= as a run before in PinballX, "DOFFX2Msg GAME_FILE_NAME=[TABLEPATH]\[TABLENAME]", then if you add a file (who cares how big or what's in it) in the VP tables folder with same name as your game (and possibly B2S file), but with extension ".DOFFX2", then DOFFX2 will activate for that table only.
+  This allows you to add an emulator that has DOF tables to the DOFFX2 process list, but only have DOFFX2 activate for the tables you specifiy via the flag file.
+  As such, you can have 90% of your tables running with built in DOF, and falg the ones with no DOF to get the flippers and RGB from DOFFX2.  Now 100% of your tables have DOF of some sort.
+  If you set the GAME_FLAG_FILE=PPPP\FFFF as a 'Launch Before' then you will have to do a run after of "DOFFX2Msg GAME_NAME=" to 'unset' the name.  If you don't do this then you might acidentally force DOFFX2 to run on a table you don't want it to.  This shouldn't happen if you 'Launch Before' on each table, but it can theoretically happen if the next table you launch is in another emulator that you haven't setup this way, so best to cleanup.
+- Allow SUP_INI= files to be processed during run-time via a message.
+  For most commands, ie key reconfigurations, DOFFX2 must be be asleep.
+- Fix bug where not all LedWiz devices were always found
+
+V1.4 4/8/16
+- Added PacLed64 support
+  If you have PacLed64(s), on the command line add "PACLED64=1" or "PACLED64=1,2" or "PACLED64=1,2,3,4", etc.  
+  Just include the numbers of the PacLed64 devices you have (their ID number), if you only have one device its probably "PACLED64=1"  (all with no quotes of course)
+  I've had to have this type of driver board defined on the command line as I can't figure out how to test for PacLed64 existence automatically without using the PacDrive SDK ontop of the DOF framework.
+- Fix bug whereby a GAME_COLOUR list with one colour would crash
+- Increase KEY_TO_OUTPUT sets to 50
+- Increase KEY_TO_COLOUR sets to 50
+- Add three command line parameters ....
+- 1) PACLED64= (as per above)
+- 2) GAME_NAME=XXX this forces the game name to this value, hence you can get a game specific colour set to work regardless of the auto detection working.
+  Auto detection of game name works for Pinball FX2 when started with the [TABLEFILE] parameter from the likes of PinballX menu.
+- 3) SUP_INI= you can provide a supplementary INI file.  DOFFX2.ini will always be processed first with the supplementary file second.
+  This allows for emulator or game specific settings to be placed here.
+  So when starting DOFFX2 as a "Launch Before" program you can add a specific configuration file, ie DOFFX2 SUP_INI=FuturePinball or DOFFX2 SUP_INI=[TABLEFILE]
+  This will allow for Table specific configurations.
+- Added INI parameter PROCESSES=
+  This allows up to 10 process names to be supplied in a comma separated list that can "wake up" DOFFX2
+  If the line is ommitted or commented out the default process is "Pinball FX2".
+  If you add the line and want Pinball FX2 to funstion you must add it yourself.
+  A line could look like (note bogus process names) PROCESSES=Pinball FX2,FP,TPA,Some Process,ETC
+  The process names are as they appear in Task Manager.  Happy to include some examples here if people send them to me.
+- Fix the default MAX_FLIPPER_ON time
+
+V1.3 31/7/16
+- Make DOFFX2 check for the Pinball FX2 process more frequently when it knows PinBall FX2 is running so that exit and shutdown delay is less.
+- Added INI parameter OUTPUT_GAME_NAME=  0 or 1 (default 0).  Setting this to 1 means that the detected game name will be output to the log file regardless of the DEBUG flag
+  This is useful when trying to setup colours for each game to ensure you have the exact game name from the FX2 window.
+- Fix bug whereby >5 KEY_TO_OUTPUT would break the count of key to output pairs and cause a non-crash error.
+- Fix bug whereby >10 KEY_TO_OUTPUT pairs in the INI file would crash.
+- Extended KEY_TO_OUTPUT to 20 pairs.
+- New parameter FORCE_ACTIVE= 0 or 1 (default 0).  This forces DOFFX2 to be active from the moment it starts until you kill the process.
+  A little something for TerryRed to play with and use the utility for more than just Pinball FX2
+- Add additional error checks for some parameters when reading the INI file.
+- Fix bug with MAX_FLIPPER_ON whereby it would turn the flipper solenoid off but then go immediately back on if the key was still pressed.
+  Now the flipper key needs to be re-pressed.
+- Added INI parameter KEY_TO_COLOUR= to have a key press set an RGB colour.
+  The format is "KEY_TO_COLOUR=KK DOO The_Colour KK DOO The_Colour" with upto 20 keys.  The keys are still https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx
+  The DOO is the same as for RGB_OUTPUT= being the RED device / port.  The_Colour is a valid colour name in your directoutputconfig file.
+- Added INI parameter GAME_COLOUR=Game Name,Colour#1,Colour#2,etc (upto a shit load of colours)
+  Make sure the first item on this CSV list is the FX2 game name with no quotes
+  If you don't set a specific set of colours for a game then the full palette is used
+  The Game Name is the name FX2 adds to the PinBall FX2 window.
+  If in doubt run DOFFX2 in DEBUG or set OUTPUT_GAME_NAME=1 to force the detected game name to be written to the log file.
+  Note - The Game Name does not have to be the same as the Table name parsed by PinballX to Steam.  It is usually the "Friendly" / "Marketting" name.
+
+V1.2 26/7/16
+- Add FTDI (Sainsmart) support - thanks Doogie2301 for your testing and feedback
+- QUIT_AFTER_FX2=0 or 1 (default 0)
+  If this is set to 1, then DOFFX2 will close completely after Pinball FX2 stops.
+  This allows for DOFFX2 to be started as a "Run Before" program without the need to kill the process afterwards.
+  It ensures the program exits cleanly (as opposed to sending it a "kill" signal).
+  There is no need to use this as DOFFX2 is designed to run continuously in the background, however, if you prefer to start and stop it each time - feel free.
+- Standardise a number of DOF.Output structures from LEDWiz to common interfaces
+- Initialise the DOF devices before reading the config file allowing checking of devices and ports
+- Add a lot of error checking for devices, ports, etc.
+
+V1.1 24/7/16
+- KEY_TO_OUTPUT=KK DOO KK DOO
+  When KK key is pressed LEDWiz output D OO is activated.  When the key is lifted the output is turned off
+  This will allow a key not used in FX2, to trigger a LEDWiz output while the key is pressed.
+  For example assign key 1 (Start) to trigger an output, the output can run a relay to trigger a keyboard emulator key, ie iPac.
+  Why, well this alows the <Start> key (4) to essentially press another key like <ENTER> on the keyboard.  Effectively this gives you two <ENTER> keys for FX2.
+  So now you can use the <Start> button for starting a game and locking in initials for scores instead of haing to pull the plunger all the time.
+  The other key this is a candidate for is to "remap" the <Coin> key (4) to the "C" key.
+  This allows the unused <Coin> button in FX2 to adjust the camera.
+  Of course you could use this to simply turn on the button LED for an unused key just to make everything seem interactive.
+  Upto 10 KK DOO sets can be entered
+  A key can appear twice, this allows one key to turn on/off multiple DOF outputs, so you could turn on the buttons LED and a relay if you want
+- Ensure the colours start straight away when using flippers as the trigger
+- Detect the game name being played (future use for a colour by game idea)
+
+V1.0 22/7/16
+Initial release
