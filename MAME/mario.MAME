@@ -1,0 +1,66 @@
+#######################################################################
+# MAME configuration for Super Mario
+# DOFLinx force feedback configuration file v1
+# Created by MositoFeliz AKAjunkyerd,javiersertaun
+#######################################################################
+
+###########################
+
+[STARTUP]
+
+#KEY_TO_COMMAND=BUT_B1,button1,BUT_B2,button2,BUT_B3,button3,BUT_B4,button4,BUT_B6,button6,BUT_B8,button8
+
+##################
+#Start with effect E83 mx MATRIX during 7000 miliseconds (nintendo words)
+#Start with effect E98 mx MATRIX during 7000 miliseconds (arcade universe animation words)
+##################
+
+FF_DOF=E83,7000
+
+#FF_DOF=E98,7000
+
+
+[SHUTDOWN]
+
+
+[COMMANDS]
+
+#FOR ACTION BUTTON JUMP
+#button1|ON|FF_DOF E454,400|FF_DOF E458,400
+
+#FOR LEFT JOYSTICK
+#button6|ON|FF_DOF E564,400
+
+#FOR RIGHT JOYSTICK
+#button8|ON|FF_DOF E568,400
+
+
+[SCORE]
+
+S1=:maincpu|main|program|6820|3
+M1=,,,1,STRING,FORWARD
+DELAY=500
+S2=:maincpu|main|program|6826|3
+M2=,,,1,STRING,FORWARD
+DELAY=500
+
+#Cyan and blue effect for enemy flipped
+SC=10:10:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E700,200|FF_DOF E711,400|FF_DOF E712,200|FF_DOF E713,400|FF_DOF E704,400
+
+#Red effect for enemy flipped when POW 
+SC=00:50:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E705,200|FF_DOF E691,400|FF_DOF E692,200|FF_DOF E693,400|FF_DOF E709,400
+
+#Yellow and cyan effect for enemy or coin catched
+SC=800:800:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E466,400|FF_DOF E225,400|FF_DOF E141,800
+
+#Yellow and red effect for enemy or coin catched BONUS 1
+SC=1600:1600:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E466,400|FF_DOF E220,400|FF_DOF E183,800|FF_DOF E184,800
+
+#Yellow and magenta effect for enemy or coin catched BONUS 2
+SC=3200:3200:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E468,400|FF_DOF E226,400|FF_DOF E185,800|FF_DOF E186,800
+
+#plasma effect for challenge stage
+SC=8000:8000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,4000|FF_DOF E221,400|FF_DOF E200,800|FF_DOF E201,800
+
+#plasma effect for challenge stage
+SC=5000:5000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,4000|FF_DOF E221,400|FF_DOF E200,800|FF_DOF E201,800
