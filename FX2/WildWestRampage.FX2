@@ -1,0 +1,79 @@
+##################
+#
+# WildWestRampage
+# DOFLinx force feedback configuration file v4
+#
+##################
+
+[STARTUP]
+FF_ROM=fx2_wildwest
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Left_SlingShot=882FC0,FF,2E4,8,20,8
+Right_SlingShot=882FC0,FF,2E4,C,20,8
+Bumper1=882FC0,FF,108,8,98,E4
+Bumper2=882FC0,FF,108,8,98,40
+Bumper3=882FC0,FF,108,8,98,188
+Left_SlingShot_Flasher=882FC0,FF,2B0,C,C,4,A4
+RightSlingShot_Flasher=882FC0,FF,2B0,C,10,4,A4
+Flasher1=882FC0,FF,2B0,C,104,4,A4
+Flasher2=882FC0,FF,2B0,C,108,4,A4
+Flasher3=882FC0,FF,2B0,C,10C,4,A4
+Flasher4=882FC0,FF,2B0,C,110,4,A4
+Left_KickBack_Flasher=882FC0,FF,2B0,C,140,4,A4
+Right_KickBack_Flasher=882FC0,FF,2B0,C,144,4,A4
+Left_Bumper_Hole_Flasher=882FC0,FF,2B0,C,164,4,A4
+Right_Bumper_Hole_Flasher=882FC0,FF,2B0,C,168,4,A4
+Top_Locker_Flasher=882FC0,FF,2B0,C,16C,4,A4
+Sherif_Flasher=882FC0,FF,2B0,C,2BC,4,A4
+Train_Locker_Flasher=882FC0,FF,2B0,C,308,4,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random|FF_B2S B2SStartAnimation Title|FF_DOF E424,-1
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500|FF_DOF E310,-1
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0|FF_DOF E310,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_B2S B2SStartAnimation Title|FF_DOF E132,-1
+SCOREMODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations|FF_DOF E423,-1
+LeftFlipper|ON|FF_Dev DV_LF,10000|FF_DOF E101,-1
+LeftFlipper|OFF|FF_Dev DV_LF,0
+RightFlipper|ON|FF_Dev DV_RF,10000|FF_DOF E102,-1
+RightFlipper|OFF|FF_Dev DV_RF,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Gun|FF_DOF E402,-1
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Bumper1|ON|FF_Dev DV_BC,-1|FF_Flasher DV_FLOL,FL_TT,1,150,100,Gold|FF_DOF E120,-1
+Bumper2|ON|FF_Dev DV_BR,-1|FF_Flasher DV_FLCN,FL_TT,1,150,100,Gold|FF_B2S B2SStartAnimation Face|FF_DOF E121,-1
+Bumper3|ON|FF_Dev DV_BL,-1|FF_Flasher DV_FLOR,FL_TT,1,150,100,Gold|FF_DOF E122,-1
+Left_SlingShot|ON|FF_Dev DV_LS,-1|FF_DOF E110,-1
+Right_SlingShot|ON|FF_Dev DV_RS,-1|FF_DOF E111,-1
+Flasher1|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Window1|FF_DOF E410,-1
+Flasher1|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Gold
+Flasher2|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Window2|FF_DOF E411,-1
+Flasher2|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Gold
+Flasher3|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Window3|FF_DOF E413,-1
+Flasher3|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Gold
+Flasher4|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Window4|FF_DOF E414,-1
+Flasher4|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Gold
+Left_KickBack_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Cloud1|FF_DOF E418,-1
+Left_KickBack_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Gold
+Right_KickBack_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Gold|FF_DOF E419,-1
+Right_KickBack_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Gold
+Left_Bumper_Hole_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Cloud2|FF_DOF E416,-1
+Left_Bumper_Hole_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Gold
+Right_Bumper_Hole_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Star|FF_DOF E417,-1
+Right_Bumper_Hole_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Gold
+Top_Locker_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Gun|FF_DOF E420,-1
+Top_Locker_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Gold
+Sherif_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation Star|FF_DOF E412,-1
+Sherif_Flasher|OFF|FF_B2S B2SStopAnimation Star
+Train_Locker_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation Title|FF_DOF E415,-1

@@ -1,0 +1,73 @@
+##################
+#
+# American Dad Pinball
+# DOFLinx force feedback configuration file v7
+#
+##################
+
+[STARTUP]
+FF_ROM=fx2_amdad
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Bumper1=882FC0,FF,2E4,00,20,08
+Bumper2=882FC0,FF,2E4,04,20,08
+Bumper3=882FC0,FF,2E4,08,20,08
+Left_Slingshot=882FC0,FF,2E4,0C,20,08
+Right_Slingshot=882FC0,FF,2E4,10,20,08
+LeftSlingShot_Flasher=882FC0,FF,2B0,0C,10,04,A4
+RightSlingShot_Flasher=882FC0,FF,2B0,0C,14,04,A4
+Bumper1_Flasher=882FC0,FF,2B0,0C,04,04,A4
+Bumper2_Flasher=882FC0,FF,2B0,0C,08,04,A4
+Bumper3_Flasher=882FC0,FF,2B0,0C,0C,04,A4
+Flasher1=882FC0,FF,2B0,0C,1B0,04,A4
+Flasher2=882FC0,FF,2B0,0C,1B4,04,A4
+Flasher3=882FC0,FF,2B0,0C,1B8,04,A4
+Flasher4=882FC0,FF,2B0,0C,1BC,04,A4
+Flasher5=882FC0,FF,2B0,0C,1C0,04,A4
+Flasher6=882FC0,FF,2B0,0C,1C4,04,A4
+Flasher7=882FC0,FF,2B0,0C,1C8,04,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,100,Deep_Sky_Blue|FF_Flasher DV_FLOR,FL_FD,6,750,100,Deep_Sky_Blue|FF_Flasher DV_FLIL,FL_FD,6,750,100,Medium_Turquoise|FF_Flasher DV_FLIR,FL_FD,6,750,100,Medium_Turquoise|FF_Flasher DV_FLCN,FL_FD,6,750,100,Lawn_Green|FF_B2S B2SStartAnimation Title|FF_DOF E424,-1
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500|FF_DOF E310,-1
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0|FF_DOF E310,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_B2S B2SStartAnimation Title|FF_DOF E310,0|FF_DOF E132,-1
+SCOREMODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations|FF_DOF E423,-1
+LeftFlipper|ON|FF_Dev DV_LF,10000|FF_B2S B2SSetData 12,1|FF_DOF E101,-1
+LeftFlipper|OFF|FF_Dev DV_LF,0|FF_B2S B2SSetData 12,0
+RightFlipper|ON|FF_Dev DV_RF,10000|FF_B2S B2SSetData 13,1|FF_DOF E102,-1
+RightFlipper|OFF|FF_Dev DV_RF,0|FF_B2S B2SSetData 13,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation,Fish|FF_DOF E402,-1
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+Left_Slingshot|ON|FF_Dev DV_LS,-1|FF_DOF E110,-1
+Right_Slingshot|ON|FF_Dev DV_RS,-1|FF_DOF E111,-1
+Bumper1|ON|FF_Dev DV_BL,-1|FF_DOF E120,-1
+Bumper2|ON|FF_Dev DV_BC,-1|FF_DOF E121,-1
+Bumper3|ON|FF_Dev DV_BR,-1|FF_DOF E122,-1
+LeftSlingShot_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Aqua|FF_B2S B2SStartAnimation,Roger
+LeftSlingShot_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Aqua
+RightSlingShot_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation,Stan
+RightSlingShot_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Gold
+Bumper1_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Random|FF_B2S B2SStartAnimation,Steve
+Bumper1_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random
+Bumper2_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Random|FF_B2S B2SStartAnimation,Hayley
+Bumper2_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random
+Bumper3_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Random|FF_B2S B2SStartAnimation,Francine
+Bumper3_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random
+Flasher1|ON|FF_Colour Lime,RGB_TT,250|FF_B2S B2SStartAnimation,GarageLight|FF_DOF E410,-1
+Flasher2|ON|FF_Colour Lime,RGB_TT,250|FF_DOF E411,-1
+Flasher3|ON|FF_Colour Lime,RGB_TT,250|FF_B2S B2SStartAnimation,WindowLight|FF_DOF E412,-1
+Flasher4|ON|FF_Colour Lime,RGB_TT,250|FF_DOF E413,-1
+Flasher5|ON|FF_Colour Lime,RGB_TT,250|FF_B2S B2SStartAnimation,LapelPin|FF_DOF E414,-1
+Flasher6|ON|FF_Colour Lime,RGB_TT,250|FF_B2S B2SStartAnimation,LapelPin|FF_DOF E415,-1
+Flasher7|ON|FF_Dev DV_SR,1500|FF_DOF E416,-1

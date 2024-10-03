@@ -1,0 +1,80 @@
+##################
+#
+# EpicQuest
+# DOFLinx force feedback configuration file v6
+#
+##################
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Bumper1=882FC0,FF,2E4,0,20,8
+Bumper2=882FC0,FF,2E4,4,20,8
+Bumper3=882FC0,FF,2E4,8,20,8
+Left_SlingShot=882FC0,FF,2E4,C,20,8
+Right_SlingShot=882FC0,FF,2E4,10,20,8
+Left_SlingShot_Flasher=882FC0,FF,2B0,C,10,4,A4
+Right_SlingShot_Flasher=882FC0,FF,2B0,C,14,4,A4
+Bumper1_Flasher=882FC0,FF,2B0,C,4,4,A4
+Bumper2_Flasher=882FC0,FF,2B0,C,8,4,A4
+Bumper3_Flasher=882FC0,FF,2B0,C,C,4,A4
+Cave_Flasher=882FC0,FF,2B0,C,18,4,A4
+Loot_Flasher=882FC0,FF,2B0,C,24,4,A4
+Tree1_Flasher=882FC0,FF,2B0,C,2C,4,A4
+Tree2_Flasher=882FC0,FF,2B0,C,30,4,A4
+Tree3_Flasher=882FC0,FF,2B0,C,34,4,A4
+Tree4_Flasher=882FC0,FF,2B0,C,38,4,A4
+Tree5_Flasher=882FC0,FF,2B0,C,3C,4,A4
+Tree6_Flasher=882FC0,FF,2B0,C,40,4,A4
+Tree7_Flasher=882FC0,FF,2B0,C,44,4,A4
+Tree8_Flasher=882FC0,FF,2B0,C,48,4,A4
+Tree9_Flasher=882FC0,FF,2B0,C,4C,4,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random|FF_B2S B2SStartAnimation Title
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_B2S B2SStartAnimation Title
+SCOREMODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations
+LeftFlipper|ON|FF_Dev DV_LF,10000|FF_B2S B2SSetData 2,1
+LeftFlipper|OFF|FF_Dev DV_LF,0|FF_B2S B2SSetData 2,0
+RightFlipper|ON|FF_Dev DV_RF,10000|FF_B2S B2SSetData 5,1
+RightFlipper|OFF|FF_Dev DV_RF,0|FF_B2S B2SSetData 5,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation,ChickenEye
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Bumper1|ON|FF_Dev DV_BL,-1
+Bumper2|ON|FF_Dev DV_BC,-1
+Bumper3|ON|FF_Dev DV_BR,-1
+Left_SlingShot|ON|FF_Dev DV_LS,-1
+Right_SlingShot|ON|FF_Dev DV_RS,-1
+Left_SlingShot_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Random|FF_Colour White,RGB_TT,125|FF_B2S B2SStartAnimation,KnightEye
+Left_SlingShot_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random
+Right_SlingShot_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Random|FF_Colour White,RGB_TT,125|FF_B2S B2SStartAnimation,Castle
+Right_SlingShot_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random
+Bumper1_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Pink|FF_B2S B2SStartAnimation,HorseEyes
+Bumper1_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Pink
+Bumper2_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,White|FF_B2S B2SStartAnimation,HorseTeeth
+Bumper2_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,White
+Bumper3_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Silver|FF_B2S B2SStartAnimation,KnightTeeth
+Bumper3_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Silver
+Cave_Flasher|ON|FF_Dev DV_SR,1250|FF_B2S B2SStartAnimation,Jewel
+Loot_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Silver|FF_B2S B2SStartAnimation,KnightTeeth|FF_B2S B2SStartAnimation,KnightEye
+Loot_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Silver
+Tree1_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation,Tree1
+Tree2_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation,Tree2
+Tree3_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation,Tree3
+Tree4_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation,Tree1|FF_B2S B2SStartAnimation,Jewel
+Tree5_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation,Tree2
+Tree6_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation,Tree3
+Tree7_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation,Tree1
+Tree8_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation,Tree2
+Tree9_Flasher|ON|FF_Dev DV_SR,1500|FF_B2S B2SStartAnimation,Castle

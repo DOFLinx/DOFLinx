@@ -1,0 +1,84 @@
+##################
+#
+# Bob's Burgers Pinball
+# DOFLinx force feedback configuration file v9
+#
+##################
+
+[STARTUP]
+FF_ROM=fx2_bb
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Left_Slingshot=882FC0,FF,2E4,0C,20,08
+Right_Slingshot=882FC0,FF,2E4,14,20,08
+Bumper1=882FC0,FF,2E4,00,20,08
+Bumper2=882FC0,FF,2E4,04,20,08
+Bumper3=882FC0,FF,2E4,08,20,08
+Bumper1_Flasher=882FC0,FF,2B0,0C,00,04,A4
+Bumper2_Flasher=882FC0,FF,2B0,0C,04,04,A4
+Bumper3_Flasher=882FC0,FF,2B0,0C,08,04,A4
+Left_SlingShot_Flasher=882FC0,FF,2B0,0C,0C,04,A4
+Right_SlingShot_Flasher=882FC0,FF,2B0,0C,14,04,A4
+Crane_Flasher=882FC0,FF,2B0,0C,1C,04,A4
+FerrisWheel_Flasher1=882FC0,FF,2B0,0C,20,04,A4
+FerrisWheel_Flasher2=882FC0,FF,2B0,0C,24,04,A4
+Lamp1_Flasher=882FC0,FF,2B0,0C,28,04,A4
+Lamp2_Flasher=882FC0,FF,2B0,0C,2C,04,A4
+Lamp3_Flasher=882FC0,FF,2B0,0C,30,04,A4
+Lamp4_Flasher=882FC0,FF,2B0,0C,34,04,A4
+SinkHole_Flasher=882FC0,FF,2B0,0C,38,04,A4
+WonderWharf_Left_Flasher=882FC0,FF,2B0,0C,3C,04,A4
+WonderWharf_Right_Flasher=882FC0,FF,2B0,0C,40,04,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Orange|FF_Flasher DV_FLOR,FL_FD,6,750,50,Orange|FF_Flasher DV_FLIL,FL_FD,6,750,50,Yellow|FF_Flasher DV_FLIR,FL_FD,6,750,50,Yellow|FF_Flasher DV_FLCN,FL_FD,6,750,50,Orange|FF_B2S B2SStartAnimation Sign|FF_DOF E424,-1
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500|FF_DOF E310,-1
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0|FF_DOF E310,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_B2S B2SStartAnimation Sign|FF_DOF E310,0|FF_DOF E132,-1
+SCOREMODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations|FF_DOF E423,-1
+LeftFlipper|ON|FF_Dev DV_LF,10000|FF_DOF E101,-1
+LeftFlipper|OFF|FF_Dev DV_LF,0
+RightFlipper|ON|FF_Dev DV_RF,10000|FF_DOF E102,-1
+RightFlipper|OFF|FF_Dev DV_RF,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation,BurgerBall|FF_DOF E402,-1
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Left_Slingshot|ON|FF_Dev DV_LS,-1|FF_DOF E110,-1
+Right_Slingshot|ON|FF_Dev DV_RS,-1|FF_DOF E111,-1
+Bumper1|ON|FF_Dev DV_BL,-1|FF_DOF E120,-1
+Bumper2|ON|FF_Dev DV_BC,-1|FF_DOF E121,-1
+Bumper3|ON|FF_Dev DV_BR,-1|FF_DOF E122,-1
+Bumper1_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Random|FF_B2S B2SStartAnimation,LouiseFace
+Bumper1_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random
+Bumper2_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Random|FF_B2S B2SStartAnimation,GeneFace
+Bumper2_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random
+Bumper3_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Random|FF_B2S B2SStartAnimation,TinaFace
+Bumper3_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random
+Left_SlingShot_Flasher|ON|FF_Colour Yellow,RGB_TT,125|FF_B2S B2SStartAnimation,BobFace
+Right_SlingShot_Flasher|ON|FF_Colour Yellow,RGB_TT,125|FF_B2S B2SStartAnimation,LindaFace
+Crane_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Yellow|FF_B2S B2SStartAnimation,Windows|FF_DOF E413,-1
+Crane_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Yellow
+FerrisWheel_Flasher1|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Silver|FF_B2S B2SStartAnimation,Windows|FF_DOF E410,-1
+FerrisWheel_Flasher1|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Silver
+FerrisWheel_Flasher2|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Silver|FF_B2S B2SStartAnimationReverse,Windows|FF_DOF E412,-1
+FerrisWheel_Flasher2|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Silver
+Lamp1_Flasher|ON|FF_Dev DV_SR,2000|FF_B2S B2SSetData 51,1|FF_B2S B2SSetData 58,1|FF_DOF E416,-1
+Lamp2_Flasher|ON|FF_Dev DV_SR,2000|FF_B2S B2SSetData 52,1|FF_B2S B2SSetData 57,1|FF_DOF E417,-1
+Lamp3_Flasher|ON|FF_Dev DV_SR,2000|FF_B2S B2SSetData 53,1|FF_B2S B2SSetData 56,1|FF_DOF E418,-1
+Lamp4_Flasher|ON|FF_Dev DV_SR,2000|FF_B2S B2SSetData 54,1|FF_B2S B2SSetData 55,1|FF_DOF E419,-1
+SinkHole_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Lime|FF_B2S B2SStopAnimation Windows|FF_DOF E415,-1
+SinkHole_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Lime|FF_B2S B2SSetData 51,0|FF_B2S B2SSetData 52,0|FF_B2S B2SSetData 53,0|FF_B2S B2SSetData 54,0|FF_B2S B2SSetData 55,0|FF_B2S B2SSetData 56,0|FF_B2S B2SSetData 57,0|FF_B2S B2SSetData 58,0
+WonderWharf_Left_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Yellow|FF_B2S B2SSetData 1,1|FF_DOF E411,-1
+WonderWharf_Left_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Yellow
+WonderWharf_Right_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Yellow|FF_B2S B2SSetData 2,1|FF_DOF E414,-1
+WonderWharf_Right_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Yellow

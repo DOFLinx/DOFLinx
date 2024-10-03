@@ -1,0 +1,72 @@
+##################
+#
+# StarWarsPinballHanSolo
+# DOFLinx force feedback configuration file v2
+#
+##################
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Left_SlingShot=882FC0,FF,2E4,4,20,8
+Right_SlingShot=882FC0,FF,2E4,8,20,8
+Bumper1=882FC0,FF,108,0,98,40
+Bumper2=882FC0,FF,108,0,98,E4
+Bumper3=882FC0,FF,108,0,98,188
+Left_SlingShot_Flasher=882FC0,FF,2B0,C,0,4,A4
+Right_SlingShot_Flasher=882FC0,FF,2B0,C,4,4,A4
+Bumper_Flasher=882FC0,FF,2B0,C,8,4,A4
+Left_Loop_Flasher=882FC0,FF,2B0,C,C,4,A4
+Left_BackBoard_Flasher=882FC0,FF,2B0,C,10,4,A4
+Centre_BackBoard_Flasher=882FC0,FF,2B0,C,14,4,A4
+Right_BackBoard_Flasher=882FC0,FF,2B0,C,18,4,A4
+Right_Ramp_Flasher=882FC0,FF,2B0,C,1C,4,A4
+Right_Loop_Flasher=882FC0,FF,2B0,C,20,4,A4
+Falcon_Flasher=882FC0,FF,2B0,C,20,4,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1
+SCOREMODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0
+LeftFlipper|ON|FF_Dev DV_LF,10000
+LeftFlipper|OFF|FF_Dev DV_LF,0
+RightFlipper|ON|FF_Dev DV_RF,10000
+RightFlipper|OFF|FF_Dev DV_RF,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Left_SlingShot|ON|FF_Dev DV_LS,-1
+Right_SlingShot|ON|FF_Dev DV_RS,-1
+Bumper1|ON|FF_Dev DV_BL,-1
+Bumper2|ON|FF_Dev DV_BC,-1
+Bumper3|ON|FF_Dev DV_BR,-1
+Bumper_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Orange
+Bumper_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Orange
+Left_SlingShot_Flasher|ON|FF_Colour White,RGB_TT,200|FF_Flasher DV_FLIL,FL_ON,1,1,100,White|FF_Dev DV_SR,300
+Left_SlingShot_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,White
+Right_SlingShot_Flasher|ON|FF_Colour White,RGB_TT,200|FF_Flasher DV_FLIR,FL_ON,1,1,100,White|FF_Dev DV_SR,300
+Right_SlingShot_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,White
+Left_Loop_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red
+Left_Loop_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red
+Left_BackBoard_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Red
+Left_BackBoard_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Red
+Centre_BackBoard_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red
+Centre_BackBoard_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red
+Right_BackBoard_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Red
+Right_BackBoard_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Red
+Right_Ramp_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Red
+Right_Ramp_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Red
+Right_Loop_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red
+Right_Loop_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+Falcon_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Red
+Falcon_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Red

@@ -1,0 +1,78 @@
+##################
+#
+# Wolverine
+# DOFLinx force feedback configuration file v3
+#
+##################
+
+[STARTUP]
+FF_ROM=fx2_wolverine
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Bumper1=882FC0,FF,2E4,0,20,8
+Bumper2=882FC0,FF,2E4,4,20,8
+Bumper3=882FC0,FF,2E4,8,20,8
+Left_SlingShot=882FC0,FF,2E4,C,20,8
+Right_SlingShot=882FC0,FF,2E4,10,20,8
+Left_SlingShot_Flasher=882FC0,FF,2B0,C,30,4,A4
+Right_SlingShot_Flasher=882FC0,FF,2B0,C,34,4,A4
+Bumper1_Flasher=882FC0,FF,2B0,C,10,4,A4
+Bumper2_Flasher=882FC0,FF,2B0,C,14,4,A4
+Bumper3_Flasher=882FC0,FF,2B0,C,18,4,A4
+BackWall1_Flasher=882FC0,FF,2B0,C,0,4,A4
+BackWall2_Flasher=882FC0,FF,2B0,C,4,4,A4
+BackWall3_Flasher=882FC0,FF,2B0,C,8,4,A4
+Reverse_Scoop_Flasher=882FC0,FF,2B0,C,28,4,A4
+Right_Ramp_Flasher=882FC0,FF,2B0,C,2C,4,A4
+WeaponX_Flasher=882FC0,FF,2B0,C,38,4,A4
+
+[COMMANDS]
+GAMEMODE|On|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random|FF_B2S B2SStartAnimation Title|FF_DOF E424,-1
+LAUNCHMODE|On|FF_Button BUT_LB,BA_FL,10000,500|FF_DOF E310,-1
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0|FF_DOF E310,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_B2S B2SStartAnimation Title|FF_DOF E310,0|FF_DOF E132,-1
+SCOREMODE|On|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations|FF_DOF E423,-1
+LeftFlipper|On|FF_Dev DV_LF,10000|FF_DOF E101,-1
+LeftFlipper|OFF|FF_Dev DV_LF,0
+RightFlipper|On|FF_Dev DV_RF,10000|FF_DOF E102,-1
+RightFlipper|OFF|FF_Dev DV_RF,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Pinball2|FF_DOF E402,-1
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Left_Slingshot|ON|FF_Dev DV_LS,-1|FF_DOF E110,-1
+Right_Slingshot|ON|FF_Dev DV_RS,-1|FF_DOF E111,-1
+Bumper1|ON|FF_Dev DV_BL,-1|FF_DOF E120,-1
+Bumper2|ON|FF_Dev DV_BC,-1|FF_DOF E121,-1
+Bumper3|ON|FF_Dev DV_BR,-1|FF_DOF E122,-1
+Left_SlingShot_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,White|FF_Flasher DV_FLIL,FL_ON,1,1,100,White|FF_Colour White,RGB_TT,200|FF_B2S B2SStartAnimation ArmLeft
+Left_SlingShot_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,White|FF_Flasher DV_FLIL,FL_OFF,1,1,100,White
+Right_SlingShot_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,White|FF_Flasher DV_FLIR,FL_ON,1,1,100,White|FF_Colour White,RGB_TT,200|FF_B2S B2SStartAnimation ArmRight
+Right_SlingShot_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,White|FF_Flasher DV_FLIR,FL_OFF,1,1,100,White
+Bumper1_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Purple|FF_B2S B2SStartAnimation Head
+Bumper1_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Purple
+Bumper2_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Purple|FF_B2S B2SStartAnimation Shoulder
+Bumper2_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Purple
+Bumper3_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Purple|FF_B2S B2SStartAnimation Sparkle
+Bumper3_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Purple
+BackWall1_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation BackLeft|FF_DOF E410,-1
+BackWall1_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Red
+BackWall2_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation BackRight|FF_DOF E412,-1
+BackWall2_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red
+BackWall3_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation BackBase|FF_DOF E414,-1
+BackWall3_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Red
+Reverse_Scoop_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Pinball1|FF_DOF E411,-1|FF_DOF E418,-1
+Reverse_Scoop_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red
+Right_Ramp_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Head|FF_DOF E413,-1
+Right_Ramp_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+WeaponX_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Sparkle|FF_DOF E415,-1
+WeaponX_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red

@@ -1,0 +1,120 @@
+##################
+#
+# CivilWar
+# DOFLinx force feedback configuration file v5
+# DDH69 - not entirely happy with this one as it seems to occasionally not work for slingshots and bumpers, still better than no feedback
+#
+##################
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Bumper1_R=882FC0,FF,2E4,0,20,8
+Bumper1_B=882FC0,FF,2E4,4,20,8
+Right_SlingShot_R=882FC0,FF,2E4,8,20,8
+Right_SlingShot_B=882FC0,FF,2E4,C,20,8
+Bumper2_R=882FC0,FF,2E4,10,20,8
+Bumper2_B=882FC0,FF,2E4,14,20,8
+Bumper3_R=882FC0,FF,2E4,18,20,8
+Bumper3_B=882FC0,FF,2E4,1C,20,8
+Left_SlingShot_R=882FC0,FF,2E4,20,20,8
+Left_SlingShot_B=882FC0,FF,2E4,24,20,8
+Bumper1_Flasher=882FC0,FF,2B0,0C,4,04,A4
+Bumper1_IM_Flasher=882FC0,FF,2B0,0C,8,04,A4
+Bumper2_Flasher=882FC0,FF,2B0,0C,C,04,A4
+Bumper2_IM_Flasher=882FC0,FF,2B0,0C,10,04,A4
+Bumper3_Flasher=882FC0,FF,2B0,0C,14,04,A4
+Bumper3_IM_Flasher=882FC0,FF,2B0,0C,18,04,A4
+Left_SlingShot_Flasher=882FC0,FF,2B0,0C,1C,04,A4
+Left_SlingShot_IM_Flasher=882FC0,FF,2B0,0C,20,04,A4
+Right_SlingShot_Flasher=882FC0,FF,2B0,0C,24,04,A4
+Right_SlingShot_IM_Flasher=882FC0,FF,2B0,0C,28,04,A4
+Right_Kicker1_Flasher=882FC0,FF,2B0,0C,2C,04,A4
+Right_Kicker2_Flasher=882FC0,FF,2B0,0C,30,04,A4
+Right_Kicker3_Flasher=882FC0,FF,2B0,0C,34,04,A4
+Right_Kicker4_Flasher=882FC0,FF,2B0,0C,38,04,A4
+Right_Kicker5_Flasher=882FC0,FF,2B0,0C,3C,04,A4
+Right_Kicker6_Flasher=882FC0,FF,2B0,0C,40,04,A4
+Right_Kicker7_Flasher=882FC0,FF,2B0,0C,44,04,A4
+Left_Orbit_Flasher=882FC0,FF,2B0,0C,48,04,A4
+Right_Orbit_Flasher=882FC0,FF,2B0,0C,4C,04,A4
+Prison_Flasher=882FC0,FF,2B0,0C,80,04,A4
+BackRamp_Arrow1_Flasher=882FC0,FF,2B0,0C,84,04,A4
+BackRamp_Arrow2_Flasher=882FC0,FF,2B0,0C,88,04,A4
+BackRamp_Arrow3_Flasher=882FC0,FF,2B0,0C,8C,04,A4
+LeftRamp_Flasher=882FC0,FF,2B0,0C,90,04,A4
+MiddleRamp_Flasher=882FC0,FF,2B0,0C,94,04,A4
+MiddleRamp_Arrow1_Flasher=882FC0,FF,2B0,0C,98,04,A4
+MiddleRamp_Arrow2_Flasher=882FC0,FF,2B0,0C,9C,04,A4
+MiddleRamp_Arrow3_Flasher=882FC0,FF,2B0,0C,A0,04,A4
+RightRamp_Flasher=882FC0,FF,2B0,0C,A4,04,A4
+UpperPlayfield_Flasher=882FC0,FF,2B0,0C,B4,04,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random|FF_B2S B2SStartAnimation Title
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_B2S B2SStartAnimation Title
+SCOREMODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations
+LeftFlipper|ON|FF_Dev DV_LF,10000
+LeftFlipper|OFF|FF_Dev DV_LF,0
+RightFlipper|ON|FF_Dev DV_RF,10000
+RightFlipper|OFF|FF_Dev DV_RF,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Marvel
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Left_SlingShot_R|ON|FF_Dev DV_LS,-1
+Left_SlingShot_B|ON|FF_Dev DV_LS,-1
+Right_SlingShot_R|ON|FF_Dev DV_RS,-1
+Right_SlingShot_B|ON|FF_Dev DV_RS,-1
+Bumper1_R|ON|FF_Dev DV_BL,-1
+Bumper1_B|ON|FF_Dev DV_BL,-1
+Bumper2_R|ON|FF_Dev DV_BC,-1
+Bumper2_B|ON|FF_Dev DV_BC,-1
+Bumper3_R|ON|FF_Dev DV_BR,-1
+Bumper3_B|ON|FF_Dev DV_BR,-1
+Bumper1_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Crimson|FF_B2S B2SStartAnimation Captain
+Bumper1_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Crimson
+Bumper1_IM_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Crimson|FF_B2S B2SStartAnimation Captain
+Bumper1_IM_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Crimson
+Bumper2_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Royal_Blue|FF_B2S B2SStartAnimation Shield
+Bumper2_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Royal_Blue
+Bumper2_IM_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Royal_Blue|FF_B2S B2SStartAnimation Shield
+Bumper2_IM_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Royal_Blue
+Bumper3_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Orange_Red|FF_B2S B2SStartAnimation Star
+Bumper3_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Orange_Red
+Bumper3_IM_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Orange_Red|FF_B2S B2SStartAnimation Star
+Bumper3_IM_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Orange_Red
+Left_SlingShot_Flasher|ON|FF_Colour White,RGB_TT,125|FF_B2S B2SStartAnimation C1
+Left_SlingShot_IM_Flasher|ON|FF_Colour Cyan,RGB_TT,125
+Right_SlingShot_Flasher|ON|FF_Colour White,RGB_TT,125|FF_B2S B2SStartAnimation C8
+Right_SlingShot_IM_Flasher|ON|FF_Colour Cyan,RGB_TT,125
+Right_Kicker1_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation C1
+Right_Kicker2_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation C2
+Right_Kicker3_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation C3
+Right_Kicker4_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation C4
+Right_Kicker5_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation C5
+Right_Kicker6_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation C6|FF_B2S B2SStartAnimation C8
+Right_Kicker7_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation C7
+Left_Orbit_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation C5
+Right_Orbit_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation Beam|FF_B2S B2SStartAnimation C1
+Prison_Flasher|ON|FF_Dev DV_SR,1000|FF_B2S B2SStartAnimation Blast
+BackRamp_Arrow1_Flasher|ON|FF_Dev DV_SR,2000|FF_B2S B2SStartAnimation C2
+BackRamp_Arrow2_Flasher|ON|FF_Dev DV_SR,2000|FF_B2S B2SStartAnimation Beam
+BackRamp_Arrow3_Flasher|ON|FF_Dev DV_SR,2000|FF_B2S B2SStartAnimation C1
+LeftRamp_Flasher|ON|FF_Dev DV_BK,1500|FF_Flasher DV_FLOL,FL_TT,1,150,100,Random|FF_B2S B2SStartAnimation C3
+MiddleRamp_Flasher|ON|FF_Dev DV_BK,1500|FF_Flasher DV_FLCN,FL_TT,1,150,100,Random|FF_B2S B2SStartAnimation IronMan
+MiddleRamp_Arrow1_Flasher|ON|FF_Dev DV_BK,1500|FF_Flasher DV_FLCN,FL_TT,1,150,100,Random
+MiddleRamp_Arrow2_Flasher|ON|FF_Dev DV_BK,1500|FF_Flasher DV_FLCN,FL_TT,1,150,100,Random
+MiddleRamp_Arrow3_Flasher|ON|FF_Dev DV_BK,1500|FF_Flasher DV_FLCN,FL_TT,1,150,100,Random
+RightRamp_Flasher|ON|FF_Dev DV_BK,1500|FF_Flasher DV_FLOR,FL_TT,1,150,100,Random|FF_B2S B2SStartAnimation C6
+UpperPlayfield_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,150,100,Red|FF_B2S B2SStartAnimation Blast|FF_B2S B2SStartAnimation C9
+UpperPlayfield_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,150,100,Red

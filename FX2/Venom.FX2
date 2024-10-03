@@ -1,0 +1,86 @@
+##################
+#
+# Venom
+# DOFLinx force feedback configuration file v5
+#
+##################
+
+[STARTUP]
+FF_ROM=fx2_venom
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Left_SlingShot=882FC0,FF,2E4,0,20,8
+Right_SlingShot=882FC0,FF,2E4,4,20,8
+Bumper1=882FC0,FF,2E4,8,20,8
+Left_SlingShot_Flasher=882FC0,FF,2B0,C,0,4,A4
+Right_SlingShot_Flasher=882FC0,FF,2B0,C,4,4,A4
+Saucer_Flasher=882FC0,FF,2B0,C,8,4,A4
+Left_Upper_Playfield_Flasher=882FC0,FF,2B0,C,C,4,A4
+Left_Ramp_Flasher=882FC0,FF,2B0,C,10,4,A4
+Left_BackWall_Flasher=882FC0,FF,2B0,C,14,4,A4
+Right_BackWall_Flasher=882FC0,FF,2B0,C,18,4,A4
+Right_Upper_Playfield_Flasher=882FC0,FF,2B0,C,1C,4,A4
+Right_Ramp_Flasher=882FC0,FF,2B0,C,20,4,A4
+Right_Loop_Flasher=882FC0,FF,2B0,C,24,4,A4
+MPF1_Flasher=882FC0,FF,2B0,C,28,4,A4
+MPF2_Flasher=882FC0,FF,2B0,C,2C,4,A4
+MPF3_Flasher=882FC0,FF,2B0,C,30,4,A4
+MPF4_Flasher=882FC0,FF,2B0,C,34,4,A4
+Bumper_Flasher=882FC0,FF,2B0,C,3C,4,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Blue|FF_Flasher DV_FLOR,FL_FD,6,750,50,Blue|FF_Flasher DV_FLIL,FL_FD,6,750,50,Red|FF_Flasher DV_FLIR,FL_FD,6,750,50,Red|FF_Flasher DV_FLCN,FL_FD,6,750,50,Blue|FF_B2S B2SStartAnimation Title|FF_DOF E424,-1
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500|FF_DOF E310,-1
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0|FF_DOF E310,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_B2S B2SStartAnimation Title|FF_DOF E310,0|FF_DOF E132,-1
+SCOREMODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations|FF_DOF E423,-1
+LeftFlipper|ON|FF_Dev DV_LF,10000|FF_DOF E101,-1
+LeftFlipper|OFF|FF_Dev DV_LF,0
+RightFlipper|ON|FF_Dev DV_RF,10000|FF_DOF E102,-1
+RightFlipper|OFF|FF_Dev DV_RF,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation,PinballSmall|FF_DOF E402,-1
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Left_SlingShot|ON|FF_Dev DV_LS,-1|FF_DOF E110,-1
+Right_SlingShot|ON|FF_Dev DV_RS,-1|FF_DOF E111,-1
+Bumper1|ON|FF_Dev DV_BR,-1|FF_DOF E120,-1
+Left_SlingShot_Flasher|ON|FF_Colour Red,RGB_TT,50|FF_Flasher DV_FLIL,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation SpiderMan
+Left_SlingShot_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Red
+Right_SlingShot_Flasher|ON|FF_Colour Blue,RGB_TT,50|FF_Flasher DV_FLIR,FL_ON,1,1,100,Blue|FF_B2S B2SStartAnimation Red
+Right_SlingShot_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Blue
+Saucer_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Orange|FF_B2S B2SStartAnimation PinballBig|FF_DOF E412,-1
+Saucer_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Orange
+Left_Upper_Playfield_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation SignBank|FF_DOF E121,-1
+Left_Upper_Playfield_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Red
+Left_Ramp_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Orange|FF_B2S B2SStartAnimation SignStry|FF_DOF E410,-1
+Left_Ramp_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Orange
+Left_BackWall_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation SignTravels|FF_DOF E411,-1
+Left_BackWall_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Red
+Right_BackWall_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation WindowBig1|FF_DOF E413,-1
+Right_BackWall_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Red
+Right_Upper_Playfield_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Yellow|FF_B2S B2SStartAnimation WindowBig2|FF_DOF E121,-1
+Right_Upper_Playfield_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Yellow
+Right_Ramp_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Marvel|FF_DOF E414,-1
+Right_Ramp_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+Right_Loop_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation SignTravels|FF_DOF E415,-1
+Right_Loop_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+MPF1_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation WindowsSM1|FF_DOF E416,-1
+MPF1_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red
+MPF2_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation WindowsSM2|FF_DOF E417,-1
+MPF2_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Red
+MPF3_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation WindowsSM3|FF_DOF E418,-1
+MPF3_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Red
+MPF4_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation WindowsSM4|FF_DOF E419,-1
+MPF4_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+Bumper_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,White|FF_Flasher DV_FLIL,FL_ON,1,1,100,White|FF_Flasher DV_FLCN,FL_ON,1,1,100,White|FF_Flasher DV_FLIR,FL_ON,1,1,100,White|FF_Flasher DV_FLOR,FL_ON,1,1,100,White|FF_B2S B2SStartAnimation Blue
+Bumper_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,White|FF_Flasher DV_FLIL,FL_OFF,1,1,100,White|FF_Flasher DV_FLCN,FL_OFF,1,1,100,White|FF_Flasher DV_FLIR,FL_OFF,1,1,100,White|FF_Flasher DV_FLOR,FL_OFF,1,1,100,White

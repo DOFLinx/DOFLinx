@@ -1,0 +1,63 @@
+##################
+#
+# EarthDefense
+# DOFLinx force feedback configuration file v2
+#
+##################
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Left_SlingShot=882FC0,FF,2E4,0,20,8
+Right_SlingShot=882FC0,FF,2E4,4,20,8
+Heart_Flasher=882FC0,FF,2B0,0C,0,04,A4
+Rescue_Flasher=882FC0,FF,2B0,0C,4,04,A4
+Kickback_Flasher=882FC0,FF,2B0,0C,8,04,A4
+Subway_Main_Flasher=882FC0,FF,2B0,0C,10,04,A4
+Subway_Right_Flasher=882FC0,FF,2B0,0C,14,04,A4
+Cannon_Flasher=882FC0,FF,2B0,0C,18,04,A4
+Mini_SlingShot_Flasher=882FC0,FF,2B0,0C,23C,04,A4
+Left_SlingShot_Flasher=882FC0,FF,2B0,0C,240,04,A4
+Right_SlingShot_Flasher=882FC0,FF,2B0,0C,244,04,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random|FF_B2S B2SStartAnimation Title
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_B2S B2SStartAnimation Title
+SCOREMODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations
+LeftFlipper|ON|FF_Dev DV_LF,10000|FF_B2S B2SSetData 5,1
+LeftFlipper|OFF|FF_Dev DV_LF,0|FF_B2S B2SSetData 5,0
+RightFlipper|ON|FF_Dev DV_RF,10000|FF_B2S B2SSetData 6,1
+RightFlipper|OFF|FF_Dev DV_RF,0|FF_B2S B2SSetData 6,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Helicopter
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Left_SlingShot|ON|FF_Dev DV_LS,-1
+Right_SlingShot|ON|FF_Dev DV_RS,-1
+Heart_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Eyes
+Heart_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red
+Rescue_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,White|FF_B2S B2SStartAnimation UFO1
+Rescue_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,White
+Kickback_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,White|FF_B2S B2SStartAnimation UFO5
+Kickback_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,White
+Subway_Main_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation UFO2
+Subway_Main_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Gold
+Subway_Right_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,White|FF_B2S B2SStartAnimation UFO10
+Subway_Right_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,White
+Cannon_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,White|FF_B2S B2SStartAnimation UFO9
+Cannon_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,White
+Mini_SlingShot_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Lightning
+Mini_SlingShot_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Gold
+Left_SlingShot_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation StreetLight
+Left_SlingShot_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Gold
+Right_SlingShot_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation UFO4
+Right_SlingShot_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Gold

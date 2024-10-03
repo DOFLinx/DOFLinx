@@ -1,0 +1,51 @@
+##################
+#
+# SuperLeague - Copy of ASRoma
+# DOFLinx force feedback configuration file v3
+#
+##################
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Bumper1=882FC0,FF,2E4,0,20,8
+Bumper2=882FC0,FF,2E4,4,20,8
+Bumper3=882FC0,FF,2E4,8,20,8
+Left_SlingShot=882FC0,FF,2E4,C,20,8
+Right_SlingShot=882FC0,FF,2E4,10,20,8
+Left_SlingShot_Flasher=882FC0,FF,2B0,C,C,4,A4
+Right_SlingShot_Flasher=882FC0,FF,2B0,C,10,4,A4
+Bumper1_Flasher=882FC0,FF,2B0,C,0,4,A4
+Bumper2_Flasher=882FC0,FF,2B0,C,4,4,A4
+Bumper3_Flasher=882FC0,FF,2B0,C,8,4,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1
+LeftFlipper|ON|FF_Dev DV_LF,10000
+LeftFlipper|OFF|FF_Dev DV_LF,0
+RightFlipper|ON|FF_Dev DV_RF,10000
+RightFlipper|OFF|FF_Dev DV_RF,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Bumper1|ON|FF_Dev DV_BL,-1
+Bumper2|ON|FF_Dev DV_BC,-1
+Bumper3|ON|FF_Dev DV_BR,-1
+Left_SlingShot|ON|FF_Dev DV_LS,-1
+Right_SlingShot|ON|FF_Dev DV_RS,-1
+Right_SlingShot_Flasher|ON|FF_Flasher DV_FLOR,FL_TT,1,100,100,Lawn_Green|FF_Colour Gold,RGB_TT,150
+Left_SlingShot_Flasher|ON|FF_Flasher DV_FLOL,FL_TT,1,100,100,Lawn_Green|FF_Colour Gold,RGB_TT,150
+Bumper1_Flasher|ON|FF_Flasher DV_FLIL,FL_TT,1,100,100,Lawn_Green
+Bumper2_Flasher|ON|FF_Flasher DV_FLCN,FL_TT,1,100,100,Lawn_Green
+Bumper3_Flasher|ON|FF_Flasher DV_FLIR,FL_TT,1,100,100,Lawn_Green

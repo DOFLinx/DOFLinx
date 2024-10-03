@@ -1,0 +1,76 @@
+##################
+#
+# Portal
+# DOFLinx force feedback configuration file v6
+#
+##################
+
+[MEMORY TRIGGERS - CORE]
+GAMEMODE=8879B4,FF
+SCOREMODE=887919,FF
+ANIMEMODE=88791B,FF
+LAUNCHMODE=88791A,FF
+LAUNCHBALL=883CF4,FF
+LeftFlipper=88781C,FF
+RightFlipper=88781C,FF00
+Nudge=88B8F4,FF000000
+
+[MEMORY TRIGGERS - TABLE BASED]
+Bumper1=882FC0,FF,2E4,0,20,08
+Bumper2=882FC0,FF,2E4,4,20,08
+Bumper3=882FC0,FF,2E4,8,20,08
+Left_SlingShot=882FC0,FF,2E4,C,20,08
+Right_SlingShot=882FC0,FF,2E4,10,20,08
+MPF_SlingShotLeft=882FC0,FF,2E4,14,20,08
+MPF_SlingShotRight=882FC0,FF,2E4,18,20,08
+Bumper1_Flasher=882FC0,FF,2B0,C,0,4,A4
+Bumper2_Flasher=882FC0,FF,2B0,C,4,4,A4
+Bumper3_Flasher=882FC0,FF,2B0,C,8,4,A4
+Left_SlingShot_Flasher=882FC0,FF,2B0,C,C,4,A4
+Right_SlingShot_Flasher=882FC0,FF,2B0,C,10,4,A4
+MPF_Left_Flasher=882FC0,FF,2B0,C,14,4,A4
+MPF_Right_Flasher=882FC0,FF,2B0,C,18,4,A4
+MPF_Left_SlingShot_Flasher=882FC0,FF,2B0,C,1C,4,A4
+MPF_Right_SlingShot_Flasher=882FC0,FF,2B0,C,20,4,A4
+Portal_Right_Flasher=882FC0,FF,2B0,C,24,4,A4
+
+[COMMANDS]
+GAMEMODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,100,Orange|FF_Flasher DV_FLOR,FL_FD,6,750,100,Orange|FF_Flasher DV_FLIL,FL_FD,6,750,100,Yellow|FF_Flasher DV_FLIR,FL_FD,6,750,100,Yellow|FF_Flasher DV_FLCN,FL_FD,6,750,100,Orange|FF_B2S B2SStartAnimation Title
+LAUNCHMODE|ON|FF_Button BUT_LB,BA_FL,10000,500
+LAUNCHMODE|OFF|FF_Button BUT_LB,BA_OFF,0,0
+LAUNCHBALL|OFF|FF_Dev DV_MR,-1|FF_B2S B2SStartAnimation Title
+SCOREMODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations
+LeftFlipper|ON|FF_Dev DV_LF,10000|FF_B2S B2SSetData 2,1
+LeftFlipper|OFF|FF_Dev DV_LF,0|FF_B2S B2SSetData 3,0
+RightFlipper|ON|FF_Dev DV_RF,10000|FF_B2S B2SSetData 3,1
+RightFlipper|OFF|FF_Dev DV_RF,0|FF_B2S B2SSetData 2,0
+Nudge|ON|FF_Dev DV_SH,10000|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_ON,1,1,100,Red|FF_Flasher DV_FLOL,FL_ON,1,1,100,Red|FF_Flasher DV_FLOR,FL_ON,1,1,100,Red|FF_B2S B2SStartAnimation Pinball
+Nudge|OFF|FF_Dev DV_SH,250|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Red|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Red
+
+Left_Slingshot|ON|FF_Dev DV_LS,-1
+Right_Slingshot|ON|FF_Dev DV_RS,-1
+Bumper1|ON|FF_Dev DV_BL,-1
+Bumper2|ON|FF_Dev DV_BC,-1
+Bumper3|ON|FF_Dev DV_BR,-1
+MPF_SlingShotLeft|ON|FF_Dev DV_LS,-1
+MPF_SlingShotRight|ON|FF_Dev DV_RS,-1
+Bumper1_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Cyan|FF_B2S B2SStartAnimation Rail2
+Bumper1_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Cyan
+Bumper2_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Cyan|FF_B2S B2SStartAnimation Rail3
+Bumper2_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Cyan
+Bumper3_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Cyan|FF_B2S B2SStartAnimation Rail4
+Bumper3_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Cyan
+Left_SlingShot_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Gold|FF_Colour Gold,RGB_TT,180|FF_B2S B2SStartAnimation RingLeft
+Left_SlingShot_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Gold
+Right_SlingShot_Flasher|ON|FF_Flasher DV_FLCN,FL_ON,1,1,100,Cyan|FF_Colour Cyan,RGB_TT,180|FF_B2S B2SStartAnimation RingRight
+Right_SlingShot_Flasher|OFF|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Cyan
+MPF_Left_Flasher|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,White|FF_B2S B2SStartAnimation RingLeft
+MPF_Left_Flasher|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,White
+MPF_Right_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,White|FF_B2S B2SStartAnimation RingRight
+MPF_Right_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,White
+MPF_Left_SlingShot_Flasher|ON|FF_Flasher DV_FLIL,FL_ON,1,1,100,Yellow|FF_B2S B2SStartAnimation Rail2
+MPF_Left_SlingShot_Flasher|OFF|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Yellow
+MPF_Right_SlingShot_Flasher|ON|FF_Flasher DV_FLIR,FL_ON,1,1,100,Yellow|FF_B2S B2SStartAnimation Rail3
+MPF_Right_SlingShot_Flasher|OFF|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Yellow
+Portal_Right_Flasher|ON|FF_Flasher DV_FLOR,FL_ON,1,1,100,Gold|FF_B2S B2SStartAnimation Rail1
+Portal_Right_Flasher|OFF|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Gold
