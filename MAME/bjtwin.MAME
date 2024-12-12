@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for Bomber Jack Twin
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created By D@vS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Red,BUT_P2,Cyan
 COLOUR_PALETTE=White,Blue,Red,Orange,Green,Silver,Magenta
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,jump
 FF_DOF=E78,-1
 

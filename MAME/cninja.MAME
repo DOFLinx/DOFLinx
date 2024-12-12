@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for Caveman Ninja
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Yellow,BUT_P1,White,BUT_P2,White
 COLOUR_PALETTE=White,Blue,Green,Orange,Yellow
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,Attack,BUT_B2,Jump
 FF_DOF=E85,-1
 

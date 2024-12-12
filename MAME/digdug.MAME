@@ -1,16 +1,14 @@
 ##################
 #
 # MAME configration for digdug
-# DOFLinx force feedback configuration file v3
+# DOFLinx force feedback configuration file v4
 #
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Orchid,BUT_P1,Yellow_Green,BUT_P2,Dodger_Blue
 COLOUR_PALETTE=Orange,Red,Orange_Red,Yellow,Blue,Lime,Golden_Rod,White
-BUTTONS_LIT=BUT_P1,BUT_P2
 FF_DOF=E63,-1
-
 
 [SHUTDOWN]
 KEY_TO_COMMAND=

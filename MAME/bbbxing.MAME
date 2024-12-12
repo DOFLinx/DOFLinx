@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configuration for Best Bout Boxing
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Yellow,BUT_P1,Blue,BUT_P2,red
 COLOUR_PALETTE=White,Dark_Orange,Blue,Red
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,H_punch,BUT_B2,L_punch,BUT_B3,F_blow
 FF_DOF=E78,-1
 

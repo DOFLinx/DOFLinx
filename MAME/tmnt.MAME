@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for tmnt
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 #
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Green,BUT_P1,Orchid,BUT_P2,Pale_Green
 COLOUR_PALETTE=Orchid,Lawn_Green,Yellow,Blue,Aqua,Chart_Reuse,Red,Magenta
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,jump,BUT_B2,sword
 FF_DOF=E61,7000
 

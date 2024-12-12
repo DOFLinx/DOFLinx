@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for Blomby Car
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Green,Red,BUT_P1,Yellow,BUT_P2,Yellow
 COLOUR_PALETTE=Orange,Red,Yellow,Green
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,acel,BUT_B2,brake
 FF_DOF=E73,-1
 

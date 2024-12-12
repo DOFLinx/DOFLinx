@@ -1,13 +1,12 @@
 ##################
 #
 # MAME configration for alieninvp2
-# DOFLinx force feedback configuration file v3
+# DOFLinx force feedback configuration file v4
 #
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Green,BUT_P1,Teal,BUT_P2,Light_Pink
-BUTTONS_LIT=BUT_P1,BUT_P2
 COLOUR_PALETTE=White,Red,Green
 FF_DOF=E58,7000
 

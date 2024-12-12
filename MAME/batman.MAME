@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for Batman
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Cyan,BUT_P1,Yellow,BUT_P2,Yellow
 COLOUR_PALETTE=White,Yellow,Cyan
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,punch,BUT_B2,jump
 FF_DOF=E78,-1
 

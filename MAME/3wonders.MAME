@@ -1,13 +1,12 @@
 ##################
 #
 # MAME configration for 3 Wonders
-# DOFLinx force feedback configuration file v5
+# DOFLinx force feedback configuration file v6
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Blue,BUT_P1,White,BUT_P2,Blue
-BUTTONS_LIT=BUT_P1,BUT_P2
 COLOUR_PALETTE=White,Dark_Orange,Blue,Green
 KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,jump
 FF_DOF=E66,-1

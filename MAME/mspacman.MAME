@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for mspacman
-# DOFLinx force feedback configuration file v4
+# DOFLinx force feedback configuration file v5
 #
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Blue,BUT_P1,Magenta,BUT_P2,Cyan
 COLOUR_PALETTE=Yellow,Red,Cyan,Magenta,Orange,Blue
-BUTTONS_LIT=BUT_P1,BUT_P2
 FF_DOF=E63,-1
 
 [SHUTDOWN]

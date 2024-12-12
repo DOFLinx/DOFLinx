@@ -1,7 +1,7 @@
 #################################################
 #                                                                                              
 # MAME configuration for Green Beret                                    
-# DOFLinx force feedback configuration file v3                       
+# DOFLinx force feedback configuration file v3 4                     
 # Created By Carlos                                                                
 #                                                                                              
 #################################################
@@ -9,7 +9,6 @@
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Red,BUT_P1,Blue,BUT_P2,Green
 COLOUR_PALETTE=White,Blue,Cyan,Green,Silver,Red,Yellow
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,Cuchillo,BUT_B2,Arma_Especial
 FF_DOF=E61,-1
 

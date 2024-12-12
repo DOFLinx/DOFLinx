@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Kamikaze
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 #
 # Nb, while a 2 player game the score only shows the current player so will only work properly with DOFlinx for 1 player mode
 #
@@ -10,7 +10,6 @@
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
 COLOUR_PALETTE=White,Red,Blue,Green
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,fire
 FF_DOF=E78,-1
 

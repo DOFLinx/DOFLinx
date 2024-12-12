@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for bublboblr
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 #
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Yellow,BUT_P1,Magenta,BUT_P2,Lime
 COLOUR_PALETTE=White,Yellow,Red,Cyan,Magenta,Orange,Dodger_Blue,Lime,Amber
-BUTTONS_LIT=BUT_P1,BUT_P2
 FF_DOF=E58,-1
 
 [SHUTDOWN]

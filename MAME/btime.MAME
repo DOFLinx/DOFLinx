@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for Burger Time
-# DOFLinx force feedback configuration file v3
+# DOFLinx force feedback configuration file v4
 #
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Red,BUT_P1,Yellow,BUT_P2,Yellow
 COLOUR_PALETTE=White,Blue,Cyan,Green,Magenta
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,pepper
 FF_DOF=E73,-1
 

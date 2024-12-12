@@ -1,13 +1,12 @@
 ##################
 #
 # MAME configration for Donkey Kong 3
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # 
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Navajo_White,BUT_P1,Forest_Green,BUT_P2,Light_Coral
-BUTTONS_LIT=BUT_P1,BUT_P2
 COLOUR_PALETTE=Chocolate,Saddle_Brown,Navajo_White,Forest_Green,Gold,Light_Coral,Dark_Golden_Rod,Lime,Yellow
 KEY_TO_COMMAND=BUT_B1,Fire
 FF_DOF=E79,-1

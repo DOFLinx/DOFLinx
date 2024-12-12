@@ -1,17 +1,15 @@
 ##################
 #
 # MAME configration for Chase HQ
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Red,BUT_P1,Yellow,BUT_P2,Yellow
 COLOUR_PALETTE=White,Red,Blue,Orange,Yellow
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,gas,BUT_B2,brake,BUT_B3,turbo,BUT_B4,gear
 FF_DOF=E58,-1
-
 
 [SHUTDOWN]
 

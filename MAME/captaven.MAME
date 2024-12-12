@@ -1,17 +1,15 @@
 ##################
 #
 # MAME configration for Captain America and The Avengers
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Red,BUT_P2,Blue
 COLOUR_PALETTE=White,Red,Blue,Orange,Green,Yellow
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,attack,BUT_B2,jump
 FF_DOF=E85,-1
-
 
 [SHUTDOWN]
 
