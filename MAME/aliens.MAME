@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for Aliens
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # Created By D@vS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Red,BUT_P1,Blue,BUT_P2,Green
 COLOUR_PALETTE=White,Blue,Cyan,Green,Silver,Red
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,up_fire,BUT_B2,down_fire
 FF_DOF=E61,-1
 [SHUTDOWN]

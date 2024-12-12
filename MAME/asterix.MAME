@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configuration for Asterix
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created By D@vS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Yellow,BUT_P1,Red,BUT_P2,Blue
 COLOUR_PALETTE=White,Blue,Red,Yellow,Green,Orange_red
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,punch,BUT_B2,jump
 FF_DOF=E61,-1
 

@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for Badlands
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Orange,BUT_P1,Blue,BUT_P2,Red
 COLOUR_PALETTE=White,Red,Blue,Orange
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,gas,BUT_B2,shoot
 FF_DOF=E78,-1
 

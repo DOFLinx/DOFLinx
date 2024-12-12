@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configration for Arkanoid 
-# DOFLinx force feedback configuration file v3
+# DOFLinx force feedback configuration file v4
 # Created By D@vS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Red,BUT_P2,Red
 COLOUR_PALETTE=White,Blue,Red,Green,cyan,Magenta
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,shoot
 FF_DOF=E58,-1
 

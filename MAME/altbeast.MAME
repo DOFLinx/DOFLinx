@@ -1,14 +1,13 @@
 ##################
 #
 # MAME configuration for Altered Beast
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Red,BUT_P2,Blue
 COLOUR_PALETTE=White,Red,Blue,Green,Cyan,Silver
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,punch,BUT_B2,kick,BUT_B3,jump
 FF_DOF=E69,-1
 [SHUTDOWN]
