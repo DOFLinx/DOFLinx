@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Eeekk
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 #
 ##################
 
@@ -15,10 +15,10 @@ FF_DOF=E78,-1
 KEY_TO_COMMAND=
 
 [COMMANDS]
-led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_PC S,C,Player%201
-led0|OFF|FF_Button BUT_P1,BA_OFF,0,0|FF_PC S,C,%20
-led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_PC S,C,Player%202
-led1|OFF|FF_Button BUT_P2,BA_OFF,0,0|FF_PC S,C,%20
+led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201
+led0|OFF|FF_Button BUT_P1,BA_OFF,0,0
+led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202
+led1|OFF|FF_Button BUT_P2,BA_OFF,0,0
 fire|ON|FF_DOF E216,-1
 coin|ON|FF_DOF E78,0
 player1|ON|FF_DOF E78,0
