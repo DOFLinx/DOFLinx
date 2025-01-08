@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for RType 2
-# DOFLinx force feedback configuration file v4
+# DOFLinx force feedback configuration file v5
 #
 ##################
 
@@ -15,9 +15,9 @@ FF_DOF=E73,7000
 KEY_TO_COMMAND=
 
 [COMMANDS]
-led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,-1
+led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201,arcade/stream/mameoutput/startup_player1-blue,
 led0|OFF|FF_Button BUT_P1,BA_OFF,0,0
-led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,-1
+led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202,arcade/stream/mameoutput/startup_player2-green,
 led1|OFF|FF_Button BUT_P2,BA_OFF,0,0
 fire|ON|FF_DOF E216,-1|FF_DOF E217,-1
 
