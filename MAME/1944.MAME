@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for 1944: The Loop Master
-# DOFLinx force feedback configuration file v6
+# DOFLinx force feedback configuration file v7
 # Created By D@vS0ut0
 ##################
 
@@ -56,4 +56,4 @@ SC=80000:80000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLO
 # Dragonfly
 SC=100000:100000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Green|FF_Flasher DV_FLOR,FL_FL,6,750,100,Green|FF_Flasher DV_FLIL,FL_FL,6,750,100,Green|FF_Flasher DV_FLIR,FL_FL,6,750,100,Green|FF_Flasher DV_FLCN,FL_FL,6,750,100,Green|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 |FF_DOF E785,2000
-SD=3000:FF_PC,U,E,arcade/stream/mame/1944?l=99999&nogif
+SD=5000:FF_PC,U,E,arcade/stream/mame/1944?l=99999&nogif

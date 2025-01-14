@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for tempest
-# DOFLinx force feedback configuration file v5
+# DOFLinx force feedback configuration file v6
 #
 ##################
 
@@ -44,4 +44,4 @@ SC=200:200:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|F
 SC=2500:1000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-full-horizontal
 # Start level bonus achieved
 SC=6000:1000000:10:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800|FF_PC,U,E,arcade/stream/mameoutput/generic_levelup-cyan?l=4
-SD=30000:FF_PC,U,E,arcade/stream/mame/tempest|FF_DMD,U,display/picture?path=mame/tempest&fixed=false
+SD=5000:FF_PC,U,E,arcade/stream/mame/tempest|FF_DMD,U,display/picture?path=mame/tempest&fixed=false

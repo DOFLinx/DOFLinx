@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for digdug
-# DOFLinx force feedback configuration file v4
+# DOFLinx force feedback configuration file v5
 #
 ##################
 
@@ -40,3 +40,4 @@ SC=4000:4000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,5000|FF_Flasher DV_FLOL,FL_F
 # Bonus lives
 ST=20000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,E,arcade/stream/mameoutput/digdug_bonus?l=5
 ST=60000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,E,arcade/stream/mameoutput/digdug_bonus?l=5
+SD=5000:FF_PC,U,E,arcade/stream/mame/digdug|FF_DMD,U,display/picture?path=mame/digdug&fixed=false

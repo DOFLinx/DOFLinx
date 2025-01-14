@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Asteroid
-# DOFLinx force feedback configuration file v5
+# DOFLinx force feedback configuration file v6
 #
 ##################
 
@@ -32,4 +32,4 @@ M2=,,,10,STRING,REVERSE
 DELAY=5000
 # 
 SC=10:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/asteroids-explosion
-SD=30000:FF_PC,U,E,arcade/stream/mame/asteroidb2|FF_DMD,U,display/picture?path=mame/asteroidb2&fixed=false
+SD=5000:FF_PC,U,E,arcade/stream/mame/asteroidb2|FF_DMD,U,display/picture?path=mame/asteroidb2&fixed=false

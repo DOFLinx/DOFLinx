@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for galaga3
-# DOFLinx force feedback configuration file v8
+# DOFLinx force feedback configuration file v9
 #
 ##################
 
@@ -42,4 +42,4 @@ SC=10000:10000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,3000|FF_Flasher DV_FLOL,FL
 #ST=30000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,5000|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,E,arcade/stream/mameoutput/galaga_newship?l=1|FF_PC,U,E,arcade/stream/mame/galaga3?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 # Subsequent New Ships
 #SE=70000:70000:10:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,5000|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800|FF_PC,U,E,arcade/stream/mameoutput/galaga_newship?l=1|FF_PC,U,E,arcade/stream/mame/galaga3?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
-SD=3000:FF_PC,U,E,arcade/stream/mame/galaga3?l=99999&nogif
+SD=5000:FF_PC,U,E,arcade/stream/mame/galaga3?l=99999&nogif

@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for galaxian
-# DOFLinx force feedback configuration file v6
+# DOFLinx force feedback configuration file v7
 #
 ##################
 
@@ -39,4 +39,4 @@ SC=60:60:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500
 SC=101:800:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,animation/overlay/mameoutput/galaga_shipinflight-exploding|FF_DMD,U,display/picture?path=ingame/explosion3&fixed=false
 # New Ship
 ST=7000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800|FF_DMD,U,display/picture?path=ingame/galaga-capture&fixed=false
-SD=3000:FF_PC,U,E,arcade/stream/mame/galaxian?l=99999&nogif
+SD=5000:FF_PC,U,E,arcade/stream/mame/galaxian?l=99999&nogif

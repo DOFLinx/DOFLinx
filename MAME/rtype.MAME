@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for RTpye
-# DOFLinx force feedback configuration file v6
+# DOFLinx force feedback configuration file v7
 #
 ##################
 
@@ -38,4 +38,4 @@ ST=100000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher D
 ST=350000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 ST=500000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 ST=700000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
-SD=3000:FF_PC,U,E,arcade/stream/mame/rtype?l=99999&nogif
+SD=5000:FF_PC,U,E,arcade/stream/mame/rtype?l=99999&nogif
