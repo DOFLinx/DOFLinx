@@ -15,9 +15,9 @@ FF_DOF=E78,-1
 KEY_TO_COMMAND=
 
 [COMMANDS]
-led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201,arcade/stream/mameoutput/startup_player1-blue,
+led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201,animation/overlay/mameoutput/startup_player1-blue,arcade/stream/mameoutput/startup_player1-blue,display/picture?path=ingame/select1player
 led0|OFF|FF_Button BUT_P1,BA_OFF,0,0
-led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202,arcade/stream/mameoutput/startup_player2-green,
+led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202,animation/overlay/mameoutput/startup_player2-green,arcade/stream/mameoutput/startup_player2-green,display/picture?path=ingame/select2players
 led1|OFF|FF_Button BUT_P2,BA_OFF,0,0
 fire|ON|FF_DOF E216,-1
 coin|ON|FF_DOF E78,0

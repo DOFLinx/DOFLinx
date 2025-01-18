@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for gyrus
-# DOFLinx force feedback configuration file v3
+# DOFLinx force feedback configuration file v4
 #
 ##################
 
@@ -27,12 +27,21 @@ S2=:maincpu|main|program|9666|3
 M2=,,,1,STRING,REVERSE
 DELAY=3000
 # Ship Still
-SC=50:50:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1
+SC=50:50:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3
 # Ship Moving
-SC=100:100:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400
+SC=100:100:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5
 # Satelite
-SC=1000:1000:FF_Colour Cyan,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIL,FL_FL,6,500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIR,FL_FL,6,500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Cyan|FF_DOF E570,1400|FF_DOF E576,1400|FF_DOF E587,1400
+SC=1000:1000:FF_Colour Cyan,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIL,FL_FL,6,500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIR,FL_FL,6,500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Cyan|FF_DOF E570,1400|FF_DOF E576,1400|FF_DOF E587,1400|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion6
 # Perfect Challenge Round
-ST=10000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,550,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_DOF E773,1800
+ST=10000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,550,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_DOF E773,1800|FF_PC,U,E,animation/overlay/mameoutput/generic_perfect
 # Bonus milestones
 SE=30000:60000:100:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,600,100,Random|FF_Flasher DV_FLOR,FL_FL,6,600,100,Random|FF_Flasher DV_FLIL,FL_FL,6,600,100,Random|FF_Flasher DV_FLIR,FL_FL,6,600,100,Random|FF_Flasher DV_FLCN,FL_FL,6,600,100,Random|FF_DOF E781,1900
+SD=5000:FF_PC,U,E,arcade/stream/mame/gyrus|FF_DMD,U,display/picture?path=mame/gyruss&fixed=false
+
+#SCORING
+#Shooting a ship: 50, 100 or 150 points.
+#Destroying a whole formation of enemy ships before the next wave attacks: 1,000, 1,500, 2,000, 2,500 points.
+#Bonus for clearing a sector (having not destroyed a whole formation): 1,000 points.
+#Shooting the three glowing spheres: 1,000, 1,500, 2,000 points.
+#Bonus for shooting each ship on the Chance Stage: 100 points.
+#Bonus for shooting all 40 ships on the Chance Stage: 10,000 points
