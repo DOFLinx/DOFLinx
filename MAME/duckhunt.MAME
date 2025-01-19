@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Duck Hunt
-# DOFLinx force feedback configuration file v4
+# DOFLinx force feedback configuration file v5
 #
 ##################
 
@@ -36,50 +36,21 @@ TM1=,,,1,STRING,FORWARD
 H1=:maincpu|main|program|3F0|C
 HM1=,,0,1,LENGTH,FORWARD
 
-
 DELAY=2000
 
-# Hit a duck
-SC=600:600:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000
-# First or major duck
-SC=1000:1000:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000
-# 
-SC=2000:9500:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400
-# 
-SC=10000:10000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500
-# 
+# Lower level duck
+SC=500:800:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000
+# Significant duck
+SC=1000:2400:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000
+# THE duck
+SC=3000:3000:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400
+
+# Perfect round 1-10
+SC=10000:10000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_perfect|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# Perfect round 11-15
+SC=15000:15000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_perfect|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# Perfect round 16-20
+SC=20000:20000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_perfect|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# Perfect round 21+
 ST=30000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800
-# 
-SE=80000:80000:10:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800
-
-#######
-# A few flasher / colour combinations for use when building
-#
-## Basic single flash of centre
-# FF_Flasher DV_FLCN,FL_TT,1,300,100,Random
-## Single flash of outer left and outer right flashers
-# FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange
-## Single flash of outer left,outer right and centre flashers
-# FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_Flasher DV_FLCN,FL_TT,1,450,100,Orange
-## Single flash of all flashers
-# FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta
-## Outer Left, Right and Centre doing 3 on / off short  flashes
-# FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White
-## All flashers flashing longer on / off 3 x
-# FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random
-## All flashers fading up and down 5 x
-# FF_Flasher DV_FLOL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLOR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLCN,FL_FD,10,750,100,Gold
-
-#######
-## Simply add one of these to the commands line
-## Turn on / change the RGB for 3 seconds
-# FF_Colour White,RGB_TT,3000
-## Turn on / change the RGB for 10 seconds
-# FF_Colour Lime,RGB_TT,10000
-
-#######
-## Simply add one of these to the commands line
-## Fire the knocker for a significant milestone, ie new life
-# FF_Dev DV_KN,-1
-## Make some real noise by firing off all solenoids
-# FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
