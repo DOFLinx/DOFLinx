@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for 1944: The Loop Master
-# DOFLinx force feedback configuration file v7
+# DOFLinx force feedback configuration file v8
 # Created By D@vS0ut0
 ##################
 
@@ -48,12 +48,9 @@ SC=10000:10000:FF_Flasher DV_FLOL,FL_FL,6,300,100,Blue|FF_Flasher DV_FLIL,FL_FL,
 # Bamboo Sprout
 SC=20000:20000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Green|FF_Flasher DV_FLIR,FL_FL,6,750,100,Green|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_DOF E494,2000|FF_DOF E566,2000|FF_DOF E498,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long1|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
 # Holstein
-SC=50000:50000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long1|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
-|FF_DOF E774,2000
+SC=50000:50000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long1|FF_DOF E774,2000|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
 # Strawberry
-SC=80000:80000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_PC,U,E,animation/overlay/mameoutput/pacman_strawberry|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
-|FF_DOF E781,2000
+SC=80000:80000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_DOF E781,2000|FF_PC,U,E,animation/overlay/mameoutput/pacman_strawberry|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 # Dragonfly
-SC=100000:100000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Green|FF_Flasher DV_FLOR,FL_FL,6,750,100,Green|FF_Flasher DV_FLIL,FL_FL,6,750,100,Green|FF_Flasher DV_FLIR,FL_FL,6,750,100,Green|FF_Flasher DV_FLCN,FL_FL,6,750,100,Green|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
-|FF_DOF E785,2000
+SC=100000:100000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Green|FF_Flasher DV_FLOR,FL_FL,6,750,100,Green|FF_Flasher DV_FLIL,FL_FL,6,750,100,Green|FF_Flasher DV_FLIR,FL_FL,6,750,100,Green|FF_Flasher DV_FLCN,FL_FL,6,750,100,Green|FF_DOF E785,2000|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 SD=5000:FF_PC,U,E,arcade/stream/mame/1944?l=99999&nogif
