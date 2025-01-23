@@ -26,6 +26,8 @@ player1|ON|FF_DOF E63,0
 player2|ON|FF_DOF E63,0
 
 [SCORE]
+CK=:maincpu|main|program|98F2|1
+CKM=EQ,01
 S1=:maincpu|main|program|83f8|8
 M1=,,24,1,NUMBER,REVERSE
 S2=:maincpu|main|program|83e3|8
