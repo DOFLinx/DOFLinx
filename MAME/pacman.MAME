@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for pacman
-# DOFLinx force feedback configuration file v10
+# DOFLinx force feedback configuration file v11
 #
 ##################
 
@@ -58,4 +58,4 @@ SC=3000:3000:FF_Dev DV_KN,-1|FF_Colour Yellow,RGB_TT,1500|FF_Flasher DV_FLOL,FL_
 # Key
 SC=5000:5000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,Random|FF_Flasher DV_FLIL,FL_FL,6,300,100,Random|FF_Flasher DV_FLCN,FL_FL,6,300,100,Random|FF_Flasher DV_FLIR,FL_FL,6,300,100,Random|FF_Flasher DV_FLOR,FL_FL,6,300,100,Random|FF_DOF E786,2500|FF_PC,U,E,animation/overlay/mameoutput/pacman_key|FF_DMD,U,display/picture?path=mameoutput/pacman_key&fixed=false
 SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
-RE=1:1:255:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true|FF_PC,U,A,/stats?label=!PREFIX_R!&value=!ROUND!&separator=solid
+RE=1:1:255:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true|FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&separator=solid
