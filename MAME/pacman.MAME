@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for pacman
-# DOFLinx force feedback configuration file v9
+# DOFLinx force feedback configuration file v10
 #
 ##################
 
@@ -19,10 +19,15 @@ player1|ON|FF_DOF E63,0
 player2|ON|FF_DOF E63,0
 
 [SCORE]
+4EAE <>0
+CK=:maincpu|main|program|4EAE|1
+CKM=NEQ,00
 S1=:maincpu|main|program|4e80|4
 M1=,,24,1,STRING,REVERSE
 S2=:maincpu|main|program|4e80|4
 M2=,,24,1,STRING,REVERSE
+R1=:maincpu|main|program|4E13|1
+RM1=,,,+1,HEX,REVERSE,Level
 DELAY=3000
 # dot
 SC=10:10:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E218,-1
@@ -52,4 +57,5 @@ SC=2000:2000:FF_Dev DV_KN,-1|FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT
 SC=3000:3000:FF_Dev DV_KN,-1|FF_Colour Yellow,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLIL,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLCN,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLIR,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLOR,FL_FL,6,500,100,Yellow|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,animation/overlay/mameoutput/pacman_bell|FF_DMD,U,display/picture?path=mameoutput/pacman_bell&fixed=false
 # Key
 SC=5000:5000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,Random|FF_Flasher DV_FLIL,FL_FL,6,300,100,Random|FF_Flasher DV_FLCN,FL_FL,6,300,100,Random|FF_Flasher DV_FLIR,FL_FL,6,300,100,Random|FF_Flasher DV_FLOR,FL_FL,6,300,100,Random|FF_DOF E786,2500|FF_PC,U,E,animation/overlay/mameoutput/pacman_key|FF_DMD,U,display/picture?path=mameoutput/pacman_key&fixed=false
-SD=5000:FF_PC,U,E,arcade/stream/mame/pacman|FF_DMD,U,display/picture?path=mame/pacman&fixed=false
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
+RE=1:1:255:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true|FF_PC,U,A,/stats?label=!PREFIX_R!&value=!ROUND!&separator=solid
