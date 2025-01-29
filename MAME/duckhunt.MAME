@@ -30,11 +30,11 @@ CKM=NEQ,01
 S1=:maincpu|main|program|C7|4
 M1=,,,1,STRING,FORWARD,Score
 R1=:maincpu|main|program|C1|1
-RM1=,,,1,STRING,FORWARD,ROUND
+RM1=,,,1,STRING,FORWARD,ROUND,2
 T1=:maincpu|main|program|BA|1
-TM1=,,,1,STRING,FORWARD,Shots,ADD3COMP
+TM1=,,,1,STRING,FORWARD,Shots,ADD3COMP,2
 H1=:maincpu|main|program|3F0|C
-HM1=,,0,1,LENGTH,FORWARD,Hits,ADD
+HM1=,,0,1,LENGTH,FORWARD,Hits,ADD,3
 
 DELAY=2000
 
