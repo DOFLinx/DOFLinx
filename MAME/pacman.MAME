@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for pacman
-# DOFLinx force feedback configuration file v11
+# DOFLinx force feedback configuration file v13
 #
 ##################
 
@@ -19,12 +19,11 @@ player1|ON|FF_DOF E63,0
 player2|ON|FF_DOF E63,0
 
 [SCORE]
-4EAE <>0
 CK=:maincpu|main|program|4EAE|1
 CKM=NEQ,00
-S1=:maincpu|main|program|4e80|4
+S1=:maincpu|main|program|4e80|3
 M1=,,24,1,STRING,REVERSE
-S2=:maincpu|main|program|4e80|4
+S2=:maincpu|main|program|4e80|3
 M2=,,24,1,STRING,REVERSE
 R1=:maincpu|main|program|4E13|1
 RM1=,,,+1,HEX,REVERSE,Level
