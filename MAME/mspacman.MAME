@@ -27,6 +27,8 @@ S1=:maincpu|main|program|4e80|3
 M1=,,24,1,STRING,REVERSE
 S2=:maincpu|main|program|4e84|3
 M2=,,24,1,STRING,REVERSE
+L1=:maincpu|main|program|4E14|1
+LM1=,,,1,HEX,REVERSE,Lives
 R1=:maincpu|main|program|4E13|1
 RM1=,,24,1,HEX,REVERSE,LevelDELAY=3000
 # dot
