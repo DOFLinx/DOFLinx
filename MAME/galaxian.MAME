@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for galaxian
-# DOFLinx force feedback configuration file v7
+# DOFLinx force feedback configuration file v8
 #
 ##################
 
@@ -27,6 +27,8 @@ player2|ON|FF_DOF E63,0
 [SCORE]
 CK=:maincpu|main|program|4007|1
 CKM=EQ,00
+DK=:maincpu|main|program|4002|1
+DKM=,,,1,NUMBER,FORWARD
 PK=:maincpu|main|program|400D|1
 PKM=,,,1,HEX,FORWARD
 S1=:maincpu|main|program|40A2|3

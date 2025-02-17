@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for galaga3
-# DOFLinx force feedback configuration file v11
+# DOFLinx force feedback configuration file v12
 #
 ##################
 
@@ -24,6 +24,8 @@ player1|ON|FF_DOF E63,0
 player2|ON|FF_DOF E63,0
 
 [SCORE]
+DK=:maincpu|main|program|880|1
+DKM=,,,1,NUMBER,FORWARD,CREDITS
 PK=:maincpu|main|program|102D|1
 PKM=,,,1,HEX,FORWARD
 S1=:maincpu|main|program|9B0|3
@@ -31,7 +33,7 @@ M1=,,,100,STRING,REVERSE
 S2=:maincpu|main|program|9B3|3
 M2=,,,100,STRING,REVERSE
 L1=:maincpu|main|program|1104|1
-LM1=,,,+1,HEX,REVERSE,SHIPS
+LM1=,,,1,HEX,REVERSE,SHIPS
 # Parsec is 1035 or 1106
 R1=:maincpu|main|program|1035|1
 RM1=,,,+1,HEX,REVERSE,PARSEC
@@ -55,5 +57,7 @@ SC=10000:10000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,3000|FF_Flasher DV_FLOL,FL
 #ST=50000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,5000|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,E,arcade/stream/mameoutput/galaga_newship?l=1|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 # Subsequent New Ships
 #SE=150000:150000:10:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,5000|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800|FF_PC,U,E,arcade/stream/mameoutput/galaga_newship?l=1|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+SD=1000:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&livesLabel=!PREFIX_L!&livesValue=!LIVES!
 SD=7000:FF_PC,U,E,arcade/stream/mame/!ROM!?l=99999&nogif
 RE=2:1:200:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&separator=solid|FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!
