@@ -69,7 +69,7 @@ SC=10000:10000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL
 ST=30000:FF_Dev DV_MC,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,E,animation/overlay/mameoutput/galaga_newship|FF_DMD,U,display/picture?path=mameoutput/galaga_newship
 # Subsequent New Ships
 SE=80000:80000:10:FF_Dev DV_MC,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800|FF_PC,U,E,animation/overlay/mameoutput/galaga_newship|FF_DMD,U,display/picture?path=mameoutput/galaga_newship
-SD=100:FF_PC,U,M,ministat?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!
+SD=100:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!
 SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini
 SD=30000:FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
 RE=1:1:200:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true
