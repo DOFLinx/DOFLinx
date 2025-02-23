@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for galaga
-# DOFLinx force feedback configuration file v21
+# DOFLinx force feedback configuration file v22
 #
 ##################
 
@@ -45,13 +45,13 @@ RM1=,,,1,HEX,REVERSE,STAGE
 R2=:maincpu|main|program|9821|1
 RM2=,,,1,HEX,REVERSE,STAGE
 H1=:maincpu|main|program|9844|2
-HM1=,,,1,HEX,REVERSE,Hits
+HM1=,,,1,HEX,REVERSE,Hits,,50
 H2=:maincpu|main|program|9844|2
-HM2=,,,1,HEX,REVERSE,Hits
+HM2=,,,1,HEX,REVERSE,Hits,,50
 T1=:maincpu|main|program|9846|2
-TM1=,,,1,HEX,REVERSE,Shots
+TM1=,,,1,HEX,REVERSE,Shots,,100
 T2=:maincpu|main|program|9846|2
-TM2=,,,1,HEX,REVERSE,Shots
+TM2=,,,1,HEX,REVERSE,Shots,,100
 DELAY=5000
 # A single ship stationary or in flight
 SC=50:160:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/galaga_shipinflight-exploding|FF_DMD,U,display/picture?path=mameoutput/galaga_shipinflight-exploding
@@ -76,5 +76,5 @@ RE=1:1:200:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%
 RE=2:1:200:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=solid
 DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!
 ####
-# If you have a Pixelcade LCD and no LED, you can uncomment the line below (remove the # at the beginning) and get ongoing stats
+# If you have a Pixelcade, you can uncomment the line below (remove the # at the beginning) and get ongoing stats
 #SD=50:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=solid
