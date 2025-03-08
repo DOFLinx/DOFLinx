@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Donkey Kong rev1
-# DOFLinx force feedback configuration file v7
+# DOFLinx force feedback configuration file v8
 # 
 ##################
 
@@ -21,11 +21,24 @@ player1|ON|FF_DOF E79,0
 player2|ON|FF_DOF E79,0
 
 [SCORE]
+DK=:maincpu|main|program|6001|1
+DKM=,,,1,NUMBER,FORWARD,CREDITS
+PK=:maincpu|main|program|600D|1
+PKM=,,,1,HEX,FORWARD
 S1=:maincpu|main|program|60b2|3
 M1=,,,1,STRING,REVERSE
 S2=:maincpu|main|program|60b5|3
 M2=,,,1,STRING,REVERSE
-
+L1=:maincpu|main|program|6040|1
+LM1=,,,1,HEX,REVERSE,LIVES
+L2=:maincpu|main|program|6048|1
+LM2=,,,1,HEX,REVERSE,LIVES
+# level P1 6229, 6380, 74A3
+R1=:maincpu|main|program|6229|1
+RM1=,,,1,HEX,REVERSE,LEVEL
+# level P2 60BA, 6229, 6380, 74A3, 7621
+R2=:maincpu|main|program|6229|1
+RM2=,,,1,HEX,REVERSE,LEVEL
 DELAY=1000
 
 # 1 Barrel
@@ -36,5 +49,6 @@ SC=300:300:FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,450,100,Lime|F
 SC=600:5000:FF_Colour Medium_blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_DOF E778,1500|FF_PC,U,E,arcade/stream/mameoutput/dkong_bonus?l=4|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 #Milestones
 SE=10000:10000:10:FF_DEV DV_KN,-1|FF_Colour Magenta,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_DOF E635,1000|FF_DOF E621,1000|FF_DOF E637,1000|FF_DOF E623,1000|FF_DOF E639,1000|FF_PC,U,E,arcade/stream/mameoutput/generic_milestone?l=15|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
-SD=5000:FF_PC,U,E,arcade/stream/mame/dkong|FF_DMD,U,display/picture?path=mame/dkong&fixed=false
-
+SD=8000:FF_PC,U,E,arcade/stream/mame/dkong|FF_DMD,U,display/picture?path=mame/dkong&fixed=false
+SD=1000:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&livesLabel=!PREFIX_L!&livesValue=!LIVES!
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!

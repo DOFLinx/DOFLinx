@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for gyrus
-# DOFLinx force feedback configuration file v7
+# DOFLinx force feedback configuration file v8
 #
 ##################
 
@@ -23,10 +23,16 @@ player2|ON|FF_DOF E61,0
 [SCORE]
 CK=:maincpu|main|program|9669|1
 CKM=NEQ,00
+DK=:maincpu|main|program|9406|1
+DKM=,,,1,NUMBER,FORWARD,CREDITS
 S1=:maincpu|main|program|9663|3
 M1=,,,1,STRING,REVERSE
 S2=:maincpu|main|program|9666|3
 M2=,,,1,STRING,REVERSE
+L1=:maincpu|main|program|9620|1
+LM1=,,,1,HEX,REVERSE,SHIPS
+L2=:maincpu|main|program|9640|1
+LM2=,,,1,HEX,REVERSE,SHIPS
 R1=:maincpu|main|program|9609|1
 RM1=,,,+1,HEX,REVERSE,Stage
 DELAY=4000
@@ -42,7 +48,8 @@ ST=10000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,550,100,Random|FF_Flasher DV
 SE=30000:60000:100:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,600,100,Random|FF_Flasher DV_FLOR,FL_FL,6,600,100,Random|FF_Flasher DV_FLIL,FL_FL,6,600,100,Random|FF_Flasher DV_FLIR,FL_FL,6,600,100,Random|FF_Flasher DV_FLCN,FL_FL,6,600,100,Random|FF_DOF E781,1900
 SD=5000:FF_PC,U,E,arcade/stream/mame/gyrus|FF_DMD,U,display/picture?path=mame/gyruss&fixed=false
 RE=1:1:200:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true|FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&separator=solid
-
+SD=1000:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&livesLabel=!PREFIX_L!&livesValue=!LIVES!
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!
 #SCORING
 #Shooting a ship: 50, 100 or 150 points.
 #Destroying a whole formation of enemy ships before the next wave attacks: 1,000, 1,500, 2,000, 2,500 points.
