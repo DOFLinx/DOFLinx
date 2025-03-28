@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Donkey Kong rev1
-# DOFLinx force feedback configuration file v8
+# DOFLinx force feedback configuration file v9
 # 
 ##################
 
@@ -10,9 +10,11 @@ BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Blue,BUT_P2,Dark_red
 COLOUR_PALETTE=White,Blue,Red,Dark_red,Deep_pink,Medium_blue,Golden_rod,Dark_orange
 KEY_TO_COMMAND=BUT_B1,jump
 FF_DOF=E79,-1
+BUTTONS_LIT_ADDED=BUT_B1,BUT_B9
 
 [SHUTDOWN]
 KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_B1,BUT_B9
 
 [COMMANDS]
 jump|ON|FF_Flasher DV_FLIL,FL_TT,1,200,Blue|FF_Flasher DV_FLIR,FL_TT,1,200,Blue|FF_DOF E701,500|FF_DOF E703,500

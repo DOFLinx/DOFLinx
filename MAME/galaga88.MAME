@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for galaga88
-# DOFLinx force feedback configuration file v12
+# DOFLinx force feedback configuration file v13
 #
 ##################
 
@@ -10,9 +10,7 @@ BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Lime
 COLOUR_PALETTE=White,Red,Blue,Green,Silver,Cyan,Lime
 KEY_TO_COMMAND=BUT_B1,fire
 FF_DOF=E63,7000
-
-[SHUTDOWN]
-KEY_TO_COMMAND=
+|FF_DOF E212,-1|FF_DOF E213,-1
 
 [COMMANDS]
 fire|ON|FF_DOF E212,-1
