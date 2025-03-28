@@ -19,8 +19,8 @@ BUTTONS_LIT_DELETED=BUT_B1,BUT_B2
 
 [COMMANDS]
 #lamp0 - start
-lamp1|ON|FF_BUTTON BUT_B3,BA_ON,1,1|FF_DEV DV_SR,1500|FF_DEV DV_BE,-1|FF_PC,U,C,arcade/stream/mame/ajaxsw?notext|FF_PC,U,E,arcade/stream/mameoutput/ajax-superweapon?l=99999&nogif
-lamp1|OFF|FF_BUTTON BUT_B3,BA_OFF,1,1|FF_PC,U,C,arcade/stream/mame/ajaxj?notext
+lamp1|ON|FF_BUTTON BUT_B3,BA_ON,1,1|FF_DEV DV_SR,1500|FF_DEV DV_BE,-1|FF_PC,U,C,arcade/stream/mameoutput/ajax?notext&nogif|FF_PC,U,E,arcade/stream/mameoutput/ajax-superweapon?l=99999&nogif
+lamp1|OFF|FF_BUTTON BUT_B3,BA_OFF,1,1|FF_PC,U,C,arcade/stream/mame/ajax?notext&nogif
 #lamp2 - power up
 #lamp5 - power up
 #lamp3 - game over
