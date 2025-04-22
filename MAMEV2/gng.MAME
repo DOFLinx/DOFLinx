@@ -1,0 +1,66 @@
+##################
+#
+# MAME configration for Ghost And Goblins
+# DOFLinx force feedback configuration file v1
+# Created by MositoFeliz AKAjunkyerd,javiersertaun,flicki,cachulin,etc
+# First version
+##################
+
+[STARTUP]
+
+######################################################
+#BUT_B1 button1-------FOR ACTION BUTTON 1 (FIRE)
+#BUT_B2 button2-------FOR ACTION BUTTON 2 (JUMP)
+######################################################
+
+#KEY_TO_COMMAND=BUT_B1,button1,BUT_B2,button2
+
+##################
+#Start with effect E66 mx MATRIX during 7000 miliseconds (capcom words)
+##################
+
+FF_DOF=E66,7000
+
+
+[SHUTDOWN]
+
+
+[COMMANDS]
+
+#FOR ACTION BUTTON FIRE
+#button1|ON|FF_DOF E198,-1|FF_DOF E199,-1|FF_DOF E233,1
+#FOR ACTION BUTTON JUMP
+#button2|ON|FF_DOF E454,400|FF_DOF E458,400
+
+[SCORE]
+
+vMgpy1P1xUx6CXy9hSPqm1PIQ0jLS2J+x0Bm/VFovCpnr899Q3MV0TgpVO4VtrltFggsGEMIM0IJP2KacqF/QQ==
+eVTpu1GUoSgKgTjV1kR2J1xeAkkwuIZREM3aVt5dgdY+ux7Eg9hNcxfgrXb/b+w/
+DELAY=500
+06H+TWPiN0VEJxdM2T35BygSmp9hKiU2a5xfSrs6sjh3cDdMWwwJDCf3gaC4B9hlxQJyiUCWQpCAp+IRa2klug==
+PDuT/HMPxe9gurPsj92d0uGghAzzrkIo1ykW/IqmgxOkFrGQoMDJIKZmbKco4+j3
+DELAY=500
+
+#killing to ("Woodie Flying monked outfit pigs with Red Eyes" "Purple Armored flying knights" "Blue and Red crows" "Green carnivorous plants" "Blue and purple petite flying and running devils with red wings" "bats" "blue tunic woodie-woodie dancing skeleton") with no mercy, and earning 100 points to your score. 
+SC=100:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E461,200|FF_DOF E221,400
+
+#killing to the zombie with no mercy and earning 200 points to your score.
+SC=200:200:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E451,200|FF_DOF E219,400
+
+#killing to the "magic ivory tower tree evil bowling balls launcher" t with no mercy and earning 300 points to your score
+SC=300:300:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E481,200|FF_DOF E225,400
+
+#killing to the "dumby heart-tatooed giants" with no mercy and earning 500 points to your score
+SC=500:500:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E446,200|FF_DOF E218,400
+
+#killing to the "red flying devils (HALF-STAGE)" "Flying japanese Dragons" with no mercy and earning 1000 points to your score
+SC=1000:1000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E476,2000|FF_DOF E224,800
+
+#killing to the Evil Magic wizard with no mercy and earning 2000 points to your score
+SC=2000:2000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E784,2000
+
+#killing to Flying Satan with no mercy and earning 3000 points to your score
+SC=3000:3000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,3000
+
+#killing to ASTAROTH with no mercy and earning 10000 points to your score
+SC=10000:10000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,4000

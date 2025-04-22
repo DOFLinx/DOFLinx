@@ -1,0 +1,81 @@
+##################
+#
+# MAME configration for gorf
+# DOFLinx force feedback configuration file v5
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
+COLOUR_PALETTE=Red,Blue,Green,Orange
+KEY_TO_COMMAND=BUT_B1,fire
+FF_DOF=E78,-1
+PIXELCADE_REPLACE_LED_MARQUEE_AFTER_ANIMATION=0
+FF_PC=U,E,arcade/stream/mameoutput/gorf_spacecadet
+FF_PC=U,C,arcade/stream/mameoutput/gorf_spacecadet
+BUTTONS_LIT_DELETED=BUT_J1
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+KEY_TO_COMMAND_ADDED=BUT_J1
+
+[COMMANDS]
+lamp0|ON|FF_PC,U,E,arcade/stream/mameoutput/gorf_spacecadet|FF_PC,U,C,arcade/stream/mameoutput/gorf_spacecadet|FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta
+lamp1|ON|FF_PC,U,E,arcade/stream/mameoutput/gorf_spacecaptain|FF_PC,U,C,arcade/stream/mameoutput/gorf_spacecaptain|FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta
+lamp2|ON|FF_PC,U,E,arcade/stream/mameoutput/gorf_spacecolonel|FF_PC,U,C,arcade/stream/mameoutput/gorf_spacecolonel|FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta
+lamp3|ON|FF_PC,U,E,arcade/stream/mameoutput/gorf_spacegeneral|FF_PC,U,C,arcade/stream/mameoutput/gorf_spacegeneral|FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta
+lamp4|ON|FF_PC,U,E,arcade/stream/mameoutput/gorf_spacewarrior|FF_PC,U,C,arcade/stream/mameoutput/gorf_spacewarrior|FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta
+lamp5|ON|FF_PC,U,E,arcade/stream/mameoutput/gorf_spaceavenger|FF_PC,U,C,arcade/stream/mameoutput/gorf_spaceavenger|FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta
+lamp6|ON|FF_Button BUT_J1,BA_ON,0,0
+lamp6|OFF|FF_Button BUT_J1,BA_OFF,0,0
+#lamp7|ON|FF_Button BUT_J1,BA_ON,0,0
+#lamp7|OFF|FF_Button BUT_J1,BA_OFF,0,0
+
+fire|ON|FF_DOF E216,-1
+coin|ON|FF_DOF E78,0
+player1|ON|FF_DOF E78,0
+player2|ON|FF_DOF E78,0
+
+[SCORE]
+vMgpy1P1xUx6CXy9hSPqm1PIQ0jLS2J+x0Bm/VFovCpnr899Q3MV0TgpVO4Vtrlto7DxF9bLdp6WxZFq7sRDlQ==
+eVTpu1GUoSgKgTjV1kR2J1xeAkkwuIZRoIZtKle9oZc+EVhHfRH5sHwKGA4BuLIR
+06H+TWPiN0VEJxdM2T35BygSmp9hKiU2a5xfSrs6sjh3cDdMWwwJDCf3gaC4B9hltDx7RubSmCQuf0SKsY5ISw==
+PDuT/HMPxe9gurPsj92d0uGghAzzrkIodonF1iFBYo0jsHAae4ADQl5GiffOqtdE
+DELAY=5000
+# Base group of ships
+SC=50:90:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white
+# Saucer Galaxian diving
+SC=100:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white|FF_DMD,U,display/picture?path=ingame/score_100&fixed=false
+# orf mission start
+SC=250:250:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white2|FF_DMD,U,display/picture?path=ingame/score_200&fixed=false
+# Gorf & Laser Ship
+SC=300:300:FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white2
+#Flag Ship
+SC=1000:1500:FF_PC,U,E,arcade/stream/mameoutput/generic_explosion-long1?l=3|FF_DMD,U,display/picture?path=ingame/score_1000&fixed=false
+SD=6000:FF_PC,U,E,arcade/stream/mame/gorf?l=99999&nogif
+
+#Astro Battle
+#Invader in formation	50 points
+#Large Invader in mid-air	60 points
+#Medium Invader in mid-air	80 points
+#Small Invader in mid-air	100 points
+#Large Saucer	100 points
+#Small Saucer	200 points
+#Gorf at mission start	250 points
+#Gorf during the battle	300 points
+#Laser Attack
+#Gorf or Laser Guards	100 points
+#Laser Ships	300 points
+#Galaxians
+#Galaxian in formation	50 points
+#Yellow Galaxian diving	60 points
+#Blue Galaxian diving	80 points
+#Red Galaxian diving	100 points
+#Galaxian Flagship or Gorf	300 points
+#Space Warp
+#All attacking fighters	250 points
+#Flag Ship
+#Chipping the Flagship	20 points
+#Escort Gorf	50 points
+#Flagship Chunk in flight	150 points
+#Hitting the Flagship core reactor	1000 points
