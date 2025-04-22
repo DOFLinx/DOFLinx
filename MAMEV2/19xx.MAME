@@ -1,0 +1,59 @@
+##################
+#
+# MAME configration for 19XX
+# DOFLinx force feedback configuration file v10
+# Created by D@VS0ut0
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Silver,BUT_P1,Dodger_Blue,BUT_P2,Dark_red
+COLOUR_PALETTE=White,Silver,Dark_Blue,Dark_red
+KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,bomb
+FF_DOF=E66,-1
+BUTTONS_LIT_ADDED=BUT_B1,BUT_B2,BUT_B9,BUT_B10
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_B1,BUT_B2,BUT_B9,BUT_B10
+
+[COMMANDS]
+fire|ON|FF_DOF E208,1000|FF_DOF E209,1000
+bomb|ON|FF_DOF E137,800
+coin|ON|FF_DOF E66,0
+player1|ON|FF_DOF E66,0
+player2|ON|FF_DOF E66,0
+
+[SCORE]
+zIXQN2WiDZWebAk0VsL9t7MaRzf9SsTuvPPPUmvpVQ9CqAiEOKJuEINh8Uxcfzd9iA4SqgIMogVyDzuuqvh6Ql4SpJu4EV18
+q/euRv96gBNoayidmNUIqGSe36ukw9kR
+Z80X5p5HVrRzbcnANJsGAr9LY56QY8DCx7bT5UAEs1iwrysyiSPngFOSs3VhF8VxAGMbLwSrZgbODDtagsyQH+5KfKM/SfwL
+nZZhxmTq0BpaBg5zhqk+1E9u0MPVA5kB8sRQhCfC5Q8ZUlE5FOB0qnKVVkOitoIUTkC1Yl7mu1niYOdgo0mBtA==
+vMgpy1P1xUx6CXy9hSPqm1PIQ0jLS2J+x0Bm/VFovCpnr899Q3MV0TgpVO4VtrltjknHlbmrhEOkRSXf6X6kImLkPfx35Q41
+eVTpu1GUoSgKgTjV1kR2J1xeAkkwuIZREM3aVt5dgdY+ux7Eg9hNcxfgrXb/b+w/
+06H+TWPiN0VEJxdM2T35BygSmp9hKiU2a5xfSrs6sjh3cDdMWwwJDCf3gaC4B9hlvD6W/TdGN4Ewl2Y0iBa9fdYz19GbKYwF
+PDuT/HMPxe9gurPsj92d0uGghAzzrkIo1ykW/IqmgxOkFrGQoMDJIKZmbKco4+j3
+Mwsgxd3+o20GAhM5XVN9C9ntz5gBi5tsjOvq197qdQhUA6gFvS2UfKezAj9kIyjA3txFENqoZ2pKubYqsx8UZj38U63Xd2MT
+JMKpi6fb68SHEDSkDCLt8MyqkocIVaA+u1fh+8yhhc4tGIYbKb4iLWo3qCn5Jbwe0WMuS29zs1Q=
+r/TM93Nb5SS4l/a4E+xUZNTSNwSZUpZrTV7sMnRU/WyMMDIk6RoG8HTAb8slbe8dwf3XScgk/JZYW0dX/rAc28LOZknCDRB+
+1FZYcfNRJB0JR5diRKb/NqnVXqH5m5WlGvFX5KUdtArOpX8qlkp+Ogsv9q2tTqjhbnFeen/QknA=
+Z1sV5Mrl3zrgLgpEoOfn4wPw5+4btgoOwvH/1/Jc38wffvifAdB2Fd2oD/23nHzdr+9Uz7bR/v4EASSRR50zPP2gYAIqMhCq
+9gHeCgJ8ZNavwkf7w6DlyPx5ImsHiaBrsOGHUqAde5OioZWm/mqJZe9GnXm4njALZGZSpLCeyrqqMNE5SwSWDQ==
+DELAY=2000
+# Planes
+SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Silver|FF_Flasher DV_FLOR,FL_TT,1,450,100,Silver|FF_DOF E221,1000|FF_PC,U,E,animation/overlay/mameoutput/1942_explosion-small|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false
+SC=110:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,white|FF_DOF E223,1000|FF_PC,U,E,animation/overlay/mameoutput/1942_explosion-small|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false
+SC=210:290:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E219,1000|FF_PC,U,E,animation/overlay/mameoutput/1942_explosion-small|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false
+# Medals
+SC=300:300:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E626,1000|FF_DOF E628,1000
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLOR,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLCN,FL_TT,1,450,100,Yellow|FF_DOF E606,1000|FF_DOF E608,1000
+SC=1000:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_Flasher DV_FLCN,FL_TT,1,450,100,Red|FF_DOF E646,1000|FF_DOF E648,1000
+SC=3000:3000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,450,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,450,100,Blue|FF_DOF E656,1000|FF_DOF E658,1000
+# Bomber at start
+SC=1700:1700:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E559,1000|FF_DOF E561,1000|FF_DOF E563,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long1|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
+# Ships, big planes etc
+SC=2000:2000:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E529,1000|FF_DOF E531,1000|FF_DOF E533,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long1|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
+SC=5000:5000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,300,100,Dark_blue|FF_Flasher DV_FLIL,FL_FL,6,300,100,Dark_blue|FF_Flasher DV_FLCN,FL_FL,6,300,100,Dark_blue|FF_Flasher DV_FLIR,FL_FL,6,300,100,Dark_blue|FF_DOF E785,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long1|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
+SC=10000:10000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,300,100,Silver|FF_Flasher DV_FLIL,FL_FL,6,300,100,Dark_blue|FF_Flasher DV_FLCN,FL_FL,6,300,100,Dark_blue|FF_Flasher DV_FLIR,FL_FL,6,300,100,Silver|FF_DOF E779,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long1|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
+SD=5000:FF_PC,U,E,arcade/stream/mame/19xx?l=99999&nogif
+SD=1000:FF_PC,U,M,ministats?livesLabel=!PREFIX_L!&livesValue=!LIVES!&hits=!HITS!
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!

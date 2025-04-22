@@ -1,0 +1,49 @@
+##################
+#
+# MAME configration for 1941
+# DOFLinx force feedback configuration file v9
+# Created By D@vS0ut0
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Orange_Red,BUT_P2,Dark_Green
+COLOUR_PALETTE=White,Blue,Red,Dark_Green,Orange_Red
+KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,Bomb
+FF_DOF=E66,-1
+
+
+[SHUTDOWN]
+
+[COMMANDS]
+fire|ON|FF_DOF E182,1000|FF_DOF E183,1000
+Bomb|ON|FF_DOF E135,2000
+coin|ON|FF_DOF E66,0
+player1|ON|FF_DOF E66,0
+player2|ON|FF_DOF E66,0
+
+[SCORE]
+vMgpy1P1xUx6CXy9hSPqm1PIQ0jLS2J+x0Bm/VFovCpnr899Q3MV0TgpVO4VtrltW5G/MVzWnmX6+DArR6tZ1RMW0h7dfCID
+eVTpu1GUoSgKgTjV1kR2J1xeAkkwuIZREM3aVt5dgdY+ux7Eg9hNcxfgrXb/b+w/
+06H+TWPiN0VEJxdM2T35BygSmp9hKiU2a5xfSrs6sjh3cDdMWwwJDCf3gaC4B9hlvciZmHAvpZ+qonD1CzaDttHXjP9vel4e
+PDuT/HMPxe9gurPsj92d0uGghAzzrkIo1ykW/IqmgxOkFrGQoMDJIKZmbKco4+j3
+DELAY=2000
+
+# Destroy simple plane
+SC=100:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/1942_explosion-small|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false
+# Destroy submarine
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,300,100,Random|FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_Flasher DV_FLOR,FL_TT,1,300,100,Random|FF_DOF E570,1000|FF_DOF E566,1500|FF_DOF E572,1000|FF_PC,U,E,animation/overlay/mameoutput/1943kai_explosion|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
+# Destroy crane, houses, stuff
+SC=1000:1000:FF_Flasher DV_FLOL,FL_TT,1,300,100,Random|FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_Flasher DV_FLOR,FL_TT,1,300,100,Random|FF_DOF E479,1500|FF_DOF E483,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long1|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false
+# Various
+SC=2000:2000:FF_Flasher DV_FLIL,FL_TT,1,300,100,Random|FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_Flasher DV_FLIR,FL_TT,1,300,100,Random|FF_DOF E620,1500|FF_DOF E622,1500|FF_DOF E624,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long2|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
+# Various medium
+SC=5000:5000:FF_Flasher DV_FLOL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIR,FL_TT,1,300,100,Random|FF_Flasher DV_FLOR,FL_TT,1,300,100,Random|FF_DOF E720,1500|FF_DOF E687,1500|FF_DOF E724,1500|FF_PC,U,E,animation/overlay/mameoutput/1943kai_explosion|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false
+# Various high
+SC=10000:10000:FF_Flasher DV_FLOL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIR,FL_TT,1,300,100,Random|FF_Flasher DV_FLOR,FL_TT,1,300,100,Random|FF_DOF E650,1500|FF_DOF E606,1500|FF_DOF E654,1500|FF_DOF E608,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-long1|FF_DMD,U,display/picture?path=ingame/explosion2&fixed=false
+# Holstein
+SC=50000:50000:FF_Colour Orange_Red,RGB_TT,2500|FF_Flasher DV_FLOL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIR,FL_TT,1,300,100,Random|FF_Flasher DV_FLOR,FL_TT,1,300,100,Random|FF_DOF E774,2500
+# Strawberry
+SC=80000:80000:FF_Colour White,RGB_TT,2500|FF_Flasher DV_FLOL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIL,FL_TT,1,300,100,Random|FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_Flasher DV_FLIR,FL_TT,1,300,100,Random|FF_Flasher DV_FLOR,FL_TT,1,300,100,Random|FF_DOF E781,2500|FF_PC,U,E,animation/overlay/mameoutput/pacman_strawberry?|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# Dragonfly
+SC=100000:100000:FF_DV DV_KN,-1|FF_Flasher DV_FLOL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIL,FL_TT,1,300,100,Random|FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_Flasher DV_FLIR,FL_TT,1,300,100,Random|FF_Flasher DV_FLOR,FL_TT,1,300,100,Random|FF_DOF E785,2500|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+SD=5000:FF_PC,U,E,arcade/stream/mame/1941?l=99999&nogif
