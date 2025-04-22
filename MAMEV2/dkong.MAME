@@ -1,0 +1,56 @@
+##################
+#
+# MAME configration for Donkey Kong rev1
+# DOFLinx force feedback configuration file v9
+# 
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Blue,BUT_P2,Dark_red
+COLOUR_PALETTE=White,Blue,Red,Dark_red,Deep_pink,Medium_blue,Golden_rod,Dark_orange
+KEY_TO_COMMAND=BUT_B1,jump
+FF_DOF=E79,-1
+BUTTONS_LIT_ADDED=BUT_B1,BUT_B9
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_B1,BUT_B9
+
+[COMMANDS]
+jump|ON|FF_Flasher DV_FLIL,FL_TT,1,200,Blue|FF_Flasher DV_FLIR,FL_TT,1,200,Blue|FF_DOF E701,500|FF_DOF E703,500
+coin|ON|FF_DOF E79,0
+player1|ON|FF_DOF E79,0
+player2|ON|FF_DOF E79,0
+
+[SCORE]
+Z80X5p5HVrRzbcnANJsGAr9LY56QY8DCx7bT5UAEs1iwrysyiSPngFOSs3VhF8VxNaxRlrvOYavH83OFUM3K1A==
+nZZhxmTq0BpaBg5zhqk+1E9u0MPVA5kB8sRQhCfC5Q8ZUlE5FOB0qnKVVkOitoIUTkC1Yl7mu1niYOdgo0mBtA==
+YcNNpyzxfwzya8dASvgpe92jtgiWyVQZ8eW+XrJJhrX+fY4of9Xn+3iwnkT4aV8KKUkagIjFh3FCVh1MZncACQ==
+TiIzaf+vGan8SRziRJ/85FuoqSDjIjYCm+0tTRqSZ0Zz/NEjuCNAGvcMYNzIRDRK
+vMgpy1P1xUx6CXy9hSPqm1PIQ0jLS2J+x0Bm/VFovCpnr899Q3MV0TgpVO4VtrltP44D0G0n/fs4QCOR9tRq0A==
+eVTpu1GUoSgKgTjV1kR2J1xeAkkwuIZRoIZtKle9oZc+EVhHfRH5sHwKGA4BuLIR
+06H+TWPiN0VEJxdM2T35BygSmp9hKiU2a5xfSrs6sjh3cDdMWwwJDCf3gaC4B9hlrRNtNLMKgng5vBzaQuhBrQ==
+PDuT/HMPxe9gurPsj92d0uGghAzzrkIodonF1iFBYo0jsHAae4ADQl5GiffOqtdE
+Mwsgxd3+o20GAhM5XVN9C9ntz5gBi5tsjOvq197qdQhUA6gFvS2UfKezAj9kIyjALYc3jEFvwMwy5HAOGCT4jg==
+JMKpi6fb68Q4JWWOkpVMfdUK6yTTNJgwYBlvDk8Nohfx5irQlFtbpW0ezhIrGQVKk3mGZLskL4o=
+r/TM93Nb5SS4l/a4E+xUZNTSNwSZUpZrTV7sMnRU/WyMMDIk6RoG8HTAb8slbe8dpRFXchQmpN++UWdRDUhdMg==
+1FZYcfNRJB0JR5diRKb/NqnVXqH5m5WlGvFX5KUdtArOpX8qlkp+Ot9zGJayD9I2NkH9YACmtng=
+# level P1 6229, 6380, 74A3
+obaGfTgA4LxA4+tSa7vghmtjHqFIoY1z6LyZmVtp2bUp1ygijj+N3L2Fye3TBudwH6G74AHvK0CP5DweeyzDAg==
+6xp2jcsBANPiZ4qGNLuHB4VkNHPZP6noqlMzgJQXUBAOIKBvmKwG3u/Xtqu58OCu7e5M7np3ASw=
+# level P2 60BA, 6229, 6380, 74A3, 7621
+6JmeH4KayX/0o/fxAE71cvYfAnA/C3KWAnM0J1a9doQgPo0JU8g9pAf10t1QoUGHoX6uEwY9IrLDfREygdAj2w==
+GxE2NuDUdnF7evS2ZeTYJyh7lfW11CmNLnGIpbNOVCCEdMyxXatVrKzaPYq4Sc61zYAok4Mzy+M=
+DELAY=1000
+
+# 1 Barrel
+SC=100:200:FF_Flasher DV_FLCN,FL_TT,1,500,100,Random|FF_DOF E715,1000|FF_DOF E719,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_100|FF_DMD,U,display/picture?path=ingame/score_100&fixed=false
+# Hitting barrel
+SC=300:300:FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,450,100,Lime|FF_Flasher DV_FLOR,FL_TT,1,450,100,Lime|FF_DOF E505,1100|FF_DOF E507,1100|FF_PC,U,E,arcade/stream/mameoutput/dkong_explosion?l=1|FF_DMD,U,display/picture?path=ingame/score_300&fixed=false
+# Bonus
+SC=600:5000:FF_Colour Medium_blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_DOF E778,1500|FF_PC,U,E,arcade/stream/mameoutput/dkong_bonus?l=4|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+#Milestones
+SE=10000:10000:10:FF_DEV DV_KN,-1|FF_Colour Magenta,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_DOF E635,1000|FF_DOF E621,1000|FF_DOF E637,1000|FF_DOF E623,1000|FF_DOF E639,1000|FF_PC,U,E,arcade/stream/mameoutput/generic_milestone?l=15|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+SD=8000:FF_PC,U,E,arcade/stream/mame/dkong|FF_DMD,U,display/picture?path=mame/dkong&fixed=false
+SD=1000:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&livesLabel=!PREFIX_L!&livesValue=!LIVES!
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!
