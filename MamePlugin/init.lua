@@ -1,10 +1,13 @@
 -- For use with DOFLinx
 -- By DDH69
 -- For DOFLinx documentation go here https://doflinx.github.io/docs/
+--
+-- For Windows Mame must be >=0.267 as sockets lock in versions prior to that
+-- For Linux
 
 local exports = {
 	name = "doflinx",
-	version = "1",
+	version = "2",
 	description = "DOFLinx plugin",
 	license = "",
 	author = { name = "DDH69" } }
@@ -20,9 +23,14 @@ function doflinx.startplugin()
 
 	local cpu
 	local offset = 0
-	local socket = emu.file("rwc")
-	socket:open("socket.127.0.0.1:8069")
-    local ver="1"
+	if package.config:sub(1,1)=="/" then
+	 	mode="U"
+	else
+		mode="W"
+		socket = emu.file("rwc")
+		socket:open("socket.127.0.0.1:8069")
+	end
+    local ver="2"
 
 	local function chksum(str)
 		local k = 0
@@ -31,7 +39,15 @@ function doflinx.startplugin()
 	end
 		
 	local function sendmsg(str)
-    	socket:write("!" .. str .. "#" .. chksum(str) .. string.char(13))
+		local snd = "!" .. str .. "#" .. chksum(str)
+		if mode == "U" then
+			snd = manager.machine.options.entries.pluginspath:value() .. "/doflinx/DLSocket w " .. string.char(34) .. snd .. string.char(34)
+			pot=io.popen(snd)
+			pot:close()
+		else
+			snd = snd .. string.char(13)
+    		socket:write(snd)
+		end
 	end
 	
 	local function pap(str,i)
@@ -90,10 +106,16 @@ function doflinx.startplugin()
 			end
 	    end
 		local d = ""
-		repeat
-			local read = socket:read(150)
-			d = d .. read
-		until #read == 0
+		if mode == "W" then
+			repeat
+				local read = socket:read(150)
+				d = d .. read
+			until #read == 0
+		else
+			pin=io.popen(manager.machine.options.entries.pluginspath:value() .. "/doflinx/DLSocket r")
+			d=pin:read("*a")
+			pin:close()
+		end
 		if #d == 0 then
 			return
 		end
@@ -119,20 +141,26 @@ function doflinx.startplugin()
                 	    sendmsg("cheat_status=1")
 					else
     	                sendmsg("cheat_status=0")
-					end  
+					end
+				elseif cmd == "t" then 
+					th=emu.thread()
+					th:start(pap(pkt,1))
+					sendmsg(th:result())
 				elseif cmd == "m" then
 					local out = pap(pkt,1) .. "=" 
 					if out then
 					    cpu=manager.machine.devices[pap(pkt,2)]
 						if cpu then
 			        	    mem=cpu.spaces[pap(pkt,4)]
-							out = out .. string.format("%.1X",mem:read_i8(0xfab) & 0xf)
-							local a=tonumber(pap(pkt,5),16)
-						    for r = 0, tonumber(pap(pkt,6),16)-1 do
-							    b=mem:read_u8(a+r+offset)
-							    out = out .. string.format("%.2X", b) .. string.format("%.1X", (mem:read_i8(a+r+offset+0x1F)) & 0xf)
-					        end
-							sendmsg(out)
+							if mem then
+								out = out .. string.format("%.1X",mem:read_i8(0xfab) & 0xf)
+								local a=tonumber(pap(pkt,5),16)
+						    	for r = 0, tonumber(pap(pkt,6),16)-1 do
+								    b=mem:read_u8(a+r+offset)
+								    out = out .. string.format("%.2X", b) .. string.format("%.1X", (mem:read_i8(a+r+offset+0x1F)) & 0xf)
+						        end
+								sendmsg(out)
+							end
 					    end
 					end
 				elseif cmd == "M" then
@@ -141,13 +169,15 @@ function doflinx.startplugin()
 					    cpu=manager.machine.devices[pap(pkt,2)]
 						if cpu then
 			        	    mem=cpu.spaces[pap(pkt,4)]
-							out = out .. string.format("%.4X",mem:read_i16(0xfab) & 0xffff)
-							local a=tonumber(pap(pkt,5),16)
-						    for r = 0, tonumber(pap(pkt,6),16)-1 do
-							    b=mem:read_u16(a+r+offset)
-							    out = out .. string.format("%.4X", b) .. string.format("%.4X", (mem:read_i16(a+r+offset+0x7F)) & 0xffff)
-					        end
-							sendmsg(out)
+							if mem then
+								out = out .. string.format("%.4X",mem:read_i16(0xfab) & 0xffff)
+								local a=tonumber(pap(pkt,5),16)
+						    	for r = 0, tonumber(pap(pkt,6),16)-1 do
+								    b=mem:read_u16(a+r+offset)
+								    out = out .. string.format("%.4X", b) .. string.format("%.4X", (mem:read_i16(a+r+offset+0x7F)) & 0xffff)
+						        end
+								sendmsg(out)
+							end
 					    end
 					end
 				elseif cmd == "n" then
@@ -156,13 +186,15 @@ function doflinx.startplugin()
 					    cpu=manager.machine.devices[pap(pkt,2)]
 						if cpu then
 			        	    mem=cpu.spaces[pap(pkt,4)]
-							out = out .. string.format("%.8X",mem:read_i32(0xfab) & 0xffffffff)
-							local a=tonumber(pap(pkt,5),16)
-						    for r = 0, tonumber(pap(pkt,6),16)-1 do
-							    b=mem:read_u32(a+r+offset)
-							    out = out .. string.format("%.8X", b) .. string.format("%.8X", (mem:read_i32(a+r+offset+0x7F)) & 0xffffffff)
-					        end
-							sendmsg(out)
+							if mem then
+								out = out .. string.format("%.8X",mem:read_i32(0xfab) & 0xffffffff)
+								local a=tonumber(pap(pkt,5),16)
+						    	for r = 0, tonumber(pap(pkt,6),16)-1 do
+								    b=mem:read_u32(a+r+offset)
+								    out = out .. string.format("%.8X", b) .. string.format("%.8X", (mem:read_i32(a+r+offset+0x7F)) & 0xffffffff)
+						        end
+								sendmsg(out)
+							end
 					    end
 					end
 				elseif cmd == "N" then
@@ -171,13 +203,15 @@ function doflinx.startplugin()
 					    cpu=manager.machine.devices[pap(pkt,2)]
 						if cpu then
 			        	    mem=cpu.spaces[pap(pkt,4)]
-							out = out .. string.format("%.16X",mem:read_i64(0xfeb) & 0xffffffffffffffff)
-							local a=tonumber(pap(pkt,5),16)
-						    for r = 0, tonumber(pap(pkt,6),16)-1 do
-							    b=mem:read_u64(a+r+offset)
-							    out = out .. string.format("%.16X", b) .. string.format("%.16X", (mem:read_i64(a+r+offset+0x7FF)) & 0xffffffffffffffff)
-					        end
-							sendmsg(out)
+							if mem then
+								out = out .. string.format("%.16X",mem:read_i64(0xfeb) & 0xffffffffffffffff)
+								local a=tonumber(pap(pkt,5),16)
+						    	for r = 0, tonumber(pap(pkt,6),16)-1 do
+							    	b=mem:read_u64(a+r+offset)
+							    	out = out .. string.format("%.16X", b) .. string.format("%.16X", (mem:read_i64(a+r+offset+0x7FF)) & 0xffffffffffffffff)
+					        	end
+								sendmsg(out)
+							end
 					    end
 					end
 				elseif cmd == "o" then
@@ -199,8 +233,23 @@ function doflinx.startplugin()
 		  				end
 					end
 					sendmsg("score_b=")
+				elseif cmd == "t" then
+					sendmsg("t=" .. mode)
+				elseif cmd == "T" then
+					mode=pap(pkt,1)
+					if mode == "W" then
+						socket = emu.file("rwc")
+						socket:open("socket.127.0.0.1:8069")
+					else
+						socket:close()					
+					end
 				elseif cmd == "V" then	
 					sendmsg("pv=" .. ver)
+				elseif cmd =="x" then
+  					ex=io.popen(pap(pkt,1))
+					rs=ex:read("*a")
+					ex:close()
+					sendmsg("x=" .. rs)
 				else
 					sendmsg("??")
 				end
