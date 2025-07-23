@@ -1,0 +1,31 @@
+##################
+#
+# MAME configuration that is applied to all games before the game file itself is processed
+# DOFLinx force feedback configuration file v11
+#
+##################
+
+[STARTUP]
+fqVqDgieK1+yQ333LIB430UOpW8OKC+bQD3ASguBrvc=
+SHOW_SCORE=1
+FF_PC=U,A,arcade/stream/mameoutput/startup_insertcoin1?notext
+FF_PC=U,E,ledstrip/manufacturer?rom=!ROM!
+FF_DMD=U,display/picture?path=mameoutput/startup_insertcoin4&duration=6000
+LOAD_SOUND=CoinIn,100,SIDE,Coin_In_1,Coin_In_2,Coin_In_3
+LOAD_SOUND=Reset,100,REAR,Reset
+LOAD_SOUND=PauseOn,100,REAR,Pause_On
+LOAD_SOUND=PauseOff,100,REAR,Pause_Off
+LOAD_SOUND=CheatOn,100,REAR,Cheat_On
+LOAD_SOUND=CheatOff,100,REAR,Cheat_Off_1,Cheat_Off_2
+
+[SHUTDOWN]
+
+[COMMANDS]
+pause|ON|FF_SSF PauseOn|FF_BUTTON BUT_PS,BA_FD,10000,1000|FF_PC S,C,GAME%20PAUSED|FF_PC,U,A,arcade/stream/mameoutput/startup_pause?notext|FF_DMD,U,display/picture?path=ingame/pause&duration=-1
+pause|OFF|FF_SSF PauseOff|FF_BUTTON BUT_PS,BA_OFF,0,0|FF_PC S,C,%20|FF_PC,U,A,arcade/stream/mame/!ROM!?l=99999&nogif|FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
+reset|ON|FF_SSF Reset|FF_DOF E141,3000|FF_PC S,C,GAME%20RESET|FF_PC,U,A,arcade/stream/mameoutput/startup_reset?notext|FF_DMD,U,display/picture?path=mameoutput/startup_reset&duration=4
+cheat_status|ON|FF_BUTTON BUT_CH,BA_ON,0,0
+cheat_status|OFF|FF_BUTTON BUT_CH,BA_OFF,0,0
+cheat|ON|FF_SSF CheatOn|FF_BUTTON BUT_CH,BA_ON,0,0|FF_Colour Yellow,RGB_TT,3000|FF_Flasher DV_FLOL,FL_TT,1,2500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,2500,100,Yellow|FF_Flasher DV_FLCN,FL_TT,1,2500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,2500,100,Yellow|FF_Flasher DV_FLOR,FL_TT,1,2500,100,Blue|FF_DOF E740,2500|FF_DOF E746,2500|FF_DOF E742,2500|FF_DOF E748,2500|FF_DOF E744,2500|FF_PC S,C,CHEAT%20ON|FF_PC,U,A,arcade/stream/mameoutput/startup_cheat?notext|FF_DMD,U,display/picture?path=mameoutput/startup_cheat&duration=4
+cheat|OFF|FF_SSF CheatOff|FF_BUTTON BUT_CH,BA_OFF,0,0|FF_Colour Lawn_Green,RGB_TT,2000|FF_Flasher DV_FLOL,FL_TT,1,2000,100,Lawn_Green|FF_Flasher DV_FLIL,FL_TT,1,2000,100,Lawn_Green|FF_Flasher DV_FLCN,FL_TT,1,2000,100,Lawn_Green|FF_Flasher DV_FLIR,FL_TT,1,2000,100,Lawn_Green|FF_Flasher DV_FLOR,FL_TT,1,2000,100,Lawn_Green|FF_DOF E735,2000|FF_DOF E736,2000|FF_DOF E737,2000|FF_DOF E738,2000|FF_DOF E739,2000|FF_PC S,C,CHEAT%20OFF|FF_DMD,U,display/picture?path=ingame/cheatoff&duration=4
+Coin|ON|FF_SSF CoinIn|FF_PC S,C,COIN%20IN&t=3|FF_PC,U,A,arcade/stream/black/dummy|FF_PC,U,A,arcade/stream/mameoutput/startup_coin1?l=3&notext|FF_PC,U,A,arcade/stream/mameoutput/startup_insertcoin1?l=999&notext|FF_DMD,U,display/picture?path=mameoutput/startup_coin2&duration=3|FF_DMD,U,display/picture?path=mameoutput/startup_insertcoin4&duration=6000&queue
