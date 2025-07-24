@@ -1,0 +1,67 @@
+##################
+#
+# MAME configration for pacman
+# DOFLinx force feedback configuration file v14
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Blue,BUT_P1,Magenta,BUT_P2,Cyan
+COLOUR_PALETTE=Yellow,Red,Cyan,Magenta,Orange,Blue
+FF_DOF=E63,-1
+FE=0C41343F364F35303B313A49382E2D3939472F211C23343332171E211817
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+
+[COMMANDS]
+coin|ON|FF_DOF E63,0
+player1|ON|FF_DOF E63,0
+player2|ON|FF_DOF E63,0
+
+[SCORE]
+FE=0D3643421D2961624E67574A51556248636750635F4F5051671E2E292C6216
+FE=024148525127473D48222524
+FE=073D4948232F6768546D5D50575B684E696D5669655556576D24342432681C
+FE=00444A54532927262529234949463C40472B444C4E523B4B3C
+FE=0152444329356D6E5A7363565D616E546F735C6F6B5B5C5D732A5A2C236E24
+FE=004D45442A2827262A244A4A473D41392C514353414D4D3E
+FE=054E44432531696A566F5F52595D6A506B6F586B675758596F265628236A20
+FE=0B423E3D1F1D1C1B1F193F3F3C32362E2146384836424233
+FE=09433C3B212D6566526B5B4E5559664C676B5467635354556B22321D1F661A
+FE=0745453D3C22201F1E221C373345183D3E4E3C4848391F3E5A665461
+FE=044E414026326A6B577060535A5E6B516C70596C6858595A70273722236B1F
+FE=02504A4241272524232126203B37491C504252404C4C3D23425A6A585E
+DELAY=3000
+# dot
+SC=10:10:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E218,-1
+# Power pellet
+SC=50:60:FF_Flasher DV_FLIL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLIR,FL_TT,1,450,100,Orange|FF_DOF E225,-1|FF_PC,U,E,animation/overlay/mameoutput/pacman_powerpellet|FF_DMD,U,display/picture?path=mameoutput/pacman_powerpellet&fixed=false
+# 1 Ghost
+SC=200:210:FF_Flasher DV_FLOL,FL_FL,4,300,100,Blue|FF_Flasher DV_FLOR,FL_FL,4,300,100,Blue|FF_DOF E461,1000|FF_PC,U,E,animation/overlay/mameoutput/pacman_ghost200|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost200&fixed=false
+# 2 Ghosts
+SC=400:410:FF_Flasher DV_FLOL,FL_FL,8,300,100,Cyan|FF_Flasher DV_FLOR,FL_FL,8,300,100,Cyan|FF_DOF E455,1000|FF_DOF E457,1000|FF_PC,U,E,animation/overlay/mameoutput/pacman_ghost400|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost400&fixed=false
+# 3 Ghosts
+SC=800:810:FF_Flasher DV_FLCN,FL_FL,12,350,100,Cyan|FF_Flasher DV_FLOL,FL_FL,12,350,100,Cyan|FF_Flasher DV_FLOR,FL_FL,12,350,100,Cyan|FF_DOF E464,1200|FF_DOF E466,1200|FF_DOF E468,1200|FF_PC,U,E,animation/overlay/mameoutput/pacman_ghost800|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost800&fixed=false
+# 4 Ghosts
+SC=1600:1610:FF_Flasher DV_FLOL,FL_FL,6,350,100,Random|FF_Flasher DV_FLIL,FL_FL,6,350,100,Random|FF_Flasher DV_FLCN,FL_FL,6,350,100,Random|FF_Flasher DV_FLIR,FL_FL,6,350,100,Random|FF_Flasher DV_FLOR,FL_FL,6,350,100,Random|FF_DOF E770,2500|FF_PC,U,E,animation/overlay/mameoutput/pacman_ghost1600|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost1600&fixed=false
+# Cherry
+SC=100:100:FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLIL,FL_TT,1,450,100,Red|FF_Flasher DV_FLIR,FL_TT,1,450,100,Red|FF_DOF E611,1000|FF_DOF E613,1000|FF_PC,U,E,animation/overlay/mameoutput/pacman_cherry|FF_DMD,U,display/picture?path=mameoutput/pacman_cherry&fixed=false
+# Strawberry
+SC=300:300:FF_Colour Orange_Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_TT,1,500,100,Orange_Red|FF_Flasher DV_FLIL,FL_TT,1,500,100,Orange_Red|FF_Flasher DV_FLIR,FL_TT,1,500,100,Orange_Red|FF_DOF E640,1000|FF_DOF E642,1000|FF_DOF E644,1000|FF_PC,U,E,animation/overlay/mameoutput/pacman_strawberry|FF_DMD,U,display/picture?path=mameoutput/pacman_straberry&fixed=false
+# Orange
+SC=500:500:FF_Colour Orange,RGB_TT,1500|FF_Flasher DV_FLCN,FL_FL,4,500,100,Orange|FF_Flasher DV_FLIL,FL_FL,4,500,100,Orange|FF_Flasher DV_FLIR,FL_FL,4,500,100,Orange|FF_DOF E640,1000|FF_DOF E641,1000|FF_DOF E642,1000|FF_DOF E643,1000|FF_DOF E644,1000|FF_PC,U,E,animation/overlay/mameoutput/pacman_orange|FF_DMD,U,display/picture?path=mameoutput/pacman_orange&fixed=false
+# apple
+SC=700:700:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,animation/overlay/mameoutput/pacman_apple|FF_DMD,U,display/picture?path=mameoutput/pacman_apple&fixed=false
+# Melon
+SC=1000:1000:FF_Dev DV_MC,-1|FF_Colour Cyan,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIL,FL_FL,6,500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIR,FL_FL,6,500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Cyan|FF_DOF E570,1400|FF_DOF E576,1400|FF_DOF E587,1400|FF_PC,U,E,animation/overlay/mameoutput/pacman_melon|FF_DMD,U,display/picture?path=mameoutput/pacman_melon&fixed=false
+# Galaxian
+SC=2000:2000:FF_Dev DV_KN,-1|FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E624,1400|FF_DOF E622,1400|FF_DOF E606,1400|FF_DOF E608,1400|FF_PC,U,E,animation/overlay/mameoutput/pacman_galaxian|FF_DMD,U,display/picture?path=mameoutput/pacman_galaxian&fixed=false
+# Bell
+SC=3000:3000:FF_Dev DV_KN,-1|FF_Colour Yellow,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLIL,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLCN,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLIR,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLOR,FL_FL,6,500,100,Yellow|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,animation/overlay/mameoutput/pacman_bell|FF_DMD,U,display/picture?path=mameoutput/pacman_bell&fixed=false
+# Key
+SC=5000:5000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,Random|FF_Flasher DV_FLIL,FL_FL,6,300,100,Random|FF_Flasher DV_FLCN,FL_FL,6,300,100,Random|FF_Flasher DV_FLIR,FL_FL,6,300,100,Random|FF_Flasher DV_FLOR,FL_FL,6,300,100,Random|FF_DOF E786,2500|FF_PC,U,E,animation/overlay/mameoutput/pacman_key|FF_DMD,U,display/picture?path=mameoutput/pacman_key&fixed=false
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
+RE=1:1:255:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true|FF_PC,U,A,/stats?label=!PREFIX_R!&value=!ROUND!&separator=solid
+SD=1000:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&livesLabel=!PREFIX_L!&livesValue=!LIVES!
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!

@@ -1,0 +1,84 @@
+##################
+#
+# MAME configration for galaga
+# DOFLinx force feedback configuration file v28
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
+COLOUR_PALETTE=White,Red,Blue,Green
+KEY_TO_COMMAND=BUT_B1,fire
+FF_DOF=E63,-1
+BUTTONS_LIT_ADDED=BUT_B1,BUT_B9
+FE=05483B463D563C37423841503F353440404E3628232E3B3A391E29201F1E1934322928232F3B3A391E29281F1E
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_B1,BUT_B9
+
+[COMMANDS]
+led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201,animation/overlay/mameoutput/startup_player1-blue,arcade/stream/mameoutput/startup_player1-blue?notext,display/text?text=Select%20%201%7CPlayer&size=M&font=BTTF&color=1E90FF&bordersize=0&duration=-1
+led0|OFF|FF_Button BUT_P1,BA_OFF,0,0
+led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202,animation/overlay/mameoutput/startup_player2-green,arcade/stream/mameoutput/startup_player2-green?notext,display/text?text=Select%20%201%20%20or%20%202%7CPlayers&size=M&font=BTTF&color=00FA9A&bordersize=0&duration=-1&cleanbg=true
+led1|OFF|FF_Button BUT_P2,BA_OFF,0,0
+fire|ON|FF_DOF E212,-1|FF_DOF E213,-1
+coin|ON|FF_DOF E63,0
+coin|OFF|FF_DOF E54,0
+player1|ON|FF_DOF E63,0
+player2|ON|FF_DOF E63,0
+
+[SCORE]
+FE=03404D4C27336B6C587161545B5F6C526D715A6D69595A5B712D2B38236C20
+FE=0A39404A491F36411B1E1E
+FE=0D3743421D2961624E67574A51556248636750635F4F50516723222A1C6216
+FE=073D434D4C22201F1E221C3D433A2E304B243D45474B3444351C32403230344D4B
+FE=054B4B4A2531696A566F5F52595D6A506B6F586B675758596F2B29241F6A1E
+FE=0C443E48471D1B1A191D17322E40132C434549324233
+FE=0251434228346C6D597262555C606D536E725B6E6A5A5B5C722D27592A6D28
+FE=0D4038371D1B1A1F20171B15363C332738441D423444323E3E2F
+FE=0B483E3D1F2B63645069594C5357644A656952656151525369241E4F1C641F
+FE=0845414022201F24251C201A3B41382C3D492247394937434334
+FE=0B413A391F2B63645069594C5357644A65695265615152536925231C196418
+FE=0C404038371D1B1A19171C16312D3F1246384836424233193F3333393B
+FE=0646434224306869556E5E51585C694F6A6E576A665657586E2A28211E691D
+FE=0A42423E3D1F1D1C1B191E18332F4114483A4A384444351B4135353B3D
+FE=0F4336351B275F604C6555484F53604661654E615D4D4E4F65211F18166014
+FE=0B474139381E1C1B1A1E18332F4114393A4A384444351B41412D322F
+FE=0B473E3D1F2B63645069594C5357644A65695265615152536925231C1A6418
+FE=02504A46452725242327213C384A1D424353414D4D3E244A4A363B38
+FE=0C3C39381E2A62634F68584B5256634964685164605051526824221D1C6318
+FE=0840443C3B211F1E1D211B363244173C3D4D3B4747381E395963611918201A
+FE=0444454426326A6B577060535A5E6B516C70596C6858595A702C2A25246B20
+FE=01474B47462826252428223D394B1E434454424E4E3F2540606A68201F2721
+FE=0351424127336B6C587161545B5F6C526D715A6D69595A5B712D2B26276C21
+FE=084C443C3B211F1E1D211B363244173C3D4D3B4747381E44585E626018171B2827
+FE=0153484729356D6E5A7363565D616E546F735C6F6B5B5C5D732F2D28296E23
+FE=0C48403C3B1D1B1A191D17322E4013383949374343341A40545A5E5C1413172423
+DELAY=5000
+# A single ship stationary or in flight
+SC=50:160:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/galaga_shipinflight-exploding|FF_DMD,U,display/picture?path=mameoutput/galaga_shipinflight-exploding|FF_PC,U,D,ledstrip/zone/left_matrix/effect/explosion_galaga?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=220&loops=1|FF_PC,U,D,ledstrip/zone/right_matrix/effect/explosion_galaga?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=220&loops=1
+# Boss Ship in flight
+SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,E,animation/overlay/mameoutput/galaga_bossinflight-exploding|FF_DMD,U,display/picture?path=mameoutput/galaga_bossinflight-exploding|FF_PC,U,D,ledstrip/zone/left_matrix/effect/matrix_explosion_radial?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=220&loops=1|FF_PC,U,D,ledstrip/zone/right_matrix/effect/matrix_explosion_radial?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=220&loops=1
+
+# Boss ship in flight 1 wingman
+SC=800:800:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/galaga_bossinflight-exploding|FF_DMD,U,display/picture?path=mameoutput/galaga_bossinflight-exploding
+# Boss ship in flight 2 wingman
+SC=1600:1600:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,100|FF_DOF E703,100|FF_DOF E699,1000|FF_PC,U,E,animation/overlay/mameoutput/galaga_bossinflight-exploding|FF_DMD,U,display/picture?path=mameoutput/galaga_bossinflight-exploding
+# A challenge stage not perfect
+SC=2000:9500:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,animation/overlay/mameoutput/galaga_challengenotperfect?l=1|FF_DMD,U,display/picture?path=mameoutput/galaga_challengenotperfect
+# Challenge Stage Perfect
+SC=10000:10000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500|FF_PC,U,E,animation/overlay/mameoutput/galaga_challengeperfect|FF_DMD,U,display/picture?path=mameoutput/galaga_challengeperfect|FF_PC,U,D,ledstrip/zone/score_matrix/effect/mame_galaga?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=220&loops=1
+# First New Ship
+ST=30000:FF_Dev DV_MC,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,E,animation/overlay/mameoutput/galaga_newship|FF_DMD,U,display/picture?path=mameoutput/galaga_newship
+# Subsequent New Ships
+SE=80000:80000:10:FF_Dev DV_MC,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800|FF_PC,U,E,animation/overlay/mameoutput/galaga_newship|FF_DMD,U,display/picture?path=mameoutput/galaga_newship
+SD=100:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini
+SD=30000:FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
+RE=1:1:200:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/chase_wave?r=0&g=255&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/chase_wave?r=0&g=255&b=255&speed=255&intensity=255&loops=1
+RE=2:1:200:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=solid
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1
+####
+# If you have a Pixelcade, you can uncomment the line below (remove the # at the beginning) and get ongoing stats
+#SD=50:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=solid
