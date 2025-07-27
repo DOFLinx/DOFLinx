@@ -1,0 +1,39 @@
+##################
+#
+# MAME configration for Centipede
+# DOFLinx force feedback configuration file v9
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
+COLOUR_PALETTE=White,Red,Blue,Green
+KEY_TO_COMMAND=BUT_B1,fire
+FF_DOF=E78,-1
+FE=0E3F323D344D332E392F3847362C2B3737452D201A1D181C1A19181316
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+
+[COMMANDS]
+led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201,animation/overlay/mameoutput/startup_player1-blue,arcade/stream/mameoutput/startup_player1-blue?notext,display/text?text=Select%20%201%7CPlayer&size=M&font=BTTF&color=1E90FF&bordersize=0&duration=-1
+led0|OFF|FF_Button BUT_P1,BA_OFF,0,0
+led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202,animation/overlay/mameoutput/startup_player2-green,arcade/stream/mameoutput/startup_player2-green?notext,display/text?text=Select%20%201%20%20or%20%202%7CPlayers&size=M&font=BTTF&color=00FA9A&bordersize=0&duration=-1&cleanbg=true
+led1|OFF|FF_Button BUT_P2,BA_OFF,0,0
+fire|ON|FF_DOF E216,-1
+coin|ON|FF_DOF E78,0
+player1|ON|FF_DOF E78,0
+player2|ON|FF_DOF E78,0
+
+[SCORE]
+FE=084B3D3C222E6667536C5C4F565A674D686C5568645455566C30256922
+FE=0548403F25232225241F231D434340364941254A3C4C3A464637
+DELAY=5000
+# A simple regular action
+SC=10:50:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/centipede-explosion2
+# 
+SC=51:299:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,E,animation/overlay/mameoutput/centipede-explosion2
+SC=300:600:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000|FF_PC,U,E,animation/overlay/mameoutput/centipede-explosion1
+#
+SC=600:1000:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_DOF E699,1000|FF_PC,U,E,animation/overlay/mameoutput/centipede-explosion1
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false

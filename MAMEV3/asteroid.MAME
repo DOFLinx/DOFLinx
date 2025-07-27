@@ -1,0 +1,36 @@
+##################
+#
+# MAME configration for Asteroid
+# DOFLinx force feedback configuration file v7
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
+COLOUR_PALETTE=White,Red,Blue,Green
+KEY_TO_COMMAND=BUT_B1,fire
+FF_DOF=E78,-1
+FE=014C3F4A415A403B463C45544339384444523A2D272A25292726252023
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+
+[COMMANDS]
+led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201,animation/overlay/mameoutput/startup_player1-blue,arcade/stream/mameoutput/startup_player1-blue?notext,display/text?text=Select%20%201%7CPlayer&size=M&font=BTTF&color=1E90FF&bordersize=0&duration=-1
+led0|OFF|FF_Button BUT_P1,BA_OFF,0,0
+led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202,animation/overlay/mameoutput/startup_player2-green,arcade/stream/mameoutput/startup_player2-green?notext,display/text?text=Select%20%201%20%20or%20%202%7CPlayers&size=M&font=BTTF&color=00FA9A&bordersize=0&duration=-1&cleanbg=true
+led1|OFF|FF_Button BUT_P2,BA_OFF,0,0
+fire|ON|FF_DOF E216,-1
+coin|ON|FF_DOF E78,0
+player1|ON|FF_DOF E78,0
+player2|ON|FF_DOF E78,0
+
+[SCORE]
+FE=005345442A366E6F5B7464575E626F5570745D706C5C5D5E742C287126
+FE=06473F3E2422212024221D434340363A41254A3C4C3A464637
+FE=054E44432531696A566F5F52595D6A506B6F586B675758596F27256C21
+FE=0A433F3E201E1D1C201E193F3F3C32363D2146384836424233
+DELAY=5000
+# 
+SC=10:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/asteroids-explosion
+SD=5000:FF_PC,U,E,arcade/stream/mame/asteroid|FF_DMD,U,display/picture?path=mame/asteroid&fixed=false
