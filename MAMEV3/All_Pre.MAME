@@ -6,7 +6,7 @@
 ##################
 
 [STARTUP]
-fqVqDgieK1+yQ333LIB430UOpW8OKC+bQD3ASguBrvc=
+FE=0244435B4D494F4E243A443A3F5B5F68
 SHOW_SCORE=1
 FF_PC=U,A,arcade/stream/mameoutput/startup_insertcoin1?notext
 FF_PC=U,E,ledstrip/manufacturer?rom=!ROM!
