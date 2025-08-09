@@ -1,0 +1,37 @@
+##################
+#
+# MAME configration for truxton
+# DOFLinx force feedback configuration file v5
+#
+##################
+###
+# for noting, truxton seems to swap the P1 / P2 scores betwee 81d0e,4 and 81d50,4 with an indicator at 81d25,1 =1 for P1 and 5 for P2
+# just not handling the complexity of scores without a fixed location yet.  As such this one is really limited to a single player setup
+####
+
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Lime,BUT_P1,Orchid,BUT_P2,Pale_Green
+COLOUR_PALETTE=Yellow_Green,Dark_khaki,Dark_golden_rod,Dark_olive_green,Orange_red,Lime
+KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,bomb
+FF_DOF=E73,7000
+FE=0C41343F364F35303B313A49382E2D3939472F231C1F1A253231302F141F16242322
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+
+[COMMANDS]
+fire|ON|FF_DOF E214,-1
+bomb|ON|FF_DOF E139,2000
+
+[SCORE]
+FE=064D3F3E24306869556E5E51585C694F6A6E576A665657586E2921531E52682E
+FE=014C4443292726252927224848453B3F462A434B4D513A4A3B
+DELAY=5000
+SC=40:1000:FF_Flasher DV_FLCN,FL_TT,1,500,100,Random|FF_Flasher DV_FLIL,FL_TT,1,500,100,Random|FF_Flasher DV_FLIR,FL_TT,1,500,100,Random|FF_DOF E695,-1|FF_DOF E701,-1|FF_DOF E697,-1|FF_DOF E703,-1|FF_DOF E699,-1|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5
+#Power Up
+SC=5000:5000:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,animation/overlay/mameoutput/generic_bonus
+# Set a couple of milestones
+ST=70000:FF_Dev DV_MC,-1|FF_Flasher DV_FLOL,FL_FL,6,550,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_DOF E773,1800|FF_PC,U,E,animation/overlay/mameoutput/generic_extralife
+SE=200000:200000:100:FF_Dev DV_MC,-1|FF_Flasher DV_FLOL,FL_FL,6,600,100,Random|FF_Flasher DV_FLOR,FL_FL,6,600,100,Random|FF_Flasher DV_FLIL,FL_FL,6,600,100,Random|FF_Flasher DV_FLIR,FL_FL,6,600,100,Random|FF_Flasher DV_FLCN,FL_FL,6,600,100,Random|FF_DOF E781,1900|FF_PC,U,E,animation/overlay/mameoutput/generic_extralife
+SD=5000:FF_PC,U,E,arcade/stream/mame/truxton|FF_DMD,U,display/picture?path=mame/truxton&fixed=false

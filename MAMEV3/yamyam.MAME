@@ -1,0 +1,39 @@
+##################
+#
+# MAME configration for yamyam
+# DOFLinx force feedback configuration file v2
+#
+# NOTE : The only known score address is the current score, not specifically P1 / P2.  As such, until this is found, only the current score is shown.
+#        This will work for single player, but a little odd for 2 player
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
+COLOUR_PALETTE=White,Red,Blue,Green
+KEY_TO_COMMAND=BUT_B1,fire
+FF_DOF=E78,-1
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+
+[COMMANDS]
+fire|ON|FF_DOF E216,-1
+coin|ON|FF_DOF E78,0
+player1|ON|FF_DOF E78,0
+player2|ON|FF_DOF E78,0
+
+[SCORE]
+FE=084B3D3C222E6667536C5C4F565A674D686C5568645455566C34271D1D671E
+FE=0548403F25232221251F454542383C342740484A4E374738
+FE=0C17463C3B1D2961624E67574A51556257636750635F4F505167221C4D1A622C
+FE=0E153E3A391B1918171B15363C332729441D423444323E3E2F
+DELAY=5000
+# A simple regular action
+SC=50:499:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1
+# 
+SC=500:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800
+# 
+SC=1001:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000
+# 
+SC=10000:10000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500
