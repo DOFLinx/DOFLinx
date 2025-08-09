@@ -1,0 +1,40 @@
+##################
+#
+# MAME configration for Spy Hunter
+# DOFLinx force feedback configuration file v3
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
+COLOUR_PALETTE=White,Red,Blue,Green
+KEY_TO_COMMAND=BUT_B1,accelerate,BUT_B2,gear
+FF_DOF=E62,-1
+BUTTONS_LIT_ADDED=BUT_B1,BUT_B2,BUT_B9,BUT_B10
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_B1,BUT_B2,BUT_B9,BUT_B10
+
+[COMMANDS]
+lamp0|ON|FF_PC,U,E,arcade/stream/mameoutput/spyhunt_oilslick|FF_PC,U,C,arcade/stream/mameoutput/spyhunt_oilslick|FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta
+lamp1|ON|FF_PC,U,E,arcade/stream/mameoutput/spyhunt_missiles|FF_PC,U,C,arcade/stream/mameoutput/spyhunt_missiles|FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_Flasher DV_FLIL,FL_TT,1,450,100,Red|FF_Flasher DV_FLIR,FL_TT,1,450,100,Red|FF_Flasher DV_FLCN,FL_TT,1,450,100,Red
+lamp2|ON|FF_PC,U,E,arcade/stream/mameoutput/spyhunt_weaponsvan|FF_PC,U,C,arcade/stream/mameoutput/spyhunt_weaponsvan|FF_Flasher DV_FLOL,FL_TT,1,450,100,Green|FF_Flasher DV_FLOR,FL_TT,1,450,100,Green|FF_Flasher DV_FLIL,FL_TT,1,450,100,Green|FF_Flasher DV_FLIR,FL_TT,1,450,100,Green|FF_Flasher DV_FLCN,FL_TT,1,450,100,Green
+lamp3|ON|FF_PC,U,E,arcade/stream/mameoutput/spyhunt_smokescreen|FF_PC,U,C,arcade/stream/mameoutput/spyhunt_smokescreen|FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLIL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLIR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,Cyan
+lamp4|ON|FF_PC,U,E,arcade/stream/mameoutput/spyhunt_machineguns|FF_PC,U,C,arcade/stream/mameoutput/spyhunt_machineguns|FF_Flasher DV_FLOL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,450,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,450,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,450,100,Blue
+accelerate|ON|FF_Flasher DV_FLOL,FL_ON,1,1,100,White|FF_Flasher DV_FLIL,FL_ON,1,1,100,White|FF_Flasher DV_FLCN,FL_ON,1,1,100,White|FF_Flasher DV_FLIR,FL_ON,1,1,100,White|FF_Flasher DV_FLOR,FL_ON,1,1,100,White
+accelerate|OFF|FF_Flasher DV_FLOL,FL_OFF,1,1,100,White|FF_Flasher DV_FLIL,FL_OFF,1,1,100,White|FF_Flasher DV_FLCN,FL_OFF,1,1,100,White|FF_Flasher DV_FLIR,FL_OFF,1,1,100,White|FF_Flasher DV_FLOR,FL_OFF,1,1,100,White
+gear|ON|FF_DOF E212,-1|FF_DOF E213,-1
+coin|ON|FF_DOF E62,0
+player1|ON|FF_DOF E62,0
+player2|ON|FF_DOF E62,0
+
+[SCORE]
+FE=04404C4B26326A6B577060535A5E6B516C70596C6858595A70392623366B1F
+FE=0D373D47461C1A19181C16373D34282A451E373F41452E3E2F162C3A2C2A2E4745
+FE=084B3D3C222E6667536C5C4F565A674D686C5568645455566C5521251E6721
+FE=004D45442A2827262A24454B423638442C454D4F533C4C3D
+DELAY=5000
+# Periodic reward
+SE=10000:10000:10:FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!
