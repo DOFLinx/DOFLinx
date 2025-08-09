@@ -1,0 +1,59 @@
+##################
+#
+# MAME configration for Duck Hunt
+# DOFLinx force feedback configuration file v9
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
+COLOUR_PALETTE=Dodget_blue,Deep_pink,Lawn_green,Peru,Green,Dark_orange
+KEY_TO_COMMAND=BUT_B1,fire
+FF_DOF=E79,-1
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+
+[COMMANDS]
+led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201,animation/overlay/mameoutput/startup_player1-blue,arcade/stream/mameoutput/startup_player1-blue?notext,display/text?text=Select%20%201%7CPlayer&size=M&font=BTTF&color=1E90FF&bordersize=0&duration=-1
+led0|OFF|FF_Button BUT_P1,BA_OFF,0,0
+led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202,animation/overlay/mameoutput/startup_player2-green,arcade/stream/mameoutput/startup_player2-green?notext,display/text?text=Select%20%201%20%20or%20%202%7CPlayers&size=M&font=BTTF&color=00FA9A&bordersize=0&duration=-1&cleanbg=true
+led1|OFF|FF_Button BUT_P2,BA_OFF,0,0
+fire|ON|FF_DOF E216,-1
+coin|ON|FF_DOF E79,0
+player1|ON|FF_DOF E79,0
+player2|ON|FF_DOF E79,0
+
+[SCORE]
+FE=0F3441401B275F604C6555484F53604661654E615D4D4E4F651A1B6216
+FE=053E454F4E24443A451F2222
+FE=084B3D3C222E6667536C5C4F565A674D686C5568645455566C32256920
+FE=0A433B3A201E1D1C201A40403D33372F223B4345493242331A404F5A5C4E
+FE=0C4639381E2A62634F68584B525663496468516460505152682E1B6519
+FE=0C464038371D1B1A191D173D3D3A30343B1F384042462F3F30173C383D352A2025
+FE=064E3F3E24306869556E5E51585C694F6A6E576A665657586E33316B1F
+FE=0D473F37361C1A19181C163C3C392F333A1E373F41452E3E2F163C50565A581F33353422313C393B161B
+FE=0444414026326A6B577060535A5E6B516C70596C6858595A702638216C32
+FE=02464A4241272524272226203F373F3752452841494B4F384839203B5B65632A3E403F262C
+
+DELAY=2000
+
+# Lower level duck
+SC=500:800:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/duckhunt_explosion3|FF_DMD,U,display/picture?path=mameoutput/duckhunt_explosion3&fixed=false
+# Significant duck
+SC=1000:2400:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000|FF_PC,U,E,animation/overlay/mameoutput/duckhunt_explosion3|FF_DMD,U,display/picture?path=mameoutput/duckhunt_explosion3&fixed=false
+# THE duck
+SC=3000:3000:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,140|FF_PC,U,E,animation/overlay/mameoutput/duckhunt_explosion3
+
+# Perfect round 1-10
+SC=10000:10000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_perfect|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# Perfect round 11-15
+SC=15000:15000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_perfect|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# Perfect round 16-20
+SC=20000:20000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_perfect|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# Perfect round 21+
+ST=30000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800
+SD=2500:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=doubledot
+SD=15000:FF_PC,U,E,arcade/stream/mame/!ROM!|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
+RE=1:1:200:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true
+RE=2:1:200:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=solid

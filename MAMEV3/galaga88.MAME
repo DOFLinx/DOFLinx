@@ -1,0 +1,67 @@
+##################
+#
+# MAME configration for galaga88
+# DOFLinx force feedback configuration file v13
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Lime
+COLOUR_PALETTE=White,Red,Blue,Green,Silver,Cyan,Lime
+KEY_TO_COMMAND=BUT_B1,fire
+FF_DOF=E63,7000
+|FF_DOF E212,-1|FF_DOF E213,-1
+
+[COMMANDS]
+fire|ON|FF_DOF E212,-1
+
+[SCORE]
+FE=063E4A4924306869556E5E51585C694F6A6E576A665657586E24202121691D
+FE=0D373D47461C1A19181C16373D34282A451E373F41452E3E2F162C3A2C2A2E4745
+FE=005345442A366E6F5B7464575E626F5570745D706C5C5D5E742B3726286F28
+FE=0B423A391F1D1C1B1F193A40372B2D39213A4249324233
+FE=0350464527336B6C587161545B5F6C526D715A6D69595A5B71283423326C25
+FE=034A464527252423272142483F33354129424A4C5039493A
+FE=0349424127336B6C587161545B5F6C526D715A6D69595A5B71282329276C20
+FE=014B4B43422826252428223D394B1E434454424E4E3F254B3F3F4547
+FE=0349464527336B6C587161545B5F6C526D715A6D69595A5B71282337256C20
+FE=084444403F211F1E1D211B363244173C3D4D3B4747381E4438383E40
+FE=034F424127336B6C587161545B5F6C526D715A6D69595A5B71282325276C20
+FE=02504A4241272524232126203B37491C504252404C4C3D234949353A37
+FE=093F3C3B212D6566526B5B4E5559664C676B5467635354556B221D2F1F661B
+FE=0C3C4038371D1B1A191D17322E40132C4345493242331A35555F5D
+FE=0450414026326A6B577060535A5E6B516C70596C6858595A70272234226B20
+FE=0B494139381E1C1B1A1E18332F41142D44464A3343341B41555B5F5D
+DELAY=2000
+# A single ship stationary
+SC=50:90:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,arcade/stream/mameoutput/galaga_shipinflight-exploding?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/explosion3&fixed=false
+# Ship attacking
+SC=100:140:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,E,arcade/stream/mameoutput/galaga_shipinflight-exploding?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/score_100&fixed=false
+# Boss in formation
+SC=150:190:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,arcade/stream/mameoutput/galaga_shipinflight-exploding?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/explosion3&fixed=false
+# Boss attacking
+SC=200:350:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,100|FF_DOF E703,100|FF_DOF E699,1000|FF_PC,U,E,arcade/stream/mameoutput/galaga_shipinflight-exploding?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/explosion3&fixed=false
+# Capsule
+SC=400:550:FF_Flasher DV_FLCN,FL_FL,12,350,100,Cyan|FF_Flasher DV_FLOL,FL_FL,12,350,100,Cyan|FF_Flasher DV_FLOR,FL_FL,12,350,100,Cyan|FF_DOF E464,1200|FF_DOF E466,1200|FF_DOF E468,1200|FF_PC,U,E,arcade/stream/mameoutput/arkanoid_explosion3?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/explosion3&fixed=false
+# Hiyoko
+SC=600:900:FF_Flasher DV_FLOL,FL_FL,6,350,100,Random|FF_Flasher DV_FLIL,FL_FL,6,350,100,Random|FF_Flasher DV_FLCN,FL_FL,6,350,100,Random|FF_Flasher DV_FLIR,FL_FL,6,350,100,Random|FF_Flasher DV_FLOR,FL_FL,6,350,100,Random|FF_DOF E770,2500|FF_PC,U,E,arcade/stream/mameoutput/arkanoid_explosion4-long?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/explosion3&fixed=false
+# Daruma
+SC=1200:1200:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_DMD,U,display/picture?path=ingame/explosion3&fixed=false
+# Babito / Galaxian
+SC=1800:1800:FF_Dev DV_MC,-1|FF_Colour Yellow,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLIL,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLCN,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLIR,FL_FL,6,500,100,Yellow|FF_Flasher DV_FLOR,FL_FL,6,500,100,Yellow|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,arcade/stream/mameoutput/pacman_galaxian?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/explosion3&fixed=false
+# A challenge stage not perfect
+SC=2000:9500:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,arcade/stream/mameoutput/galaga_challengenotperfect?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# Challenge Stage Bonus
+SC=10000:25000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500|FF_PC,U,E,arcade/stream/mameoutput/galaga_bugs?l=5|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# First New Ship
+ST=40000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,E,arcade/stream/mameoutput/galaga_newship?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+# Subsequent New Ships
+SE=120000:120000:2:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800|FF_PC,U,E,arcade/stream/mameoutput/galaga_newship?l=1|FF_PC,U,E,arcade/stream/mame/galaga88?l=99999&nogif|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
+RE=2:1:200:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=solid|FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true
+SD=100:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!
+SD=8000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini
+SD=30000:FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!
+####
+# If you have a Pixelcade, you can uncomment the line below (remove the # at the beginning) and get ongoing stats
+#SD=50:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=solid
