@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for gyrus
-# DOFLinx force feedback configuration file v10
+# DOFLinx force feedback configuration file v11
 #
 ##################
 
@@ -24,27 +24,27 @@ player1|ON|FF_DOF E61,0
 player2|ON|FF_DOF E61,0
 
 [SCORE]
-FE=02414E4D28346C6D597262555C606D536E725B6E6A5A5B5C722E2A292B6D21
-FE=0F343B45441A3A303B151817
-FE=01434F4E29356D6E5A7363565D616E546F735C6F6B5B5C5D732F2924296E22
-FE=034147515026242322262041473E32344F2841494B4F384839203644363438514F
-FE=064D3F3E24306869556E5E51585C694F6A6E576A665657586E2A262521691F
-FE=024B43422826252428224848453B3F372A4F41513F4B4B3C
-FE=0D463C3B1D2961624E67574A51556248636750635F4F505167231F1E1D6218
-FE=0845414022201F1E221C42423F35393124493B4B39454536
-FE=06463F3E24306869556E5E51585C694F6A6E576A665657586E2A26211E691D
+FE=043F4C4B26326A6B577060535A5E6B516C70596C6858595A702C2827296B1F
+FE=00434A545329493F4A242726
+FE=04404C4B26326A6B577060535A5E6B516C70596C6858595A702C2621266B1F
+FE=0D373D47461C1A19181C16373D34282A451E373F41452E3E2F162C3A2C2A2E4745
+FE=0A493B3A202C6465516A5A4D5458654B666A5366625253546A2622211D651B
+FE=0F3E36351B1918171B153B3B382E322A1D423444323E3E2F
+FE=0C473D3C1E2A62634F68584B5256634964685164605051526824201F1E6319
+FE=024B47462826252428224848453B3F372A4F41513F4B4B3C
+FE=07453E3D232F6768546D5D50575B684E696D5669655556576D2925201D681C
 FE=0A42423A391F1D1C1B1F19343042153A3B4B394545361C4236363C3E
-FE=08444140222E6667536C5C4F565A674D686C5568645455566C2824211C671B
-FE=0F3D3D39381A1817161A142F2B3D1035364634404031173D31313739
-FE=0F4336351B275F604C6555484F53604661654E615D4D4E4F65211D161E6014
-FE=0C464038371D1B1A19171C16312D3F1246384836424233193F5F4B504D
+FE=0B413E3D1F2B63645069594C5357644A65695265615152536925211E196418
+FE=0C40403C3B1D1B1A191D17322E4013383949374343341A4034343A3C
+FE=0D4538371D2961624E67574A51556248636750635F4F505167231F18206216
+FE=00524C4443292726252328223D394B1E524454424E4E3F254B6B575C59
 DELAY=4000
 # Ship Still
-SC=50:50:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3|FF_PC,U,E,ledstrip/zone/center_matrix/effect/matrix_8x8_mame_1942_explosion?speed=220&loops=1|FF_PC,U,E,ledstrip/zone/left_strip/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/left_speaker_ring/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_speaker_ring/effect/particle_explosion?speed=250&loops=1
+SC=50:50:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3|FF_PC,U,E,ledstrip/zone/center_matrix/effect/matrix_8x32_explosion3?speed=220&loops=1|FF_PC,U,E,ledstrip/zone/left_strip/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/left_speaker_ring/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_speaker_ring/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_matrix/effect/matrix_8x8_explosion3?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/left_matrix/effect/matrix_8x8_explosion3?speed=250&loops=1
 # Ship Moving
-SC=100:100:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5|FF_PC,U,E,ledstrip/zone/center_matrix/effect/matrix_8x8_mame_1942_explosion?speed=220&loops=1|FF_PC,U,E,ledstrip/zone/left_strip/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_strip/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/left_speaker_ring/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_speaker_ring/effect/particle_explosion?speed=250&loops=1
+SC=100:100:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5|FF_PC,U,E,ledstrip/zone/center_matrix/effect/matrix_8x32_explosion3?speed=220&loops=1|FF_PC,U,E,ledstrip/zone/left_strip/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/left_speaker_ring/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_speaker_ring/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_matrix/effect/matrix_8x8_explosion3?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/left_matrix/effect/matrix_8x8_explosion3?speed=250&loops=1
 # Satelite
-SC=1000:1000:FF_Colour Cyan,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIL,FL_FL,6,500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIR,FL_FL,6,500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Cyan|FF_DOF E570,1400|FF_DOF E576,1400|FF_DOF E587,1400|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion6|FF_PC,U,E,ledstrip/zone/center_matrix/effect/matrix_8x8_mame_1942_explosion?speed=220&loops=1|FF_PC,U,E,ledstrip/zone/left_strip/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_strip/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/left_speaker_ring/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_speaker_ring/effect/particle_explosion?speed=250&loops=1
+SC=1000:1000:FF_Colour Cyan,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIL,FL_FL,6,500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Cyan|FF_Flasher DV_FLIR,FL_FL,6,500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Cyan|FF_DOF E570,1400|FF_DOF E576,1400|FF_DOF E587,1400|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion6|FF_PC,U,E,ledstrip/zone/center_matrix/effect/matrix_8x32_explosion3?speed=220&loops=1|FF_PC,U,E,ledstrip/zone/left_strip/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/left_speaker_ring/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_speaker_ring/effect/particle_explosion?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/right_matrix/effect/matrix_8x8_explosion3?speed=250&loops=1|FF_PC,U,E,ledstrip/zone/left_matrix/effect/matrix_8x8_explosion3?speed=250&loops=1
 # Perfect Challenge Round
 ST=10000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,550,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_DOF E773,1800|FF_PC,U,E,animation/overlay/mameoutput/generic_perfect
 # Bonus milestones
