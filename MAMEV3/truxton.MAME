@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for truxton
-# DOFLinx force feedback configuration file v5
+# DOFLinx force feedback configuration file v6
 #
 ##################
 ###
@@ -15,7 +15,7 @@ BUTTON_COLOUR_CHANGE=BUT_EX,Lime,BUT_P1,Orchid,BUT_P2,Pale_Green
 COLOUR_PALETTE=Yellow_Green,Dark_khaki,Dark_golden_rod,Dark_olive_green,Orange_red,Lime
 KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,bomb
 FF_DOF=E73,7000
-FE=0C41343F364F35303B313A49382E2D3939472F231C1F1A253231302F141F16242322
+FE=04493C473E573D384339425140363541414F372B2427222D3A3938371C271E2C2B2A
 
 [SHUTDOWN]
 KEY_TO_COMMAND=
@@ -25,8 +25,10 @@ fire|ON|FF_DOF E214,-1
 bomb|ON|FF_DOF E139,2000
 
 [SCORE]
-FE=064D3F3E24306869556E5E51585C694F6A6E576A665657586E2921531E52682E
-FE=014C4443292726252927224848453B3F462A434B4D513A4A3B
+FE=0C3844431E2A62634F68584B52566349646851646050515268231B2B20186225
+FE=0E363C46451B1918171B15363C332729441D363E40442D3D2E152B392B292D4644
+FE=054E403F2531696A566F5F52595D6A506B6F586B675758596F2A22541F53692F
+FE=06473F3E2422212024221D434340363A41253E46484C354536
 DELAY=5000
 SC=40:1000:FF_Flasher DV_FLCN,FL_TT,1,500,100,Random|FF_Flasher DV_FLIL,FL_TT,1,500,100,Random|FF_Flasher DV_FLIR,FL_TT,1,500,100,Random|FF_DOF E695,-1|FF_DOF E701,-1|FF_DOF E697,-1|FF_DOF E703,-1|FF_DOF E699,-1|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5
 #Power Up
@@ -34,4 +36,5 @@ SC=5000:5000:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue
 # Set a couple of milestones
 ST=70000:FF_Dev DV_MC,-1|FF_Flasher DV_FLOL,FL_FL,6,550,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_DOF E773,1800|FF_PC,U,E,animation/overlay/mameoutput/generic_extralife
 SE=200000:200000:100:FF_Dev DV_MC,-1|FF_Flasher DV_FLOL,FL_FL,6,600,100,Random|FF_Flasher DV_FLOR,FL_FL,6,600,100,Random|FF_Flasher DV_FLIL,FL_FL,6,600,100,Random|FF_Flasher DV_FLIR,FL_FL,6,600,100,Random|FF_Flasher DV_FLCN,FL_FL,6,600,100,Random|FF_DOF E781,1900|FF_PC,U,E,animation/overlay/mameoutput/generic_extralife
-SD=5000:FF_PC,U,E,arcade/stream/mame/truxton|FF_DMD,U,display/picture?path=mame/truxton&fixed=false
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame|FF_DMD,U,display/picture?path=mame/truxton&fixed=false
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1

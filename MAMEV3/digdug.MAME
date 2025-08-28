@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for digdug
-# DOFLinx force feedback configuration file v6
+# DOFLinx force feedback configuration file v7
 #
 ##################
 
@@ -15,15 +15,21 @@ FE=0C41343F364F35303B313A49382E2D3939472F221C1F1A1E1C1B1A19141F162423
 KEY_TO_COMMAND=
 
 [COMMANDS]
+led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201,animation/overlay/mameoutput/startup_player1-blue,arcade/stream/mameoutput/startup_player1-blue?notext,display/text?text=Select%20%201%7CPlayer&size=M&font=BTTF&color=1E90FF&bordersize=0&duration=-1
+led0|OFF|FF_Button BUT_P1,BA_OFF,0,0
+led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202,animation/overlay/mameoutput/startup_player2-green,arcade/stream/mameoutput/startup_player2-green?notext,display/text?text=Select%20%201%20%20or%20%202%7CPlayers&size=M&font=BTTF&color=00FA9A&bordersize=0&duration=-1&cleanbg=true
+led1|OFF|FF_Button BUT_P2,BA_OFF,0,0
 coin|ON|FF_DOF E66,0
 player1|ON|FF_DOF E63,0
 player2|ON|FF_DOF E63,0
 
 [SCORE]
-FE=0C4739381E2A62634F68584B52566349646851646050515268231E1A1C6319
-FE=0A433B3A201E1D22231A1E183E3E3B31443C2045374735414132
-FE=074C4241232F6768546D5D50575B684E696D5669655556576D28231F24681E
-FE=0944403F211F1E23241B1F193F3F3C32453D2146384836424233
+FE=0044504F2A366E6F5B7464575E626F5570745D706C5C5D5E742F2B36296F23
+FE=0F353B45441A1817161A14353B322628431C353D3F432C3C2D142A382A282C4543
+FE=0152444329356D6E5A7363565D616E546F735C6F6B5B5C5D732E2925276E24
+FE=0548403F25232227281F231D434340364941254A3C4C3A464637
+FE=064D434224306869556E5E51585C694F6A6E576A665657586E29242025691F
+FE=034A4645272524292A21251F454542384B43274C3E4E3C484839
 
 DELAY=3000
 # SIngle segment
@@ -41,4 +47,5 @@ SC=4000:4000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,5000|FF_Flasher DV_FLOL,FL_F
 # Bonus lives
 ST=20000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,E,arcade/stream/mameoutput/digdug_bonus?l=5
 ST=60000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,E,arcade/stream/mameoutput/digdug_bonus?l=5
-SD=5000:FF_PC,U,E,arcade/stream/mame/digdug|FF_DMD,U,display/picture?path=mame/digdug&fixed=false
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1

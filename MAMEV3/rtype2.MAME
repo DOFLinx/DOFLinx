@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for RType 2
-# DOFLinx force feedback configuration file v8
+# DOFLinx force feedback configuration file v9
 #
 ##################
 
@@ -18,10 +18,12 @@ KEY_TO_COMMAND=
 fire|ON|FF_DOF E216,-1|FF_DOF E217,-1
 
 [SCORE]
-FE=0A493B3A202C6465516A5A4D5458654B666A5366625253546A321F231B2C642A
-FE=0E3F37361C1A19181C163C3C392F332B1E433545333F3F30
-FE=0251474628346C6D597262555C606D536E725B6E6A5A5B5C723A272B24256C32
-FE=014C48472927262529234949463C40382B504252404C4C3D
+FE=0A3A4645202C6465516A5A4D5458654B666A5366625253546A321F222F2C6428
+FE=0C383E48471D1B1A191D173D3D3A30343B1F44364634404031172D3B2D2B2F4846
+FE=054E403F2531696A566F5F52595D6A506B6F586B675758596F3724282031692F
+FE=0C4139381E1C1B1A1E183E3E3B31352D2045374735414132
+FE=0F443A391B275F604C6555484F53604661654E615D4D4E4F652D1A1E17185F25
+FE=034A46452725242327214747443A3E36294E40503E4A4A3B
 DELAY=2000
 # Various scores
 SC=100:100:FF_Flasher DV_FLIL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIR,FL_TT,1,300,100,Random|FF_DOF E225,-1|FF_PC,U,E,animation/overlay/mameoutput/rtype_explosion3-small|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false
@@ -34,4 +36,5 @@ ST=100000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher D
 ST=350000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 ST=500000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 ST=700000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
-SD=5000:FF_PC,U,E,arcade/stream/mame/rtype2|FF_DMD,U,display/picture?path=mame/rtype2&fixed=false
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1

@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for RTpye
-# DOFLinx force feedback configuration file v8
+# DOFLinx force feedback configuration file v10
 #
 ##################
 
@@ -10,6 +10,7 @@ BUTTON_COLOUR_CHANGE=BUT_EX,Cyan,BUT_P1,Orchid,BUT_P2,Amber
 COLOUR_PALETTE=Cyan,Orchid,Peru,Amber,Light_Steel_Blue,Sea_Green
 KEY_TO_COMMAND=BUT_B1,fire
 FF_DOF=E73,7000
+FE=04493C473E573D384339425140363541414F372A24272229273938371C2027342B2A
 
 [SHUTDOWN]
 KEY_TO_COMMAND=
@@ -18,10 +19,12 @@ KEY_TO_COMMAND=
 fire|ON|FF_DOF E216,-1|FF_DOF E217,-1
 
 [SCORE]
-FE=0B483A391F2B63645069594C5357644A656952656151525369201D302D20632B
-FE=07463E3D2321201F231D434340363A32254A3C4C3A464637
-FE=0A493F3E202C6465516A5A4D5458654B666A5366625253546A211F1B1B21642C
-FE=0F3E3A391B1918171B153B3B382E322A1D423444323E3E2F
+FE=063E4A4924306869556E5E51585C694F6A6E576A665657586E2522351E23682B
+FE=073D434D4C22201F1E221C3D433A2E304B243D45474B3444351C32403230344D4B
+FE=0350424127336B6C587161545B5F6C526D715A6D69595A5B7128253835286B33
+FE=0548403F25232221251F454542383C34274C3E4E3C484839
+FE=074C4241232F6768546D5D50575B684E696D5669655556576D24221E1E24672F
+FE=04494544262423222620464643393D35284D3F4F3D49493A
 DELAY=2000
 # Various scores
 SC=100:100:FF_Flasher DV_FLIL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIR,FL_TT,1,300,100,Random|FF_DOF E225,-1|FF_PC,U,E,animation/overlay/mameoutput/rtype_explosion3-small|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false
@@ -34,4 +37,5 @@ ST=100000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher D
 ST=350000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 ST=500000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 ST=700000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
-SD=5000:FF_PC,U,E,arcade/stream/mame/rtype?l=99999&nogif
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1
