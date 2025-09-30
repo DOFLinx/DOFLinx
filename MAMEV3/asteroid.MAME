@@ -32,5 +32,5 @@ FE=074C4241232F6768546D5D50575B684E696D5669655556576D25236A1F
 FE=0944403F211F1E1D211F1A40403D33373E2247394937434334
 DELAY=5000
 # 
-SC=10:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/asteroids-explosion
+SC=10:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/asteroids-explosion|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_8x8_explosion6?speed=220&loops=1
 SD=5000:FF_PC,U,E,arcade/stream/mame/asteroid|FF_DMD,U,display/picture?path=mame/asteroid&fixed=false
