@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration that is appled to all games after the game file itself is processed
-# DOFLinx force feedback configuration file v9
+# DOFLinx force feedback configuration file v10
 #
 ##################
 
@@ -22,3 +22,4 @@ Button1|ON|FF_PC,U,D,ledstrip/zone/left/effect/gun_muzzle_trail?r=!LED_R!&g=!LED
 Button2|ON|FF_PC,U,D,ledstrip/zone/right/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
 Button9|ON|FF_PC,U,D,ledstrip/zone/left/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
 Button10|ON|FF_PC,U,D,ledstrip/zone/right/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+
