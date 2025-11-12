@@ -1,0 +1,22 @@
+curl "localhost:8080/ledstrip/batch?zones=center_matrix~matrix_8x8_explosion1~0~0~255~220~1~false@left_strip~marquee~0~0~255~250~1~false@right_strip~marquee~0~0~255~250~1~false@left_speaker_ring~marquee~0~0~255~250~1~false@right_speaker_ring~marquee~0~0~255~250~1~false"
+
+curl "localhost:8080/ledstrip/zone/center_matrix/effect/matrix_8x32_explosion8?speed=230&loops=2"
+
+curl "localhost:8080/ledstrip/zone/center_matrix/effect/matrix_8x32_explosion8?speed=230&loops=2"
+
+curl "localhost:8080/ledstrip/zone/center_matrix/effect/matrix_8x8_mame_1942_explosion?speed=230&loops=2"
+
+curl "localhost:8080/ledstrip/zone/center_matrix/effect/matrix_8x8_mame_1942_explosion?speed=230&loops=2"
+
+curl "localhost:8080/ledstrip/zone/center_matrix/effect/matrix_8x32_explosion4?speed=230&loops=2"
+
+curl "localhost:8080/ledstrip/zone/center_matrix/effect/matrix_8x8_explosion4?speed=230&loops=2"
+
+curl "localhost:8080/ledstrip/zone/center_matrix/effect/matrix_8x32_achievements_3?speed=230&loops=2"
+
+curl "localhost:8080/ledstrip/zone/center_matrix/effect/matrix_8x32_achievements_3?speed=230&loops=2&r=0&g=0&b=0"
+
+curl "localhost:8080/ledstrip/batch?zones=center_matrix~matrix_8x8_achievements_3~0~0~0~230~2~false@left_strip~achievements_7~0~0~255~250~2~false@right_strip~achievements_7~0~0~255~250~2~false@left_speaker_ring~achievements_7~0~0~255~250~2~false@right_speaker_ring~achievements_7~0~0~255~250~2~false"
+
+
+

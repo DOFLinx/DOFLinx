@@ -45,13 +45,13 @@ FE=044E48444325232221251F3A36481B4041513F4B4B3C22413949373D
 DELAY=1000
 
 # 1 Barrel
-SC=100:200:FF_Flasher DV_FLCN,FL_TT,1,500,100,Random|FF_DOF E715,1000|FF_DOF E719,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_100|FF_DMD,U,display/picture?path=ingame/score_100&fixed=false|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_8x8_achievements_3?speed=230&loops=1
+SC=100:200:FF_Flasher DV_FLCN,FL_TT,1,500,100,Random|FF_DOF E715,1000|FF_DOF E719,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_100|FF_DMD,U,display/picture?path=ingame/score_100&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_square_pulse~255~0~0~220~1~false@left_strip~pulse~255~0~0~250~1~false@right_strip~pulse~255~0~0~250~1~false@left_speaker_ring~pulse~255~0~0~250~1~false@right_speaker_ring~pulse~255~0~0~250~1~false
 # Hitting barrel
-SC=300:300:FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,450,100,Lime|FF_Flasher DV_FLOR,FL_TT,1,450,100,Lime|FF_DOF E505,1100|FF_DOF E507,1100|FF_PC,U,E,animation/overlay/mameoutput/dkong_explosion?l=1|FF_DMD,U,display/picture?path=ingame/score_300&fixed=false|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_8x8_explosion2?speed=220&loops=1
+SC=300:300:FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,450,100,Lime|FF_Flasher DV_FLOR,FL_TT,1,450,100,Lime|FF_DOF E505,1100|FF_DOF E507,1100|FF_PC,U,E,animation/overlay/mameoutput/dkong_explosion?l=1|FF_DMD,U,display/picture?path=ingame/score_300&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamond_pulse~0~0~255~220~1~false@left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false
 # Bonus
 SC=600:5000:FF_Colour Medium_blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_DOF E778,1500|FF_PC,U,E,arcade/stream/mameoutput/dkong_bonus?l=4|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
 #Milestones
 SE=10000:10000:10:FF_DEV DV_KN,-1|FF_Colour Magenta,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,500,100,Random|FF_Flasher DV_FLIL,FL_FL,6,500,100,Random|FF_Flasher DV_FLCN,FL_FL,6,500,100,Random|FF_Flasher DV_FLIR,FL_FL,6,500,100,Random|FF_Flasher DV_FLOR,FL_FL,6,500,100,Random|FF_DOF E635,1000|FF_DOF E621,1000|FF_DOF E637,1000|FF_DOF E623,1000|FF_DOF E639,1000|FF_PC,U,E,arcade/stream/mameoutput/generic_milestone?l=15|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false
-SD=8000:FF_PC,U,E,arcade/stream/mame/dkong|FF_DMD,U,display/picture?path=mame/dkong&fixed=false
+SD=8000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame|FF_DMD,U,display/picture?path=mame/dkong&fixed=false
 SD=1000:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&livesLabel=!PREFIX_L!&livesValue=!LIVES!
 DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!

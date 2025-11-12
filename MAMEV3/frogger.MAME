@@ -41,7 +41,7 @@ DELAY=5000
 # A Forward step
 SC=10:10:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E462,200|FF_DOF E465,200
 # Frog home
-SC=200:999:FF_Flasher DV_FLOL,FL_TT,1,450,100,Lime|FF_Flasher DV_FLOR,FL_TT,1,450,100,Lime|FF_DOF E505,1100|FF_DOF E507,1100|FF_PC,U,E,animation/overlay/mameoutput/frogger_home|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_8x8_achievements_5~0~255~0~220~3~false@left_strip~marquee~0~255~0~200~6~false@right_strip~marquee~0~255~0~200~6~false@right_speaker_ring~marquee~0~255~0~200~6~false@left_speaker_ring~marquee~0~255~0~200~6~false
+SC=200:999:FF_Flasher DV_FLOL,FL_TT,1,450,100,Lime|FF_Flasher DV_FLOR,FL_TT,1,450,100,Lime|FF_DOF E505,1100|FF_DOF E507,1100|FF_PC,U,E,animation/overlay/mameoutput/frogger_home|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_5~0~255~0~220~3~false@left_strip~marquee~0~255~0~200~6~false@right_strip~marquee~0~255~0~200~6~false@right_speaker_ring~marquee~0~255~0~200~6~false@left_speaker_ring~marquee~0~255~0~200~6~false
 # Lady frog
 SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,Random|FF_Flasher DV_FLOR,FL_TT,1,450,100,Random|FF_DOF E454,1100|FF_DOF E456,1100|FF_DOF E458,1100
 # End level
