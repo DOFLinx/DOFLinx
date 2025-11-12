@@ -6,11 +6,12 @@
 ##################
 
 [STARTUP]
-FE=0244435B4D494F4E243A443A3F5B5F68
+FE=0E38374F413D4342182E382E334F535C
 SHOW_SCORE=1
 FF_PC=U,A,arcade/stream/mameoutput/startup_insertcoin1?notext
 FF_PC=U,E,ledstrip/manufacturer?rom=!ROM!
 FF_DMD=U,display/picture?path=mameoutput/startup_insertcoin4&duration=6000
+BUTTONS_LIT_ADDED=BUT_CN,BUT_EX,BUT_RE,BUT_P1,BUT_P2
 LOAD_SOUND=CoinIn,100,SIDE,Coin_In_1,Coin_In_2,Coin_In_3
 LOAD_SOUND=Reset,100,REAR,Reset
 LOAD_SOUND=PauseOn,100,REAR,Pause_On
