@@ -33,6 +33,6 @@ FE=044F454426326A6B577060535A5E6B516C70596C6858595A7029276D23
 FE=0647434224222120241E444441373B33264B3D4D3B474738
 DELAY=5000
 # 
-SC=10:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/asteroids-explosion|FF_DMD,U,display/picture?path=ingame/explosion3
+SC=10:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/asteroids-explosion|FF_DMD,U,display/picture?path=ingame/explosion3|FF_PC,U,E,animation/overlay/mameoutput/asteroids-explosion|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~245~130~220~1~false@left_strip~pulse~255~245~130~250~1~false@right_strip~pulse~255~245~130~250~1~false@left_speaker_ring~pulse~255~245~130~250~1~false@right_speaker_ring~pulse~255~245~130~250~1~false@top_strip~pulse~255~245~130~250~1~false@bottom_strip~pulse~255~245~130~250~1~false
 SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
 DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1

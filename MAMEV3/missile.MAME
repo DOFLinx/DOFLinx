@@ -29,14 +29,14 @@ FE=005345442A366E6F5B7464575E626F5570745D706C5C5D5E743B277128
 FE=0A433B3A201E1D1C201A3B41382C2E3A2247394937434334
 DELAY=5000
 # Missile
-SC=5:95:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800
+SC=5:95:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~165~0~220~1~false@left_strip~pulse~255~165~0~250~1~false@right_strip~pulse~255~165~0~250~1~false@left_speaker_ring~pulse~255~165~0~250~1~false@right_speaker_ring~pulse~255~165~0~250~1~false@top_strip~pulse~255~165~0~250~1~false@bottom_strip~pulse~255~165~0~250~1~false
 # Bomber 
-SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000
+SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~255~220~1~false@left_strip~pulse~0~255~255~250~1~false@right_strip~pulse~0~255~255~250~1~false@left_speaker_ring~pulse~0~255~255~250~1~false@right_speaker_ring~pulse~0~255~255~250~1~false@top_strip~pulse~0~255~255~250~1~false@bottom_strip~pulse~0~255~255~250~1~false
 # SMart Bomb
-SC=125:125:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000
+SC=125:125:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~0~220~1~false@left_strip~pulse~0~255~0~250~1~false@right_strip~pulse~0~255~0~250~1~false@left_speaker_ring~pulse~0~255~0~250~1~false@right_speaker_ring~pulse~0~255~0~250~1~false@top_strip~pulse~0~255~0~250~1~false@bottom_strip~pulse~0~255~0~250~1~false
 # A bonus type range
-SC=1000:9500:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400
-SD=30000:FF_PC,U,E,arcade/stream/mame/missile
+SC=1000:9500:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~0~0~255~220~3~false@left_strip~marquee~0~0~255~250~3~false@right_strip~marquee~0~0~255~250~3~false@left_speaker_ring~marquee~0~0~255~250~3~false@right_speaker_ring~marquee~0~0~255~250~3~false@bottom_strip~marquee~0~0~255~250~3~false@top_strip~marquee~0~0~255~250~3~false
+SD=30000:FF_PC,U,E,arcade/stream/mame/missile?nogif&nomini&event=InGame
 
 
 
