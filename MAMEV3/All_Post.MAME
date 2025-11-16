@@ -16,8 +16,8 @@ BUTTONS_LIT_DELETED=BUT_CN,BUT_EX,BUT_RE,BUT_P1,BUT_P2
 
 [COMMANDS]
 coin|ON|FF_DOF E54,1500|FF_BUTTON BUT_CN,BA_FL,5,75
-player1|ON|FF_DOF E52,1500|FF_BUTTON BUT_P1,BA_FL,7,50|FF_MSG 0,,,,|FF_PC,U,A,arcade/stream/black/dummy|FF_PC,U,A,arcade/stream/mameoutput/1player?l=3&notext|FF_PC,U,A,arcade/stream/mame/!ROM!?l=99999&nogif|FF_PC,U,E,ledstrip/manufacturer?rom=""|FF_DMD,U,display/picture?path=ingame/1player&duration=3|FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1&queue
-player2|ON|FF_DOF E51,1500|FF_BUTTON BUT_P2,BA_FL,7,50|FF_MSG 0,,,,|FF_PC,U,A,arcade/stream/black/dummy|FF_PC,U,A,arcade/stream/mameoutput/2players?l=3&notext|FF_PC,U,A,arcade/stream/mame/!ROM!?l=99999&nogif|FF_PC,U,E,ledstrip/manufacturer?rom=""|FF_DMD,U,display/picture?path=ingame/2players&duration=3|FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1&queue
+player1|ON|FF_DOF E52,1500|FF_BUTTON BUT_P1,BA_FL,7,50|FF_MSG 0,,,,|FF_PC,U,A,arcade/stream/black/dummy|FF_PC,U,A,arcade/stream/mameoutput/1player?l=3&notext?nostrip&nomini|FF_PC,U,A,arcade/stream/mame/!ROM!?l=99999&nogif|FF_PC,U,E,ledstrip/manufacturer?rom=""|FF_DMD,U,display/picture?path=ingame/1player&duration=3|FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1&queue
+player2|ON|FF_DOF E51,1500|FF_BUTTON BUT_P2,BA_FL,7,50|FF_MSG 0,,,,|FF_PC,U,A,arcade/stream/black/dummy|FF_PC,U,A,arcade/stream/mameoutput/2players?l=3&notext?nostrip&nomini|FF_PC,U,A,arcade/stream/mame/!ROM!?l=99999&nogif|FF_PC,U,E,ledstrip/manufacturer?rom=""|FF_DMD,U,display/picture?path=ingame/2players&duration=3|FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1&queue
 Button1|ON|FF_PC,U,D,ledstrip/zone/left/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
 Button2|ON|FF_PC,U,D,ledstrip/zone/right/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
 Button9|ON|FF_PC,U,D,ledstrip/zone/left/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
