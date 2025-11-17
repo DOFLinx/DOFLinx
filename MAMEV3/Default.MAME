@@ -1,13 +1,16 @@
 ##################
 #
 # MAME default configration that is appled to all games if no specific game file exists
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 #
 ##################
 
 [STARTUP]
 FF_DOF=E73,7000
+BUTTONS_LIT_ADDED=BUT_B1,BUT_B9
 
 [SHUTDOWN]
 
 [COMMANDS]
+SD=3000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame
+
