@@ -45,22 +45,22 @@ FE=004D49482A2827262A244A4A473D41392C454D4F533C4C3D
 DELAY=500
 
 #Cyan and blue effect for enemy flipped
-SC=10:10:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E700,200|FF_DOF E711,400|FF_DOF E712,200|FF_DOF E713,400|FF_DOF E704,400
+SC=10:10:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E700,200|FF_DOF E711,400|FF_DOF E712,200|FF_DOF E713,400|FF_DOF E704,400|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~255~220~1~false@left_strip~pulse~0~255~255~250~1~false@right_strip~pulse~0~255~255~250~1~false@left_speaker_ring~pulse~0~255~255~250~1~false@right_speaker_ring~pulse~0~255~255~250~1~false@top_strip~pulse~0~255~255~250~1~false@bottom_strip~pulse~0~255~255~250~1~false
 
 #Red effect for enemy flipped when POW 
-SC=00:50:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E705,200|FF_DOF E691,400|FF_DOF E692,200|FF_DOF E693,400|FF_DOF E709,400
+SC=00:50:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E705,200|FF_DOF E691,400|FF_DOF E692,200|FF_DOF E693,400|FF_DOF E709,400|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~0~0~220~1~false@left_strip~pulse~255~0~0~250~1~false@right_strip~pulse~255~0~0~250~1~false@left_speaker_ring~pulse~255~0~0~250~1~false@right_speaker_ring~pulse~255~0~0~250~1~false@top_strip~pulse~255~0~0~250~1~false@bottom_strip~pulse~255~0~0~250~1~false
 
 #Yellow and cyan effect for enemy or coin catched
-SC=800:800:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E466,400|FF_DOF E225,400|FF_DOF E141,800
+SC=800:800:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E466,400|FF_DOF E225,400|FF_DOF E141,800|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~0~220~1~false@left_strip~pulse~255~255~0~250~1~false@right_strip~pulse~255~255~0~250~1~false@left_speaker_ring~pulse~255~255~0~250~1~false@right_speaker_ring~pulse~255~255~0~250~1~false@top_strip~pulse~255~255~0~250~1~false@bottom_strip~pulse~255~255~0~250~1~false
 
 #Yellow and red effect for enemy or coin catched BONUS 1
-SC=1600:1600:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E466,400|FF_DOF E220,400|FF_DOF E183,800|FF_DOF E184,800
+SC=1600:1600:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E466,400|FF_DOF E220,400|FF_DOF E183,800|FF_DOF E184,800|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~0~220~1~false@left_strip~pulse~255~255~0~250~1~false@right_strip~pulse~255~255~0~250~1~false@left_speaker_ring~pulse~255~255~0~250~1~false@right_speaker_ring~pulse~255~255~0~250~1~false@top_strip~pulse~255~255~0~250~1~false@bottom_strip~pulse~255~255~0~250~1~false
 
 #Yellow and magenta effect for enemy or coin catched BONUS 2
-SC=3200:3200:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E468,400|FF_DOF E226,400|FF_DOF E185,800|FF_DOF E186,800
+SC=3200:3200:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E468,400|FF_DOF E226,400|FF_DOF E185,800|FF_DOF E186,800|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~0~255~220~1~false@left_strip~pulse~255~0~255~250~1~false@right_strip~pulse~255~0~255~250~1~false@left_speaker_ring~pulse~255~0~255~250~1~false@right_speaker_ring~pulse~255~0~255~250~1~false@top_strip~pulse~255~0~255~250~1~false@bottom_strip~pulse~255~0~255~250~1~false
 
 #plasma effect for challenge stage
-SC=8000:8000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,4000|FF_DOF E221,400|FF_DOF E200,800|FF_DOF E201,800
+SC=8000:8000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,4000|FF_DOF E221,400|FF_DOF E200,800|FF_DOF E201,800|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~0~255~255~220~5~false@left_strip~marquee~0~255~255~250~5~false@right_strip~marquee~0~255~255~250~5~false@left_speaker_ring~marquee~0~255~255~250~5~false@right_speaker_ring~marquee~0~255~255~250~5~false@bottom_strip~marquee~0~255~255~250~5~false@top_strip~marquee~0~255~255~250~5~false
 
 #plasma effect for challenge stage
-SC=5000:5000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,4000|FF_DOF E221,400|FF_DOF E200,800|FF_DOF E201,800
+SC=5000:5000:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,4000|FF_DOF E221,400|FF_DOF E200,800|FF_DOF E201,800|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~0~255~255~220~5~false@left_strip~marquee~0~255~255~250~5~false@right_strip~marquee~0~255~255~250~5~false@left_speaker_ring~marquee~0~255~255~250~5~false@right_speaker_ring~marquee~0~255~255~250~5~false@bottom_strip~marquee~0~255~255~250~5~false@top_strip~marquee~0~255~255~250~5~false

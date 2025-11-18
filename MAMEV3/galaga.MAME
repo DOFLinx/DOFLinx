@@ -59,7 +59,7 @@ FE=0F453A391B275F604C6555484F53604661654E615D4D4E4F65211F1A1B6015
 FE=0D473F3B3A1C1A19181C16312D3F1237384836424233193F53595D5B1312162322
 DELAY=5000
 # A single ship stationary or in flight
-SC=50:160:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/galaga_shipinflight-exploding|FF_DMD,U,display/picture?path=mameoutput/galaga_shipinflight-exploding|FF_PC,U,D,ledstrip/batch?zones=left_strip~explosion_galaga~255~0~0~220~1~false@right_strip~explosion_galaga~255~0~0~220~1~false@left_speaker_ring~explosion_galaga~255~0~0~220~1~false@right_speaker_ring~explosion_galaga~255~0~0~220~1~false@center_matrix~matrix_!PULSE_RES!_explosion1~255~0~0~220~1~false
+SC=50:160:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/galaga_shipinflight-exploding|FF_DMD,U,display/picture?path=mameoutput/galaga_shipinflight-exploding|FF_PC,U,D,ledstrip/batch?zones=left_strip~explosion_galaga~255~0~0~220~1~false@right_strip~explosion_galaga~255~0~0~220~1~false@left_speaker_ring~explosion_galaga~255~0~0~220~1~false@right_speaker_ring~explosion_galaga~255~0~0~220~1~false@center_matrix~matrix_!PULSE_RES!_explosion1~255~0~0~220~1~false@top_strip~explosion_galaga~255~0~0~220~1~false@bottom_strip~explosion_galaga~255~0~0~220~1~false
 # Boss Ship in flight
 SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,E,animation/overlay/mameoutput/galaga_bossinflight-exploding|FF_DMD,U,display/picture?path=mameoutput/galaga_bossinflight-exploding|FF_PC,U,D,ledstrip/batch?zones=left_strip~explosion_galaga~255~0~0~220~1~false@right_strip~explosion_galaga~255~0~0~220~1~false@left_speaker_ring~explosion_galaga~255~0~0~220~1~false@right_speaker_ring~explosion_galaga~255~0~0~220~1~false@center_matrix~matrix_!PULSE_RES!_explosion1~255~0~0~220~1~false
 # Boss ship in flight 1 wingman
@@ -77,7 +77,8 @@ SD=5000:FF_PC,U,E,arcade/stream/mame/galaga?nogif&nomini&event=InGame
 SD=30000:FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
 RE=1:1:200:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~chase_wave~0~255~255~255~255~1~false@right_speaker_ring~chase_wave~0~255~255~255~255~1~false
 RE=2:1:200:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=solid
-DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle_fox~255~0~255~255~255~1~false@right_speaker_ring~twinkle_fox~255~0~255~255~255~1~false
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle_fox~255~0~255~255~1~false@right_speaker_ring~twinkle_fox~255~0~255~255~1~false
+
 ####
 # If you have a Pixelcade, you can uncomment the line below (remove the # at the beginning) and get ongoing stats
 #SD=50:FF_PC,U,A,stats?label=!PREFIX_R!&value=!ROUND!&shots=!SHOTS!&hits=!HITS!&ratio=!RATIO!&separator=solid

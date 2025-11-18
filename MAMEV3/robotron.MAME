@@ -27,11 +27,11 @@ FE=0A493F3E202C6465516A5A4D5458654B666A5366625253546A4F511C4F651E
 FE=0647434224222120241E444441373B33263F47494D364637
 DELAY=5000
 # Grunt
-SC=100:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1
+SC=100:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 #  Spheroid
-SC=150:150:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800
+SC=150:150:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~165~0~220~1~false@left_strip~pulse~255~165~0~250~1~false@right_strip~pulse~255~165~0~250~1~false@left_speaker_ring~pulse~255~165~0~250~1~false@right_speaker_ring~pulse~255~165~0~250~1~false@top_strip~pulse~255~165~0~250~1~false@bottom_strip~pulse~255~165~0~250~1~false
 # Brain
-SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~255~220~1~false@left_strip~pulse~0~255~255~250~1~false@right_strip~pulse~0~255~255~250~1~false@left_speaker_ring~pulse~0~255~255~250~1~false@right_speaker_ring~pulse~0~255~255~250~1~false@top_strip~pulse~0~255~255~250~1~false@bottom_strip~pulse~0~255~255~250~1~false
 #  Quark
-SC=1000:1000:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000
+SC=1000:1000:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~0~220~1~false@left_strip~pulse~0~255~0~250~1~false@right_strip~pulse~0~255~0~250~1~false@left_speaker_ring~pulse~0~255~0~250~1~false@right_speaker_ring~pulse~0~255~0~250~1~false@top_strip~pulse~0~255~0~250~1~false@bottom_strip~pulse~0~255~0~250~1~false
 

@@ -28,44 +28,43 @@ FE=0A493F3E202C6465516A5A4D5458654B666A5366625253546A5352231F1E4E722A
 FE=0E3F3B3A1C1A19181C163C3C392F332B1E373F41452E3E2F
 DELAY=2000
 # Every punch at enemy
-SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E218,1000
+SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E218,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Every kick at enemy
-SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E225,1000
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E225,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Stalker,private,turret
-SC=1000:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E479,1000|FF_DOF E483,1000
+SC=1000:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E479,1000|FF_DOF E483,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Sergeant
-SC=1300:1300:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E510,1000|FF_DOF E512,1000
+SC=1300:1300:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Royal Guard,corporal
-SC=1500:1500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E554,1000|FF_DOF E556,1000|FF_DOF E558,1000
+SC=1500:1500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E554,1000|FF_DOF E556,1000|FF_DOF E558,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Arachnoid,defender
-SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E570,1000|FF_DOF E572,1000
+SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E570,1000|FF_DOF E572,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Smasher
-SC=2500:2500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E630,1000|FF_DOF E607,1000|FF_DOF E634,1000
+SC=2500:2500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E630,1000|FF_DOF E607,1000|FF_DOF E634,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Warrior
-SC=3000:3000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E681,1000|FF_DOF E683,1000
+SC=3000:3000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E681,1000|FF_DOF E683,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Topaz
-SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E117,1000
+SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E117,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Amethyst
-SC=3000:3000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E116,1000
+SC=3000:3000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E116,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Aquamarine,amber
-SC=4000:4000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E115,1000
+SC=4000:4000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E115,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Emerald
-SC=5000:5000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E112,1000
+SC=5000:5000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E112,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Necklace
-SC=6000:6000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E111,1000
+SC=6000:6000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E111,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Lapislazuli
-SC=8000:8000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E113,1000
+SC=8000:8000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E113,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Lingot
-SC=20000:20000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E114,1000
+SC=20000:20000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E114,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Turkey
-SC=25000:25000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E772,1000
+SC=25000:25000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E772,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Power Loader
-SC=30000:30000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E786,1000
+SC=30000:30000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E786,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # End Stage
-SC=10000:250000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,White
-|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E785,3000
+SC=10000:250000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E785,3000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Alien Queen
-SC=300000:300000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E780,4000
+SC=300000:300000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E780,4000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 
 
 

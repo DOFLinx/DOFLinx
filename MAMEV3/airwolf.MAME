@@ -39,4 +39,4 @@ SC=80:200:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,50
 # A bonus type range
 SC=500:5000:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400
 SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
-DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle_fox~255~0~255~255~1~false@right_speaker_ring~twinkle_fox~255~0~255~255~1~false

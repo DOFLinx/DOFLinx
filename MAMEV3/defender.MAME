@@ -43,19 +43,20 @@ DELAY=500
 SC=25:25:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E468,200
 
 # marcianito (little person from mars)
-SC=150:150:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E466,200|FF_DOF E220,400|FF_DOF E135,200|FF_DOF E138,200
+SC=150:150:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E466,200|FF_DOF E220,400|FF_DOF E135,200|FF_DOF E138,200|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~0~220~1~false@left_strip~pulse~0~255~0~250~1~false@right_strip~pulse~0~255~0~250~1~false@left_speaker_ring~pulse~0~255~0~250~1~false@right_speaker_ring~pulse~0~255~0~250~1~false@top_strip~pulse~0~255~0~250~1~false@bottom_strip~pulse~0~255~0~250~1~false
 
 # mistery ship
-SC=200:200:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E690,500|FF_DOF E707,500|FF_DOF E694,5ZZZZZZZZZZZZZZZZ00
+SC=200:200:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E690,500|FF_DOF E707,500|FF_DOF E694,500|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 
 # ANOTHER marcianito (little person from mars)
-SC=250:250:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,200
+SC=250:250:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,200|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~255~220~1~false@left_strip~pulse~0~255~255~250~1~false@right_strip~pulse~0~255~255~250~1~false@left_speaker_ring~pulse~0~255~255~250~1~false@right_speaker_ring~pulse~0~255~255~250~1~false@top_strip~pulse~0~255~255~250~1~false@bottom_strip~pulse~0~255~255~250~1~false
 
 # BONUS ship 10000 POINTS
-SE=10000:10000:10:FF_Flasher DV_FLOL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLOR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLCN,FL_FD,10,750,100,Gold|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E769,1000
+SE=10000:10000:10:FF_Flasher DV_FLOL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLOR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLCN,FL_FD,10,750,100,Gold|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E769,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_3~0~0~0~230~2~false@left_strip~marquee~255~215~0~250~1~false@right_strip~marquee~255~215~0~250~1~false@left_speaker_ring~marquee~255~215~0~250~1~false@right_speaker_ring~marquee~255~215~0~250~1~false@top_strip~marquee~255~215~0~250~1~false@bottom_strip~marquee~255~215~0~250~1~false
 
 # ANOTHER MORE marcianito (one more little person from mars)
-SC=500:500:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E784,200
+SC=500:500:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E784,200|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~0~255~220~1~false@left_strip~pulse~255~0~255~250~1~false@right_strip~pulse~255~0~255~250~1~false@left_speaker_ring~pulse~255~0~255~250~1~false@right_speaker_ring~pulse~255~0~255~250~1~false@top_strip~pulse~255~0~255~250~1~false@bottom_strip~pulse~255~0~255~250~1~false
 
 # flopper point (un algo parecidico a un asterisco, maño.)
 SC=1000:1000:FF_Flasher DV_FLCN,FL_TT,1,500,100,Random|FF_Flasher DV_FLIL,FL_TT,1,500,100,Random|FF_Flasher DV_FLIR,FL_TT,1,500,100,Random|FF_DOF E695,3000|FF_DOF E701,3000|FF_DOF E697,3000|FF_DOF E703,3000|FF_DOF E699,3000
+

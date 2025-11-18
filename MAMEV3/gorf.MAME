@@ -47,18 +47,18 @@ FE=09433C3B212D6566526B5B4E5559664C676B5467635354556B321D1F1D661A
 FE=0B414139381E1C1B1A1E18393F362A2C472039414347304031183E3232383A
 DELAY=5000
 # Base group of ships
-SC=50:90:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white
+SC=50:90:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 # Saucer Galaxian diving
-SC=100:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white|FF_DMD,U,display/picture?path=ingame/score_100&fixed=false
+SC=100:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white|FF_DMD,U,display/picture?path=ingame/score_100&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~165~0~220~1~false@left_strip~pulse~255~165~0~250~1~false@right_strip~pulse~255~165~0~250~1~false@left_speaker_ring~pulse~255~165~0~250~1~false@right_speaker_ring~pulse~255~165~0~250~1~false@top_strip~pulse~255~165~0~250~1~false@bottom_strip~pulse~255~165~0~250~1~false
 # orf mission start
-SC=250:250:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white2|FF_DMD,U,display/picture?path=ingame/score_200&fixed=false
+SC=250:250:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white2|FF_DMD,U,display/picture?path=ingame/score_200&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~255~220~1~false@left_strip~pulse~0~255~255~250~1~false@right_strip~pulse~0~255~255~250~1~false@left_speaker_ring~pulse~0~255~255~250~1~false@right_speaker_ring~pulse~0~255~255~250~1~false@top_strip~pulse~0~255~255~250~1~false@bottom_strip~pulse~0~255~255~250~1~false
 # Gorf & Laser Ship
-SC=300:300:FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white2
+SC=300:300:FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_PC U,E,animation/overlay/mameoutput/generic_explosion-white2|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~0~220~1~false@left_strip~pulse~255~255~0~250~1~false@right_strip~pulse~255~255~0~250~1~false@left_speaker_ring~pulse~255~255~0~250~1~false@right_speaker_ring~pulse~255~255~0~250~1~false@top_strip~pulse~255~255~0~250~1~false@bottom_strip~pulse~255~255~0~250~1~false
 #Flag Ship
-SC=1000:1500:FF_PC,U,E,arcade/stream/mameoutput/generic_explosion-long1?l=3|FF_DMD,U,display/picture?path=ingame/score_1000&fixed=false
+SC=1000:1500:FF_PC,U,E,arcade/stream/mameoutput/generic_explosion-long1?l=3|FF_DMD,U,display/picture?path=ingame/score_1000&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~255~255~255~220~5~false@left_strip~marquee~255~255~255~250~5~false@right_strip~marquee~255~255~255~250~5~false@left_speaker_ring~marquee~255~255~255~250~5~false@right_speaker_ring~marquee~255~255~255~250~5~false@bottom_strip~marquee~255~255~255~250~5~false@top_strip~marquee~255~255~255~250~5~false
 SD=1000:FF_PC,U,M,ministats?livesLabel=!PREFIX_L!&livesValue=!LIVES!
 SD=6000:FF_PC,U,E,arcade/stream/mame/gorf?nogif&nomini&event=InGame
-DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/twinkle_fox?r=255&g=0&b=255&speed=255&intensity=255&loops=1
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle_fox~255~0~255~255~1~false@right_speaker_ring~twinkle_fox~255~0~255~255~1~false
 
 #Astro Battle
 #Invader in formation	50 points
