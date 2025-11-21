@@ -2,7 +2,7 @@
   "plugin": {
 	"name": "doflinx",
 	"description": "DOFLinx plugin",
-	"version": "1",
+	"version": "4",
 	"author": "DDH69",
 	"type": "plugin",
 	"start": "true"
