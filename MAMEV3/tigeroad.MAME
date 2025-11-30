@@ -1,7 +1,7 @@
 
 #######################################################################
 # MAME configuration for Super Mario
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created by MositoFeliz AKAjunkyerd
 #######################################################################
 ###########################################################################################################
@@ -14,14 +14,12 @@ KEY_TO_COMMAND=BUT_B1,button1,BUT_B2,button2
 #Start with effect E83 mx MATRIX during 7000 miliseconds (nintendo words)
 #Start with effect E98 mx MATRIX during 7000 miliseconds (arcade universe animation words)
 ##################
-
 #FF_DOF=E83,7000
-
-FF_DOF=E98,7000
-
+FF_DOF=E98,7000BUTTON_COLOUR_CHANGE=BUT_J1,Red,BUT_B1,Red,BUT_B2,Blue
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2
 
 [SHUTDOWN]
-
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2
 
 [COMMANDS]
 
@@ -32,8 +30,8 @@ FF_DOF=E98,7000
 
 [SCORE]
 
-FE=0F4436351B275F604C6555484F53604661654E615D4D4E4F654E4D49151D486D24
-FE=06473F3E24222120241E444441373B33263F47494D364637
+FE=0251434228346C6D597262555C606D536E725B6E6A5A5B5C725B5A56222A557A31
+FE=0548403F25232221251F454542383C342740484A4E374738
 DELAY=500
 FE=0C473D3C1E2A62634F68584B5256634964685164605051526851504C1848167027
 FE=0C413D3C1E1C1B1F1920173D3D3A30343B1F384042462F3F30

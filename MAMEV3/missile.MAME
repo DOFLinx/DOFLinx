@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Missile Attack
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 #
 # This game will report only the current players score, be that P1 or P2, both report as P1.  This is because the game only gives access to the current players score
 # Increments for advanced scores in upper levels are made hard due to the multiplier effect, see score table at base of file.
@@ -11,12 +11,14 @@
 [STARTUP]
 BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
 COLOUR_PALETTE=White,Red,Blue,Green
-BUTTONS_LIT=BUT_P1,BUT_P2
 KEY_TO_COMMAND=BUT_B1,fire
 FF_DOF=E78,-1
+BUTTON_COLOUR_CHANGE=BUT_TB1,Red,BUT_B1,Red,BUT_B2,Red,BUT_B3,Red
+BUTTONS_LIT_ADDED=BUT_TB1,BUT_B1,BUT_B2,BUT_B3
 
 [SHUTDOWN]
 KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_TB1,BUT_B1,BUT_B2,BUT_B3
 
 [COMMANDS]
 fire|ON|FF_DOF E216,-1
@@ -25,8 +27,8 @@ player1|ON|FF_DOF E78,0
 player2|ON|FF_DOF E78,0
 
 [SCORE]
-FE=005345442A366E6F5B7464575E626F5570745D706C5C5D5E743B277128
-FE=0A433B3A201E1D1C201A3B41382C2E3A2247394937434334
+FE=074C3E3D232F6768546D5D50575B684E696D5669655556576D34206A21
+FE=07463E3D2321201F231D3E443B2F313D254A3C4C3A464637
 DELAY=5000
 # Missile
 SC=5:95:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~165~0~220~1~false@left_strip~pulse~255~165~0~250~1~false@right_strip~pulse~255~165~0~250~1~false@left_speaker_ring~pulse~255~165~0~250~1~false@right_speaker_ring~pulse~255~165~0~250~1~false@top_strip~pulse~255~165~0~250~1~false@bottom_strip~pulse~255~165~0~250~1~false

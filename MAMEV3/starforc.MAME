@@ -1,28 +1,25 @@
 ########################################################################
 #############################################################
 # MAME configuration for STARFORCE
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created by MositoFeliz AKAjunkyerd
 #  SECOND VERSION...ALMOST HAPPY
 ######################################################
 
 [STARTUP]
-
 ##################
 #Start with effect E98 mx MATRIX BACK AND SIDES, during 5000 miliseconds (ARCADE UNIVERSE)
 ##################
-
 FF_DOF=E98,5000
-
 ######################################################
 # EXPLANATION = BUT_B1 button1 -- FOR ACTION BUTTON1(FIRE)
 ######################################################
-
 #KEY_TO_COMMAND=BUT_B1,button1
-
+BUTTON_COLOUR_CHANGE=BUT_J1,Red,BUT_B1,Blue
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1
 
 [SHUTDOWN]
-
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1
 
 [COMMANDS]
 
@@ -35,11 +32,11 @@ FF_DOF=E98,5000
 
 [SCORE]
 
-FE=0A493B3A202C6465516A5A4D5458654B666A5366625253546A251D221E651C
-FE=0A433B3A201E1D1C201A40403D33372F223B434549324233
+FE=0350424127336B6C587161545B5F6C526D715A6D69595A5B712C2429256C23
+FE=0D4038371D1B1A191D173D3D3A30342C1F384042462F3F30
 DELAY=500
-FE=0D463C3B1D2961624E67574A51556248636750635F4F5051671A191E1F6219
-FE=034A46452725242327214747443A3E3629424A4C5039493A
+FE=0251474628346C6D597262555C606D536E725B6E6A5A5B5C722524292A6D24
+FE=0548444325232221251F454542383C342740484A4E374738
 DELAY=500
 
 #####################################SHIPS BONUS AND ENEMIES#####################################

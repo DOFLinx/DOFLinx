@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Ghost And Goblins
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created by MositoFeliz AKAjunkyerd,javiersertaun,flicki,cachulin,etc
 # First version
 ##################
@@ -18,12 +18,13 @@
 ##################
 #Start with effect E66 mx MATRIX during 7000 miliseconds (capcom words)
 ##################
-
 FF_DOF=E66,7000
-
+BUTTON_COLOUR_CHANGE=BUT_J1,Medium_Spring_Green,BUT_B1,Cyan,BUT_B2,Yellow
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2
 
 [SHUTDOWN]
-
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2
+KEY_TO_COMMAND=
 
 [COMMANDS]
 
@@ -34,11 +35,11 @@ FF_DOF=E66,7000
 
 [SCORE]
 
-FE=054E403F2531696A566F5F52595D6A506B6F586B675758596F222126276A21
-FE=034A42412725242327214747443A3E3629424A4C5039493A
+FE=0D4638371D2961624E67574A51556248636750635F4F5051671A191E1F6219
+FE=08453D3C22201F1E221C42423F353931243D45474B344435
 DELAY=500
-FE=0F443A391B275F604C6555484F53604661654E615D4D4E4F6518171C1D6017
-FE=04494544262423222620464643393D352841494B4F384839
+FE=0350464527336B6C587161545B5F6C526D715A6D69595A5B71242328296C23
+FE=0F3E3A391B1918171B153B3B382E322A1D363E40442D3D2E
 DELAY=500
 
 #killing to ("Woodie Flying monked outfit pigs with Red Eyes" "Purple Armored flying knights" "Blue and Red crows" "Green carnivorous plants" "Blue and purple petite flying and running devils with red wings" "bats" "blue tunic woodie-woodie dancing skeleton") with no mercy, and earning 100 points to your score. 

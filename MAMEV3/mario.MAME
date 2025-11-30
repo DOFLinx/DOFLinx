@@ -1,6 +1,6 @@
 #######################################################################
 # MAME configuration for Super Mario
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 # Created by MositoFeliz AKAjunkyerd,javiersertaun
 #######################################################################
 
@@ -14,14 +14,13 @@
 #Start with effect E83 mx MATRIX during 7000 miliseconds (nintendo words)
 #Start with effect E98 mx MATRIX during 7000 miliseconds (arcade universe animation words)
 ##################
-
 FF_DOF=E83,7000
-
 #FF_DOF=E98,7000
-
+BUTTON_COLOUR_CHANGE=BUT_J1,White,BUT_B1,Blue
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1
 
 [SHUTDOWN]
-
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1
 
 [COMMANDS]
 
@@ -37,11 +36,11 @@ FF_DOF=E83,7000
 
 [SCORE]
 
-FE=005345442A366E6F5B7464575E626F5570745D706C5C5D5E742D2E27246F25
-FE=0D4038371D1B1A191D173D3D3A30342C1F384042462F3F30
+FE=044F414026326A6B577060535A5E6B516C70596C6858595A70292A23206B21
+FE=0A433B3A201E1D1C201A40403D33372F223B434549324233
 DELAY=500
 FE=005349482A366E6F5B7464575E626F5570745D706C5C5D5E742D2E272A6F25
-FE=004D49482A2827262A244A4A473D41392C454D4F533C4C3D
+FE=074642412321201F231D434340363A32253E46484C354536
 DELAY=500
 
 #Cyan and blue effect for enemy flipped
