@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for 1941
-# DOFLinx force feedback configuration file v13
+# DOFLinx force feedback configuration file v14
 # Created By D@vS0ut0
 ##################
 
@@ -12,6 +12,7 @@ KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,Bomb
 FF_DOF=E66,-1
 MAME_FBNEO_OFFSET=2,0,ffffff,ff0000
 BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2
+MAX_SCORE_CHANGE=3000000
 
 [SHUTDOWN]
 KEY_TO_COMMAND=
