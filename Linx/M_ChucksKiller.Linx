@@ -1,0 +1,88 @@
+##################
+#
+# Chuck's Killer
+# DOFLinx force feedback LINX configuration file v1
+#
+##################
+
+[STARTUP]
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Silver,Dark_Red,Red,Amber,Crimson,Brown,Dark_Golden_Rod,Navy,Teal,Gray,Saddle_Brown,Slate_Gray,Dim_Gray,Burly_Wood,Tan,Light_Blue,Dark_Khaki,Indian_Red
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Teal,BUT_MR,Teal
+
+[COMMANDS]
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BLOOD1
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BLOOD2
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BLOOD3
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation CHUCKY
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation EYES
+
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Random|FF_DOF E23,-1|FF_B2S B2SStartAnimation BLOOD1
+R2|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Random|FF_DOF E24,-1|FF_B2S B2SStartAnimation BLOOD2
+R3|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Random|FF_DOF E25,-1|FF_B2S B2SStartAnimation CHUCKY
+R4|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Random|FF_DOF E26,-1|FF_B2S B2SStartAnimation BLOOD2
+R5|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Random|FF_DOF E27,-1|FF_B2S B2SStartAnimation BLOOD1
+HOLE|ON|FF_DOF E140,-1|FF_Dev DV_GR,1000|FF_B2S B2SStartAnimation BLOOD3
+FAN|ON|FF_Dev DV_FN,750
+DROP1|ON|FF_SSF DropTarget|FF_DOF E765,-1|FF_DEV DV_ML,-1|FF_B2S B2SStartAnimation EYES
+DROP2|ON|FF_SSF DropTarget|FF_DOF E766,-1|FF_DEV DV_MC,-1|FF_B2S B2SStartAnimation EYES
+DROP3|ON|FF_SSF DropTarget|FF_DOF E782,-1|FF_DEV DV_MR,-1|FF_B2S B2SStartAnimation EYES
+S1|ON|FF_DOF E116,-1|FF_DOF E124,-1|FF_B2S B2SStartAnimation CHUCKY
+S2|ON|FF_DOF E112,-1|FF_DOF E126,-1|FF_B2S B2SStartAnimation EYES
+S3|ON|FF_DOF E113,-1|FF_DOF E127,-1|FF_B2S B2SStartAnimation BLOOD1
+S4|ON|FF_DOF E114,-1|FF_DOF E128,-1|FF_B2S B2SStartAnimation BLOOD2
+S5|ON|FF_DOF E115,-1|FF_DOF E123,-1|FF_B2S B2SStartAnimation BLOOD3
+
+coll_target_back2|ALIAS|DROP1
+coll_target_left2|ALIAS|DROP2
+coll_target_right|ALIAS|DROP3
+coll_chucky_body|ALIAS|S1
+coll_chucky_head|ALIAS|S2
+coll_chucky_left_forearm|ALIAS|S3
+coll_chucky_left_leg_lower|ALIAS|S4
+coll_chucky_left_leg_upper|ALIAS|S4
+coll_chucky_left_upperarm|ALIAS|S5
+coll_chucky_right_forearm|ALIAS|S5
+coll_chucky_right_leg_lower|ALIAS|S1
+coll_chucky_right_leg_upper|ALIAS|S1
+coll_chucky_right_upperarm|ALIAS|S2
+coll_jar|ALIAS|S3
+coll_knife_left|ALIAS|A1
+coll_knife_right|ALIAS|A2
+coll_rubber_posts_min|ALIAS|A3
+coll_blade_arm|ALIAS|A4
+sensor_bangback|ALIAS|S1
+sensor_bangback002|ALIAS|S2
+sensor_blood_pool_inlane_left|ALIAS|R2
+sensor_blood_pool_inlane_right|ALIAS|R4
+sensor_blood_pool_plunger|ALIAS|R3
+sensor_candle_01|ALIAS|S1
+sensor_candle_02|ALIAS|S2
+sensor_candle_03|ALIAS|S3
+sensor_dead_zone|ALIAS|S4
+sensor_eject_hole|ALIAS|SENSOR_VUK
+sensor_fan|ALIAS|FAN
+sensor_fan_inside|ALIAS|FAN
+sensor_held_on_habitrail|ALIAS|S5
+sensor_hole|ALIAS|HOLE
+sensor_instant_launcher|ALIAS|S1
+sensor_left_ramp|ALIAS|R1
+sensor_left_ramp=_01|ALIAS|R1
+sensor_left_ramp_02|ALIAS|R1
+sensor_left_ramp_wave|ALIAS|R2
+sensor_magnet_mode_start|ALIAS|A5
+sensor_magnet_skillshot|ALIAS|A6
+sensor_right_loop_01|ALIAS|R4
+sensor_right_loop_002|ALIAS|R4
+sensor_right_loop_03|ALIAS|R4
+sensor_right_ramp|ALIAS|R5
+sensor_right_ramp_01|ALIAS|R5
+sensor_right_ramp_02|ALIAS|R5
+sensor_sinkhole_front|ALIAS|HOLE
+sensor_sinkhole_rear|ALIAS|HOLE
+sensor_under_ramp|ALIAS|R3
+sensor_underground_pass|ALIAS|R3
+bonus_02|ALIAS|A7
+bonus_03|ALIAS|A8
+bonus_04|ALIAS|A9
+bonus_05|ALIAS|A10

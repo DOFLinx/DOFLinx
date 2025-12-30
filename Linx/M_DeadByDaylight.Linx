@@ -1,0 +1,82 @@
+##################
+#
+# Dead by Daylight
+# DOFLinx force feedback LINX configuration file v1
+#
+##################
+
+[STARTUP]
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Silver,Dark_Red,Red,Amber,Crimson,Brown,Dark_Golden_Rod,Navy,Teal,Gray,Saddle_Brown,Slate_Gray,Dim_Gray,Burly_Wood,Tan,Light_Blue,Dark_Khaki,Indian_Red
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Teal,BUT_MR,Teal
+
+[COMMANDS]
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BANNER
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation C1
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation LOGO
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation C2
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation C5
+
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Random|FF_DOF E23,-1|FF_B2S B2SStartAnimation C3
+R2|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Random|FF_DOF E24,-1|FF_B2S B2SStartAnimation C4
+R3|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Random|FF_DOF E25,-1|FF_B2S B2SStartAnimation LIGHT1
+R4|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Random|FF_DOF E26,-1|FF_B2S B2SStartAnimation LIGHT2
+R5|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Random|FF_DOF E27,-1|FF_B2S B2SStartAnimation LIGHT3
+HOLE|ON|FF_DOF E140,-1|FF_Dev DV_GR,1000|FF_B2S B2SStartAnimation PINBALL
+FAN|ON|FF_Dev DV_FN,750
+DROP1|ON|FF_SSF DropTarget|FF_DOF E765,-1|FF_DEV DV_ML,-1|FF_B2S B2SStartAnimation PINBALL
+DROP2|ON|FF_SSF DropTarget|FF_DOF E766,-1|FF_DEV DV_MC,-1|FF_B2S B2SStartAnimation LIGHT4
+DROP3|ON|FF_SSF DropTarget|FF_DOF E782,-1|FF_DEV DV_MR,-1|FF_B2S B2SStartAnimation LIGHT5
+S1|ON|FF_DOF E116,-1|FF_DOF E124,-1|FF_B2S B2SStartAnimation C1
+S2|ON|FF_DOF E112,-1|FF_DOF E126,-1|FF_B2S B2SStartAnimation C2
+S3|ON|FF_DOF E113,-1|FF_DOF E127,-1|FF_B2S B2SStartAnimation C3
+S4|ON|FF_DOF E114,-1|FF_DOF E128,-1|FF_B2S B2SStartAnimation C4
+S5|ON|FF_DOF E115,-1|FF_DOF E123,-1|FF_B2S B2SStartAnimation C5
+
+coll_Bear_Trap|ALIAS|S1
+coll_beartrap002|ALIAS|A1
+coll_droptarget|ALIAS|DROP1
+coll_droptarget_03|ALIAS|DROP3
+coll_droptarget_2|ALIAS|DROP2
+coll_palette|ALIAS|S2
+coll_palette_back|ALIAS|A2
+coll_palette_lanes|ALIAS|A3
+target01|ALIAS|DROP1
+target02|ALIAS|DROP2
+sensor_after_sinkhole|ALIAS|HOLE
+sensor_backlane|ALIAS|R3
+sensor_ball_lock_magnet|ALIAS|S3
+sensor_bumplane_head|ALIAS|R2
+sensor_bumplane_off|ALIAS|R2
+sensor_bumplane_tail|ALIAS|R2
+sensor_jump_head|ALIAS|R4
+sensor_jump_off|ALIAS|R4
+sensor_jump_tail|ALIAS|R4
+sensor_locker_head|ALIAS|R1
+sensor_locker_off|ALIAS|R1
+sensor_locker_tail|ALIAS|R1
+sensor_minilane_03|ALIAS|R2
+sensor_minilane_02|ALIAS|R2
+sensor_minilane|ALIAS|R2
+sensor_multilane_head|ALIAS|R5
+sensor_multilane_off|ALIAS|R5
+sensor_multilane_tail|ALIAS|R5
+sensor_orbit_1|ALIAS|R2
+sensor_orbit_2|ALIAS|R3
+sensor_orbit_3|ALIAS|R4
+sensor_orbit_4|ALIAS|R2
+sensor_safety_01|ALIAS|S4
+sensor_safety_02|ALIAS|S4
+sensor_safety_03|ALIAS|S4
+sensor_safety_04|ALIAS|S4
+sensor_safety_05|ALIAS|S4
+sensor_safety_06|ALIAS|S4
+sensor_safety_center|ALIAS|S4
+sensor_sinkh_bumper|ALIAS|S5
+sensor_sinkh_heal|ALIAS|S1
+sensor_sinkh_locker|ALIAS|S2
+sensor_sinkh_minilane|ALIAS|R2
+sensor_sinkh_multiplier|ALIAS|S4
+sensor_sinkh_rightvuk|ALIAS|SENSOR_VUK
+sensor_sinkhole_middle|ALIAS|HOLE
+sensor_upperleft_center|ALIAS|A7

@@ -1,0 +1,144 @@
+##################
+#
+# Duke Nukem Big Shot
+# DOFLinx force feedback LINX configuration file v1
+#
+##################
+
+[STARTUP]
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Silver,Dark_Red,Red,Amber,Crimson,Brown,Dark_Golden_Rod,Navy,Teal,Gray,Saddle_Brown,Slate_Gray,Dim_Gray,Burly_Wood,Tan,Light_Blue,Dark_Khaki,Indian_Red
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Teal,BUT_MR,Teal
+
+[COMMANDS]
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BALLSLEFT
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BLAST
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BLOODLEFT
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation GUNLEFT
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation GUNRIGHT
+
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Random|FF_DOF E23,-1|FF_B2S B2SStartAnimation BALLSRIGHT
+R2|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Random|FF_DOF E24,-1|FF_B2S B2SStartAnimation BLOODRIGHT
+R3|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Random|FF_DOF E25,-1|FF_B2S B2SStartAnimation DUKE
+R4|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Random|FF_DOF E26,-1|FF_B2S B2SStartAnimation JACKPOT
+R5|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Random|FF_DOF E27,-1|FF_B2S B2SStartAnimation MONSTER1
+HOLE|ON|FF_DOF E140,-1|FF_Dev DV_GR,1000|FF_B2S B2SStartAnimation DUKE
+FAN|ON|FF_Dev DV_FN,750
+DROP1|ON|FF_SSF DropTarget|FF_DOF E765,-1|FF_DEV DV_ML,-1|FF_B2S B2SStartAnimation JACKPOT
+DROP2|ON|FF_SSF DropTarget|FF_DOF E766,-1|FF_DEV DV_MC,-1|FF_B2S B2SStartAnimation MONSTER1
+DROP3|ON|FF_SSF DropTarget|FF_DOF E782,-1|FF_DEV DV_MR,-1|FF_B2S B2SStartAnimation MONSTER2
+S1|ON|FF_DOF E116,-1|FF_DOF E124,-1|FF_B2S B2SStartAnimation MONSTER2
+S2|ON|FF_DOF E112,-1|FF_DOF E126,-1|FF_B2S B2SStartAnimation NUKE
+S3|ON|FF_DOF E113,-1|FF_DOF E127,-1|FF_B2S B2SStartAnimation NUKESIGN
+S4|ON|FF_DOF E114,-1|FF_DOF E128,-1|FF_B2S B2SStartAnimation BLOODLEFT
+S5|ON|FF_DOF E115,-1|FF_DOF E123,-1|FF_B2S B2SStartAnimation BLOODRIGHT
+
+coll_droptarget_enemy_boss|ALIAS|DROP1
+coll_droptarget_enemy_boss_back|ALIAS|DROP2
+coll_droptarget_door_1|ALIAS|DROP3
+coll_droptarget_door_2|ALIAS|DROP1
+coll_droptarget_door_3|ALIAS|DROP2
+coll_droptarget_enemy_medium_1_back|ALIAS|DROP3
+coll_droptarget_enemy_medium_2_back|ALIAS|DROP1
+coll_droptarget_enemy_medium_1|ALIAS|DROP2
+coll_droptarget_enemy_medium_2|ALIAS|DROP3
+coll_droptarget_mpf_left|ALIAS|DROP1
+coll_droptarget_mpf_right|ALIAS|DROP2
+coll_droptarget_enemy_small_1|ALIAS|DROP2
+coll_droptarget_enemy_small_2|ALIAS|DROP3
+coll_droptarget_enemy_small_3|ALIAS|DROP1
+coll_droptarget_enemy_small_4|ALIAS|DROP2
+coll_droptarget_enemy_small_1_back|ALIAS|DROP1
+coll_droptarget_enemy_small_2_back|ALIAS|DROP2
+coll_droptarget_enemy_small_3_back|ALIAS|DROP3
+coll_droptarget_enemy_small_4_back|ALIAS|DROP1
+sensor_droptarget_enemy_small_1_corpse|ALIAS|DROP2
+sensor_droptarget_enemy_small_2_corpse|ALIAS|DROP3
+sensor_droptarget_enemy_small_3_corpse|ALIAS|DROP1
+sensor_droptarget_enemy_small_4_corpse|ALIAS|DROP2
+sensor_door_droptargets|ALIAS|DROP3
+coll_target_01|ALIAS|S1
+coll_target_02|ALIAS|S2
+coll_target_03|ALIAS|S3
+coll_target_04|ALIAS|S3
+coll_target_05|ALIAS|S4
+coll_target_06|ALIAS|S5
+coll_target_07|ALIAS|S1
+coll_target_08|ALIAS|S2
+coll_target_09|ALIAS|S3
+coll_target_10|ALIAS|S4
+coll_target_11|ALIAS|S5
+coll_target_12|ALIAS|S1
+coll_target_13|ALIAS|S2
+coll_target_14|ALIAS|S3
+coll_target_15|ALIAS|S4
+coll_target_16|ALIAS|S5
+coll_target_17|ALIAS|S1
+coll_target_18|ALIAS|S2
+coll_target_19|ALIAS|S3
+coll_vari_target|ALIAS|S1
+sensor_flamethrower_left|ALIAS|S2
+sensor_flamethrower_right|ALIAS|S3
+sensor_pickup_1|ALIAS|A1
+sensor_pickup_2|ALIAS|A2
+sensor_pickup_4|ALIAS|A3
+sensor_pickup_3|ALIAS|A4
+sensor_queen|ALIAS|S4
+sensor_blast_1_left|ALIAS|S5
+sensor_blast_2_left|ALIAS|S1
+sensor_blast_3_left|ALIAS|S2
+sensor_blast_1_right|ALIAS|S3
+sensor_blast_2_right|ALIAS|S4
+sensor_blast_3_right|ALIAS|S5
+sensor_balcony_saucer_02|ALIAS|S1
+sensor_balcony_saucer_01|ALIAS|S2
+sensor_balcony_saucer_00|ALIAS|S3
+sensor_loot_saucer|ALIAS|S4
+sensor_spindisk_launch|ALIAS|S5
+sensor_enemy_medium_splat_1|ALIAS|S1
+sensor_enemy_medium_splat_2|ALIAS|S2
+sensor_enemy_small_splat_1|ALIAS|A7
+sensor_enemy_small_splat_2|ALIAS|A8
+sensor_enemy_small_splat_3|ALIAS|A9
+sensor_enemy_small_splat_4|ALIAS|A10
+sensor_balcony_cleared_end|ALIAS|S3
+sensor_dropdoor_in|ALIAS|S4
+sensor_dropdoor_ou1|ALIAS|S5
+sensor_elevator_saucer|ALIAS|S1
+sensor_feeder|ALIAS|S2
+sensor_mpf_cutout_left|ALIAS|S3
+sensor_mpf_cutout_right|ALIAS|S4
+sensor_spindisk_01|ALIAS|A1
+sensor_spindisk_02|ALIAS|A2
+sensor_spindisk_03|ALIAS|A3
+sensor_spindisk_04|ALIAS|A4
+sensor_spindisk_05|ALIAS|A5
+sensor_spindisk_06|ALIAS|A6
+sensor_balcony_hole_start|ALIAS|HOLE
+sensor_balcony_hole_end|ALIAS|HOLE
+sensor_fromminiplf_hole|ALIAS|HOLE
+sensor_hole_launch|ALIAS|HOLE
+sensor_spindisk_hole_end|ALIAS|HOLE
+sensor_tominiplf_hole_end|ALIAS|HOLE
+sensor_tominiplf_hole_start|ALIAS|HOLE
+sensor_left_hole_end|ALIAS|HOLE
+sensor_left_hole_start|ALIAS|HOLE
+sensor_center_lane_start|ALIAS|R3
+sensor_center_left_lane_end|ALIAS|R1
+sensor_center_left_lane_start|ALIAS|R1
+sensor_center_lane_end|ALIAS|R3
+sensor_left_habitlane_end|ALIAS|R2
+sensor_left_habitlane_start|ALIAS|R2
+sensor_left_lane_end|ALIAS|R1
+sensor_left_lane_start|ALIAS|R3
+sensor_right_lane_end|ALIAS|R5
+sensor_right_lane_start|ALIAS|R5
+sensor_right_habitlane_end|ALIAS|R4
+sensor_right_habitlane_start|ALIAS|R4
+sensor_center_waterTank_lane_end|ALIAS|R3
+sensor_center_wizard_lane_end|ALIAS|R3
+
+#sensor_bumpers_in_left_start
+#sensor_bumpers_in_left_end
+#sensor_bumpers_in_right
+#sensor_bumpers_out

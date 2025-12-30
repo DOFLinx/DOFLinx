@@ -1,0 +1,101 @@
+##################
+#
+# Wrath of the Elder Gods Directors Cut
+# DOFLinx force feedback LINX configuration file v1
+#
+##################
+
+[STARTUP]
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Silver,Dark_Red,Red,Amber,Crimson,Brown,Dark_Golden_Rod,Navy,Teal,Gray,Saddle_Brown,Slate_Gray,Dim_Gray,Burly_Wood,Tan,Light_Blue,Dark_Khaki,Indian_Red
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Teal,BUT_MR,Teal
+
+[COMMANDS]
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation MONSTER
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation MOON
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation WOMAN
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BUSHLEFT
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BUSHRIGHT
+
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Random|FF_DOF E23,-1|FF_B2S B2SStartAnimation HOUSELEFT
+R2|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Random|FF_DOF E24,-1|FF_B2S B2SStartAnimation BUSHLEFT
+R3|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Random|FF_DOF E25,-1|FF_B2S B2SStartAnimation MONSTER
+R4|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Random|FF_DOF E26,-1|FF_B2S B2SStartAnimation BUSHRIGHT
+R5|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Random|FF_DOF E27,-1|FF_B2S B2SStartAnimation HOUSERIGHT
+HOLE|ON|FF_DOF E140,-1|FF_Dev DV_GR,1000|FF_B2S B2SStartAnimation WINDOW1
+DROP1|ON|FF_SSF DropTarget|FF_DOF E765,-1|FF_DEV DV_ML,-1|FF_B2S B2SStartAnimation WINDOW2
+DROP2|ON|FF_SSF DropTarget|FF_DOF E766,-1|FF_DEV DV_MC,-1|FF_B2S B2SStartAnimation WINDOW1
+DROP3|ON|FF_SSF DropTarget|FF_DOF E782,-1|FF_DEV DV_MR,-1|FF_B2S B2SStartAnimation MOON
+S1|ON|FF_DOF E116,-1|FF_DOF E124,-1|FF_B2S B2SStartAnimation WOMAN
+S2|ON|FF_DOF E112,-1|FF_DOF E126,-1|FF_B2S B2SStartAnimation WINDOW1
+S3|ON|FF_DOF E113,-1|FF_DOF E127,-1|FF_B2S B2SStartAnimation WINDOW2
+S4|ON|FF_DOF E114,-1|FF_DOF E128,-1|FF_B2S B2SStartAnimation MOON
+S5|ON|FF_DOF E115,-1|FF_DOF E123,-1|FF_B2S B2SStartAnimation BUSHLEFT
+
+coll_target_01|ALIAS|DROP1
+coll_target_02|ALIAS|DROP1
+coll_droptarget_01|ALIAS|DROP2
+coll_droptarget_02|ALIAS|DROP2
+coll_droptarget_03|ALIAS|DROP2
+coll_droptarget_04|ALIAS|DROP2
+sensor_left_ramp_head|ALIAS|R1
+sensor_left_ramp_off|ALIAS|R1
+sensor_left_ramp_tail|ALIAS|R1
+sensor_left_orbit_head|ALIAS|R2
+sensor_left_orbit_off|ALIAS|R2
+sensor_left_orbit_tail|ALIAS|R2
+sensor_centre_ramp_head|ALIAS|R3
+sensor_centre_ramp_off|ALIAS|R3
+sensor_centre_ramp_tail|ALIAS|R3
+sensor_mini_orbit_1|ALIAS|R4
+sensor_mini_orbit_2|ALIAS|R4
+sensor_mini_orbit_3|ALIAS|R4
+sensor_mini_orbit_4|ALIAS|R4
+sensor_short_ramp_head|ALIAS|R4
+sensor_short_ramp_off|ALIAS|R4
+sensor_right_ramp_head|ALIAS|R5
+sensor_right_ramp_off|ALIAS|R5
+sensor_right_ramp_tail|ALIAS|R5
+sensor_tendril_splash_left_ramp|ALIAS|R1
+sensor_tendril_splash_right_ramp|ALIAS|R5
+sensor_tendril_splash_spindisk_ramp|ALIAS|R3
+sensor_lift|ALIAS|HOLE
+sensor_sinkhole|ALIAS|HOLE
+sensor_sinkhole_toy|ALIAS|HOLE
+
+coll_bashing_toy|ALIAS|S1
+coll_bashing_toy_door|ALIAS|S2
+coll_bashing_toy_hit|ALIAS|S3
+coll_tendril_eye_1|ALIAS|S4
+coll_tendril_eye_2|ALIAS|S5
+coll_tendril_eye_3|ALIAS|S1
+coll_tendril_eye_4|ALIAS|S2
+coll_tendril_eye_5|ALIAS|S3
+coll_tendril_eye_6|ALIAS|S4
+coll_tulu_tentacle_stopper_left|ALIAS|R1
+coll_tulu_tentacle_stopper_right|ALIAS|R2
+sensor_capture_steal|ALIAS|S5
+sensor_mouth_ball|ALIAS|S1
+sensor_nuisance_punch_trigger|ALIAS|S2
+sensor_owg_bottom|ALIAS|S3
+sensor_owg_top|ALIAS|S3
+sensor_platform|ALIAS|S4
+sensor_platform_exit|ALIAS|S4
+sensor_spindisk_1|ALIAS|A10
+sensor_spindisk_2|ALIAS|A10
+sensor_spindisk_3|ALIAS|A10
+sensor_spindisk_4|ALIAS|A10
+sensor_spindisk_lift|ALIAS|A9
+sensor_tendril|ALIAS|S5
+sensor_tendril_entry_left|ALIAS|R5
+sensor_tendril_entry_right|ALIAS|R5
+sensor_tendril_entry_spindisk|ALIAS|R5
+sensor_tentacle_nuisance_punch|ALIAS|A10
+bonus_01|ALIAS|A1
+bonus_02|ALIAS|A2
+bonus_03|ALIAS|A3
+bonus_04|ALIAS|A4
+bonus_05|ALIAS|A5
+bonus_top_01|ALIAS|A6
+bonus_top_02|ALIAS|A7
+bonus_top_03|ALIAS|A8

@@ -1,0 +1,84 @@
+##################
+#
+# Texas Chainsaw
+# DOFLinx force feedback LINX configuration file v1
+#
+##################
+
+[STARTUP]
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Silver,Dark_Red,Red,Amber,Crimson,Brown,Dark_Golden_Rod,Navy,Teal,Gray,Saddle_Brown,Slate_Gray,Dim_Gray,Burly_Wood,Tan,Light_Blue,Dark_Khaki,Indian_Red
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Teal,BUT_MR,Teal
+
+[COMMANDS]
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BIRDS
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation FLOWERS
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation JACKPOT
+sensor_bumpers_left|ALIAS|Bumper01
+sensor_bumpers_right|ALIAS|Bumper02
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation MAN
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation MASK
+
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Random|FF_DOF E23,-1|FF_B2S B2SStartAnimation KICKBACK
+R2|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Random|FF_DOF E24,-1|FF_B2S B2SStartAnimation BIRDS
+R3|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Random|FF_DOF E25,-1|FF_B2S B2SStartAnimation FLOWERS
+R4|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Random|FF_DOF E26,-1|FF_B2S B2SStartAnimation JACKPOT
+R5|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Random|FF_DOF E27,-1|FF_B2S B2SStartAnimation MASK
+HOLE|ON|FF_DOF E140,-1|FF_Dev DV_GR,1000|FF_B2S B2SStartAnimation MAN
+FAN|ON|FF_Dev DV_FN,750
+DROP1|ON|FF_SSF DropTarget|FF_DOF E765,-1|FF_DEV DV_ML,-1|FF_B2S B2SStartAnimation MASK
+DROP2|ON|FF_SSF DropTarget|FF_DOF E766,-1|FF_DEV DV_MC,-1|FF_B2S B2SStartAnimation KICKBACK
+DROP3|ON|FF_SSF DropTarget|FF_DOF E782,-1|FF_DEV DV_MR,-1|FF_B2S B2SStartAnimation JACKPOT
+S1|ON|FF_DOF E116,-1|FF_DOF E124,-1|FF_B2S B2SStartAnimation MASK
+S2|ON|FF_DOF E112,-1|FF_DOF E126,-1|FF_B2S B2SStartAnimation MAN
+S3|ON|FF_DOF E113,-1|FF_DOF E127,-1|FF_B2S B2SStartAnimation BIRDS
+S4|ON|FF_DOF E114,-1|FF_DOF E128,-1|FF_B2S B2SStartAnimation FLOWERS
+S5|ON|FF_DOF E115,-1|FF_DOF E123,-1|FF_B2S B2SStartAnimation MASK
+
+coll_target_01|ALIAS|S1
+coll_target_02|ALIAS|S2
+coll_target_03|ALIAS|S3
+coll_target_04|ALIAS|S4
+coll_target_05|ALIAS|S5
+coll_target_06|ALIAS|S1
+coll_target_07|ALIAS|S2
+coll_target_08|ALIAS|S3
+coll_droptarget_01|ALIAS|DROP1
+coll_droptarget_02|ALIAS|DROP2
+coll_droptarget_03|ALIAS|DROP3
+coll_droptarget_04|ALIAS|DROP1
+sensor_fx_inlane_outlane|ALIAS|S4
+sensor_fx_macabre_blood|ALIAS|S5
+sensor_fx_plungerlane|ALIAS|S1
+sensor_fx_under_chainsaw|ALIAS|S2
+sensor_behind_head|ALIAS|S3
+sensor_bus|ALIAS|S4
+sensor_chainsaw|ALIAS|R3
+sensor_chainsaw_buffer_in|ALIAS|R3
+sensor_chainsaw_buffer_out|ALIAS|R3
+sensor_chainsaw_head|ALIAS|R3
+sensor_chainsaw_out|ALIAS|R3
+sensor_head_stuck|ALIAS|R1
+sensor_hook_head|ALIAS|R1
+sensor_hook_tail|ALIAS|R1
+sensor_kickout_hole|ALIAS|HOLE
+sensor_left_habit_end|ALIAS|R2
+sensor_left_habit_start|ALIAS|R2
+sensor_macabre_head|ALIAS|R1
+sensor_macabre_tail|ALIAS|R1
+sensor_orbit_left_gate|ALIAS|R5
+sensor_orbit_right_enter|ALIAS|R4
+sensor_orbit_right_gate|ALIAS|R4
+sensor_orbit_right_head|ALIAS|R5
+sensor_droptarget_stuck|ALIAS|SENSOR_VUK
+sensor_sawblade|ALIAS|S1
+sensor_slaughter_head|ALIAS|S2
+sensor_slaughter_tail
+sensor_spinner|ALIAS|S3
+bonus_01|ALIAS|A1
+bonus_02|ALIAS|A2
+bonus_03|ALIAS|A3
+bonus_04|ALIAS|A4
+bonus_05|ALIAS|A5
+bonus_06|ALIAS|A6
+bonus_07|ALIAS|A7

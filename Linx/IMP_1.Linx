@@ -1,0 +1,69 @@
+##################
+#
+# Infected Mushroom Pinball
+# DOFLinx force feedback LINX configuration file v2
+#
+##################
+
+[STARTUP]
+BACKGLASS_EXISTS=NO
+COLOUR_PALETTE=Silver,Dark_Red,Red,Amber,Crimson,Brown,Dark_Golden_Rod,Navy,Teal,Gray,Saddle_Brown,Slate_Gray,Dim_Gray,Burly_Wood,Tan,Light_Blue,Dark_Khaki,Indian_Red
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Dark_Red,BUT_MR,Dark_Red
+FF_PUP_INIT=IMP
+
+[COMMANDS]
+MENU_MODE|ON|FF_PUP_EVENT E801,1|FF_PUP_EVENT E804,1|FF_PUP_EVENT E806,1|FF_PUP_EVENT E808,1|FF_PUP_EVENT E810,1|FF_PUP_EVENT E812,1
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Random
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random
+
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Random|FF_DOF E23,-1
+R2|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Random|FF_DOF E24,-1
+R3|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Random|FF_DOF E25,-1
+R4|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Random|FF_DOF E26,-1
+R5|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Random|FF_DOF E27,-1
+HOLE|ON|FF_DOF E140,-1|FF_Dev DV_GR,1000
+DROP1|ON|FF_SSF DropTarget|FF_DOF E765,-1|FF_DEV DV_ML,-1
+DROP2|ON|FF_SSF DropTarget|FF_DOF E766,-1|FF_DEV DV_MC,-1
+DROP3|ON|FF_SSF DropTarget|FF_DOF E782,-1|FF_DEV DV_MR,-1
+S1|ON|FF_DOF E116,-1|FF_DOF E124,-1
+S2|ON|FF_DOF E112,-1|FF_DOF E126,-1
+S3|ON|FF_DOF E113,-1|FF_DOF E127,-1
+S4|ON|FF_DOF E114,-1|FF_DOF E128,-1
+S5|ON|FF_DOF E115,-1|FF_DOF E123,-1
+
+Game_Mode_Hit_All_Targets|ON|FF_PUP_EVENT E803,1|FF_DEV DV_SR,1000|FF_DOF E778,-1
+Game_Mode_Hit_All_Targets|OFF|FF_PUP_EVENT E804,1
+Game_Mode_Frog_Machine|ON|FF_PUP_EVENT E800,1|FF_DEV DV_BE,-1|FF_DOF E767,-1
+Game_Mode_Frog_Machine|OFF|FF_PUP_EVENT E801,1
+Game_Mode_Hurry_Up|ON|FF_PUP_EVENT E805,1|FF_DEV DV_C2,-1|FF_DOF E769,-1
+Game_Mode_Hurry_Up|OFF|FF_PUP_EVENT E806,1
+Game_Mode_AOM|ON|FF_PUP_EVENT E807,1|FF_DEV DV_KN,-1
+Game_Mode_AOM|OFF|FF_PUP_EVENT E808,1
+Game_Mode_Multiball|ON|FF_PUP_EVENT E809,1|FF_DEV DV_BK,1000|FF_DEV DV_C1,-1|FF_DOF E773,-1
+Game_Mode_Multiball|OFF|FF_PUP_EVENT E810,1
+Ball_Drain|ON|FF_PUP_EVENT E802,1
+Mini_Game_Mode_Fly|ON|FF_PUP_EVENT E813,1
+Mini_Game_Mode_Fly|OFF|FF_PUP_EVENT E814,1
+Mini_Game_Mode_BUW|ON|FF_PUP_EVENT E811,1
+Mini_Game_Mode_BUW|OFF|FF_PUP_EVENT E812,1
+
+Lane_Guide_Right_Hit|ALIAS|R5
+Lane_Guide_Right_Post_Hit|ALIAS|S1
+Lane_Guide_Left_Hit|ALIAS|R1
+Lane_Guide_Left_Post_Hit|ALIAS|S5
+Right_Rail_Gate|ALIAS|S4
+Left_Rail_Gate|ALIAS|R2
+Red_Target_Set|ALIAS|SENSOR_VUK
+Red_Target_Hit|ALIAS|DROP1
+Yellow_Target_Set|ALIAS|SENSOR_VUK
+Yellow _Target_Hit|ALIAS|DROP2
+Blue_Target_Set|ALIAS|SENSOR_VUK
+Blue_Target_Hit|ALIAS|DROP3
+Guitar_Spinner|ALIAS|R1
+Power_Target|ALIAS|R2
+Frog_Machine_Spinner|ALIAS|R3
+Left_Saucer|ALIAS|R4
+

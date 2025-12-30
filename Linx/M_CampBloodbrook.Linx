@@ -1,0 +1,98 @@
+##################
+#
+# Camp BloodBrook
+# DOFLinx force feedback LINX configuration file v1
+#
+##################
+
+[STARTUP]
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Silver,Dark_Red,Red,Amber,Crimson,Brown,Dark_Golden_Rod,Navy,Teal,Gray,Saddle_Brown,Slate_Gray,Dim_Gray,Burly_Wood,Tan,Light_Blue,Dark_Khaki,Indian_Red
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Teal,BUT_MR,Teal
+
+[COMMANDS]
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BACKL
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation BACKR
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation MAN
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation MAN
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation EYES
+
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Random|FF_DOF E23,-1|FF_B2S B2SStartAnimation TREE1
+R2|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Random|FF_DOF E24,-1|FF_B2S B2SStartAnimation TREE2
+R3|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Random|FF_DOF E25,-1|FF_B2S B2SStartAnimation TREE3
+R4|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Random|FF_DOF E26,-1|FF_B2S B2SStartAnimation TREE4
+R5|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Random|FF_DOF E27,-1|FF_B2S B2SStartAnimation TREE5
+HOLE|ON|FF_DOF E140,-1|FF_Dev DV_GR,1000|FF_B2S B2SStartAnimation TREE6
+FAN|ON|FF_Dev DV_FN,750
+DROP1|ON|FF_SSF DropTarget|FF_DOF E765,-1|FF_DEV DV_ML,-1|FF_B2S B2SStartAnimation TREE6
+DROP2|ON|FF_SSF DropTarget|FF_DOF E766,-1|FF_DEV DV_MC,-1|FF_B2S B2SStartAnimation MAN
+DROP3|ON|FF_SSF DropTarget|FF_DOF E782,-1|FF_DEV DV_MR,-1|FF_B2S B2SStartAnimation EYES
+S1|ON|FF_DOF E116,-1|FF_DOF E124,-1|FF_B2S B2SStartAnimation TREE1
+S2|ON|FF_DOF E112,-1|FF_DOF E126,-1|FF_B2S B2SStartAnimation TREE2
+S3|ON|FF_DOF E113,-1|FF_DOF E127,-1|FF_B2S B2SStartAnimation TREE3
+S4|ON|FF_DOF E114,-1|FF_DOF E128,-1|FF_B2S B2SStartAnimation TREE4
+S5|ON|FF_DOF E115,-1|FF_DOF E123,-1|FF_B2S B2SStartAnimation TREE5
+
+coll_droptarget_bob_01|ALIAS|DROP1
+coll_droptarget_bob_02|ALIAS|DROP2
+coll_droptarget_archery_01|ALIAS|DROP3
+coll_droptarget_archery_02|ALIAS|DROP1
+coll_char_body|ALIAS|S1
+coll_axe|ALIAS|S2
+coll_char_01|ALIAS|S3
+coll_char_02|ALIAS|S4
+coll_target01|ALIAS|S5
+coll_target02|ALIAS|S1
+coll_target03|ALIAS|S2
+coll_target04|ALIAS|S3
+coll_target05|ALIAS|S4
+coll_target06|ALIAS|S5
+coll_target07|ALIAS|S1
+coll_target_well01|ALIAS|S2
+coll_target_well02|ALIAS|S3
+coll_target_well03|ALIAS|S4
+coll_target_well04|ALIAS|S5
+coll_target_well05|ALIAS|S1
+sensor_bodypart_01|ALIAS|S2
+sensor_bodypart_02|ALIAS|S3
+sensor_bodypart_03|ALIAS|S4
+sensor_bodypart_04|ALIAS|S5
+sensor_bodypart_05|ALIAS|S1
+sensor_cabin_roof|ALIAS|S2
+sensor_cabin_window|ALIAS|S3
+sensor_lakehouse|ALIAS|S4
+sensor_leaves_01|ALIAS|S5
+sensor_leaves_02|ALIAS|S1
+sensor_leaves_03|ALIAS|S2
+sensor_machette_lock|ALIAS|S3
+sensor_machette_safe|ALIAS|S4
+sensor_skillshot_ender|ALIAS|S5
+sensor_spindisk|ALIAS|S1
+sensor_sinkhole|ALIAS|HOLE
+sensor_sinkhole_head|ALIAS|HOLE
+sensor_bumper_tunnel|ALIAS|R3
+sensor_well_drop|ALIAS|R3
+sensor_well_magnet|ALIAS|R3
+sensor_well_ramp|ALIAS|R3
+sensor_lane_center_head|ALIAS|R1
+sensor_lane_lake_head|ALIAS|R3
+sensor_lane_left_head|ALIAS|R1
+sensor_lane_left_magnet|ALIAS|R1
+sensor_orbit_left_head|ALIAS|R2
+sensor_orbit_left_tail|ALIAS|R2
+sensor_orbit_right_head|ALIAS|R4
+sensor_orbit_right_tail|ALIAS|R4
+sensor_ramp_left_head|ALIAS|R1
+sensor_ramp_left_mid|ALIAS|R1
+sensor_ramp_left_tail|ALIAS|R1
+sensor_ramp_right_head|ALIAS|R5
+sensor_ramp_right_mid|ALIAS|R5
+sensor_ramp_right_tail|ALIAS|R5
+bonus_01|ALIAS|A1
+bonus_02|ALIAS|A2
+bonus_03|ALIAS|A3
+bonus_04|ALIAS|A4
+bonus_05|ALIAS|A5
+bonus_006|ALIAS|A6
+bonus_007|ALIAS|A7
+bonus_008|ALIAS|A8

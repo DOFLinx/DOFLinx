@@ -1,0 +1,132 @@
+##################
+#
+# System Shock
+# DOFLinx force feedback LINX configuration file v1
+#
+##################
+
+[STARTUP]
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Silver,Dark_Red,Red,Amber,Crimson,Brown,Dark_Golden_Rod,Navy,Teal,Gray,Saddle_Brown,Slate_Gray,Dim_Gray,Burly_Wood,Tan,Light_Blue,Dark_Khaki,Indian_Red
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Teal,BUT_MR,Teal
+
+[COMMANDS]
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation LIGHTLEFT
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation LIGHTRIGHT
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation PERSON1
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation PERSON1
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation PERSON2
+
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Random|FF_DOF E23,-1|FF_B2S B2SStartAnimation BACKBL
+R2|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Random|FF_DOF E24,-1|FF_B2S B2SStartAnimation BACKBR
+R3|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Random|FF_DOF E25,-1|FF_B2S B2SStartAnimation BACKTL
+R4|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Random|FF_DOF E26,-1|FF_B2S B2SStartAnimation BACKTR
+R5|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Random|FF_DOF E27,-1|FF_B2S B2SStartAnimation PERSON1
+HOLE|ON|FF_DOF E140,-1|FF_Dev DV_GR,1000|FF_B2S B2SStartAnimation LIGHTRIGHT
+FAN|ON|FF_Dev DV_FN,750
+DROP1|ON|FF_SSF DropTarget|FF_DOF E765,-1|FF_DEV DV_ML,-1|FF_B2S B2SStartAnimation PERSON2
+DROP2|ON|FF_SSF DropTarget|FF_DOF E766,-1|FF_DEV DV_MC,-1|FF_B2S B2SStartAnimation BACKBL
+DROP3|ON|FF_SSF DropTarget|FF_DOF E782,-1|FF_DEV DV_MR,-1|FF_B2S B2SStartAnimation BACKBR
+S1|ON|FF_DOF E116,-1|FF_DOF E124,-1|FF_B2S B2SStartAnimation BACKTL
+S2|ON|FF_DOF E112,-1|FF_DOF E126,-1|FF_B2S B2SStartAnimation BACKTR
+S3|ON|FF_DOF E113,-1|FF_DOF E127,-1|FF_B2S B2SStartAnimation PERSON1
+S4|ON|FF_DOF E114,-1|FF_DOF E128,-1|FF_B2S B2SStartAnimation PERSON2
+S5|ON|FF_DOF E115,-1|FF_DOF E123,-1|FF_B2S B2SStartAnimation LIGHTLEFT
+
+coll_center_target|ALIAS|DROP1
+ramp_target_01|ALIAS|DROP2
+ramp_target_02|ALIAS|DROP3
+ramp_target_03|ALIAS|DROP1
+ramp_target_04|ALIAS|DROP2
+coll_target_left|ALIAS|DROP3
+coll_cyberguard|ALIAS|S1
+coll_mini_pf_bat|ALIAS|S2
+coll_miniplayfield_04_walls|ALIAS|S3
+coll_jump_ramp|ALIAS|S4
+coll_mutant_arm_l|ALIAS|S5
+coll_mutant_arm_r|ALIAS|S1
+coll_mutant_body|ALIAS|S2
+coll_mutant_head|ALIAS|S3
+coll_mutant_leg_l|ALIAS|S4
+coll_mutant_leg_r|ALIAS|S5
+coll_magna_grab|ALIAS|S1
+coll_target_spinner_01|ALIAS|S2
+coll_target_spinner_02|ALIAS|S3
+coll_target_spinner_03|ALIAS|S4
+coll_target_spinner_04|ALIAS|S5
+coll_target_spinner_05|ALIAS|S1
+coll_target_spinner_06|ALIAS|S2
+coll_target_spinner_07|ALIAS|S3
+coll_target_spinner_08|ALIAS|S4
+coll_target_spinner_09|ALIAS|S5
+coll_servbot|ALIAS|S1
+sensor_level1_arm|ALIAS|S2
+sensor_level2_arm|ALIAS|S3
+sensor_level3_arm|ALIAS|S4
+sensor_bangback|ALIAS|S5
+sensor_bangback002|ALIAS|S1
+sensor_cyber_shodan|ALIAS|S2
+sensor_cybermine_01|ALIAS|S3
+sensor_cybermine_02|ALIAS|S4
+sensor_cyborg_aim_01|ALIAS|A1
+sensor_cyborg_aim_02|ALIAS|A2
+sensor_cyborg_aim_03|ALIAS|A3
+sensor_cyborg_aim_04|ALIAS|A4
+sensor_cyborg_aim_05|ALIAS|A5
+sensor_cyborg_aim_06|ALIAS|A6
+sensor_cyborg_aim_07|ALIAS|A7
+sensor_cyborg_aim_08|ALIAS|A8
+sensor_cyborg_aim_09|ALIAS|A9
+sensor_cyborg_aim_10|ALIAS|A10
+sensor_cyborg_attack_area|ALIAS|S5
+sensor_exit_level_1|ALIAS|S1
+sensor_exit_level_2|ALIAS|S2
+sensor_exit_level_3|ALIAS|S3
+sensor_lock|ALIAS|S5
+sensor_lock_01|ALIAS|S1
+sensor_lock_02|ALIAS|S2
+sensor_lock_03|ALIAS|S3
+sensor_magnet_cyberspace_center|ALIAS|S4
+sensor_magnet_cyberspace_terminal|ALIAS|S5
+sensor_magnet_elevator|ALIAS|S1
+sensor_magnet_head_01|ALIAS|S2
+sensor_magnet_head_02|ALIAS|S3
+sensor_magnet_head_03|ALIAS|S4
+sensor_magnet_post|ALIAS|S5
+sensor_mini_playfield|ALIAS|S1
+sensor_miniplayfield_03|ALIAS|S2
+sensor_mpf_ramp|ALIAS|R3
+sensor_mpf_ramp_01|ALIAS|R3
+sensor_mpf_ramp_02|ALIAS|R3
+sensor_reticle|ALIAS|S4
+sensor_right_popper|ALIAS|SENSOR_VUK
+sensor_underground_pass|ALIAS|S5
+sensor_up_post|ALIAS|SENSOR_VUK
+bonus_01|ALIAS|A7
+bonus_02|ALIAS|A8
+bonus_03|ALIAS|A9
+bonus_04|ALIAS|A10
+sensor_eject_hole|ALIAS|HOLE
+sensor_eject_hole_eject|ALIAS|HOLE
+sensor_sinkhole|ALIAS|HOLE
+sensor_left_ramp|ALIAS|R1
+sensor_left_ramp_01|ALIAS|R1
+sensor_left_ramp_02|ALIAS|R1
+sensor_left_loop_01|ALIAS|R2
+sensor_left_loop_02|ALIAS|R2
+sensor_left_loop_03|ALIAS|R2
+sensor_cross_ramp|ALIAS|R3
+sensor_cross_ramp_01|ALIAS|R3
+sensor_cross_ramp_02|ALIAS|R3
+sensor_cross_ramp_lvl2|ALIAS|R3
+sensor_cross_ramp_lvl2_01|ALIAS|R3
+sensor_cross_ramp_lvl2_02|ALIAS|R3
+sensor_cross_ramp_lvl3|ALIAS|R3
+sensor_cross_ramp_lvl3_01|ALIAS|R3
+sensor_cross_ramp_lvl3_02|ALIAS|R3
+sensor_right_loop_01|ALIAS|R4
+sensor_right_loop_02|ALIAS|R4
+sensor_right_loop_03|ALIAS|R4
+sensor_right_ramp|ALIAS|R5
+sensor_right_ramp_01|ALIAS|R5
+sensor_right_ramp_02|ALIAS|R5

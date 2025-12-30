@@ -1,0 +1,136 @@
+##################
+#
+# The Thing
+# DOFLinx force feedback LINX configuration file v1
+#
+##################
+
+[STARTUP]
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Silver,Dark_Red,Red,Amber,Crimson,Brown,Dark_Golden_Rod,Navy,Teal,Gray,Saddle_Brown,Slate_Gray,Dim_Gray,Burly_Wood,Tan,Light_Blue,Dark_Khaki,Indian_Red
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Teal,BUT_MR,Teal
+
+[COMMANDS]
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation MAN
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation PINBALL
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation MAN
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation PINBALL
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour Random,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Random|FF_B2S B2SStartAnimation MAN
+
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Random|FF_DOF E23,-1|FF_B2S B2SStartAnimation PINBALL
+R2|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Random|FF_DOF E24,-1|FF_B2S B2SStartAnimation MAN
+R3|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Random|FF_DOF E25,-1|FF_B2S B2SStartAnimation PINBALL
+R4|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Random|FF_DOF E26,-1|FF_B2S B2SStartAnimation MAN
+R5|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Random|FF_DOF E27,-1|FF_B2S B2SStartAnimation PINBALL
+HOLE|ON|FF_DOF E140,-1|FF_Dev DV_GR,1000|FF_B2S B2SStartAnimation MAN
+FAN|ON|FF_Dev DV_FN,750
+DROP1|ON|FF_SSF DropTarget|FF_DOF E765,-1|FF_DEV DV_ML,-1|FF_B2S B2SStartAnimation PINBALL
+DROP2|ON|FF_SSF DropTarget|FF_DOF E766,-1|FF_DEV DV_MC,-1|FF_B2S B2SStartAnimation MAN
+DROP3|ON|FF_SSF DropTarget|FF_DOF E782,-1|FF_DEV DV_MR,-1|FF_B2S B2SStartAnimation PINBALL
+S1|ON|FF_DOF E116,-1|FF_DOF E124,-1|FF_B2S B2SStartAnimation MAN
+S2|ON|FF_DOF E112,-1|FF_DOF E126,-1|FF_B2S B2SStartAnimation PINBALL
+S3|ON|FF_DOF E113,-1|FF_DOF E127,-1|FF_B2S B2SStartAnimation MAN
+S4|ON|FF_DOF E114,-1|FF_DOF E128,-1|FF_B2S B2SStartAnimation PINBALL
+S5|ON|FF_DOF E115,-1|FF_DOF E123,-1|FF_B2S B2SStartAnimation TITLE
+
+coll_Generator_Target|ALIAS|S1
+coll_target_bonus_held|ALIAS|S2
+coll_MPF_droptarget|ALIAS|DROP1
+coll_dog_thing|ALIAS|S3
+coll_blood_test_tentacles|ALIAS|S4
+coll_spider_thing|ALIAS|S5
+coll_Target_Final_Thing|ALIAS|S5
+coll_Target_Coffin|ALIAS|S1
+coll_Flare_Target_01|ALIAS|A1
+coll_Flare_Target_02|ALIAS|A2
+coll_Flare_Target_03|ALIAS|A3
+coll_Flare_Target_04|ALIAS|A4
+coll_Flare_Target_05|ALIAS|A5
+coll_Flare_Target_06|ALIAS|A6
+coll_Target_Bennings_Revealed|ALIAS|S2
+coll_Target_Bennings_Running|ALIAS|S2
+coll_Target_Hood_01|ALIAS|A7
+coll_Target_Hood_02|ALIAS|A8
+coll_Target_Hood_03|ALIAS|A9
+coll_Target_Hood_04|ALIAS|A10
+coll_Target_Hood_05|ALIAS|A1
+coll_Target_Hood_06|ALIAS|A2
+coll_Target_Hood_07|ALIAS|A2
+coll_Target_Hood_08|ALIAS|A4
+coll_Target_Husky_01|ALIAS|S1
+coll_Target_Husky_02|ALIAS|S2
+coll_Target_Husky_03|ALIAS|S3
+coll_Target_Husky_04|ALIAS|S4
+coll_Target_Husky_05|ALIAS|S5
+coll_Target_Husky_06|ALIAS|S1
+coll_Target_Husky_07|ALIAS|S2
+coll_Target_Husky_08|ALIAS|S3
+coll_Dog_Thing_Tenatcles_POS_01|ALIAS|S4
+coll_Dog_Thing_Tenatcles_POS_02|ALIAS|S5
+coll_Dog_Thing_Tenatcles_POS_03|ALIAS|S1
+coll_Dog_Thing_Tenatcles_POS_04|ALIAS|S2
+coll_Dog_Thing_Tenatcles_POS_05|ALIAS|S3
+coll_Dog_Thing_Tenatcles_POS_06|ALIAS|S4
+coll_Dog_Thing_Tenatcles_POS_07|ALIAS|S5
+coll_Dog_Thing_Tenatcles_POS_08|ALIAS|S1
+coll_MPF_Target_01|ALIAS|DROP2
+coll_MPF_Target_02|ALIAS|DROP2
+coll_MPF_Target_03|ALIAS|DROP2
+coll_MPF_Target_04|ALIAS|DROP3
+coll_MPF_Target_05|ALIAS|DROP3
+coll_MPF_Target_06|ALIAS|DROP3
+coll_main_building_wall_bash
+sensor_Norris_Chest_Lock|ALIAS|S2
+sensor_Norrs_chest_Shoot|ALIAS|S3
+sensor_coffin_lock_01|ALIAS|S4
+sensor_coffin_lock_02|ALIAS|S5
+sensor_coffin_lock_03|ALIAS|S1
+sensor_ice_coffin|ALIAS|S2
+sensor_minigame_alien_cell_01|ALIAS|A1
+sensor_minigame_alien_cell_02|ALIAS|A2
+sensor_minigame_alien_cell_03|ALIAS|A3
+sensor_minigame_alien_cell_04|ALIAS|A4
+sensor_minigame_alien_cell_05|ALIAS|A5
+sensor_minigame_alien_cell_06|ALIAS|A6
+sensor_minigame_alien_cell_07|ALIAS|A7
+sensor_minigame_alien_cell_08|ALIAS|A8
+sensor_minigame_alien_cell_09|ALIAS|A9
+sensor_minigame_alien_cell_010|ALIAS|A10
+sensor_minigame_alien_cell_011|ALIAS|A1
+sensor_minigame_alien_cell_012|ALIAS|A2
+sensor_monitor_border|ALIAS|S1
+sensor_mpf_door_left|ALIAS|S2
+sensor_mpf_door_right|ALIAS|S3
+sensor_mpf_exit|ALIAS|S4
+sensor_mpf_vuk|ALIAS|SENSOR|VUK
+sensor_orbit_left_head|ALIAS|R2
+sensor_orbit_left_tail|ALIAS|R2
+sensor_orbit_middle|ALIAS|R3
+sensor_orbit_right_head|ALIAS|R3
+sensor_orbit_right_tail|ALIAS|R3
+sensor_outpost_ramp_head|ALIAS|R3
+sensor_ramp_blood_head|ALIAS|R1
+sensor_ramp_blood_tail|ALIAS|R1
+sensor_ramp_left_capture|ALIAS|R1
+sensor_ramp_left_head|ALIAS|R1
+sensor_ramp_left_tail|ALIAS|R1
+sensor_ramp_right_head|ALIAS|R5
+sensor_ramp_right_middle|ALIAS|R5
+sensor_ramp_right_tail|ALIAS|R5
+sensor_ramp_scorpion_head|ALIAS|R4
+sensor_ramp_scorpion_tail|ALIAS|R4
+sensor_scorpion_ramp_sinkhole|ALIAS|HOLE
+sensor_sinkhole_center|ALIAS|HOLE
+sensor_sinkhole_left|ALIAS|HOLE
+sensor_sinkhole_outpost|ALIAS|S5
+sensor_skillshot_ender|ALIAS|S1
+sensor_spindisk|ALIAS|S2
+sensor_tower_exit|ALIAS|S3
+bonus_rollover_left|ALIAS|S4
+bonus_rollover_middle|ALIAS|S5
+bonus_rollover_right|ALIAS|S1
+bonus_left_inlane_1|ALIAS|SENSOR_LEFT_OUTLANE
+bonus_left_inlane_2|ALIAS|SENSOR_LEFT_OUTLANE
+bonus_left_most_outlane|ALIAS|SENSOR_LEFT_OUTLANE
+bonus_right_inlane|ALIAS|SENSOR_RIGHT_OUTLANE
+bonus_right_outlane|ALIAS|SENSOR_TIGHT_OUTLANE

@@ -1,0 +1,11 @@
+##################
+#
+# Linx configration that is appled to all tables before the table file itself is processed
+# DOFLinx force feedback configuration file v1
+#
+##################
+
+[STARTUP]
+FF_ROM=doflinx
+
+[COMMANDS]
