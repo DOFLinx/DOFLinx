@@ -1,16 +1,16 @@
 ##################
 #
 # MAME configuration that is applied to all games before the game file itself is processed
-# DOFLinx force feedback configuration file v12
+# DOFLinx force feedback configuration file v13
 #
 ##################
 
 [STARTUP]
-FF_ROM=DOFLinx
+FE=0244435B4D494F4E243A443A3F5B5F68
 SHOW_SCORE=1
 FF_PC=U,D,ledstrip/clear
 FF_PC=U,A,arcade/stream/mameoutput/startup_insertcoin1?notext&nomini&nostrip
-FF_PC=U,E,ledstrip/manufacturer?rom=!ROM!
+FF_PC=U,D,ledstrip/manufacturer?rom=!ROM!
 FF_DMD=U,display/picture?path=mameoutput/startup_insertcoin4&duration=6000
 BUTTONS_LIT_ADDED=BUT_CN,BUT_EX,BUT_RE,BUT_P1,BUT_P2
 LOAD_SOUND=CoinIn,100,SIDE,Coin_In_1,Coin_In_2,Coin_In_3
