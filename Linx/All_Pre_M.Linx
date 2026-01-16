@@ -1,12 +1,14 @@
 ##################
 #
 # Pinball M configration that is appled to all tables before the table file itself is processed
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 #
 ##################
 
 [STARTUP]
 BUTTON_LIGHT_ACTION=BUT_LF,LeftFlipper,ON,2,0,Black,BUT_LF,LeftFlipper,OFF,1,0,Black,BUT_RF,RightFlipper,ON,2,0,Black,BUT_RF,RightFlipper,OFF,1,0,Black,BUT_ML,NudgeLeft,ON,7,1000,Red,BUT_ML,NudgeForward,ON,7,1000,Red,BUT_MR,NudgeRight,ON,7,1000,Red,BUT_MR,NudgeForward,ON,7,1000,Red
+FF_PC=U,D,ledstrip/clear
+FF_PC=U,C,arcade/stream/default/pinballm
 LOAD_SOUND=LFlipper,100,LEFT_REAR,Flipper_L01,Flipper_L02,Flipper_L03,Flipper_L04,Flipper_L05,Flipper_L06,Flipper_L07,Flipper_L08,Flipper_L09,Flipper_L10,Flipper_L11
 LOAD_SOUND=RFlipper,100,RIGHT_REAR,Flipper_R01,Flipper_R02,Flipper_R03,Flipper_R04,Flipper_R05,Flipper_R06,Flipper_R07,Flipper_R08,Flipper_R09,Flipper_R10,Flipper_R11
 LOAD_SOUND=LSling,100,LEFT_REAR,Sling_L1,Sling_L2,Sling_L3,Sling_L4,Sling_L5,Sling_L6,Sling_L7,Sling_L8,Sling_L9,Sling_L10
@@ -26,19 +28,20 @@ LOAD_SOUND=WallHit,100,Wall_Hit_1,Wall_Hit_2,Wall_Hit_3,Wall_Hit_4,Wall_Hit_5,Wa
 LOAD_SOUND=WireRampStop,100,WireRamp_Stop
 
 [COMMANDS]
-PLAY_MODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random|FF_B2S B2SStartAnimation Title|FF_DOF E424,-1
-MENU_MODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,50,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,50,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,50,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,50,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,50,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations
-INLANE_MODE|ON|FF_Button BUT_LB,BA_FL,10000,500|FF_DOF E310,-1
-INLANE_MODE|OFF|FF_Button BUT_LB,BA_OFF,0,0|FF_DOF E310,0
+PLAY_MODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random|FF_B2S B2SStartAnimation Title|FF_DOF E424,-1|FF_PC,U,D,ledstrip/batch?zones=left_matrix~matrix_plasma~!LED_R!~!LED_G!~!LED_B!~220~2~false@right_matrix~matrix_plasma~!LED_R!~!LED_G!~!LED_B!~220~2~false@center_matrix~matrix_plasma~!LED_R!~!LED_G!~!LED_B!~220~2~false
+MENU_MODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,50,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,50,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,50,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,50,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,50,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations|FF_PC,U,D,ledstrip/clear
+INLANE_MODE|ON|FF_Button BUT_LB,BA_FL,10000,500|FF_DOF E310,-1|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_bouncing_ball?speed=200&r=12&g=100&b=255
+INLANE_MODE|OFF|FF_Button BUT_LB,BA_OFF,0,0|FF_DOF E310,0|FF_PC,U,D,ledstrip/clear
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge
 Nudge_Right|On|FF_B2S B2SStartAnimation Nudge
 Nudge_Forward|On|FF_B2S B2SStartAnimation Nudge
 
-LAUNCHBALL|ON|FF_SSF Launch|FF_Dev DV_MR,-1|FF_DOF E132,-1|FF_B2S B2SStartAnimation Title|FF_DOF E310,0
-Flipper_Left|ON|FF_SSF LFlipper|FF_Dev DV_LF,10000|FF_DOF E101,-1
-Flipper_Left|OFF|FF_Dev DV_LF,0|FF_DOF E101,0
-Flipper_Right|ON|FF_SSF RFlipper|FF_Dev DV_RF,10000|FF_DOF E102,-1
-Flipper_Right|OFF|FF_Dev DV_RF,0|FF_DOF E102,0
+LAUNCHBALL|ON|FF_SSF Launch|FF_Dev DV_MR,-1|FF_DOF E132,-1|FF_B2S B2SStartAnimation Title|FF_DOF E310,0|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_!PULSE_RES!_achievements_16?speed=255&loops=3
+#LAUNCHED|ALIAS|LAUNCHBALL
+Flipper_Left|ON|FF_SSF LFlipper|FF_Dev DV_LF,10000|FF_DOF E101,-1|FF_PC,U,D,ledstrip/zone/left_strip/flood?r=!LED_R!&g=!LED_G!&b=!LED_B!
+Flipper_Left|OFF|FF_Dev DV_LF,0|FF_DOF E101,0|FF_PC,U,D,ledstrip/zone/left_strip/clear
+Flipper_Right|ON|FF_SSF RFlipper|FF_Dev DV_RF,10000|FF_DOF E102,-1|FF_PC,U,D,ledstrip/zone/right_strip/flood?r=!LED_R!&g=!LED_G!&b=!LED_B!
+Flipper_Right|OFF|FF_Dev DV_RF,0|FF_DOF E102,0|FF_PC,U,D,ledstrip/zone/left_strip/clear
 FLIPPER_LEFT_TOP|ALIAS|Flipper_Left
 Flipper_Left_Bottom|ALIAS|Flipper_Left
 Flipper_Mini_Left|ALIAS|Flipper_Left
@@ -49,23 +52,23 @@ flipper_mini_right|ALIAS|Flipper_Right
 flipper_mini_right_02|ALIAS|Flipper_Right
 flipper_right_top_01|ALIAS|Flipper_Right
 flipper_right_top_02|ALIAS|Flipper_Right
-BUMPER01|ON|FF_SSF Bump1|FF_Dev DV_BR,-1|FF_DOF E120,-1
-BUMPER02|ON|FF_SSF Bump2|FF_Dev DV_BL,-1|FF_DOF E121,-1
-BUMPER03|ON|FF_SSF Bump3|FF_Dev DV_BC,-1|FF_DOF E122,-1
+BUMPER01|ON|FF_SSF Bump1|FF_Dev DV_BR,-1|FF_DOF E120,-1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/retro_grid?loops=1&speed=200&r=!LED_R!&g=!LED_G!&b=!LED_B!
+BUMPER02|ON|FF_SSF Bump2|FF_Dev DV_BL,-1|FF_DOF E121,-1|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/retro_grid?loops=1&speed=200&r=!LED_R!&g=!LED_G!&b=!LED_B!
+BUMPER03|ON|FF_SSF Bump3|FF_Dev DV_BC,-1|FF_DOF E122,-1|FF_PC,U,D,ledstrip/batch?zones=left_matrix~matrix_explosion_radial~!LED_R!~!LED_G!~!LED_B!~220~2~false@right_matrix~matrix_explosion_radial!LED_R!~!LED_G!~!LED_B!~220~2~false
 COLL_BUMPER01|ALIAS|BUMPER01
 COLL_BUMPER02|ALIAS|BUMPER02
 COLL_BUMPER03|ALIAS|BUMPER03
-LEFT_SLING_COLLISION_BOTTOM|ON|FF_SSF LSling|FF_Dev DV_LS,-1|FF_DOF E110,-1
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_SSF LSling|FF_Dev DV_LS,-1|FF_DOF E110,-1|FF_PC,U,D,ledstrip/zone/left_matrix/effect/matrix_ripple?speed=255&loops=3&r=!LED_R!&g=!LED_G!&b=!LED_B!
 LEFT_SLING_COLLISION_TOP|ALIAS|LEFT_SLING_COLLISION_BOTTOM
-RIGHT_SLING_COLLISION_BOTTOM|ON|FF_SSF RSling|FF_Dev DV_RS,-1|FF_DOF E111,-1
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_SSF RSling|FF_Dev DV_RS,-1|FF_DOF E111,-1|FF_PC,U,D,ledstrip/zone/right_matrix/effect/matrix_ripple?speed=255&loops=3&r=!LED_R!&g=!LED_G!&b=!LED_B!
 RIGHT_SLING_COLLISION_TOP|ALIAS|RIGHT_SLING_COLLISION_BOTTOM
 upper_left_sling_collision_top|ALIAS|LEFT_SLING_COLLISION_BOTTOM
 upper_left_sling_collision_bottom|ALIAS|LEFT_SLING_COLLISION_BOTTOM
 upper_right_sling_collision_top|ALIAS|RIGHT_SLING_COLLISION_BOTTOM
 upper_right_sling_collision_bottom|ALIAS|RIGHT_SLING_COLLISION_BOTTOM
-Nudge_Left|ON|FF_SSF LNudge|FF_Dev DV_SH,1500|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,150,100,Red|FF_Flasher DV_FLIL,FL_TT,1,150,100,Red|FF_DOF E403,-1
-Nudge_Right|ON|FF_SSF RNudge|FF_Dev DV_SH,1500|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLOR,FL_TT,1,150,100,Red|FF_Flasher DV_FLIR,FL_TT,1,150,100,Red|FF_DOF E404,-1
-Nudge_Forward|ON|FF_Dev DV_SH,1500|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_TT,1,150,100,Red|FF_DOF E405,-1
+Nudge_Left|ON|FF_SSF LNudge|FF_Dev DV_SH,1500|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,150,100,Red|FF_Flasher DV_FLIL,FL_TT,1,150,100,Red|FF_DOF E403,-1|FF_PC,U,D,ledstrip/zone/left_matrix/effect/matrix_8x8_achievements_1?speed=255&duration=5&r=255
+Nudge_Right|ON|FF_SSF RNudge|FF_Dev DV_SH,1500|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLOR,FL_TT,1,150,100,Red|FF_Flasher DV_FLIR,FL_TT,1,150,100,Red|FF_DOF E404,-1|FF_PC,U,D,ledstrip/zone/right_matrix/effect/matrix_8x8_achievements_1?speed=255&duration=5&r=255
+Nudge_Forward|ON|FF_Dev DV_SH,1500|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_TT,1,150,100,Red|FF_DOF E405,-1|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_!PULSE_RES!_achievements_1?speed=255&duration=5&r=255
 sensor_vuk|ON|FF_SSF DropTargetReset|FF_DEV DV_MC,-1
 coll_vuk|ALIAS|SENSOR_VUK
 coll_vuk_popper|ALIAS|SENSOR_VUK
