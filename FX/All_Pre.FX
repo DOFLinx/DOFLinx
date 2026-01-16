@@ -1,0 +1,88 @@
+##################
+#
+# FX Pinball configration that is appled to all tables before the table file itself is processed
+# DOFLinx force feedback configuration file v16
+#
+##################
+
+[STARTUP]
+BUTTON_LIGHT_ACTION=BUT_LF,LeftFlipper,ON,2,0,Black,BUT_LF,LeftFlipper,OFF,1,0,Black,BUT_RF,RightFlipper,ON,2,0,Black,BUT_RF,RightFlipper,OFF,1,0,Black,BUT_ML,NudgeLeft,ON,7,1000,Red,BUT_ML,NudgeForward,ON,7,1000,Red,BUT_MR,NudgeRight,ON,7,1000,Red,BUT_MR,NudgeForward,ON,7,1000,Red
+FF_PC=U,D,ledstrip/clear
+FF_PC=U,C,arcade/stream/default/pinballfx
+LOAD_SOUND=LFlipper,100,LEFT_REAR,Flipper_L01,Flipper_L02,Flipper_L03,Flipper_L04,Flipper_L05,Flipper_L06,Flipper_L07,Flipper_L08,Flipper_L09,Flipper_L10,Flipper_L11
+LOAD_SOUND=RFlipper,100,RIGHT_REAR,Flipper_R01,Flipper_R02,Flipper_R03,Flipper_R04,Flipper_R05,Flipper_R06,Flipper_R07,Flipper_R08,Flipper_R09,Flipper_R10,Flipper_R11
+LOAD_SOUND=LSling,100,LEFT_REAR,Sling_L1,Sling_L2,Sling_L3,Sling_L4,Sling_L5,Sling_L6,Sling_L7,Sling_L8,Sling_L9,Sling_L10
+LOAD_SOUND=RSling,100,RIGHT_REAR,Sling_R1,Sling_R2,Sling_R3,Sling_R4,Sling_R5,Sling_R6,Sling_R7,Sling_R8
+LOAD_SOUND=Launch,100,REAR,BallRelease1,BallRelease2,BallRelease3,BallRelease4,BallRelease5,BallRelease6,BallRelease7
+LOAD_SOUND=Bump1,100,LEFT_SIDE,Bumpers_Top_1,Bumpers_Top_2,Bumpers_Top_3,Bumpers_Top_4,Bumpers_Top_5
+LOAD_SOUND=Bump2,100,SIDE,Bumpers_Middle_1,Bumpers_Middle_2,Bumpers_Middle_3,Bumpers_Middle_4,Bumpers_Middle_5
+LOAD_SOUND=Bump3,100,RIGHT_SIDE,Bumpers_Bottom_1,Bumpers_Bottom_2,Bumpers_Bottom_3,Bumpers_Bottom_4,Bumpers_Bottom_5
+LOAD_SOUND=Drain,100,REAR,Drain_1,Drain_2,Drain_3,Drain_4,Drain_5,Drain_6,Drain_7,Drain_8,Drain_9,Drain_10,Drain_11
+LOAD_SOUND=LNudge,100,LEFT_REAR,Nudge_1,Nudge_2,Nudge_3
+LOAD_SOUND=RNudge,100,RIGHT_REAR,Nudge_1,Nudge_2,Nudge_3
+LOAD_SOUND=BallColl,100,REAR,Ball_Collide_1,Ball_Collide_2,Ball_Collide_3,Ball_Collide_4,Ball_Collide_5,Ball_Collide_6,Ball_Collide_7
+LOAD_SOUND=DropTarget,100,SIDE,Drop_Target_Down_1,Drop_Target_Down_2,Drop_Target_Down_3,Drop_Target_Down_4,Drop_Target_Down_5,Drop_Target_Down_6
+LOAD_SOUND=DropTargetReset,100,SIDE,Drop_Target_Reset_1,Drop_Target_Reset_2,Drop_Target_Reset_3,Drop_Target_Reset_4,Drop_Target_Reset_5,Drop_Target_Reset_6
+LOAD_SOUND=TargetHit,100,Target_Hit_1,Target_Hit_2,Target_Hit_3,Target_Hit_4,Target_Hit_5,Target_Hit_6,Target_Hit_7,Target_Hit_8,Target_Hit_9
+LOAD_SOUND=WallHit,100,Wall_Hit_1,Wall_Hit_2,Wall_Hit_3,Wall_Hit_4,Wall_Hit_5,Wall_Hit_6,Wall_Hit_7,Wall_Hit_8,Wall_Hit_9
+LOAD_SOUND=WireRampStop,100,WireRamp_Stop
+
+[COMMANDS]
+PLAY_MODE|ON|FF_Colour Black,RGB_DF,0|FF_Flasher DV_FLOL,FL_FD,6,750,50,Random|FF_Flasher DV_FLOR,FL_FD,6,750,50,Random|FF_Flasher DV_FLIL,FL_FD,6,750,50,Random|FF_Flasher DV_FLIR,FL_FD,6,750,50,Random|FF_Flasher DV_FLCN,FL_FD,6,750,50,Random|FF_B2S B2SStartAnimation Title|FF_DOF E424,-1|FF_PC,U,D,ledstrip/batch?zones=left_matrix~matrix_plasma~!LED_R!~!LED_G!~!LED_B!~220~2~false@right_matrix~matrix_plasma~!LED_R!~!LED_G!~!LED_B!~220~2~false@center_matrix~matrix_plasma~!LED_R!~!LED_G!~!LED_B!~220~2~false
+MENU_MODE|ON|FF_Flasher DV_FLOL,FL_OFF,1,50,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,50,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,50,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,50,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,50,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations|FF_PC,U,D,ledstrip/clear
+INLANE_MODE|ON|FF_Button BUT_LB,BA_FL,10000,500|FF_DOF E310,-1|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_bouncing_ball?speed=200&r=12&g=100&b=255
+INLANE_MODE|OFF|FF_Button BUT_LB,BA_OFF,0,0|FF_DOF E310,0|FF_PC,U,D,ledstrip/clear
+LAUNCHBALL|ON|FF_SSF Launch|FF_Dev DV_MR,-1|FF_DOF E132,-1|FF_B2S B2SStartAnimation Title|FF_DOF E310,0|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_!PULSE_RES!_achievements_16?speed=255&loops=3
+#LAUNCHED|ALIAS|LAUNCHBALL
+#BALLIN_SENSOR|ALIAS|LAUNCHBALL
+#BALLIN_SENSOR|ALIAS|LAUNCHBALL
+Flipper_Left|ON|FF_SSF LFlipper|FF_Dev DV_LF,10000|FF_DOF E101,-1|FF_PC,U,D,ledstrip/zone/left_strip/flood?r=!LED_R!&g=!LED_G!&b=!LED_B!
+Flipper_Left|OFF|FF_Dev DV_LF,0|FF_DOF E101,0|FF_PC,U,D,ledstrip/zone/left_strip/clear
+Flipper_Right|ON|FF_SSF RFlipper|FF_Dev DV_RF,10000|FF_DOF E102,-1|FF_PC,U,D,ledstrip/zone/right_strip/flood?r=!LED_R!&g=!LED_G!&b=!LED_B!
+Flipper_Right|OFF|FF_Dev DV_RF,0|FF_DOF E102,0|FF_PC,U,D,ledstrip/zone/right_strip/clear
+FLIPPER_LEFT_TOP|ALIAS|Flipper_Left
+Flipper_Left_Bottom|ALIAS|Flipper_Left
+FLIPPER_SMALL_LEFT_BOTTOM|ALIAS|Flipper_Left
+Flipper_Mini_Left|ALIAS|Flipper_Left
+Flipper_MPF_Left|ALIAS|Flipper_Left
+Flipper_MPF1_Left|ALIAS|Flipper_Left
+Flipper_MPF2_Left|ALIAS|Flipper_Left
+Flipper_MPF3_Left|ALIAS|Flipper_Left
+FLIPPER_MINI_PLAYFIELD_LEFT|ALIAS|Flipper_Left
+Flipper_Left_Med|ALIAS|Flipper_Left
+Flipper_Right_Bottom|ALIAS|Flipper_Right
+FLIPPER_RIGHT_TOP|ALIAS|Flipper_Right
+FLIPPER_RIGHT_TOP_BACK|ALIAS|Flipper_Right
+Flipper_MPF_Right|ALIAS|Flipper_Right
+Flipper_MPF1_Right|ALIAS|Flipper_Right
+Flipper_MPF2_Right|ALIAS|Flipper_Right
+Flipper_MPF3_Right|ALIAS|Flipper_Right
+FLIPPER_MINI_PLAYFIELD_RIGHT|ALIAS|Flipper_Right
+Flipper_Right_Med|ALIAS|Flipper_Right
+BUMPER01|ON|FF_SSF Bump1|FF_Dev DV_BR,-1|FF_DOF E120,-1|FF_PC,U,D,ledstrip/zone/right_speaker_ring/effect/retro_grid?loops=1&speed=200&r=!LED_R!&g=!LED_G!&b=!LED_B!
+BUMPER02|ON|FF_SSF Bump2|FF_Dev DV_BL,-1|FF_DOF E121,-1|FF_PC,U,D,ledstrip/zone/left_speaker_ring/effect/retro_grid?loops=1&speed=200&r=!LED_R!&g=!LED_G!&b=!LED_B!
+BUMPER03|ON|FF_SSF Bump3|FF_Dev DV_BC,-1|FF_DOF E122,-1|FF_PC,U,D,ledstrip/batch?zones=left_matrix~matrix_explosion_radial~!LED_R!~!LED_G!~!LED_B!~220~2~false@right_matrix~matrix_explosion_radial!LED_R!~!LED_G!~!LED_B!~220~2~false
+BUMPER_01|ALIAS|BUMPER01
+BUMPER_02|ALIAS|BUMPER02
+BUMPER_03|ALIAS|BUMPER03
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_SSF LSling|FF_Dev DV_LS,-1|FF_DOF E110,-1|FF_PC,U,D,ledstrip/zone/left_matrix/effect/matrix_ripple?speed=255&loops=3&r=!LED_R!&g=!LED_G!&b=!LED_B!
+LEFT_SLING_COLLISION_TOP|ALIAS|LEFT_SLING_COLLISION_BOTTOM
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_SSF RSling|FF_Dev DV_RS,-1|FF_DOF E111,-1|FF_PC,U,D,ledstrip/zone/right_matrix/effect/matrix_ripple?speed=255&loops=3&r=!LED_R!&g=!LED_G!&b=!LED_B!
+RIGHT_SLING_COLLISION_TOP|ALIAS|RIGHT_SLING_COLLISION_BOTTOM
+Nudge_Left|ON|FF_SSF LNudge|FF_Dev DV_SH,1500|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,150,100,Red|FF_Flasher DV_FLIL,FL_TT,1,150,100,Red|FF_DOF E403,-1|FF_PC,U,D,ledstrip/zone/left_matrix/effect/matrix_8x8_achievements_1?speed=255&duration=5&r=255
+Nudge_Right|ON|FF_SSF RNudge|FF_Dev DV_SH,1500|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLOR,FL_TT,1,150,100,Red|FF_Flasher DV_FLIR,FL_TT,1,150,100,Red|FF_DOF E404,-1|FF_PC,U,D,ledstrip/zone/right_matrix/effect/matrix_8x8_achievements_1?speed=255&duration=5&r=255
+Nudge_Forward|ON|FF_Dev DV_SH,1500|FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLCN,FL_TT,1,150,100,Red|FF_DOF E405,-1|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_!PULSE_RES!_achievements_1?speed=255&duration=5&r=255
+vuk_sensor|ON|FF_SSF DropTargetReset|FF_DEV DV_MC,-1
+
+ballout|ON|FF_SSF Drain|FF_SSF Drain|FF_Flasher DV_FLOL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIL,FL_OFF,1,1,100,Random|FF_Flasher DV_FLCN,FL_OFF,1,1,100,Random|FF_Flasher DV_FLIR,FL_OFF,1,1,100,Random|FF_Flasher DV_FLOR,FL_OFF,1,1,100,Random|FF_Dev DV_SR,0|FF_Dev DV_BK,0|FF_B2S B2SStopAllAnimations|FF_DOF E130,-1
+sensor_kickback_left|ON|FF_SSF TargetHit|FF_Dev DV_ML,-1|FF_DOF E133,-1
+sensor_kickback_right|ON|FF_SSF TargetHit|FF_Dev DV_MR,-1|FF_DOF E134,-1
+sensor_left_kickback|ALIAS|sensor_kickback_left
+sensor_right_kickback|ALIAS|sensor_kickback_right
+sensor_left_outlane|ON|FF_Flasher DV_FLOL,FL_TT,1,150,100,White|FF_DOF E300,-1|FF_DEV DV_C3,-1
+sensor_right_outlane|ON|FF_Flasher DV_FLOR,FL_TT,1,150,100,White|FF_DOF E309,-1|FF_DEV DV_C3,-1
+sensor_autosafe_left|ON|FF_DOF E301,-1
+sensor_autosafe_right|ON|FF_DOF E308,-1
+sensor_skillshot|ON|FF_DEV DV_SR,1500|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLCN,FL_TT,1,150,100,White|FF_Flasher DV_FLOL,FL_TT,1,150,100,White|FF_Flasher DV_FLIL,FL_TT,1,150,100,White|FF_Flasher DV_FLIR,FL_TT,1,150,100,White|FF_Flasher DV_FLOR,FL_TT,1,150,100,White
+sensor_magnasave_left|ON|FF_DEV DV_ML,-1|FF_Flasher DV_FLOL,FL_TT,1,70,100,White
+sensor_magnasave_right|ON|FF_DEV DV_ML,-1|FF_Flasher DV_FLOR,FL_TT,1,70,100,White

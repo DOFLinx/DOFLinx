@@ -1,0 +1,30 @@
+##################
+#
+# Super Leauge Football
+# DOFLinx force feedback Pinball FX configuration file v2
+#
+##################
+
+[STARTUP]
+FF_ROM=doflinx
+BACKGLASS_EXISTS=YES
+COLOUR_PALETTE=Dark_Red,Blue,Gold,Dark_Violet,Orange,Dodger_Blue,Lime
+BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Gold,BUT_MR,Gold
+
+[COMMANDS]
+Nudge_Left|On|FF_B2S B2SStartAnimation NUDGELEFT
+Nudge_Right|On|FF_B2S B2SStartAnimation NUDGERIGHT
+Nudge_Forward|On|FF_B2S B2SStartAnimation NUDGECENTRE
+bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Gold|FF_B2S B2SStartAnimation BUMPER01
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Gold|FF_B2S B2SStartAnimation BUMPER02
+bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Gold|FF_B2S B2SStartAnimation BUMPER03
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Cyan,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Cyan|FF_B2S B2SStartAnimation SLINGLEFT
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour White,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Cyan|FF_B2S B2SStartAnimation SLINGRIGHT
+FLIPPER_LEFT_BOTTOM2|ALIAS|Flipper_Left
+FLIPPER_RIGHT_BOTTOM2|ALIAS|Flipper_Right
+SENSOR_CROSS_03|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Slate_Blue|FF_DOF E23,-1|FF_B2S B2SStartAnimation LEFTLANE
+SENSOR_DRIBBLE_03|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Gold|FF_DOF E24,-1|FF_B2S B2SStartAnimation LEFTLOOP
+SENSOR_LONG_03|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Slate_Blue|FF_DOF E25,-1|FF_B2S B2SStartAnimation CENTRELOOP
+SENSOR_ONETWO_02|ON|FF_DOF E768,-1|FF_B2S B2SStartAnimation ??
+SENSOR_ONETWO_03|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Gold|FF_DOF E26,-1|FF_B2S B2SStartAnimation RIGHTLANE
+SENSOR_PASS_03|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Slate_Blue|FF_DOF E27,-1|FF_B2S B2SStartAnimation RIGHTLANE
