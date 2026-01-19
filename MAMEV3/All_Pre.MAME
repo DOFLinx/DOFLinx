@@ -6,13 +6,13 @@
 ##################
 
 [STARTUP]
-FE=0244435B4D494F4E243A443A3F5B5F68
+FE=093D3C54464248471D333D3338545861
 SHOW_SCORE=1
 FF_PC=U,D,ledstrip/clear
 FF_PC=U,A,arcade/stream/mameoutput/startup_insertcoin1?notext&nomini&nostrip
-FF_PC=U,D,ledstrip/manufacturer?rom=!ROM!
+FF_PC=U,E,ledstrip/manufacturer?rom=!ROM!
 FF_DMD=U,display/picture?path=mameoutput/startup_insertcoin4&duration=6000
-BUTTONS_LIT_ADDED=BUT_CN,BUT_EX,BUT_RE,BUT_P1,BUT_P2
+BUTTONS_LIT_ADDED=BUT_CN,BUT_EX,BUT_RE,BUT_PS,BUT_CH,BUT_P1,BUT_P2
 LOAD_SOUND=CoinIn,100,SIDE,Coin_In_1,Coin_In_2,Coin_In_3
 LOAD_SOUND=Reset,100,REAR,Reset
 LOAD_SOUND=PauseOn,100,REAR,Pause_On
@@ -24,7 +24,7 @@ LOAD_SOUND=CheatOff,100,REAR,Cheat_Off_1,Cheat_Off_2
 
 [COMMANDS]
 pause|ON|FF_SSF PauseOn|FF_BUTTON BUT_PS,BA_FD,10000,1000|FF_PC S,C,GAME%20PAUSED|FF_PC,U,A,arcade/stream/mameoutput/startup_pause?notext&nomini&nostrip|FF_DMD,U,display/picture?path=ingame/pause&duration=-1
-pause|OFF|FF_SSF PauseOff|FF_BUTTON BUT_PS,BA_OFF,0,0|FF_PC S,C,%20|FF_PC,U,A,arcade/stream/mame/!ROM!?l=99999&nogif&nomini|FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
+pause|OFF|FF_SSF PauseOff|FF_BUTTON BUT_PS,BA_OFF,0,0|FF_PC S,C,%20|FF_PC,U,A,arcade/stream/mame/!ROM!?l=99999&nogif&nomini&nostrip|FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
 reset|ON|FF_SSF Reset|FF_DOF E141,3000|FF_PC S,C,GAME%20RESET|FF_PC,U,A,arcade/stream/mameoutput/startup_reset?notext&nomini&nostrip|FF_DMD,U,display/picture?path=mameoutput/startup_reset&duration=4
 cheat_status|ON|FF_BUTTON BUT_CH,BA_ON,0,0
 cheat_status|OFF|FF_BUTTON BUT_CH,BA_OFF,0,0
