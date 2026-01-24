@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Twin Cobra
-# DOFLinx force feedback configuration file v1
+# DOFLinx force feedback configuration file v2
 #
 ##################
 
@@ -26,76 +26,36 @@ player1|ON|FF_DOF E58,0
 player2|ON|FF_DOF E58,0
 
 [SCORE]
-FE=0A193845441F2B63645069594C535764596569526561515253691F1C302D2C7226
-FE=0A19383F49481E35401A1D
-FE=0A3A4645202C6465516A5A4D5458654B666A5366625253546A201D221D1E6427
-FE=024248525127252423272142483F33355029424A4C5039493A2137453735395250
-FE=0350424127336B6C587161545B5F6C526D715A6D69595A5B7127242A25336B31
-FE=0548403F2523222125231E444441373B42263F47494D364637
-FE=0350464527336B6C587161545B5F6C526D715A6D69595A5B7127242A26206B31
-FE=0845414022201F1E22201B41413E34383F233C44464A334334
-FE=0D3F38371D2961624E67574A51556248636750635F4F5051671D1A201E176124
-FE=03494941402624232220251F3A36481B434B4D513A4A3B22384335443243
-FE=0943403F212D6566526B5B4E5559664C676B5467635354556B211E24221D6528
-FE=03494945442624232220251F3A36481B434B4D513A4A3B22384335443243
-FE=0444414026326A6B577060535A5E6B516C70596C6858595A7026232529236A2E
-FE=02464A42412725242327213C384A1D364D4F533C4C3D243F5F69671F1E2620
-FE=0642434224306869556E5E51585C694F6A6E576A665657586E2421232721682C
-FE=074145414022201F1E221C3733451831484A4E3747381F3A5A64621A19211B
+FE=0D163542411C2860614D6656495054615662664F625E4E4F50661C192D2A296F23
+FE=022140475150263D482225
+FE=0C3844431E2A62634F68584B525663496468516460505152681E1B201B1C6225
+FE=0F353B45441A1817161A14353B322628431C353D3F432C3C2D142A382A282C4543
+FE=084B3D3C222E6667536C5C4F565A674D686C5568645455566C221F25202E662C
+FE=0A433B3A201E1D1C201E193F3F3C32363D213A424448314132
+FE=0D463C3B1D2961624E67574A51556248636750635F4F5051671D1A201C166127
+FE=0A433F3E201E1D1C201E193F3F3C32363D213A424448314132
+FE=014B444329356D6E5A7363565D616E546F735C6F6B5B5C5D7329262C2A236D30
+FE=044848403F252322211F241E3935471A424A4C5039493A21374234433142
+FE=014B484729356D6E5A7363565D616E546F735C6F6B5B5C5D7329262C2A256D30
+FE=0A42423E3D1F1D1C1B191E18332F41143C44464A3343341B313C2E3D2B3C
+FE=06423F3E24306869556E5E51585C694F6A6E576A665657586E2421232721682C
+FE=00484C44432927262529233E3A4C1F384F51553E4E3F2641616B6921202822
+FE=07414241232F6768546D5D50575B684E696D5669655556576D2320222620672B
+FE=06424642412321201F231D3834461932494B4F384839203B5B65631B1A221C
 DELAY=5000
 # Shoot something
-SC=50:200:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_8x8_explosion1~255~0~0~220~1~false@left_strip~particle_explosion~255~0~0~250~1~false@left_speaker_ring~particle_explosion~255~0~0~250~1~false@right_speaker_ring~particle_explosion~255~0~0~250~1~false@right_matrix~matrix_8x8_explosion3~255~0~0~250~1~false@left_matrix~matrix_8x8_explosion3~255~0~0~250~1~false
-SC=210:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_8x8_explosion1~0~0~255~220~1~false@left_strip~particle_explosion~0~0~255~250~1~false@left_speaker_ring~particle_explosion~0~0~255~250~1~false@right_speaker_ring~particle_explosion~0~0~255~250~1~false@right_matrix~matrix_8x8_explosion3~0~0~255~250~1~false@left_matrix~matrix_8x8_explosion3~0~0~255~250~1~false
+SC=50:200:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_8x8_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~!LED_R!~!LED_G!~!LED_B!~250~1~false
+SC=210:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_8x8_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~!LED_R!~!LED_G!~!LED_B!~250~1~false
 # Weapons bonus
-SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,D,ledstrip/batch?zones=left_strip~explosion_galaga~255~0~0~220~1~false@right_strip~explosion_galaga~255~0~0~220~1~false@left_speaker_ring~explosion_galaga~255~0~0~220~1~false@right_speaker_ring~explosion_galaga~255~0~0~220~1~false@center_matrix~matrix_!PULSE_RES!_explosion1~255~0~0~220~1~false@top_strip~explosion_galaga~255~0~0~220~1~false@bottom_strip~explosion_galaga~255~0~0~220~1~false
+SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,D,ledstrip/batch?zones=left_strip~explosion_galaga~!LED_R!~!LED_G!~!LED_B!~220~1~false@right_strip~explosion_galaga~255~0~0~220~1~false@left_speaker_ring~explosion_galaga~255~0~0~220~1~false@right_speaker_ring~explosion_galaga~255~0~0~220~1~false@center_matrix~matrix_!PULSE_RES!_explosion1~255~0~0~220~1~false@top_strip~explosion_galaga~255~0~0~220~1~false@bottom_strip~explosion_galaga~255~0~0~220~1~false
 SC=2100:5000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E510,1000|FF_DOF E512,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_8x8_explosion1~0~0~255~220~1~false@left_strip~particle_explosion~0~0~255~250~1~false@left_speaker_ring~particle_explosion~0~0~255~250~1~false@right_speaker_ring~particle_explosion~0~0~255~250~1~false@right_matrix~matrix_8x8_explosion3~0~0~255~250~1~false@left_matrix~matrix_8x8_explosion3~0~0~255~250~1~false
+#SC=2000:9500:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_8x8_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~!LED_R!~!LED_G!~!LED_B!~250~1~false
+# First new life
+ST=70000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800|FF_PC,U,D,ledstrip/batch?zones=left_strip~achievements_9~0~255~0~220~2~false@right_strip~achievements_9~0~255~0~220~2~false
+# Periodic new life
+SE=200000:200000:10:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800|FF_PC,U,D,ledstrip/batch?zones=left_strip~achievements_9~0~255~0~220~2~false@right_strip~achievements_9~0~255~0~220~2~false
 
+SD=5000:FF_PC,U,A,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+SD=100:FF_PC,U,M,ministats?label=!PREFIX_H!&value=!HITS!
 DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~255~0~255~255~1~false@right_speaker_ring~twinkle~255~0~255~255~1~false
 
- 
-# 
-#SC=1600:1600:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000
-# A bonus type range
-#SC=2000:9500:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400
-# Challenge Stage Perfect
-#SC=10000:10000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Flasher DV_FLOR,FL_FL,6,300,100,White|FF_DOF E786,1500
-
-
-
-# First new life
-ST=50000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,1800
-# Periodic new life
-SE=150000:150000:10:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E781,1800
-
-
-#######
-# A few flasher / colour combinations for use when building
-#
-## Basic single flash of centre
-# FF_Flasher DV_FLCN,FL_TT,1,300,100,Random
-## Single flash of outer left and outer right flashers
-# FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange
-## Single flash of outer left,outer right and centre flashers
-# FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_Flasher DV_FLCN,FL_TT,1,450,100,Orange
-## Single flash of all flashers
-# FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLIR,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta
-## Outer Left, Right and Centre doing 3 on / off short  flashes
-# FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White
-## All flashers flashing longer on / off 3 x
-# FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random
-## All flashers fading up and down 5 x
-# FF_Flasher DV_FLOL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLOR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLCN,FL_FD,10,750,100,Gold
-
-#######
-## Simply add one of these to the commands line
-## Turn on / change the RGB for 3 seconds
-# FF_Colour White,RGB_TT,3000
-## Turn on / change the RGB for 10 seconds
-# FF_Colour Lime,RGB_TT,10000
-
-#######
-## Simply add one of these to the commands line
-## Fire the knocker for a significant milestone, ie new life
-# FF_Dev DV_KN,-1
-## Make some real noise by firing off all solenoids
-# FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1
