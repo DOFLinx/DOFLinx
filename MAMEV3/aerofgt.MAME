@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Aero Fighters
-# DOFLinx force feedback configuration file v3
+# DOFLinx force feedback configuration file v4
 # Created By D@vS0ut0
 ##################
 
@@ -12,6 +12,7 @@ KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,Bomb
 FF_DOF=E78,-1
 BUTTON_COLOUR_CHANGE=BUT_J1,White,BUT_B1,Red,BUT_B2,Orange
 BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2
+FE=06473A453C553B364137404F3E34333F3F4D352922252039383736353419323F3F282726
 
 [SHUTDOWN]
 BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2
@@ -25,28 +26,29 @@ player1|ON|FF_DOF E78,0
 player2|ON|FF_DOF E78,0
 
 [SCORE]
-FE=0251434228346C6D597262555C606D536E725B6E6A5A5B5C725B5A292256287A31
-FE=06473F3E242221202422211C3733451840484A4E374738
-FE=0B483E3D1F2B63645069594C5357644A6569526561515253695251201A4D1F7128
-FE=05484443252322212523221D3834461941494B4F384839
+FE=083C4847222E6667536C5C4F565A674D686C5568645455566C3534252E241F7428722225
+FE=0C383E48471D1B1A191D17383E35292B461F384042462F3F30172D3B2D2B2F4846
+FE=0C4739381E2A62634F68584B5256634964685164605051526851501F184C1E7027
+FE=014C444329272625292726213C384A1D454D4F533C4C3D
+FE=005349482A366E6F5B7464575E626F5570745D706C5C5D5E745D5C2B25582A7C33
+FE=04494544262423222624231E3935471A424A4C5039493A
 DELAY=2000
 
 # Destroy simple plane
 SC=100:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,Blue|FF_DOF E218,1000
 
 # Destroy tank,helicopter,orange planes
-SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E479,1500|FF_DOF E483,1500
+SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E479,1500|FF_DOF E483,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Destroy green helicopter, Big green plane
-SC=300:300:FF_Flasher DV_FLOL,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLOR,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLCN,FL_TT,1,450,100,Yellow|FF_DOF E225,1000
+SC=300:300:FF_Flasher DV_FLOL,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLOR,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLCN,FL_TT,1,450,100,Yellow|FF_DOF E225,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Destroy antiaerial
-SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red
-|FF_DOF E570,1000|FF_DOF E566,1500|FF_DOF E572,1000
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E570,1000|FF_DOF E566,1500|FF_DOF E572,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion6|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Various 1
-SC=1000:1000:FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E620,1500|FF_DOF E622,1500|FF_DOF E624,1500
+SC=1000:1000:FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E620,1500|FF_DOF E622,1500|FF_DOF E624,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion1|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Various 2
-SC=2000:2000:FF_Flasher DV_FLIL,FL_FL,6,300,100,Yellow|FF_Flasher DV_FLIR,FL_FL,6,300,100,Yellow|FF_DOF E610,1500|FF_DOF E612,1500|FF_DOF E614,1500
+SC=2000:2000:FF_Flasher DV_FLIL,FL_FL,6,300,100,Yellow|FF_Flasher DV_FLIR,FL_FL,6,300,100,Yellow|FF_DOF E610,1500|FF_DOF E612,1500|FF_DOF E614,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Dome
-SC=3000:3000:FF_Flasher DV_FLIL,FL_FL,6,300,100,Red|FF_Flasher DV_FLIR,FL_FL,6,300,100,Red|FF_DOF E625,1500|FF_DOF E627,1500|FF_DOF E629,1500
+SC=3000:3000:FF_Flasher DV_FLIL,FL_FL,6,300,100,Red|FF_Flasher DV_FLIR,FL_FL,6,300,100,Red|FF_DOF E625,1500|FF_DOF E627,1500|FF_DOF E629,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion2|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Various medium
 SC=5000:5000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,450,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,450,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,450,100,Blue|FF_DOF E720,1500|FF_DOF E687,1500|FF_DOF E724,1500
 # Various high
@@ -59,3 +61,4 @@ SC=50000:50000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FD,10,750,100,White|FF_Flas
 SC=80000:80000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,Red|FF_Flasher DV_FLIL,FL_FD,10,750,100,Green|FF_Flasher DV_FLIR,FL_FD,10,750,100,Red|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_DOF E781,2500
 # Dragonfly
 SC=100000:100000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLOR,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIR,FL_FD,10,750,100,Blue|FF_Flasher DV_FLCN,FL_FD,10,750,100,Blue|FF_DOF E785,2500
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~255~0~255~255~1~false@right_speaker_ring~twinkle~255~0~255~255~1~false

@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for After Burner 2
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # Created by D@VS0ut0
 ##################
 
@@ -11,11 +11,13 @@ BUTTONS_LIT=BUT_P1
 COLOUR_PALETTE=White,Red,Blue,Orange_red
 KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,missile,BUT_B3,afterburner,BUT_B4,decrease
 FF_DOF=E69,7000
-BUTTON_COLOUR_CHANGE=BUT_B1,Orange,BUT_B2,Red,BUT_B3,Green
-BUTTONS_LIT_ADDED=BUT_B1,BUT_B2,BUT_B3
+BUTTON_COLOUR_CHANGE=BUT_B1,Orange,BUT_B2,Red,BUT_B3,Green,BUT_B4,Dodger_Blue
+BUTTONS_LIT_ADDED=BUT_B1,BUT_B2,BUT_B3,BUT_B4
+FE=0B423540375036313C323B4A392F2E3A3A4830241D201B2633323130151D2D252423
+PIXELCADE_SCORE_MODIFIER=&nocomma
 
 [SHUTDOWN]
-BUTTONS_LIT_DELETED=BUT_B1,BUT_B2,BUT_B3
+BUTTONS_LIT_DELETED=BUT_B1,BUT_B2,BUT_B3,BUT_B4
 
 [COMMANDS]
 fire|ON|FF_DOF E184,-1|FF_DOF E185,-1
@@ -24,6 +26,13 @@ afterburner|ON|FF_DOF E799,-1
 decrease|ON|FF_DOF E610,100|FF_DOF E611,100|FF_DOF E612,100|FF_DOF E613,100|FF_DOF E614,100
 
 [SCORE]
-FE=0B483A391F2B5D50575B5C4E4C235B5C577060535A5E6B515D614A5D59494A5A705958292827226920
-FE=0B423A391F1D1C1B1F1D183E3E3B31353C2039414347304031
+FE=04404C4B26326A6B577060535A5E6B516C70596C6858595A702B222125216A2D772B
+FE=0B393F49481E1C1B1A1E18393F362A2C472039414347304031182E3C2E2C304947
+FE=084B3D3C222E60535A5E5F514F265E5F5A7363565D616E5460644D605C4C4D5D732E252C2B266D24
+FE=07463E3D2321201F23211C42423F353940243D45474B344435
 DELAY=2000
+
+SC=0:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E479,1500|FF_DOF E483,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
+SE=2000:2000:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E479,1500|FF_DOF E483,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
+
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~255~0~255~255~1~false@right_speaker_ring~twinkle~255~0~255~255~1~false

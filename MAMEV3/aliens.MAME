@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Aliens
-# DOFLinx force feedback configuration file v4
+# DOFLinx force feedback configuration file v5
 # Created By D@vS0ut0
 ##################
 
@@ -12,6 +12,7 @@ KEY_TO_COMMAND=BUT_B1,up_fire,BUT_B2,down_fire
 FF_DOF=E61,-1
 BUTTON_COLOUR_CHANGE=BUT_J1,White,BUT_B1,Red,BUT_B2,Red
 BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2
+FE=06473A453C553B364137404F3E34333F3F4D3528222520393837361B1E
 
 [SHUTDOWN]
 BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2
@@ -24,22 +25,25 @@ coin|ON|FF_DOF E61,0
 player1|ON|FF_DOF E61,0
 player2|ON|FF_DOF E61,0
 [SCORE]
-FE=0F4436351B275F604C6555484F53604661654E615D4D4E4F65181F1A156016
-FE=0A433B3A201E1D1C201E1D183E3E3B31443C2039414347304031
-FE=0251474628346C6D597262555C606D536E725B6E6A5A5B5C72252C27266D23
-FE=004D49482A2827262A2827224848453B4E462A434B4D513A4A3B
+FE=053F4B4A2531696A566F5F52595D6A506B6F586B675758596F2A21226B1F
+FE=0E363C46451B1918171B153B3B382E32391D363E40442D3D2E152B392B292D4644
+FE=0152444329356D6E5A7363565D616E546F735C6F6B5B5C5D73262D28236E24
+FE=06473F3E242221202422211C42423F354840243D45474B344435
+FE=0350464527336B6C587161545B5F6C526D715A6D69595A5B71242B26256C22
+FE=074642412321201F2321201B41413E34473F233C44464A334334
 DELAY=2000
 # Chestbusters,facehuggers
-SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Green|FF_Flasher DV_FLOR,FL_TT,1,450,100,Green|FF_DOF E220,1000
+SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Green|FF_Flasher DV_FLOR,FL_TT,1,450,100,Green|FF_DOF E220,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # kill blue alien
-SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,450,100,Blue|FF_DOF E223,1000
+SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,450,100,Blue|FF_DOF E223,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion1|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # kill standard alien,infectoids,spiders
-SC=300:300:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E225,1000
+SC=300:300:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E225,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion2|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # kill violet alien
-SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E219,1000
+SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E219,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion4|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Kill infectoids upper body,flying alien
-SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLIL,FL_TT,1,450,100,Red|FF_Flasher DV_FLIR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,Red|FF_DOF E221,1000
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLIL,FL_TT,1,450,100,Red|FF_Flasher DV_FLIR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,Red|FF_DOF E221,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion5|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Barrel explosion
-SC=1000:1000:FF_Flasher DV_FLOL,FL_FL,6,300,100,Red|FF_Flasher DV_FLIL,FL_FL,6,300,100,Red|FF_Flasher DV_FLCN,FL_FL,6,300,100,Red|FF_Flasher DV_FLIR,FL_FL,6,300,100,Red|FF_Dev DV_KN,-1|FF_DOF E620,1500|FF_DOF E631,1500|FF_DOF E607,1500|FF_DOF E633,1500|FF_DOF E624,1500
+SC=1000:1000:FF_Flasher DV_FLOL,FL_FL,6,300,100,Red|FF_Flasher DV_FLIL,FL_FL,6,300,100,Red|FF_Flasher DV_FLCN,FL_FL,6,300,100,Red|FF_Flasher DV_FLIR,FL_FL,6,300,100,Red|FF_Dev DV_KN,-1|FF_DOF E620,1500|FF_DOF E631,1500|FF_DOF E607,1500|FF_DOF E633,1500|FF_DOF E624,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion6|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~particle_explosion~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 #Kill Boss
 SC=5000:100000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,White|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Blue|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E777,2000
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~255~0~255~255~1~false@right_speaker_ring~twinkle~255~0~255~255~1~false
