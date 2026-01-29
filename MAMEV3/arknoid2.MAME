@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Arkanoid 2 Revenge of DOH
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # Created By D@vS0ut0
 ##################
 
@@ -10,8 +10,12 @@ BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Red,BUT_P2,Red
 COLOUR_PALETTE=White,Blue,Red,Green,cyan,Magenta
 KEY_TO_COMMAND=BUT_B1,shoot
 FF_DOF=E58,-1
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1
+FE=0B423540375036313C323B4A392F2E3A3A4830231D201B34333231162B2A2D38
 
 [SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1
 
 [COMMANDS]
 shoot|ON|FF_DOF E186,1000|FF_DOF E187,1000
@@ -20,39 +24,43 @@ player1|ON|FF_DOF E58,0
 player2|ON|FF_DOF E58,0
 
 [SCORE]
-FE=064D3F3E24306869556E5E51585C694F6A6E576A665657586E5623501E691F
-FE=0B423A391F1D1C1B1F1D183E3E3B31353C2039414347304031
-FE=0152484729356D6E5A7363565D616E546F735C6F6B5B5C5D733B2835276E24
-FE=0F3E3A391B1918171B19143A3A372D31381C353D3F432C3C2D
+FE=02424E4D28346C6D597262555C606D536E725B6E6A5A5B5C723A272C2B6D21
+FE=0A3A404A491F1D1C1B1F193A40372B2D48213A424448314132192F3D2F2D314A48
+FE=0152444329356D6E5A7363565D616E546F735C6F6B5B5C5D735B2855236E24
+FE=044941402624232226241F454542383C432740484A4E374738
+FE=0350464527336B6C587161545B5F6C526D715A6D69595A5B71392633256C22
+FE=074642412321201F23211C42423F353940243D45474B344435
 DELAY=1500
 
 # White brick
-SC=50:50:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E218,1000
+SC=50:50:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/arkanoid_explosion1|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
 # Orange brick
-SC=60:60:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E225,1000
+SC=60:60:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E225,1000|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/arkanoid_explosion1|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion2~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
 # Cyan brick/black capsule(2x)
-SC=70:70:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E223,1000
-SC=140:140:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E223,1000
+SC=70:70:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E223,1000|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/arkanoid_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
+SC=140:140:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E223,1000|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/arkanoid_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
 # Green brick/black capsule(2x)
-SC=80:80:FF_Flasher DV_FLOL,FL_TT,1,450,100,Green|FF_Flasher DV_FLOR,FL_TT,1,450,100,Green|FF_DOF E220,1000
-SC=160:160:FF_Flasher DV_FLOL,FL_TT,1,450,100,Green|FF_Flasher DV_FLOR,FL_TT,1,450,100,Green|FF_DOF E220,1000
+SC=80:80:FF_Flasher DV_FLOL,FL_TT,1,450,100,Green|FF_Flasher DV_FLOR,FL_TT,1,450,100,Green|FF_DOF E220,1000|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/arkanoid_explosion1|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
+SC=160:160:FF_Flasher DV_FLOL,FL_TT,1,450,100,Green|FF_Flasher DV_FLOR,FL_TT,1,450,100,Green|FF_DOF E220,1000|FF_DOF E218,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
 # Red brick/black capsule(2x)
-SC=90:90:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E219,1000
-SC=180:180:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E219,1000
+SC=90:90:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E219,1000|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/arkanoid_explosion2|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
+SC=180:180:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,Red|FF_DOF E219,1000|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/arkanoid_explosion2|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
 # Blue brick/black capsule(2x)
-SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,450,100,Blue|FF_DOF E221,1000
-SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,450,100,Blue|FF_DOF E221,1000
+SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,450,100,Blue|FF_DOF E221,1000|FF_PC,U,E,animation/overlay/mameoutput/arkanoid_explosion3|FF_DOF E218,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
+SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,450,100,Blue|FF_DOF E221,1000|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/arkanoid_explosion3|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
 # Magenta brick/black capsule(2x)
-SC=110:110:FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_DOF E224,1000
-SC=220:220:FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_DOF E224,1000
+SC=110:110:FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_DOF E224,1000|FF_DOF E218,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
+SC=220:220:FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,Magenta|FF_DOF E224,1000|FF_DOF E218,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
 # Yellow brick/black capsule(2x)
-SC=120:120:FF_Flasher DV_FLOL,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLOR,FL_TT,1,450,100,Yellow|FF_DOF E222,1000
-SC=240:240:FF_Flasher DV_FLOL,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLOR,FL_TT,1,450,100,Yellow|FF_DOF E222,1000
+SC=120:120:FF_Flasher DV_FLOL,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLOR,FL_TT,1,450,100,Yellow|FF_DOF E222,1000|FF_DOF E218,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
+SC=240:240:FF_Flasher DV_FLOL,FL_TT,1,450,100,Yellow|FF_Flasher DV_FLOR,FL_TT,1,450,100,Yellow|FF_DOF E222,1000|FF_DOF E218,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@top_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false@bottom_strip~pulse~!LED_R!~!LED_G!~!LED_B!~250~1~false
 # Pink capsule
-SC=10000:10000:FF_Flasher DV_FLOL,FL_FL,6,300,100,Magenta|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,Magenta|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Dev DV_KN,-1|FF_DOF E635,1500|FF_DOF E726,1500|FF_DOF E569,1500|FF_DOF E5728,1500|FF_DOF E539,1500
+SC=10000:10000:FF_Flasher DV_FLOL,FL_FL,6,300,100,Magenta|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,Magenta|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Dev DV_KN,-1|FF_DOF E635,1500|FF_DOF E726,1500|FF_DOF E569,1500|FF_DOF E5728,1500|FF_DOF E539,1500|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~0~255~0~220~3~false@left_strip~marquee~0~255~0~250~3~false@right_strip~marquee~0~255~0~250~3~false@left_speaker_ring~marquee~0~255~0~250~3~false@right_speaker_ring~marquee~0~255~0~250~3~false@bottom_strip~marquee~0~255~0~250~3~false@top_strip~marquee~0~255~0~250~3~false
 # Extra live at 20000
-SC=20000:20000:FF_Flasher DV_FLOL,FL_FL,6,750,100,Red|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Green|FF_Flasher DV_FLIR,FL_FL,6,750,100,Blue|FF_Flasher DV_FLCN,FL_FL,6,750,100,Yellow|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E610,2000|FF_DOF E746,2000|FF_DOF E657,2000|FF_DOF E748,2000|FF_DOF E614,2000
+SC=20000:20000:FF_Flasher DV_FLOL,FL_FL,6,750,100,Red|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Green|FF_Flasher DV_FLIR,FL_FL,6,750,100,Blue|FF_Flasher DV_FLCN,FL_FL,6,750,100,Yellow|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E610,2000|FF_DOF E746,2000|FF_DOF E657,2000|FF_DOF E748,2000|FF_DOF E614,2000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~0~255~0~220~3~false@left_strip~marquee~0~255~0~250~3~false@right_strip~marquee~0~255~0~250~3~false@left_speaker_ring~marquee~0~255~0~250~3~false@right_speaker_ring~marquee~0~255~0~250~3~false@bottom_strip~marquee~0~255~0~250~3~false@top_strip~marquee~0~255~0~250~3~false
 # Extra live every 60000
-SE=60000:60000:10:FF_Flasher DV_FLOL,FL_FL,6,750,100,Red|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Green|FF_Flasher DV_FLIR,FL_FL,6,750,100,Blue|FF_Flasher DV_FLCN,FL_FL,6,750,100,Yellow|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E610,2000|FF_DOF E746,2000|FF_DOF E657,2000|FF_DOF E748,2000|FF_DOF E614,2000
+SE=60000:60000:10:FF_Flasher DV_FLOL,FL_FL,6,750,100,Red|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Green|FF_Flasher DV_FLIR,FL_FL,6,750,100,Blue|FF_Flasher DV_FLCN,FL_FL,6,750,100,Yellow|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E610,2000|FF_DOF E746,2000|FF_DOF E657,2000|FF_DOF E748,2000|FF_DOF E614,2000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~0~255~0~220~3~false@left_strip~marquee~0~255~0~250~3~false@right_strip~marquee~0~255~0~250~3~false@left_speaker_ring~marquee~0~255~0~250~3~false@right_speaker_ring~marquee~0~255~0~250~3~false@bottom_strip~marquee~0~255~0~250~3~false@top_strip~marquee~0~255~0~250~3~false
+SD=30000:FF_PC,U,A,arcade/stream/mame/galaga?nogif&nomini&nostrip&event=InGame
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~255~0~255~255~1~false@right_speaker_ring~twinkle~255~0~255~255~1~false
 
 
