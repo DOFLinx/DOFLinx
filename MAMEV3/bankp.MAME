@@ -1,17 +1,21 @@
 ##################
 #
 # MAME configration for Bank Panic
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # Created by D@VS0ut0
 ##################
 
 [STARTUP]
-BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green
+BUTTON_COLOUR_CHANGE=BUT_EX,Dodger_Blue,BUT_P1,Orchid,BUT_P2,Pale_Green,BUT_B3,Tomato
 COLOUR_PALETTE=White,Red,Blue,Orange,Yellow,Green
 KEY_TO_COMMAND=KEY_TO_COMMAND=BUT_B1,l_shoot,BUT_B2,c_shoot,BUT_B3,r_shoot
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2,BUT_B3
 FF_DOF=E69,-1
+FE=06473A453C553B364137404F3E34333F3F4D3528222520393837361B331D1C2A
 
 [SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2,BUT_B3
 
 [COMMANDS]
 l_shoot|ON|FF_DOF E186,1000
@@ -21,50 +25,52 @@ coin|ON|FF_DOF E69,0
 player1|ON|FF_DOF E69,0
 player2|ON|FF_DOF E69,0
 
-
 [SCORE]
-FE=0A493B3A202C6465516A5A4D5458654B666A5366625253546A521C1B2C651C
-FE=014C4443292726252927262142483F33445029424A4C5039493A
-FE=054E44432531696A566F5F52595D6A506B6F586B675758596F572121216A21
-FE=0845414022201F1E22201F1A3B41382C3D49223B434549324233
+FE=053F4B4A2531696A566F5F52595D6A506B6F586B675758596F372122266A1E
+FE=0A3A404A491F1D1C1B1F19343042152E45474B3444351C32403230343E3C
+FE=084B3D3C222E6667536C5C4F565A674D686C5568645455566C541E1D2E671E
+FE=0E3F37361C1A19181C1A1914353B322637431C353D3F432C3C2D
+FE=0F443A391B275F604C6555484F53604661654E615D4D4E4F654D1717176017
+FE=0944403F211F1E1D211F1E193A40372B3C48213A424448314132
 DELAY=2000
 #Rewards
-SC=100:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,White|FF_DOF E444,800|FF_DOF E448,800
+SC=100:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,White|FF_DOF E444,800|FF_DOF E448,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=200:200:FF_Flasher DV_FLCN,FL_TT,1,300,100,White|FF_DOF E504,800|FF_DOF E508,800
+SC=200:200:FF_Flasher DV_FLCN,FL_TT,1,300,100,White|FF_DOF E504,800|FF_DOF E508,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=300:300:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E504,800|FF_DOF E491,800|FF_DOF E508,800
+SC=300:300:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E504,800|FF_DOF E491,800|FF_DOF E508,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E539,800|FF_DOF E657,800|FF_DOF E543,800
+SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E539,800|FF_DOF E657,800|FF_DOF E543,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E655,800|FF_DOF E627,800|FF_DOF E659,800
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E655,800|FF_DOF E627,800|FF_DOF E659,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=600:600:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E565,800|FF_DOF E692,800|FF_DOF E567,800
+SC=600:600:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E565,800|FF_DOF E692,800|FF_DOF E567,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=700:700:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E751,800|FF_DOF E692,800|FF_DOF E753,800
+SC=700:700:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E751,800|FF_DOF E692,800|FF_DOF E753,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=800:800:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E605,800|FF_DOF E611,800|FF_DOF E607,800|FF_DOF E613,800|FF_DOF E609,800
+SC=800:800:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E605,800|FF_DOF E611,800|FF_DOF E607,800|FF_DOF E613,800|FF_DOF E609,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=900:900:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E735,800|FF_DOF E746,800|FF_DOF E762,800|FF_DOF E748,800|FF_DOF E739,800
+SC=900:900:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E735,800|FF_DOF E746,800|FF_DOF E762,800|FF_DOF E748,800|FF_DOF E739,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-
-SC=1000:1000:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Dev DV_KN,-1|FF_DOF E695,800|FF_DOF E626,800|FF_DOF E732,800|FF_DOF E628,800|FF_DOF E699,800
+SC=1000:1000:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Dev DV_KN,-1|FF_DOF E695,800|FF_DOF E626,800|FF_DOF E732,800|FF_DOF E628,800|FF_DOF E699,800|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Clear Stage
-SC=1100:19900:FF_Flasher DV_FLOL,FL_FL,6,750,100,Red|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Red|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,Red|FF_Dev DV_KN,-1|FF_DOF E778,1000
+SC=1100:19900:FF_Flasher DV_FLOL,FL_FL,6,750,100,Red|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Red|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,Red|FF_Dev DV_KN,-1|FF_DOF E778,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
 # Bonuses
-SC=20000:20000:FF_Flasher DV_FLOL,FL_FL,6,750,100,Orange|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Orange|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,Orange|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E772,2000
+SC=20000:20000:FF_Flasher DV_FLOL,FL_FL,6,750,100,Orange|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Orange|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,Orange|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E772,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=60000:60000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Yellow|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E769,2000
+SC=60000:60000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Yellow|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E769,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_swirl-purple|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_2~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=70000:70000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Blue|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E767,2000
+SC=70000:70000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Blue|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E767,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_spinner|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_3~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=200000:200000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Green|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Green|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Green|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E778,2000
+SC=200000:200000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Green|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Green|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Green|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E778,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_pink-circle|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_4~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=500000:500000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLIL,FL_FD,10,750,100,Green|FF_Flasher DV_FLIR,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E783,2000
+SC=500000:500000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLIL,FL_FD,10,750,100,Green|FF_Flasher DV_FLIR,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E783,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_pink-circle|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_5~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=900000:900000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Orange|FF_Flasher DV_FLOR,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLIL,FL_FD,10,750,100,Red|FF_Flasher DV_FLIR,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLCN,FL_FD,10,750,100,Orange|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E781,2000
+SC=900000:900000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Orange|FF_Flasher DV_FLOR,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLIL,FL_FD,10,750,100,Red|FF_Flasher DV_FLIR,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLCN,FL_FD,10,750,100,Orange|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E781,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_pink-circle|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_6~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-SC=1500000:1500000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,Green|FF_Flasher DV_FLIL,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLIR,FL_FD,10,750,100,Green|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E529,2000|FF_DOF E666,2000|FF_DOF E456,2000|FF_DOF E668,2000|FF_DOF E533,2000
+SC=1500000:1500000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,Green|FF_Flasher DV_FLIL,FL_FD,10,750,100,Yellow|FF_Flasher DV_FLIR,FL_FD,10,750,100,Green|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E529,2000|FF_DOF E666,2000|FF_DOF E456,2000|FF_DOF E668,2000|FF_DOF E533,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_pink-circle|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_7~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_7~LED_!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false
 
 SC=2000000:2000000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,Green|FF_Flasher DV_FLIL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIR,FL_FD,10,750,100,Green|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E479,2000|FF_DOF E726,2000|FF_DOF E491,2000|FF_DOF E728,2000|FF_DOF E483,2000
+SD=15000:FF_PC,U,A,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false

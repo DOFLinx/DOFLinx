@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Badlands
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # Created by D@VS0ut0
 ##################
 
@@ -9,9 +9,13 @@
 BUTTON_COLOUR_CHANGE=BUT_EX,Orange,BUT_P1,Blue,BUT_P2,Red
 COLOUR_PALETTE=White,Red,Blue,Orange
 KEY_TO_COMMAND=BUT_B1,gas,BUT_B2,shoot
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2,BUT_J2,BUT_B9,BUT_B10
 FF_DOF=E78,-1
+FE=034A3D483F583E39443A4352413736424250382C2528233C3B3A3938371C35433E3E2A29
 
 [SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2,BUT_J2,BUT_B9,BUT_B10
 
 [COMMANDS]
 gas|ON|FF_DOF E192,1000|FF_DOF E193,1000
@@ -21,15 +25,20 @@ player1|ON|FF_DOF E78,0
 player2|ON|FF_DOF E78,0
 
 [SCORE]
-FE=0152444329356D6E5A7363565D616E546F735C6F6B5B5C5D735C5B5A2553287B31
-FE=06473F3E24222120241E3935471A333B4C5039493A
-FE=0C473D3C1E2A62634F68584B5256634964685164605051526851504F1B191D7026
-FE=0F3E3A391B1918171B15302C3E112A324347304031
+FE=0E3642411C2860614D6656495054614762664F625E4E4F50662F2E2D2C16286E226C1C1F
+FE=0A3A404A491F1D1C1B1F19343042152E45474B3444351C32403230343E3C
+FE=054E403F2531696A566F5F52595D6A506B6F586B675758596F585756214F23772E
+FE=044941402624232226203B37491C353D4E523B4B3C
+FE=0251474628346C6D597262555C606D536E725B6E6A5A5B5C725B5A592523267A31
+FE=004D49482A2827262A243F3B4D20394152563F4F40
 DELAY=2000
-# bonus first (not working)
-SC=1000:1000:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Dev DV_KN,-1|FF_DOF E775,2000
-# bonus second (not working)
-SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLIL,FL_TT,1,450,100,White|FF_Flasher DV_FLIR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E765,2000
-# bonus total (not working)
-SC=510:3000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E771,2000
+SC=0:10:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E223,-1|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
+# bonus first
+SC=1000:1000:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Dev DV_KN,-1|FF_DOF E775,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false
+# bonus second
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLIL,FL_TT,1,450,100,White|FF_Flasher DV_FLIR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_Dev DV_KN,-1|FF_DOF E765,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_swirl-purple|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_2~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false
+# bonus total
+SC=510:3000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E771,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_spinner|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_3~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
+SD=15000:FF_PC,U,A,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false

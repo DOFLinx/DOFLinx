@@ -10,7 +10,7 @@ BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Red,BUT_P2,Blue
 COLOUR_PALETTE=White,Red,Blue,Green,Cyan,Purple
 KEY_TO_COMMAND=BUT_B1,rotate
 FF_DOF=E78,-1
-FE=074639443B543A3540363F4E3D33323E3E4C342721241F3837361B1B1E1C1B29
+FE=06473A453C553B364137404F3E34333F3F4D35282225203938371C1C1F1D1C2A
 
 [SHUTDOWN]
 
@@ -21,14 +21,14 @@ player1|ON|FF_DOF E78,0
 player2|ON|FF_DOF E78,0
 
 [SCORE]
-FE=01434F4E29356D6E5A7363565D616E546F735C6F6B5B5C5D732B267024
-FE=073D434D4C22201F1E221C3D433A2E304B243D45474B3444351C32403230344D4B
-FE=0251434228346C6D597262555C606D536E725B6E6A5A5B5C72252A23226D26
-FE=014C44432927262529233748373C3B1D454D4F533C4C3D
-FE=0251474628346C6D597262555C606D536E725B6E6A5A5B5C72252A23286D26
-FE=0944403F211F1E1D211B2F402F3433153D45474B344435
+FE=053F4B4A2531696A566F5F52595D6A506B6F586B675758596F27226C20
+FE=0B393F49481E1C1B1A1E18393F362A2C472039414347304031182E3C2E2C304947
+FE=084B3D3C222E6667536C5C4F565A674D686C5568645455566C1F241D1C6720
+FE=0F3E36351B1918171B15293A292E2D0F373F41452E3E2F
+FE=094A403F212D6566526B5B4E5559664C676B5467635354556B1E231C21661F
+FE=0845414022201F1E221C3041303534163E46484C354536
 DELAY=2000
-# Tetromino ( it�s based of d*r*(r+h)
+# Tetromino ( it s based of d*r*(r+h)
 SC=01:49:FF_Flasher DV_FLCN,FL_TT,1,300,100,White|FF_DOF E194,1000|FF_DOF E195,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 SC=51:149:FF_Flasher DV_FLCN,FL_TT,1,300,100,White|FF_DOF E196,1000|FF_DOF E197,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
 SC=151:399:FF_Flasher DV_FLCN,FL_TT,1,300,100,White|FF_DOF E192,1000|FF_DOF E193,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
@@ -46,4 +46,5 @@ SC=901:2100:FF_Flasher DV_FLOL,FL_FD,10,750,100,Purple|FF_Flasher DV_FLOR,FL_FD,
 # Bonus 2 players
 SC=2000:2000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Purple|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Green|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Purple|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E784,2500|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~128~0~128~220~3~false@left_strip~marquee~128~0~128~250~3~false@right_strip~marquee~128~0~128~250~3~false@left_speaker_ring~marquee~128~0~128~250~3~false@right_speaker_ring~marquee~128~0~128~250~3~false@bottom_strip~marquee~128~0~128~250~3~false@top_strip~marquee~128~0~128~250~3~false
 SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame
+SD=15000:FF_PC,U,A,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
 DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle_fox~255~0~255~255~1~false@right_speaker_ring~twinkle_fox~255~0~255~255~1~false
