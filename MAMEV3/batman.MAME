@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Batman
-# DOFLinx force feedback configuration file v3
+# DOFLinx force feedback configuration file v4
 # Created by D@VS0ut0
 ##################
 
@@ -10,8 +10,12 @@ BUTTON_COLOUR_CHANGE=BUT_EX,Cyan,BUT_P1,Yellow,BUT_P2,Yellow
 COLOUR_PALETTE=White,Yellow,Cyan
 KEY_TO_COMMAND=BUT_B1,punch,BUT_B2,jump
 FF_DOF=E78,-1
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2
+FE=0B423540375036313C323B4A392F2E3A3A4830241D201B34333231302F142D39242322
 
 [SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2
 
 [COMMANDS]
 punch|ON|FF_DOF E194,1000|FF_DOF E195,1000
@@ -21,72 +25,54 @@ player1|ON|FF_DOF E78,0
 player2|ON|FF_DOF E78,0
 
 [SCORE]
-FE=0A493B3A202C6465516A5A4D5458654B666A5366625253546A1E1C1E4C4C4A7228
-FE=0548403F25232221251F3A36481B343C4D513A4A3B
-FE=0251474628346C6D597262555C606D536E725B6E6A5A5B5C725B5A592523277A30
-FE=0E3F3B3A1C1A19181C16312D3F122B334448314132
+FE=0E3642411C2860614D6656495054614762664F625E4E4F50661A181B292A156E226C1C1F
+FE=063E444E4D2321201F231D3834461932494B4F3848392036443634384240
+FE=0350424127336B6C587161545B5F6C526D715A6D69595A5B71252325535351792F
+FE=044941402624232226203B37491C353D4E523B4B3C
+FE=03204F454426326A6B577060535A5E6B606C70596C6858595A70595857232134782E
+FE=01224B47462826252428223D394B1E374E50543D4D3E
 DELAY=1000
 
 # First hit on some gangsters
-SC=50:50:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E218,1000
-
+SC=50:50:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Destroy Grisson car 1, Joker's green
-SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E218,100
-
-
-
+SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_DOF E218,100|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Some hits on some thugs,Destroy Grisson car 2, Joker's green
-SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E223,1000
-
+SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E223,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Hit thug 2
-SC=240:240:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E464,1000|FF_DOF E468,1000
-
+SC=240:240:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E464,1000|FF_DOF E468,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Bald gunner,Destroy Grisson car 3, Joker's green
-SC=300:300:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E465,1000|FF_DOF E467,1000
-
+SC=300:300:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E465,1000|FF_DOF E467,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Hit thug 3,Destroy Grisson car 4, Joker's green
-SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E504,1000|FF_DOF E508,1000
-
+SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E504,1000|FF_DOF E508,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Hit thug 4
-SC=480:480:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E505,1000|FF_DOF E507,1000
-
+SC=480:480:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E505,1000|FF_DOF E507,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Destroy missile,Destroy Grisson car 5, Joker's green
-SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E544,1000|FF_DOF E548,1000
-
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E544,1000|FF_DOF E548,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Destroy Grisson car 6, Joker's green
-SC=600:600:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E545,1000|FF_DOF E547,1000
-
+SC=600:600:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E545,1000|FF_DOF E547,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Destroy Grisson car 7, Joker's green
-SC=700:700:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E584,1000|FF_DOF E588,1000
-
+SC=700:700:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E584,1000|FF_DOF E588,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_2~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Hit thug 5,Destroy Grisson car 8, Joker's green
-SC=800:800:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E585,1000|FF_DOF E587,1000
-
+SC=800:800:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E585,1000|FF_DOF E587,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_3~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Destroy Grisson car 9, Joker's green
-SC=900:900:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E625,1000|FF_DOF E629,1000
-
+SC=900:900:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E625,1000|FF_DOF E629,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_5~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Destroy Grisson car 10, Joker's green
-SC=1000:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E626,1000|FF_DOF E628,1000
-
+SC=1000:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E626,1000|FF_DOF E628,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Green-jacketed,brown-jacketed,red-jacketed,blue-jacketed thug 
-SC=1440:1440:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E222,1000
-
+SC=1440:1440:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E222,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_6~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Catch balloons
-SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLIL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLIR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,Cyan|FF_DOF E665,1000|FF_DOF E669,1000
-
+SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLIL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLIR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,Cyan|FF_DOF E665,1000|FF_DOF E669,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_7~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Hit gansters/thugs
-SC=2400:2400:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E666,1000|FF_DOF E669,1000
-
+SC=2400:2400:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E666,1000|FF_DOF E669,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_8~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_8~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_8~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_8~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_8~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_8~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Bonus end stage
-SC=2500:2500:FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,Cyan|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,Cyan|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E665,2000|FF_DOF E606,2000|FF_DOF E586,2000|FF_DOF E608,2000|FF_DOF E669,2000
-
+SC=2500:2500:FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,Cyan|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,Cyan|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E665,2000|FF_DOF E606,2000|FF_DOF E586,2000|FF_DOF E608,2000|FF_DOF E669,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_9~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Bonus life
-SC=75000:75000:FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_Dev DV_KN,-1|FF_DOF E665,2000|FF_DOF E606,2000|FF_DOF E586,2000|FF_DOF E608,2000|FF_DOF E669,2000
-
-# Bonus all grisson cars and Jokers�s cars destroyed
+SC=75000:75000:FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_Dev DV_KN,-1|FF_DOF E665,2000|FF_DOF E606,2000|FF_DOF E586,2000|FF_DOF E608,2000|FF_DOF E669,2000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_10~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_10~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_10~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_10~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_10~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_10~LED_R!~!LED_G!~!LED_B!~250~1~false
+# Bonus all grisson cars and Jokers s cars destroyed
 SC=5000:5000:FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,Cyan|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_Dev DV_KN,-1|FF_DOF E625,2000|FF_DOF E606,2000|FF_DOF E627,2000|FF_DOF E608,2000|FF_DOF E629,2000
-
-# Bonus all balloons catched
+# Bonus all balloons caught
 SC=10000:10000:FF_Flasher DV_FLOL,FL_FL,6,750,100,Cyan|FF_Flasher DV_FLOR,FL_FL,6,750,100,Cyan|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,Cyan|FF_Flasher DV_FLCN,FL_FL,6,750,100,Cyan|FF_Dev DV_KN,-1|FF_DOF E645,2000|FF_DOF E525,2000|FF_DOF E486,2000|FF_DOF E527,2000|FF_DOF E649,2000
 
-
+SD=15000:FF_PC,U,A,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false
