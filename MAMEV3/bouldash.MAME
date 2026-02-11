@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Boulder Dash
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # 
 ##################
 
@@ -10,8 +10,13 @@ BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Cyan,BUT_P2,Green
 COLOUR_PALETTE=White,Blue,Cyan,Green,Magenta
 KEY_TO_COMMAND=BUT_B1,B1,BUT_B2,B2
 FF_DOF=E73,-1
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2
+FF_DOF=E78,-1
+FE=024B3E4940593F3A453B4453423837434351392D2629243D3C3B3A39381D232E312C2B2A
 
 [SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2
 
 [COMMANDS]
 B1|ON|FF_DOF E196,1000
@@ -21,19 +26,22 @@ player1|ON|FF_DOF E73,0
 player2|ON|FF_DOF E73,0
 
 [SCORE]
-FE=0C4739381E2A62634F68584B525663496468516460505152681E1A1F49481A7027
-FE=0D4038371D1B1A191D1B163C3C392F333A1E373F41452E3E2F
-FE=0B483E3D1F2B63645069594C5357644A6569526561515253691F1B204A491F7128
-FE=014C4847292726252927224848453B3F462A434B4D513A4A3B
+FE=0D3743421D2961624E67574A51556248636750635F4F5051671D191E1817186F236D1D20
+FE=01434953522826252428224848453B3F462A434B4D513A4A3B22384638363A5351
+FE=0350424127336B6C587161545B5F6C526D715A6D69595A5B712723285251237930
+FE=07463E3D2321201F23211C42423F353940243D45474B344435
+FE=0152484729356D6E5A7363565D616E546F735C6F6B5B5C5D7329252A5453297B32
+FE=034A464527252423272520464643393D442841494B4F384839
 DELAY=2000
 
 # Grass
-SC=10:10:FF_Flasher DV_FLOL,FL_TT,1,450,100,Green|FF_Flasher DV_FLOR,FL_TT,1,450,100,Green|FF_DOF E606,500|FF_DOF E608,500
+SC=10:10:FF_Flasher DV_FLOL,FL_TT,1,450,100,Green|FF_Flasher DV_FLOR,FL_TT,1,450,100,Green|FF_DOF E606,500|FF_DOF E608,500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Blue Gems
-SC=150:150:FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta|FF_DOF E710,1000|FF_DOF E550,1000|FF_DOF E712,1000|FF_DOF E552,1000|FF_DOF E714,1000
+SC=150:150:FF_Flasher DV_FLOL,FL_TT,1,450,100,Magenta|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,Magenta|FF_DOF E710,1000|FF_DOF E550,1000|FF_DOF E712,1000|FF_DOF E552,1000|FF_DOF E714,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Bug
-SC=300:300:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Dev DV_KN,-1|FF_DOF E514,1000|FF_DOF E575,1000|FF_DOF E576,1000|FF_DOF E577,1000|FF_DOF E518,1000
+SC=300:300:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_Dev DV_KN,-1|FF_DOF E514,1000|FF_DOF E575,1000|FF_DOF E576,1000|FF_DOF E577,1000|FF_DOF E518,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Gems rock
-SC=1000:1000:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E539,1000|FF_DOF E565,1000|FF_DOF E556,1000|FF_DOF E567,1000|FF_DOF E543,1000
+SC=1000:1000:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E539,1000|FF_DOF E565,1000|FF_DOF E556,1000|FF_DOF E567,1000|FF_DOF E543,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
-
+SD=15000:FF_PC,U,A,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false

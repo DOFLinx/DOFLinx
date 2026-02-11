@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Captain America and The Avengers
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v4
 # Created by D@VS0ut0
 ##################
 
@@ -10,8 +10,15 @@ BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Red,BUT_P2,Blue
 COLOUR_PALETTE=White,Red,Blue,Orange,Green,Yellow
 KEY_TO_COMMAND=BUT_B1,attack,BUT_B2,jump
 FF_DOF=E85,-1
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2
+FF_DOF=E78,-1
+FE=05483B463D563C37423841503F353440404E362A2326213A39383736351A1E2C403F3B27
+
+11891E
 
 [SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2
 
 [COMMANDS]
 attack|ON|FF_DOF E188,1000|FF_DOF E189,1000
@@ -20,40 +27,44 @@ coin|ON|FF_DOF E85,0
 player1|ON|FF_DOF E85,0
 player2|ON|FF_DOF E85,0
 
-
 [SCORE]
-FE=0A493B3A202C6465516A5A4D5458654B666A5366625253546A1D1D1D204B19597127
-FE=07463E3D2321201F231D434340363A32254A3C4C3A464637
-FE=064D434224306869556E5E51585C694F6A6E576A665657586E212121244F1F5D752B
-FE=0548444325232221251F454542383C34274C3E4E3C484839
+#7894
+FE=053F4B4A2531696A566F5F52595D6A506B6F586B675758596F232327272724772B7529
+FE=0F353B45441A1817161A142F2B3D10294042462F3F30172D3B2D2B2F3937
+FE=044F414026326A6B577060535A5E6B516C70596C6858595A70242427522051782E
+FE=08453D3C22201F1E221C42423F35393124493B4B39454536
+FE=094A403F212D6566526B5B4E5559664C676B5467635354556B1F1F224D1D4C7329
+FE=0F3E3A391B1918171B153B3B382E322A1D423444323E3E2F
 DELAY=1000
 # cola can,hit boss,stuff
-SC=100:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E218,500
+SC=100:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E218,500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion1|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Grey enemy, barrel
-SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E219,500
+SC=200:200:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E219,500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Cola machine,shielded violet enemy,Cyan machinegun enemy
-SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E221,500
+SC=400:400:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E221,500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # orange enemy
-SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E225,500
+SC=500:500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E225,500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Bug enemy,submariner
-SC=600:600:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E222,500
+SC=600:600:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E222,500|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
 # Cyan enemy
-SC=800:800:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E223,500
+SC=800:800:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E223,500|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Brown enemy,orange flying enemy
-SC=1000:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E224,500
+SC=1000:1000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_DOF E224,500|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_2~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_2~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Signal Wasp
-SC=1001:1001:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLIL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,Red|FF_Dev DV_KN,-1|FF_DOF E579,500|FF_DOF E586,500|FF_DOF E583,500
+SC=1001:1001:FF_Flasher DV_FLOL,FL_TT,1,450,100,Red|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLIL,FL_TT,1,450,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,Red|FF_Dev DV_KN,-1|FF_DOF E579,500|FF_DOF E586,500|FF_DOF E583,500|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_3~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_3~LED_R!~!LED_G!~!LED_B!~250~1~false
 
 # Grey flying enemy
-SC=1500:1500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E650,500|FF_DOF E607,500|FF_DOF E654,500
+SC=1500:1500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E650,500|FF_DOF E607,500|FF_DOF E654,500|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_5~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_4~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Machinegun cyan enemy
-SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E711,500|FF_DOF E662,500|FF_DOF E713,500
+SC=2000:2000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E711,500|FF_DOF E662,500|FF_DOF E713,500|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_5~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Flying machine enemy
-SC=2500:2500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E474,500|FF_DOF E526,500|FF_DOF E478,500
+SC=2500:2500:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E474,500|FF_DOF E526,500|FF_DOF E478,500|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_6~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_6~LED_R!~!LED_G!~!LED_B!~250~1~false
 # Grey enemy
-SC=3000:3000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E515,500|FF_DOF E486,500|FF_DOF E517,500
+SC=3000:3000:FF_Flasher DV_FLOL,FL_TT,1,450,100,White|FF_Flasher DV_FLOR,FL_TT,1,450,100,White|FF_Flasher DV_FLCN,FL_TT,1,450,100,White|FF_DOF E515,500|FF_DOF E486,500|FF_DOF E517,500|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_7~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_7~LED_R!~!LED_G!~!LED_B!~250~1~false
 
 # Bosses
-SC=5000:70000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E775,1500
+SC=5000:70000:FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,White|FF_Flasher DV_FLIL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIR,FL_FD,10,750,100,White|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E775,1500|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_9~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_9~LED_R!~!LED_G!~!LED_B!~250~1~false
 
+SD=15000:FF_PC,U,A,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false

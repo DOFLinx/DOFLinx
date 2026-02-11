@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Back Street Soccer
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 # Created by D@VS0ut0
 ##################
 
@@ -10,25 +10,31 @@ BUTTON_COLOUR_CHANGE=BUT_EX,White,BUT_P1,Red,BUT_P2,Yellow
 COLOUR_PALETTE=White,Red,Yellow,Orange
 KEY_TO_COMMAND=BUT_B1,kick,BUT_B2,pass,BUT_B3,dash
 FF_DOF=E78,-1
-
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2,BUT_B3
+FF_DOF=E78,-1
 
 [SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2,BUT_B3
 
 [COMMANDS]
-kick|ON|FF_DOF E188,1000|FF_DOF E189,1000|FF_DOF E489,1000|FF_DOF E493,1000
-pass|ON|FF_DOF E194,1000|FF_DOF E195,1000|FF_DOF E444,1000|FF_DOF E448,1000
-dash|ON|FF_DOF E200,1000|FF_DOF E201,1000|FF_DOF E625,1000|FF_DOF E629,1000
+kick|ON|FF_DOF E188,1000|FF_DOF E189,1000|FF_DOF E489,1000|FF_DOF E493,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=left_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false
+pass|ON|FF_DOF E194,1000|FF_DOF E195,1000|FF_DOF E444,1000|FF_DOF E448,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=right_strip~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~fireworks~LED_R!~!LED_G!~!LED_B!~250~1~false
+dash|ON|FF_DOF E200,1000|FF_DOF E201,1000|FF_DOF E625,1000|FF_DOF E629,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion-blue|FF_PC,U,D,ledstrip/batch?zones=right_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_explosion3~LED_R!~!LED_G!~!LED_B!~250~1~false
 coin|ON|FF_DOF E78,0
 player1|ON|FF_DOF E78,0
 player2|ON|FF_DOF E78,0
 
-
 [SCORE]
-FE=044F414026326A6B577060535A5E6B516C70596C6858595A70252221552022782C
-FE=0F3E36351B1918171B15363C332729351D363E40442D3D2E
-FE=064D434224306869556E5E51585C694F6A6E576A665657586E23201F531E21762A
-FE=0A433F3E201E1D1C201A3B41382C2E3A223B434549324233
+FE=0B3945441F2B63645069594C5357644A6569526561515253691E1B1A191F177125
+FE=0E363C46451B1918171B15302C3E112A414347304031182E3C2E2C303A38
+FE=084B3D3C222E6667536C5C4F565A674D686C5568645455566C211E1D511C1E7428
+FE=004D45442A2827262A24454B423638442C454D4F533C4C3D
+FE=0E453B3A1C2860614D6656495054614762664F625E4E4F50661B18174B16196E22
+FE=0C413D3C1E1C1B1A1E18393F362A2C382039414347304031
 DELAY=2000
 # Goal
-SC=1:100:FF_Flasher DV_FLOL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLOR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLCN,FL_FD,10,750,100,Gold|FF_Dev DV_KN,-1|FF_DOF E55,3000
+SC=1:100:FF_Flasher DV_FLOL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLOR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLCN,FL_FD,10,750,100,Gold|FF_Dev DV_KN,-1|FF_DOF E55,3000|FF_PC,U,E,animation/overlay/mameoutput/generic_milestone|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_1~!LED_R!~!LED_G!~!LED_B!~220~1~false@left_strip~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_speaker_ring~achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@right_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false@left_matrix~matrix_8x8_achievements_1~LED_R!~!LED_G!~!LED_B!~250~1~false
 
+SD=15000:FF_PC,U,A,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false
