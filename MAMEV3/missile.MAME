@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for Missile Attack
-# DOFLinx force feedback configuration file v2
+# DOFLinx force feedback configuration file v3
 #
 # This game will report only the current players score, be that P1 or P2, both report as P1.  This is because the game only gives access to the current players score
 # Increments for advanced scores in upper levels are made hard due to the multiplier effect, see score table at base of file.
@@ -15,20 +15,26 @@ KEY_TO_COMMAND=BUT_B1,fire
 FF_DOF=E78,-1
 BUTTON_COLOUR_CHANGE=BUT_TB1,Red,BUT_B1,Red,BUT_B2,Red,BUT_B3,Red
 BUTTONS_LIT_ADDED=BUT_TB1,BUT_B1,BUT_B2,BUT_B3
+BUTTONS_LIT_DELETED=BUT_P1,BUT_P2
 
 [SHUTDOWN]
 KEY_TO_COMMAND=
+BUTTONS_LIT_ADDED=BUT_P1,BUT_P2
 BUTTONS_LIT_DELETED=BUT_TB1,BUT_B1,BUT_B2,BUT_B3
 
 [COMMANDS]
+led0|ON|FF_Button BUT_P1,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 1,Player%201,animation/overlay/mameoutput/startup_player1-blue,arcade/stream/mameoutput/startup_player1-blue?notext,display/text?text=Select%20%201%7CPlayer&size=M&font=BTTF&color=1E90FF&bordersize=0&duration=-1
+led0|OFF|FF_Button BUT_P1,BA_OFF,0,0
+led1|ON|FF_Button BUT_P2,BA_ON,0,0|FF_DOF E51,1200|FF_MSG 2,Player%202,animation/overlay/mameoutput/startup_player2-green,arcade/stream/mameoutput/startup_player2-green?notext,display/text?text=Select%20%201%20%20or%20%202%7CPlayers&size=M&font=BTTF&color=00FA9A&bordersize=0&duration=-1&cleanbg=true
+led1|OFF|FF_Button BUT_P2,BA_OFF,0,0
 fire|ON|FF_DOF E216,-1
 coin|ON|FF_DOF E78,0
 player1|ON|FF_DOF E78,0
 player2|ON|FF_DOF E78,0
 
 [SCORE]
-FE=074C3E3D232F6768546D5D50575B684E696D5669655556576D34206A21
-FE=07463E3D2321201F231D3E443B2F313D254A3C4C3A464637
+FE=0C4739381E2A62634F68584B525663496468516460505152682F1B651C
+FE=0548403F25232221251F454542383C34274C3E4E3C484839
 DELAY=5000
 # Missile
 SC=5:95:FF_Flasher DV_FLOL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLOR,FL_TT,1,450,100,Orange|FF_DOF E514,800|FF_DOF E518,800|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~165~0~220~1~false@left_strip~pulse~255~165~0~250~1~false@right_strip~pulse~255~165~0~250~1~false@left_speaker_ring~pulse~255~165~0~250~1~false@right_speaker_ring~pulse~255~165~0~250~1~false@top_strip~pulse~255~165~0~250~1~false@bottom_strip~pulse~255~165~0~250~1~false
@@ -38,7 +44,7 @@ SC=100:100:FF_Flasher DV_FLOL,FL_TT,1,450,100,Cyan|FF_Flasher DV_FLOR,FL_TT,1,45
 SC=125:125:FF_Flasher DV_FLCN,FL_TT,1,500,100,Green|FF_Flasher DV_FLIL,FL_TT,1,500,100,Green|FF_Flasher DV_FLIR,FL_TT,1,500,100,Green|FF_DOF E695,1000|FF_DOF E701,1000|FF_DOF E697,1000|FF_DOF E703,1000|FF_DOF E699,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~0~220~1~false@left_strip~pulse~0~255~0~250~1~false@right_strip~pulse~0~255~0~250~1~false@left_speaker_ring~pulse~0~255~0~250~1~false@right_speaker_ring~pulse~0~255~0~250~1~false@top_strip~pulse~0~255~0~250~1~false@bottom_strip~pulse~0~255~0~250~1~false
 # A bonus type range
 SC=1000:9500:FF_Colour Blue,RGB_TT,1500|FF_Flasher DV_FLOL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIL,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLCN,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLIR,FL_TT,1,1500,100,Blue|FF_Flasher DV_FLOR,FL_TT,1,1500,100,Blue|FF_DOF E620,1400|FF_DOF E607,1400|FF_DOF E619,1400|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~0~0~255~220~3~false@left_strip~marquee~0~0~255~250~3~false@right_strip~marquee~0~0~255~250~3~false@left_speaker_ring~marquee~0~0~255~250~3~false@right_speaker_ring~marquee~0~0~255~250~3~false@bottom_strip~marquee~0~0~255~250~3~false@top_strip~marquee~0~0~255~250~3~false
-SD=30000:FF_PC,U,E,arcade/stream/mame/missile?nogif&nomini&event=InGame
+SD=30000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
 
 
 

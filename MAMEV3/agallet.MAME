@@ -11,7 +11,7 @@ COLOUR_PALETTE=White,Cyan,Red,Orange_red,Blue
 KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,Bomb
 BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2,BUT_J2,BUT_B9,BUT_B10
 FF_DOF=E78,-1
-FE=0B423540375036313C323B4A392F2E3A3A4830241D201B34333231302F14182524232221
+FE=04493C473E573D384339425140363541414F372B2427223B3A393837361B1F2C2B2A2928
 
 [SHUTDOWN]
 BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2,BUT_J2,BUT_B9,BUT_B10
@@ -26,11 +26,11 @@ player2|ON|FF_DOF E78,0
 
 [SCORE]
 FE=063E4A4924306869556E5E51585C694F6A6E576A665657586E22201F1E2E2E762A742427
-FE=063E444E4D2321201F231D3E443B2F314C253E46484C3545361D33413331354E4C
-FE=005345442A366E6F5B7464575E626F5570745D706C5C5D5E74282625262B537C33
-FE=07463E3D2321201F231D434340363A32253E46484C354536
-FE=0D463C3B1D2961624E67574A51556248636750635F4F5051671B1918191E4A6F26
-FE=0F3E3A391B1918171B153B3B382E322A1D363E40442D3D2E
+FE=0A3A404A491F1D1C1B1F193A40372B2D48213A424448314132192F3D2F2D314A48
+FE=0C4739381E2A62634F68584B525663496468516460505152681C1A191A1F477027
+FE=0E3F37361C1A19181C163C3C392F332B1E373F41452E3E2F
+FE=005349482A366E6F5B7464575E626F5570745D706C5C5D5E74282625262B577C33
+FE=0A433F3E201E1D1C201A40403D33372F223B434549324233
 DELAY=1500
 # Destroy simple plane
 SC=010:100:FF_Flasher DV_FLCN,FL_TT,1,300,100,Blue|FF_DOF E218,1000|FF_PC,U,E,animation/overlay/mameoutput/generic_explosion1|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~0~255~220~1~false@left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false@top_strip~pulse~0~0~255~250~1~false@bottom_strip~pulse~0~0~255~250~1~false
@@ -58,6 +58,6 @@ SC=50000:79990:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FD,10,750,100,White|FF_Flas
 SC=80000:99990:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FD,10,750,100,Red|FF_Flasher DV_FLOR,FL_FD,10,750,100,Red|FF_Flasher DV_FLIL,FL_FD,10,750,100,Green|FF_Flasher DV_FLIR,FL_FD,10,750,100,Red|FF_Flasher DV_FLCN,FL_FD,10,750,100,Red|FF_DOF E781,2500|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~255~0~0~220~3~false@left_strip~marquee~255~0~0~250~3~false@right_strip~marquee~255~0~0~250~3~false@left_speaker_ring~marquee~255~0~0~250~3~false@right_speaker_ring~marquee~255~0~0~250~3~false@bottom_strip~marquee~255~0~0~250~3~false@top_strip~marquee~255~0~0~250~3~false
 # Dragonfly
 SC=100000:100000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLOR,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIL,FL_FD,10,750,100,Blue|FF_Flasher DV_FLIR,FL_FD,10,750,100,Blue|FF_Flasher DV_FLCN,FL_FD,10,750,100,Blue|FF_DOF E785,2500|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~0~0~255~220~3~false@left_strip~marquee~0~0~255~250~3~false@right_strip~marquee~0~0~255~250~3~false@left_speaker_ring~marquee~0~0~255~250~3~false@right_speaker_ring~marquee~0~0~255~250~3~false@bottom_strip~marquee~0~0~255~250~3~false@top_strip~marquee~0~0~255~250~3~false
-SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
 DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle_fox~255~0~255~255~1~false@right_speaker_ring~twinkle_fox~255~0~255~255~1~false
 

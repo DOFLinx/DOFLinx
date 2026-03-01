@@ -25,12 +25,12 @@ player1|ON|FF_DOF E66,0
 player2|ON|FF_DOF E66,0
 
 [SCORE]
-FE=01434F4E29356D6E5A7363565D616E546F735C6F6B5B5C5D732F27253727227B2F
-FE=01434953522826252428224349403436512A434B4D513A4A3B22384638363A5351
-FE=0B483A391F2B63645069594C5357644A656952656151525369251D1B4D201F7128
-FE=0E3F37361C1A19181C163C3C392F332B1E373F41452E3E2F
-FE=054E44432531696A566F5F52595D6A506B6F586B675758596F2B2321532650772E
-FE=04494544262423222620464643393D352841494B4F384839
+FE=0E3642411C2860614D6656495054614762664F625E4E4F5066221A182A1A156E22
+FE=063E444E4D2321201F231D3E443B2F314C253E46484C3545361D33413331354E4C
+FE=0152444329356D6E5A7363565D616E546F735C6F6B5B5C5D732F2725572A297B32
+FE=08453D3C22201F1E221C42423F353931243D45474B344435
+FE=0A493F3E202C6465516A5A4D5458654B666A5366625253546A261E1C4E214B7229
+FE=004D49482A2827262A244A4A473D41392C454D4F533C4C3D
 DELAY=2000
 
 # Destroy orange plane
@@ -59,5 +59,5 @@ SC=50000:50000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flas
 SC=80000:80000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,White|FF_Flasher DV_FLOR,FL_FL,6,750,100,White|FF_Flasher DV_FLIL,FL_FL,6,750,100,White|FF_Flasher DV_FLIR,FL_FL,6,750,100,White|FF_Flasher DV_FLCN,FL_FL,6,750,100,White|FF_DOF E781,2000|FF_PC,U,E,animation/overlay/mameoutput/pacman_strawberry|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion2~255~40~70~220~1~false@left_strip~particle_explosion~255~40~70~250~1~false@right_strip~particle_explosion~255~40~70~250~1~false@left_speaker_ring~particle_explosion~255~40~70~250~1~false@right_speaker_ring~particle_explosion~255~40~70~250~1~false@bottom_strip~particle_explosion~255~40~70~250~1~false@top_strip~particle_explosion~255~40~70~250~1~false
 # Dragonfly
 SC=100000:100000:FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Green|FF_Flasher DV_FLOR,FL_FL,6,750,100,Green|FF_Flasher DV_FLIL,FL_FL,6,750,100,Green|FF_Flasher DV_FLIR,FL_FL,6,750,100,Green|FF_Flasher DV_FLCN,FL_FL,6,750,100,Green|FF_DOF E785,2000|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion2~255~40~70~220~1~false@left_strip~particle_explosion~255~40~70~250~1~false@right_strip~particle_explosion~255~40~70~250~1~false@left_speaker_ring~particle_explosion~255~40~70~250~1~false@right_speaker_ring~particle_explosion~255~40~70~250~1~false@bottom_strip~particle_explosion~255~40~70~250~1~false@top_strip~particle_explosion~255~40~70~250~1~false
-SD=5000:FF_PC,U,E,arcade/stream/mame/1944?nogif&nomini&event=InGame
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
 DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle_fox~255~0~255~255~1~false@right_speaker_ring~twinkle_fox~255~0~255~255~1~false

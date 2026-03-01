@@ -13,5 +13,5 @@ BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2,BUT_J2,BUT_B9,BUT_B10
 BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2,BUT_J2,BUT_B9,BUT_B10
 
 [COMMANDS]
-SD=3000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame
+SD=3000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
 

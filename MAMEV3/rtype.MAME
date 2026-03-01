@@ -10,7 +10,7 @@ BUTTON_COLOUR_CHANGE=BUT_EX,Cyan,BUT_P1,Orchid,BUT_P2,Amber
 COLOUR_PALETTE=Cyan,Orchid,Peru,Amber,Light_Steel_Blue,Sea_Green
 KEY_TO_COMMAND=BUT_B1,fire
 FF_DOF=E73,7000
-FE=06473A453C553B364137404F3E34333F3F4D352822252027253736351A1E25322928
+FE=034A3D483F583E39443A4352413736424250382B2528232A283A39381D2128352C2B
 BUTTON_COLOUR_CHANGE=BUT_J1,White,BUT_B1,Red,BUT_B2,Green
 BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2
 
@@ -22,12 +22,12 @@ BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2
 fire|ON|FF_DOF E216,-1|FF_DOF E217,-1
 
 [SCORE]
-FE=093B4746212D6566526B5B4E5559664C676B5467635354556B221F321B206528
+FE=083C4847222E6667536C5C4F565A674D686C5568645455566C2320331C216629
 FE=093B414B4A201E1D1C201A3B41382C2E49223B4345493242331A303E302E324B49
-FE=094A3C3B212D6566526B5B4E5559664C676B5467635354556B221F322F22652D
-FE=09443C3B211F1E1D211B41413E34383023483A4A38444435
-FE=0A493F3E202C6465516A5A4D5458654B666A5366625253546A211F1B1B21642C
-FE=0C413D3C1E1C1B1A1E183E3E3B31352D2045374735414132
+FE=0251434228346C6D597262555C606D536E725B6E6A5A5B5C7229263936296C34
+FE=0E3F37361C1A19181C163C3C392F332B1E433545333F3F30
+FE=094A403F212D6566526B5B4E5559664C676B5467635354556B22201C1C22652D
+FE=074642412321201F231D434340363A32254A3C4C3A464637
 DELAY=2000
 # Various scores
 SC=100:100:FF_Flasher DV_FLIL,FL_TT,1,300,100,Random|FF_Flasher DV_FLIR,FL_TT,1,300,100,Random|FF_DOF E225,-1|FF_PC,U,E,animation/overlay/mameoutput/rtype_explosion3-small|FF_DMD,U,display/picture?path=ingame/explosion1&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
@@ -40,5 +40,5 @@ ST=100000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher D
 ST=350000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~255~255~0~220~3~false@left_strip~marquee~255~255~0~250~3~false@right_strip~marquee~255~255~0~250~3~false@left_speaker_ring~marquee~255~255~0~250~3~false@right_speaker_ring~marquee~255~255~0~250~3~false@bottom_strip~marquee~255~255~0~250~3~false@top_strip~marquee~255~255~0~250~3~false
 ST=500000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~255~255~0~220~3~false@left_strip~marquee~255~255~0~250~3~false@right_strip~marquee~255~255~0~250~3~false@left_speaker_ring~marquee~255~255~0~250~3~false@right_speaker_ring~marquee~255~255~0~250~3~false@bottom_strip~marquee~255~255~0~250~3~false@top_strip~marquee~255~255~0~250~3~false
 ST=700000:FF_Dev DV_KN,-1|FF_Flasher DV_FLOL,FL_FL,6,750,100,Random|FF_Flasher DV_FLOR,FL_FL,6,750,100,Random|FF_Flasher DV_FLIL,FL_FL,6,750,100,Random|FF_Flasher DV_FLIR,FL_FL,6,750,100,Random|FF_Flasher DV_FLCN,FL_FL,6,750,100,Random|FF_DOF E773,2500|FF_PC,U,E,arcade/stream/mameoutput/rtype_extraship?l=5|FF_DMD,U,display/picture?path=ingame/bonus&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_diamonds~255~255~0~220~3~false@left_strip~marquee~255~255~0~250~3~false@right_strip~marquee~255~255~0~250~3~false@left_speaker_ring~marquee~255~255~0~250~3~false@right_speaker_ring~marquee~255~255~0~250~3~false@bottom_strip~marquee~255~255~0~250~3~false@top_strip~marquee~255~255~0~250~3~false
-SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&event=InGame
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
 DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle_fox~255~0~255~255~1~false@right_speaker_ring~twinkle_fox~255~0~255~255~1~false
