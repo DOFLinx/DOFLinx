@@ -1,59 +1,58 @@
-
 #######################################################################
 # MAME configuration for Defender
-# DOFLinx force feedback configuration file v2
-# Created by MositoFeliz AKAjunkyerd
+# DOFLinx force feedback configuration file v3
+# Created by MositoFeliz AKA junkyerd
 #######################################################################
-###########################################################################################################
 
 [STARTUP]
-FE=0C3A3951433F45441A303A303551555E
-KEY_TO_COMMAND=BUT_B1,button1,BUT_B2,button2
-##################
-#Start with effect E98 mx MATRIX during 7000 miliseconds (arcade universe animation words)
-##################
-FF_DOF=E88,7000
-BUTTON_COLOUR_CHANGE=BUT_J1,Crimson,BUT_B1,White,BUT_B2,White,BUT_B3,Lime,BUT_B5,White,BUT_B6,White
-BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2,BUT_B3,BUT_B5,BUT_B6
+FC=256B6A82747076754B616B616682868F
+KEY_TO_COMMAND=BUT_B1,fire,BUT_B2,thrust,BUT_B3,Bomb,BUT_B4,hyperspace,BUT_B5,reverse,BUT_B9,fire,BUT_B10,thrust,BUT_B11,Bomb,BUT_B12,hyperspace,BUT_B13,reverse
+FF_DOF=E93,7000
+FC=05524550476046414C424B5A493F3E4A4A58405B5A2B2B58572727403F3E3D313144432C585729575626545323
+BUTTON_COLOUR_CHANGE=BUT_J1,Blue,BUT_B1,Red,BUT_B2,Lime,BUT_B3,Magenta,BUT_B4,White,BUT_B5,Amber,BUT_J2,Green,BUT_B9,Red,BUT_B10,Lime,BUT_B11,Magenta,But_B12,White,BUT_B13,Amber
+BUTTONS_LIT_ADDED=BUT_J1,BUT_B1,BUT_B2,BUT_B3,BUT_B4,BUT_B5,BUT_J2,BUT_B9,BUT_B10,BUT_B11,BUT_B12,BUT_B13
 
 [SHUTDOWN]
-BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2,BUT_B3,BUT_B5,BUT_B6
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=BUT_J1,BUT_B1,BUT_B2,BUT_B3,BUT_B4,BUT_B5,BUT_J2,BUT_B9,BUT_B10,BUT_B11,BUT_B12,BUT_B13
 
 [COMMANDS]
-
-#FOR ACTION BUTTON FIRE
-
-#FOR ACTION BUTTON JUMP
-
+fire|ON|FF_DOF E214,-1|FF_DOF E215,-1
+thrust|ON|FF_DOF E765,-1
+reverse|ON|FF_DOF E769,-1
+bomb|ON|FF_DOF E137,-1|FF_PC,U,D,ledstrip/zone/left_matrix/effect/matrix_8x8_explosion1?r=255&g=255&b=255&speed=220&intensity=255&loops=1|FF_PC,U,D,ledstrip/zone/right_matrix/effect/matrix_8x8_explosion1?r=255&g=255&b=255&speed=220&intensity=255&loops=1
+hyperspace|ON|FF_DOF E775,-1|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_neon_pulse?r=255&g=255&b=255&intensity=255&loops=1
 
 [SCORE]
-
-FE=0F4436351B275F604C6555484F53604661654E615D4D4E4F65491849186016
-FE=09443C3B211F1E1D211B41413E343830233C44464A334334
-DELAY=500
-# PLAYER TWO NOT WORKING :(  YET.. :)
-FE=0350464527336B6C587161545B5F6C526D715A6D69595A5B71552522216C22
-FE=0F3E3A391B1918171B153B3B382E322A1D363E40442D3D2E
-DELAY=500
+FC=296D7978535F9798849D8D80878B987E999D8699958586879D617978487372545FA37F7E4F
+FE=014349535228262524504F20203B37492B444C4E523B4B3C23394739373B4552
+FC=1A6A6A6944508889758E7E71787C896F8A8E778A867677788E526A6939454E96727142
+FD=54A4A0ACAD85858687B5B6898BA8A6BA809BA5A9AF9AAC9F
+FD=46998D8E7684BEC1AFCABCB1BAC0CFB7B6BCA7BCBAACAFB2CA90A9AA7D96AB9D72C4A0A176
+FD=0D5A54553D3D3E3F6D6E41436B6D6C645B553B5660646A55675A
+FC=49958E8D737FB7B8A4BDADA0A7ABB89EB9BDA6B9B5A5A6A7BD819897687F74C5A1A071
+FC=63AFAFA7A68C8A898886B3B283839E9ABB8EA7AFB1B59EAE9F86ACA0A0A6A8
+FC=3F9384836975ADAE9AB3A3969DA1AE94AFB39CAFAB9B9C9DB3778E8D5E7573BB979667
+FD=0357514B4C343435366465383A5755692F564A5C4C5A5C4F374E7C7B7183
+FC=409389886A76AEAF9BB4A4979EA2AF95B0B49DB0AC9C9D9EB4788E8D5F8D8C6B999868B8929164
+FE=0B423E3D1F1D1C1B474617173D3D3A30433B1F384042462F3F30
+DELAY=5000
 
 # GUN DIE
 SC=25:25:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E468,200
-
 # marcianito (little person from mars)
 SC=150:150:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E466,200|FF_DOF E220,400|FF_DOF E135,200|FF_DOF E138,200|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~0~220~1~false@left_strip~pulse~0~255~0~250~1~false@right_strip~pulse~0~255~0~250~1~false@left_speaker_ring~pulse~0~255~0~250~1~false@right_speaker_ring~pulse~0~255~0~250~1~false@top_strip~pulse~0~255~0~250~1~false@bottom_strip~pulse~0~255~0~250~1~false
-
 # mistery ship
 SC=200:200:FF_Flasher DV_FLOL,FL_FL,6,300,100,White|FF_Flasher DV_FLIL,FL_FL,6,300,100,White|FF_Flasher DV_FLCN,FL_FL,6,300,100,White|FF_Flasher DV_FLIR,FL_FL,6,300,100,White|FF_DOF E690,500|FF_DOF E707,500|FF_DOF E694,500|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~255~255~220~1~false@left_strip~pulse~255~255~255~250~1~false@right_strip~pulse~255~255~255~250~1~false@left_speaker_ring~pulse~255~255~255~250~1~false@right_speaker_ring~pulse~255~255~255~250~1~false@top_strip~pulse~255~255~255~250~1~false@bottom_strip~pulse~255~255~255~250~1~false
-
 # ANOTHER marcianito (little person from mars)
 SC=250:250:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E775,200|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~0~255~255~220~1~false@left_strip~pulse~0~255~255~250~1~false@right_strip~pulse~0~255~255~250~1~false@left_speaker_ring~pulse~0~255~255~250~1~false@right_speaker_ring~pulse~0~255~255~250~1~false@top_strip~pulse~0~255~255~250~1~false@bottom_strip~pulse~0~255~255~250~1~false
-
 # BONUS ship 10000 POINTS
 SE=10000:10000:10:FF_Flasher DV_FLOL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLOR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIL,FL_FD,10,750,100,Gold|FF_Flasher DV_FLIR,FL_FD,10,750,100,Gold|FF_Flasher DV_FLCN,FL_FD,10,750,100,Gold|FF_Dev DV_ML,-1|FF_Dev DV_MC,-1|FF_Dev DV_MR,-1|FF_DOF E769,1000|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_achievements_3~0~0~0~230~2~false@left_strip~marquee~255~215~0~250~1~false@right_strip~marquee~255~215~0~250~1~false@left_speaker_ring~marquee~255~215~0~250~1~false@right_speaker_ring~marquee~255~215~0~250~1~false@top_strip~marquee~255~215~0~250~1~false@bottom_strip~marquee~255~215~0~250~1~false
-
 # ANOTHER MORE marcianito (one more little person from mars)
 SC=500:500:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E784,200|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_!PULSE_RES!_explosion1~255~0~255~220~1~false@left_strip~pulse~255~0~255~250~1~false@right_strip~pulse~255~0~255~250~1~false@left_speaker_ring~pulse~255~0~255~250~1~false@right_speaker_ring~pulse~255~0~255~250~1~false@top_strip~pulse~255~0~255~250~1~false@bottom_strip~pulse~255~0~255~250~1~false
-
 # flopper point (un algo parecidico a un asterisco, maño.)
 SC=1000:1000:FF_Flasher DV_FLCN,FL_TT,1,500,100,Random|FF_Flasher DV_FLIL,FL_TT,1,500,100,Random|FF_Flasher DV_FLIR,FL_TT,1,500,100,Random|FF_DOF E695,3000|FF_DOF E701,3000|FF_DOF E697,3000|FF_DOF E703,3000|FF_DOF E699,3000
 
+SD=100:FF_PC,U,M,ministats?livesLabel=!PREFIX_L!&livesValue=!LIVES!&item1Label=BOMBS&item1Value=!SHOTS!
+SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false
