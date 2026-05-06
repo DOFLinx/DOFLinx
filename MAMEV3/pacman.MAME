@@ -1,7 +1,7 @@
 ##################
 #
 # MAME configration for pacman
-# DOFLinx force feedback configuration file v15
+# DOFLinx force feedback configuration file v17
 #
 ##################
 
@@ -9,11 +9,11 @@
 BUTTON_COLOUR_CHANGE=BUT_EX,Blue,BUT_P1,Magenta,BUT_P2,Cyan
 COLOUR_PALETTE=Yellow,Red,Cyan,Magenta,Orange,Blue
 FF_DOF=E63,-1
-FE=004D404B425B413C473D4655443A394545533B2E282B262D3E3D3C21282B2230
+FC=61AEA1ACA3BCA29DA89EA7B6A59B9AA6A6B49CB7B68787B4B3838397967F99A7A68B9F9E8793B4B383B1B080
 BUTTON_COLOUR_CHANGE=BUT_J1,Yellow
 BUTTONS_LIT_ADDED=BUT_J1
 
-[SHUTDOWN]
+[SHUTDOWN]lo67	
 KEY_TO_COMMAND=
 BUTTONS_LIT_DELETED=BUT_J1
 
@@ -23,31 +23,41 @@ player1|ON|FF_DOF E63,0
 player2|ON|FF_DOF E63,0
 
 [SCORE]
-FE=053E4B4A2531696A566F5F52595D6A506B6F586B675758596F263631346A1E
-FE=00434A545329493F4A242726
-FE=083C4847222E6667536C5C4F565A674D686C5568645455566C23332331671B
-FE=044046504F25232221251F454542383C432740484A4E374738
-FE=0350424127336B6C587161545B5F6C526D715A6D69595A5B7128582A216C22
-FE=04494140262423222620464643393D35284D3F4F3D49493A
-FE=084B4140222E6667536C5C4F565A674D686C5568645455566C23532520671D
-FE=024B47462826252428224848453B3F372A4F41513F4B4B3C
-FE=06463F3E24306869556E5E51585C694F6A6E576A665657586E25352022691D
-FE=03494941402624232226203B37491C414252404C4C3D23425E6A5865
-FE=0E4437361C2860614D6656495054614762664F625E4E4F50661D2D18196115
-FE=074B453D3C22201F1E1C211B363244174B3D4D3B4747381E3D55655359
+FD=1C5F6E6F4C5A949785A092879096A58D8C927D9290828588A06667526D6A6F9876774A
+FD=1B5E6773744C6E66734F7E7F51818254
+FE=0A3A4645202C6465516A5A4D5458654B666A5366625253546A2E2D162F1F2D724E4D1E
+FE=0E363C46451B191817434213133939363B3F371B343C3E422B3B2C
+FD=287B6F705866A0A391AC9E939CA2B199989E899E9C8E9194AC72735E996D908254A6828358
+FE=034A4241272524234F4E1F1F454542384B43274C3E4E3C484839
+FE=0B483E3D1F2B63645069594C5357644A6569526561515253692D2C154E2028361F6F49481B
+FD=4E9B999A7E7E7F80AEAF8284ACAEADA59C967CA397A999A7A99C
+FC=19655E5D434F8788748D7D70777B886E898D7689857576778D51503952656444595841916D6C3D
+FE=0A42423A391F1D1C1B1B46451616312D4E2146384836424233193854604E5B
+FE=054D403F2531696A566F5F52595D6A506B6F586B675758596F33321B34474626515023734F4E1F
+FC=0E605A525137353433315E5D2E2E494566395E50604E5A5A4B31506878666C
+FD=5D9EA4A58D9BD5D8C6E1D3C8D1D7E6CECDD3BED3D1C3C6C9E1A7A893AEC4C588A3DBB9BA8D
+FC=23646F67664C5B494847737243435E5A7B4E676F71755E6E5F465D676B69414F7A794B5453
+FC=15565E5D3F4B83847089796C7377846A8589728581717273894D4C354C6261406B6A3D8D696839
+FC=2768736F6E505F4D4C4B77764747625E7F526B7375796272634A6F615F46457F7E505958
+A3=:maincpu|main|program|4C05|1
+AM3==,,,1,HEX,FORWARD,PINK,,255
+A4=:maincpu|main|program|4C07|1
+AM4==,,,1,HEX,FORWARD,CYAN,,255
+A5=:maincpu|main|program|4C09|1
+AM5==,,,1,HEX,FORWARD,ORANGE,,255
 DELAY=3000
 # dot
 SC=10:10:FF_Flasher DV_FLCN,FL_TT,1,300,100,Random|FF_DOF E218,-1
 # Power pellet
-SC=50:60:FF_Flasher DV_FLIL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLIR,FL_TT,1,450,100,Orange|FF_DOF E225,-1|FF_PC,U,E,animation/overlay/mameoutput/pacman_powerpellet|FF_DMD,U,display/picture?path=mameoutput/pacman_powerpellet&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_square_pulse~255~245~130~220~1~false@left_strip~pulse~255~245~130~250~1~false@right_strip~pulse~255~245~130~250~1~false@left_speaker_ring~pulse~255~245~130~250~1~false@right_speaker_ring~pulse~255~245~130~250~1~false
+SC=50:60:FF_Flasher DV_FLIL,FL_TT,1,450,100,Orange|FF_Flasher DV_FLIR,FL_TT,1,450,100,Orange|FF_DOF E225,-1|FF_PC,U,E,arcade/stream/mameoutput/pacman_powerpellet?l=1&notext&nomini&nostrip|FF_DMD,U,display/picture?path=mameoutput/pacman_powerpellet&fixed=false|FF_PC,U,D,ledstrip/batch?zones=left_strip~pulse~255~245~130~250~1~false@right_strip~pulse~255~245~130~250~1~false@left_speaker_ring~pulse~255~245~130~250~1~false@right_speaker_ring~pulse~255~245~130~250~1~false
 # 1 Ghost
-SC=200:210:FF_Flasher DV_FLOL,FL_FL,4,300,100,Blue|FF_Flasher DV_FLOR,FL_FL,4,300,100,Blue|FF_DOF E461,1000|FF_PC,U,E,animation/overlay/mameoutput/pacman_ghost200|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost200&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_square_pulse~0~0~255~220~1~false@left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false
+SC=200:210:FF_Flasher DV_FLOL,FL_FL,4,300,100,Blue|FF_Flasher DV_FLOR,FL_FL,4,300,100,Blue|FF_DOF E461,1000|FF_PC,U,E,arcade/stream/mameoutput/pacman_ghost200?l=1&notext&nomini&nostrip|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost200&fixed=false|FF_PC,U,D,ledstrip/batch?zones=left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false
 # 2 Ghosts
-SC=400:410:FF_Flasher DV_FLOL,FL_FL,8,300,100,Cyan|FF_Flasher DV_FLOR,FL_FL,8,300,100,Cyan|FF_DOF E455,1000|FF_DOF E457,1000|FF_PC,U,E,animation/overlay/mameoutput/pacman_ghost400|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost400&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_square_pulse~0~0~255~220~1~false@left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false
+SC=400:410:FF_Flasher DV_FLOL,FL_FL,8,300,100,Cyan|FF_Flasher DV_FLOR,FL_FL,8,300,100,Cyan|FF_DOF E455,1000|FF_DOF E457,1000|FF_PC,U,E,arcade/stream/mameoutput/pacman_ghost400?l=1&notext&nomini&nostrip|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost400&fixed=false|FF_PC,U,D,ledstrip/batch?zones=left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false
 # 3 Ghosts
-SC=800:810:FF_Flasher DV_FLCN,FL_FL,12,350,100,Cyan|FF_Flasher DV_FLOL,FL_FL,12,350,100,Cyan|FF_Flasher DV_FLOR,FL_FL,12,350,100,Cyan|FF_DOF E464,1200|FF_DOF E466,1200|FF_DOF E468,1200|FF_PC,U,E,animation/overlay/mameoutput/pacman_ghost800|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost800&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_square_pulse~0~0~255~220~1~false@left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false
+SC=800:810:FF_Flasher DV_FLCN,FL_FL,12,350,100,Cyan|FF_Flasher DV_FLOL,FL_FL,12,350,100,Cyan|FF_Flasher DV_FLOR,FL_FL,12,350,100,Cyan|FF_DOF E464,1200|FF_DOF E466,1200|FF_DOF E468,1200|FF_PC,U,E,arcade/stream/mameoutput/pacman_ghost800?l=1&notext&nomini&nostrip|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost800&fixed=false|FF_PC,U,D,ledstrip/batch?zones=left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false
 # 4 Ghosts
-SC=1600:1610:FF_Flasher DV_FLOL,FL_FL,6,350,100,Random|FF_Flasher DV_FLIL,FL_FL,6,350,100,Random|FF_Flasher DV_FLCN,FL_FL,6,350,100,Random|FF_Flasher DV_FLIR,FL_FL,6,350,100,Random|FF_Flasher DV_FLOR,FL_FL,6,350,100,Random|FF_DOF E770,2500|FF_PC,U,E,animation/overlay/mameoutput/pacman_ghost1600|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost1600&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_square_pulse~0~0~255~220~1~false@left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false
+SC=1600:1610:FF_Flasher DV_FLOL,FL_FL,6,350,100,Random|FF_Flasher DV_FLIL,FL_FL,6,350,100,Random|FF_Flasher DV_FLCN,FL_FL,6,350,100,Random|FF_Flasher DV_FLIR,FL_FL,6,350,100,Random|FF_Flasher DV_FLOR,FL_FL,6,350,100,Random|FF_DOF E770,2500|FF_PC,U,E,animation/overlay/mameoutput/pacman_ghost1600|FF_DMD,U,display/picture?path=mameoutput/pacman_ghost1600&fixed=false|FF_PC,U,D,ledstrip/batch?zones=left_strip~pulse~0~0~255~250~1~false@right_strip~pulse~0~0~255~250~1~false@left_speaker_ring~pulse~0~0~255~250~1~false@right_speaker_ring~pulse~0~0~255~250~1~false
 # Cherry
 SC=100:100:FF_Colour Red,RGB_TT,1500|FF_Flasher DV_FLIL,FL_TT,1,450,100,Red|FF_Flasher DV_FLIR,FL_TT,1,450,100,Red|FF_DOF E611,1000|FF_DOF E613,1000|FF_PC,U,E,animation/overlay/mameoutput/pacman_cherry|FF_DMD,U,display/picture?path=mameoutput/pacman_cherry&fixed=false|FF_PC,U,D,ledstrip/batch?zones=center_matrix~matrix_square_pulse~255~0~0~220~1~false@left_strip~pulse~255~0~0~250~1~false@right_strip~pulse~255~0~0~250~1~false@left_speaker_ring~pulse~255~0~0~250~1~false@right_speaker_ring~pulse~255~0~0~250~1~false
 # Strawberry
@@ -67,5 +77,10 @@ SC=5000:5000:FF_Dev DV_KN,-1|FF_Colour White,RGB_TT,1500|FF_Flasher DV_FLOL,FL_F
 # Key
 SD=5000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame|FF_DMD,U,display/picture?path=mame/!ROM!&fixed=false
 RE=1:1:255:FF_PC,S,C,!PREFIX_R!%20!ROUND!|FF_DMD,U,display/text?text=!PREFIX_R!%20!ROUND!&size=L&font=whiterabbit&color=00BFFF&bordersize=0&cleanbg=true|FF_PC,U,A,/stats?label=!PREFIX_R!&value=!ROUND!&separator=solid
-SD=1000:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&livesLabel=!PREFIX_L!&livesValue=!LIVES!
+SD=100:FF_PC,U,M,ministats?label=!PREFIX_R!&value=!ROUND!&livesLabel=!PREFIX_L!&livesValue=!LIVES!&item1Label=!PREFIX_A1!&item1Value=!VALUE_A1!
 DC=-2:1:FF_PC,U,M,ministats?label=!PREFIX_C!&value=!CREDITS!
+FE=063B4F4241234E4D1E292B354028333259493B234B21391F5363535052521B6D6D6A5C57622360535E555E63615C6F6D2767575861546050525B63525362686B6B3561314B4A1C165D5D6151726D1E6565625D615B175E5E61615E6369743D3C5444361E461C331A59515E6C6C695F65236D615F551E51525A6E5E6A56635668655B691F545453515D6D27645769665C6A50113F43393F3F584A3C4916536353545D505C4C4E666E5D5E5E646767185D5F5E5E6029535223
+FC=47889C8F8E709A996B7478828D75807FA6968870986E866CA0B0A09D9F9F68BABAB7A9A4AF70ADA0ABA2ABB0AEA9BCBA74B4A4A5AEA1AD9DA2B5A0AD78B3839D9C6E68AFAFB3A3B5B061A8A8B4AFB3AD69B0B0B3B3B0A6ACB7807FA6968870986E856CABA3A1AFAFACA2B775BFB3B1A770A3A4ACB1A1AD99A6A8BAB7ADBB71A6A6A5A3A0B06AA79ABBB8AEBCA26391958B91829B8D7F8C68A5B5A5A6AFA2AE9EA3B6A1AE60A5B6B5B5B7809B9A6B
+AV3=25:EQ:FF_PC,U,E,arcade/stream/mameoutput/pacman_eyes?l=2&notext&nomini&nostrip|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_!PULSE_RES!_pacman_eyes&loops=1
+AV4=25:EQ:FF_PC,U,E,arcade/stream/mameoutput/pacman_eyes?l=2&notext&nomini&nostrip|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_!PULSE_RES!_pacman_eyes&loops=1
+AV5=25:EQ:FF_PC,U,E,arcade/stream/mameoutput/pacman_eyes?l=3&notext&nomini&nostrip|FF_PC,U,D,ledstrip/zone/center_matrix/effect/matrix_!PULSE_RES!_pacman_eyes&loops=1
