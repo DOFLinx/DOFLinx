@@ -30,7 +30,7 @@ lamp1|OFF|FF_BUTTON BUT_B3,BA_OFF,1,1|FF_PC,U,C,arcade/stream/mame/ajax?notext&n
 #lamp4 - game over
 #lamp6 - game over
 #lamp7 - game over
-fire|ON|FF_DOF E216,-1
+fire|ON|FF_DOF E200,1000|FF_DOF E201,1000
 bomb|ON|FF_DOF E481,-1
 super|ON|FF_DOF E224,-1
 coin|ON|FF_DOF E78,0
