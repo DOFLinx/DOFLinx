@@ -1,0 +1,41 @@
+##################
+#
+# MAME configration for stargate
+# DOFLinx force feedback configuration file v1
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Orange,BUT_J1,red,BUT_J2,Teal,BUT_B1,white,BUT_B9,white,BUT_B2,white,BUT_B10,white,BUT_B3,lime,BUT_B11,lime,BUT_B4,white,BUT_B12,white,BUT_B5,red,BUT_B13,red,BUT_B6,white,BUT_B14,white
+BUTTONS_LIT_ADDED=,BUT_J1,BUT_J2,BUT_B9,BUT_B10,BUT_B3,BUT_B11,BUT_B4,BUT_B12,BUT_B5,BUT_B13,BUT_B6,BUT_B14
+KEY_TO_COMMAND=,BUT_B1,FIRE1,BUT_B9,FIRE9,BUT_B2,THRUST2,BUT_B10,THRUST10,BUT_B3,SMARTBOMB3,BUT_B11,SMARTBOMB11,BUT_B4,REVERSE4,BUT_B12,REVERSE12,BUT_B5,INVISO5,BUT_B13,INVISO13,BUT_B6,HYPERSPACE6,BUT_B14,HYPERSPACE14
+FF_DOF=E88,-1
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=,BUT_J1,BUT_J2,BUT_B9,BUT_B10,BUT_B3,BUT_B11,BUT_B4,BUT_B12,BUT_B5,BUT_B13,BUT_B6,BUT_B14
+
+[COMMANDS]
+FIRE1|ON|FF_DOF E206,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+FIRE9|ON|FF_DOF E207,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+THRUST2|ON|FF_DOF E208,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/explosion?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+THRUST10|ON|FF_DOF E209,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/explosion?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+SMARTBOMB3|ON|FF_DOF E210,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+SMARTBOMB11|ON|FF_DOF E211,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+REVERSE4|ON|FF_DOF E212,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_flash_recoil?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+REVERSE12|ON|FF_DOF E213,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_flash_recoil?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+INVISO5|ON|FF_DOF E214,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/twinkle?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+INVISO13|ON|FF_DOF E215,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/twinkle?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+HYPERSPACE6|ON|FF_DOF E216,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/cylon?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+HYPERSPACE14|ON|FF_DOF E217,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/cylon?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+coin|ON|FF_DOF E88,0|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false
+player1|ON|FF_DOF E88,0|FF_PC,U,D,ledstrip/batch?zones=left_martix~matrix_8x8_mameoutput_1player~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_martix~matrix_8x8_mameoutput_1player~!LED_R!~!LED_G!~!LED_B!~255~1~false
+player2|ON|FF_DOF E88,0|FF_PC,U,D,ledstrip/batch?zones=left_martix~matrix_8x8_mameoutput_2players~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_martix~matrix_8x8_mameoutput_2players~!LED_R!~!LED_G!~!LED_B!~255~1~false
+
+[SCORE]
+DELAY=5000
+
+SD=30000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+SD=30000:FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
+
+

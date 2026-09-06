@@ -1,0 +1,35 @@
+##################
+#
+# MAME configration for tetrisp2
+# DOFLinx force feedback configuration file v1
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Orange,BUT_J1,Teal,BUT_J2,Teal,BUT_B1,green,BUT_B9,green,BUT_B2,green,BUT_B10,green,BUT_B3,green,BUT_B11,green
+BUTTONS_LIT_ADDED=,BUT_J1,BUT_J2,BUT_B9,BUT_B10,BUT_B3,BUT_B11
+KEY_TO_COMMAND=,BUT_B1,RotateClockwise1,BUT_B9,RotateClockwise9,BUT_B2,RotateAntiClockwise2,BUT_B10,RotateAntiClockwise10,BUT_B3,Bomb3,BUT_B11,Bomb11
+FF_DOF=E81,-1
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=,BUT_J1,BUT_J2,BUT_B9,BUT_B10,BUT_B3,BUT_B11
+
+[COMMANDS]
+RotateClockwise1|ON|FF_DOF E206,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+RotateClockwise9|ON|FF_DOF E207,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+RotateAntiClockwise2|ON|FF_DOF E208,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/explosion?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+RotateAntiClockwise10|ON|FF_DOF E209,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/explosion?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Bomb3|ON|FF_DOF E210,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Bomb11|ON|FF_DOF E211,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+coin|ON|FF_DOF E81,0|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false
+player1|ON|FF_DOF E81,0|FF_PC,U,D,ledstrip/batch?zones=left_martix~matrix_8x8_mameoutput_1player~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_martix~matrix_8x8_mameoutput_1player~!LED_R!~!LED_G!~!LED_B!~255~1~false
+player2|ON|FF_DOF E81,0|FF_PC,U,D,ledstrip/batch?zones=left_martix~matrix_8x8_mameoutput_2players~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_martix~matrix_8x8_mameoutput_2players~!LED_R!~!LED_G!~!LED_B!~255~1~false
+
+[SCORE]
+DELAY=5000
+
+SD=30000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+SD=30000:FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
+
+

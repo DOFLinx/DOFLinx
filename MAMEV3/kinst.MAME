@@ -1,0 +1,41 @@
+##################
+#
+# MAME configration for kinst
+# DOFLinx force feedback configuration file v1
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Orange,BUT_J1,Teal,BUT_J2,Teal,BUT_B1,cyan,BUT_B9,cyan,BUT_B2,cyan,BUT_B10,cyan,BUT_B3,cyan,BUT_B11,cyan,BUT_B4,cyan,BUT_B12,cyan,BUT_B5,cyan,BUT_B13,cyan,BUT_B6,cyan,BUT_B14,cyan
+BUTTONS_LIT_ADDED=,BUT_J1,BUT_J2,BUT_B9,BUT_B10,BUT_B3,BUT_B11,BUT_B4,BUT_B12,BUT_B5,BUT_B13,BUT_B6,BUT_B14
+KEY_TO_COMMAND=,BUT_B1,Quick(HighAttack)1,BUT_B9,Quick(HighAttack)9,BUT_B2,Medium(HighAttack)2,BUT_B10,Medium(HighAttack)10,BUT_B3,Fierce(HighAttack)3,BUT_B11,Fierce(HighAttack)11,BUT_B4,Quick(LowAttack)4,BUT_B12,Quick(LowAttack)12,BUT_B5,Medium(LowAttack)5,BUT_B13,Medium(LowAttack)13,BUT_B6,Fierce(LowAttack)6,BUT_B14,Fierce(LowAttack)14
+FF_DOF=E75,-1
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=,BUT_J1,BUT_J2,BUT_B9,BUT_B10,BUT_B3,BUT_B11,BUT_B4,BUT_B12,BUT_B5,BUT_B13,BUT_B6,BUT_B14
+
+[COMMANDS]
+Quick(HighAttack)1|ON|FF_DOF E206,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Quick(HighAttack)9|ON|FF_DOF E207,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Medium(HighAttack)2|ON|FF_DOF E208,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/explosion?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Medium(HighAttack)10|ON|FF_DOF E209,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/explosion?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Fierce(HighAttack)3|ON|FF_DOF E210,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Fierce(HighAttack)11|ON|FF_DOF E211,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Quick(LowAttack)4|ON|FF_DOF E212,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_flash_recoil?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Quick(LowAttack)12|ON|FF_DOF E213,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_flash_recoil?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Medium(LowAttack)5|ON|FF_DOF E214,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/twinkle?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Medium(LowAttack)13|ON|FF_DOF E215,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/twinkle?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Fierce(LowAttack)6|ON|FF_DOF E216,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/cylon?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Fierce(LowAttack)14|ON|FF_DOF E217,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/cylon?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+coin|ON|FF_DOF E75,0|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false
+player1|ON|FF_DOF E75,0|FF_PC,U,D,ledstrip/batch?zones=left_martix~matrix_8x8_mameoutput_1player~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_martix~matrix_8x8_mameoutput_1player~!LED_R!~!LED_G!~!LED_B!~255~1~false
+player2|ON|FF_DOF E75,0|FF_PC,U,D,ledstrip/batch?zones=left_martix~matrix_8x8_mameoutput_2players~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_martix~matrix_8x8_mameoutput_2players~!LED_R!~!LED_G!~!LED_B!~255~1~false
+
+[SCORE]
+DELAY=5000
+
+SD=30000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+SD=30000:FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
+
+

@@ -1,0 +1,41 @@
+##################
+#
+# MAME configration for xmvsf
+# DOFLinx force feedback configuration file v1
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_EX,Orange,BUT_J1,Teal,BUT_J2,Teal,BUT_B1,red,BUT_B9,red,BUT_B2,green,BUT_B10,green,BUT_B3,blue,BUT_B11,blue,BUT_B4,red,BUT_B12,red,BUT_B5,green,BUT_B13,green,BUT_B6,blue,BUT_B14,blue
+BUTTONS_LIT_ADDED=,BUT_J1,BUT_J2,BUT_B9,BUT_B10,BUT_B3,BUT_B11,BUT_B4,BUT_B12,BUT_B5,BUT_B13,BUT_B6,BUT_B14
+KEY_TO_COMMAND=,BUT_B1,Punch-Light1,BUT_B9,Punch-Light9,BUT_B2,Punch-Medium2,BUT_B10,Punch-Medium10,BUT_B3,Punch-Heavy3,BUT_B11,Punch-Heavy11,BUT_B4,Kick-Light4,BUT_B12,Kick-Light12,BUT_B5,Kick-Medium5,BUT_B13,Kick-Medium13,BUT_B6,Kick-Heavy6,BUT_B14,Kick-Heavy14
+FF_DOF=E66,-1
+
+[SHUTDOWN]
+KEY_TO_COMMAND=
+BUTTONS_LIT_DELETED=,BUT_J1,BUT_J2,BUT_B9,BUT_B10,BUT_B3,BUT_B11,BUT_B4,BUT_B12,BUT_B5,BUT_B13,BUT_B6,BUT_B14
+
+[COMMANDS]
+Punch-Light1|ON|FF_DOF E206,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Punch-Light9|ON|FF_DOF E207,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_muzzle_trail?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Punch-Medium2|ON|FF_DOF E208,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/explosion?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Punch-Medium10|ON|FF_DOF E209,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/explosion?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Punch-Heavy3|ON|FF_DOF E210,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Punch-Heavy11|ON|FF_DOF E211,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_explosion_pulse?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Kick-Light4|ON|FF_DOF E212,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/gun_flash_recoil?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Kick-Light12|ON|FF_DOF E213,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/gun_flash_recoil?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Kick-Medium5|ON|FF_DOF E214,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/twinkle?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Kick-Medium13|ON|FF_DOF E215,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/twinkle?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Kick-Heavy6|ON|FF_DOF E216,-1,|FF_PC,U,D,ledstrip/zone/left_strip/effect/cylon?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+Kick-Heavy14|ON|FF_DOF E217,-1,|FF_PC,U,D,ledstrip/zone/right_strip/effect/cylon?r=!LED_R!&g=!LED_G!&b=!LED_B!&speed=255&intensity=255&loops=1
+coin|ON|FF_DOF E66,0|FF_PC,U,D,ledstrip/batch?zones=left_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_speaker_ring~twinkle~!LED_R!~!LED_G!~!LED_B!~255~1~false
+player1|ON|FF_DOF E66,0|FF_PC,U,D,ledstrip/batch?zones=left_martix~matrix_8x8_mameoutput_1player~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_martix~matrix_8x8_mameoutput_1player~!LED_R!~!LED_G!~!LED_B!~255~1~false
+player2|ON|FF_DOF E66,0|FF_PC,U,D,ledstrip/batch?zones=left_martix~matrix_8x8_mameoutput_2players~!LED_R!~!LED_G!~!LED_B!~255~1~false@right_martix~matrix_8x8_mameoutput_2players~!LED_R!~!LED_G!~!LED_B!~255~1~false
+
+[SCORE]
+DELAY=5000
+
+SD=30000:FF_PC,U,E,arcade/stream/mame/!ROM!?nogif&nomini&nostrip&event=InGame
+SD=30000:FF_DMD,U,display/picture?path=mame/!ROM!&duration=-1
+
+
