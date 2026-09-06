@@ -1,0 +1,15 @@
+##################
+#
+# MAME configuration for mrdo
+# V1
+#
+##################
+
+[STARTUP]
+BUTTON_COLOUR_CHANGE=BUT_J1,Red,BUT_B1,Red
+BUTTONS_LIT_ADDED=BUT_ST,BUT_J1,BUT_B1
+
+[SHUTDOWN]
+BUTTONS_LIT_DELETED=BUT_ST,BUT_J1,BUT_B1
+
+[COMMANDS]
