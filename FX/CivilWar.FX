@@ -1,7 +1,7 @@
 ##################
 #
 # CivilWar
-# DOFLinx force feedback Pinball FX configuration file v5
+# DOFLinx force feedback Pinball FX configuration file v6
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_civilwar
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Blue,Dark_Red,Dodger_Blue,Light_Salmon
 BUTTON_COLOUR_CHANGE=BUT_LF,Dodger_Blue,BUT_RF,Dodger_Blue,BUT_ML,Light_Salmon,BUT_MR,Light_Salmon
+FF_DOF=E323,-1
+
+[SHUTDOWN]
+FF_DOF=E323,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Marvel

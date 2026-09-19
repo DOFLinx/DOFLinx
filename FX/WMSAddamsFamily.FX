@@ -1,7 +1,7 @@
 ##################
 #
 # Addams Family
-# DOFLinx force feedback Pinball FX configuration file v7
+# DOFLinx force feedback Pinball FX configuration file v8
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Orange_Red,Blue,Gold,Dark_Violet,Orange,Aqua,Yellow,Beige,Forest_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Forest_Green,BUT_MR,Forest_Green
+FF_DOF=E322,-1
+
+[SHUTDOWN]
+FF_DOF=E322,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation,WINDOWTR

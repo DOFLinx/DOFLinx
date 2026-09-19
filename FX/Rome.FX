@@ -1,7 +1,7 @@
 ##################
 #
 # Rome
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,11 @@ FF_ROM=fx2_rome
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Gold,Dodger_Blue,Light_Salmon,Yellow_Green,Orange
 BUTTON_COLOUR_CHANGE=BUT_LF,Yellow_Green,BUT_RF,Yellow_Green,BUT_ML,Light_Salmon,BUT_MR,Light_Salmon
+FF_DOF=E327,-1
+
+[SHUTDOWN]
+FF_DOF=E327,0
+
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Coin

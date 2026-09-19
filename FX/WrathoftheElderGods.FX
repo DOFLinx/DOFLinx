@@ -1,7 +1,7 @@
 ##################
 #
 # WrathoftheElderGods
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Crimson,Teal,Gray,Steel_Blue,Cadet_Blue,Midnight_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Crimson,BUT_RF,Crimson,BUT_ML,Midnight_Blue,BUT_MR,Midnight_Blue
+FF_DOF=E335,-1
+
+[SHUTDOWN]
+FF_DOF=E335,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

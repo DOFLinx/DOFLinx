@@ -1,7 +1,7 @@
 ##################
 #
 # Jurassic Mayhem
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_jurassicmayhem
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Sandy_brown,Forest_green,Dark_green,Dark_olive_green,Dark_khaki,Peru,Tan,Navajo_white,Beige,Dark_golden_rod,Corn_silk
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E373,-1
+
+[SHUTDOWN]
+FF_DOF=E373,0
 
 [COMMANDS]
 Nudge_Left|ON|FF_B2S B2SStartAnimation Moon

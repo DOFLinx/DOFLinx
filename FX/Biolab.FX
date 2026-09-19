@@ -1,7 +1,7 @@
 ##################
 #
 # Biolab
-# DOFLinx force feedback Pinball FX configuration file v4
+# DOFLinx force feedback Pinball FX configuration file v5
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_biolab
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Lime,Blue,Cyan,Blue_Violet,Yellow
 BUTTON_COLOUR_CHANGE=BUT_LF,Lime,BUT_RF,Lime,BUT_ML,Blue_Violet,BUT_MR,Blue_Violet
+FF_DOF=E322,-1
+
+[SHUTDOWN]
+FF_DOF=E322,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudgel

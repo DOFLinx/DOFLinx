@@ -1,7 +1,7 @@
 ##################
 #
 # BallyBlackRose
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_blackrose
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Khaki,Sky_blue,Orange_red,Gold,Aqua_marine,Tomato,Yellow_green
 BUTTON_COLOUR_CHANGE=BUT_LF,Khaki,BUT_RF,Khaki,BUT_ML,Aqua_marine,BUT_MR,Aqua_marine
+FF_DOF=E367,-1
+
+[SHUTDOWN]
+FF_DOF=E367,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Bally

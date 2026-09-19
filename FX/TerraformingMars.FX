@@ -1,7 +1,7 @@
 ##################
 #
 # TerraformingMars
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Medium_Blue,Tomato,Beige,Light_Yellow,Light_Steel_Blue,Dark_Magenta,Salmon,Yellow_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Light_Yellow,BUT_RF,Light_Yellow,BUT_ML,Dark_Magenta,BUT_MR,Dark_Magenta
+FF_DOF=E327,-1
+
+[SHUTDOWN]
+FF_DOF=E327,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

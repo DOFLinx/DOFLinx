@@ -1,7 +1,7 @@
 ##################
 #
-# SamiuraisVengence
-# DOFLinx force feedback Pinball FX configuration file v1
+# Samiurai's Vengence
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Brown,Firebrick,Peru,Tan,Burly_Wood,Sandy_Brown,Papaya_Whip,Slate_Gray,Light_Slate_Gray,Light_Golden_Rod
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E360,-1
+
+[SHUTDOWN]
+FF_DOF=E360,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

@@ -1,7 +1,7 @@
 ##################
 #
 # StarWarsAhchToIsland
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_swahchtoisland
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Peru,Tan,Light_Slate_Gray,Light_Golden_Rod,Turquoise,Deep_Sky_Blue,Spring_Green,Steel_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Peru,BUT_RF,Peru,BUT_ML,Spring_Green,BUT_MR,Spring_Green
+FF_DOF=E333,-1
+
+[SHUTDOWN]
+FF_DOF=E333,0
 
 [COMMANDS]
 flipper_right_top1|ALIAS|Flipper_Right

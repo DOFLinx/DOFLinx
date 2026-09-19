@@ -1,7 +1,7 @@
 ##################
 #
 # BrothersinArms
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Peru,Saddle_Brown,Sienna,Sandy_Brown,Tan,Papaya_white,Beige,Corn_Silk
 BUTTON_COLOUR_CHANGE=BUT_LF,Sienna,BUT_RF,Sienna,BUT_ML,Corn_Silk,BUT_MR,Corn_Silk
+FF_DOF=E338,-1
+
+[SHUTDOWN]
+FF_DOF=E338,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

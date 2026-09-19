@@ -1,7 +1,7 @@
 ##################
 #
 # Who Dunnit
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Chocolate,Tan,Yellow,Light_Golden_Rod,Light_Pink,Deep_Pink,Turquoise,Golden_Rod,Dark_Red,Tomato,Orange_Red,Brown,Khaki,Powder_Blue,Moccasin
 BUTTON_COLOUR_CHANGE=BUT_LF,Yellow,BUT_RF,Yellow,BUT_ML,Medium_Blue,BUT_MR,Medium_Blue
+FF_DOF=E329,-1
+
+[SHUTDOWN]
+FF_DOF=E329,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation NUDGE

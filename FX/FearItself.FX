@@ -1,7 +1,7 @@
 ##################
 #
 # FearItself
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_fearitself
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Blue,Yellow,Lime,Dark_Violet,Orange
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Yellow,BUT_MR,Yellow
+FF_DOF=E374,-1
+
+[SHUTDOWN]
+FF_DOF=E374,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Hammer

@@ -1,7 +1,7 @@
 ##################
 #
 # ET
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_ET
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Yellow,Amber,Sky_blue,Sienna,Aqua_marine,Slate_gray,Dark_olive_green
 BUTTON_COLOUR_CHANGE=BUT_LF,Aqua_marine,BUT_RF,Aqua_marine,BUT_ML,Dark_olive_green,BUT_MR,Dark_olive_green
+FF_DOF=E336,-1
+
+[SHUTDOWN]
+FF_DOF=E336,0
 
 [COMMANDS]
 Nudge_Left|ON|FF_B2S B2SStartAnimation RedLight

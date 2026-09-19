@@ -1,7 +1,7 @@
 ##################
 #
 # MarvelsAvengersAgeofUltron
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_ageultron
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Dodger_Blue,Lime_Green,Light_Salmon,Cyan
 BUTTON_COLOUR_CHANGE=BUT_LF,Lime_Green,BUT_RF,Lime_Green,BUT_ML,Light_Salmon,BUT_MR,Light_Salmon
+FF_DOF=E325,-1
+
+[SHUTDOWN]
+FF_DOF=E325,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Marvel

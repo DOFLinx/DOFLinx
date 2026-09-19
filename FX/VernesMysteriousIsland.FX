@@ -1,7 +1,7 @@
 ##################
 #
-# VernesMysteriousIsland
-# DOFLinx force feedback Pinball FX configuration file v2
+# Vernes Mysterious Island
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Orange,Dark_Red,Peru,White,Steel_Blue,Cadet_Blue,Teal,Gray
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Orange,BUT_RF,Dark_Orange,BUT_ML,Teal,BUT_MR,Teal
+FF_DOF=E322,-1
+
+[SHUTDOWN]
+FF_DOF=E322,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

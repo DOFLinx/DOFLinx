@@ -1,7 +1,7 @@
 ##################
 #
 # WMSStarTrekTheNextGeneration
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Firebrick,Amber,Medium_Orchid,Red,Tan
 BUTTON_COLOUR_CHANGE=BUT_LF,Firebrick,BUT_RF,Firebrick,BUT_ML,Gold,BUT_MR,Gold
+FF_DOF=E337,-1
+
+[SHUTDOWN]
+FF_DOF=E337,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation C1

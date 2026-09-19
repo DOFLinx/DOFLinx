@@ -1,7 +1,7 @@
 ##################
 #
 # SouthParkButtersVeryOwnPinballGame
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_spbutters
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Blue,Gold,Dark_Violet,Orange,Dodger_Blue,Lime_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Dodger_Blue,BUT_RF,Dodger_Blue,BUT_ML,Lime_Green,BUT_MR,Lime_Green
+FF_DOF=E370,-1
+
+[SHUTDOWN]
+FF_DOF=E370,0
 
 [COMMANDS]
 Nudge_Left|ON|FF_B2S B2SStartAnimation Devil

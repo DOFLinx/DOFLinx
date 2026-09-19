@@ -1,7 +1,7 @@
 ##################
 #
 # SecretsoftheDeep
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v4
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_secretsdeep
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Blue,Yellow,Dodger_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Blue,BUT_RF,Blue,BUT_ML,Yellow,BUT_MR,Yellow
+FF_DOF=E339,-1
+
+[SHUTDOWN]
+FF_DOF=E339,0
 
 [COMMANDS]
 bumper01|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Sky_Blue|FF_B2S B2SStartAnimation Ocean1

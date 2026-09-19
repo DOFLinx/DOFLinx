@@ -1,7 +1,7 @@
 ##################
 #
 # Star Trek Deep Space Nine
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Gray,Silver,Orchid,Saddle_Brown,Sienna,Moccasin,Light_Steel_Blue,Golden_Rod,Crimson
 BUTTON_COLOUR_CHANGE=BUT_LF,Silver,BUT_RF,Dark_Silver,BUT_ML,Orchid,BUT_MR,Orchid
+FF_DOF=E372,-1
+
+[SHUTDOWN]
+FF_DOF=E372,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

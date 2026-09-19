@@ -1,7 +1,7 @@
 ##################
 #
 # WMSFunHouse
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_funhouse
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Blue,Amber,Dark_green,Dodger_blue,Yellow,Red,Green,Peru,Orange_red,Golden_rod
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E329,-1
+
+[SHUTDOWN]
+FF_DOF=E329,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation TFlash

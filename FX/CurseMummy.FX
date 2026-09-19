@@ -1,7 +1,7 @@
 ##################
 #
 # Curse Mummy
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Lime,Peru,Tan,Sienna,Sea_Green,Teal
 BUTTON_COLOUR_CHANGE=BUT_LF,Lime,BUT_RF,Lime,BUT_ML,Peru,BUT_MR,Peru
+FF_DOF=E368,-1
+
+[SHUTDOWN]
+FF_DOF=E368,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

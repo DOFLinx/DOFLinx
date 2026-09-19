@@ -1,7 +1,7 @@
 ##################
 #
 # MidwayDrDude
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_drdude
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=White,Orange_red,Red,Yellow,Forest_green,Crimson,Coral,Medium_turquoise,Golden_rod
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E327,-1
+
+[SHUTDOWN]
+FF_DOF=E327,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation SilverBall

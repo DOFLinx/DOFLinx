@@ -1,7 +1,7 @@
 ##################
 #
 # WorldWarHulk
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_wwhulk
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Lime_Green,Yellow_Green,Dodger_Blue,Lime,Yellow
 BUTTON_COLOUR_CHANGE=BUT_LF,Lime_Green,BUT_RF,Lime_Green,BUT_ML,Dodger_Blue,BUT_MR,Dodger_Blue
+FF_DOF=E362,-1
+
+[SHUTDOWN]
+FF_DOF=E362,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation,PinBall

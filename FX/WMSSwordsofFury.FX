@@ -1,7 +1,7 @@
 ##################
 #
 # WMSSwordsofFury
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Blue,Orange_Red,Crimson,Dodger_Blue,Burly_Wood,Light_Steel_Blue,Light_Slate_Gray
 BUTTON_COLOUR_CHANGE=BUT_LF,Blue,BUT_RF,Blue,BUT_ML,Light_Slate_Gray,BUT_MR,Light_Slate_Gray
+FF_DOF=E370,-1
+
+[SHUTDOWN]
+FF_DOF=E370,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Williams

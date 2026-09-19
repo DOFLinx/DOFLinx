@@ -1,7 +1,7 @@
 ##################
 #
 # CharlieBrownChristmas
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Blue,Green,Purple,Gold,Yellow,Pink,Spring_Green,Orange,Medium_Violet_Red,Chart_Reuse,Deep_Sky_Blue,White
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Gold,BUT_MR,Gold
+FF_DOF=E323,-1
+
+[SHUTDOWN]
+FF_DOF=E323,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

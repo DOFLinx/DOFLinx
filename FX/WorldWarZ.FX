@@ -1,7 +1,7 @@
 ##################
 #
 # World War Z
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Firebrick,Silver,Slate_Gray
 BUTTON_COLOUR_CHANGE=BUT_LF,Firebrick,BUT_RF,Firebrick,BUT_ML,Silver,BUT_MR,Silver
+FF_DOF=E321,-1
+
+[SHUTDOWN]
+FF_DOF=E321,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

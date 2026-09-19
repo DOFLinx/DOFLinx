@@ -1,7 +1,7 @@
 ##################
 #
 # Excalibur
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_excalibur
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Blue,Lime,Dodger_Blue,Cyan
 BUTTON_COLOUR_CHANGE=BUT_LF,Lime,BUT_RF,Lime,BUT_ML,Cyan,BUT_MR,Cyan
+FF_DOF=E335,-1
+
+[SHUTDOWN]
+FF_DOF=E335,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Sparkle

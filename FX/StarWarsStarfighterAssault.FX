@@ -1,7 +1,7 @@
 ##################
 #
 # StarWarsStarfighterAssault
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_swstarfighter
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Medium_Blue,Dodger_Blue,Dark_Red
 BUTTON_COLOUR_CHANGE=BUT_LF,Dodger_Blue,BUT_RF,Dodger_Blue,BUT_ML,Dark_Red,BUT_MR,Dark_Red
+FF_DOF=E369,-1
+
+[SHUTDOWN]
+FF_DOF=E369,0
 
 [COMMANDS]
 Flipper_Left|On|FF_B2S B2SSetData 1,1

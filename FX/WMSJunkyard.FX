@@ -1,7 +1,7 @@
 ##################
 #
 # WMSJunkyard
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_junkyard
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Amber,Lawn_green,Burly_wood,Orange,Peru,Dark_turquoise
 BUTTON_COLOUR_CHANGE=BUT_LF,Lawn_Green,BUT_RF,Lawn_Green,BUT_ML,Amber,BUT_MR,Amber
+FF_DOF=E329,-1
+
+[SHUTDOWN]
+FF_DOF=E329,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Tyres

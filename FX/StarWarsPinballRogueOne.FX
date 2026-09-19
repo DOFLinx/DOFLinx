@@ -1,7 +1,7 @@
 ##################
 #
 # StarWarsPinballRogueOne
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_swrogueone
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Gray,Silver,Light_Sky_Blue,Teal,Beige,Bisque,Aqua_Marine,Slate_Gray,Dark_Orange
 BUTTON_COLOUR_CHANGE=BUT_LF,Gray,BUT_RF,Silver,BUT_ML,Dark_Orange,BUT_MR,Teal
+FF_DOF=E339,-1
+
+[SHUTDOWN]
+FF_DOF=E339,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Droid

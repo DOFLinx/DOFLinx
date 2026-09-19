@@ -1,7 +1,7 @@
 ##################
 #
 # KungFuPanda
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=White,Gold,Golden_Rod,Chocolate,Orange,Orange_Red,Pale_Golden_Rod,Moccasin,Rosy_Brown
 BUTTON_COLOUR_CHANGE=BUT_LF,White,BUT_RF,White,BUT_ML,Rosy_Brown,BUT_MR,Rosy_Brown
+FF_DOF=E378,-1
+
+[SHUTDOWN]
+FF_DOF=E378,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

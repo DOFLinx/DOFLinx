@@ -1,7 +1,7 @@
 ##################
 #
 # Back To The Future
-# DOFLinx force feedback Pinball FX configuration file v3
+# DOFLinx force feedback Pinball FX configuration file v4
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_bttf
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Light_steel_blue,White,Crimson,Gray,Teal,Yellow,Dodger_blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E369,-1
+
+[SHUTDOWN]
+FF_DOF=E369,0
 
 [COMMANDS]
 Flipper_Left|ON|FF_B2S B2SSetData 1,1

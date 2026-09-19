@@ -1,7 +1,7 @@
 ##################
 #
 # DoctorStrange
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_drstrange
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Blue,Gold,Lime_Green,Dark_Violet,Orange,Dodger_Blue,Lime,Medium_Slate_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Gold,BUT_RF,Gold,BUT_ML,Dark_Violet,BUT_MR,Dark_Violet
+FF_DOF=E329,-1
+
+[SHUTDOWN]
+FF_DOF=E329,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Centre

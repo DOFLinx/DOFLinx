@@ -1,7 +1,7 @@
 ##################
 #
 # Borderlands Vault Hunter
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Aqua,Amber,Peru,Powder_Blue,Golden_Rod,Khaki
 BUTTON_COLOUR_CHANGE=BUT_LF,Aqua,BUT_RF,Aqua,BUT_ML,Amber,BUT_MR,Amber
+FF_DOF=E336,-1
+
+[SHUTDOWN]
+FF_DOF=E336,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

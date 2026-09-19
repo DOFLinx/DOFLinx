@@ -1,7 +1,7 @@
 ##################
 #
-# StarTrekKelvinTimeline
-# DOFLinx force feedback Pinball FX configuration file v2
+# Star Trek Kelvin Timeline
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Dark_Red,Blue,Dark_Orange,Dark_Violet,Light_Steel_Blue,Dim_Gray,Gray
 BUTTON_COLOUR_CHANGE=BUT_LF,Light_Steel_Blue,BUT_RF,Light_Steel_Blue,BUT_ML,Dark_Orange,BUT_MR,Dark_Orange
+FF_DOF=E329,-1
+
+[SHUTDOWN]
+FF_DOF=E329,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

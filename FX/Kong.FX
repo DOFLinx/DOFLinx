@@ -1,7 +1,7 @@
 ##################
 #
 # Kong
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Gold,Orange,Dodger_Blue,Deep_Sky_Blue,Sienna,Rosy_Brown
 BUTTON_COLOUR_CHANGE=BUT_LF,Deep_Sky_Blue,BUT_RF,Deep_Sky_Blue,BUT_ML,Sienna,BUT_MR,Sienna
+FF_DOF=E336,-1
+
+[SHUTDOWN]
+FF_DOF=E336,0
 
 [COMMANDS]
 Flipper_Left|ON|FF_B2S B2SSetData 1,1

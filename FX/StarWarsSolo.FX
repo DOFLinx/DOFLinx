@@ -1,7 +1,7 @@
 ##################
 #
 # Star Wars Solo
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_swsolo
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Burly_Wood,Medium_Sea_Green,Light_Salmon,Silver,Golden_Rod,Dark_Turquoise
 BUTTON_COLOUR_CHANGE=BUT_LF,Medium_Sea_Green,BUT_RF,Medium_Sea_Green,BUT_ML,Golden_Rod,BUT_MR,Golden_Rod
+FF_DOF=E376,-1
+
+[SHUTDOWN]
+FF_DOF=E376,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Ship

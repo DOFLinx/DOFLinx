@@ -1,7 +1,7 @@
 ##################
 #
 # MarvelsWomenofPowerAForce
-# DOFLinx force feedback Pinball FX configuration file v3
+# DOFLinx force feedback Pinball FX configuration file v4
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_aforce
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Lime,Gold,Slate_Blue,Tomato,Silver,Dark_Orchid,Spring_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Gold,BUT_RF,Gold,BUT_ML,Tomato,BUT_MR,Tomato
+FF_DOF=E338,-1
+
+[SHUTDOWN]
+FF_DOF=E338,0
 
 [COMMANDS]
 bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Cyan|FF_B2S B2SStartAnimation C1

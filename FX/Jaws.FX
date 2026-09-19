@@ -1,7 +1,7 @@
 ##################
 #
 # Jaws
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_jaws
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_turquoise,Gray,White,Salmon,Light_coral,Tan,Papaya_whip,Peru
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_turquoise,BUT_RF,White,BUT_ML,Light_coral,BUT_MR,Salmon
+FF_DOF=E339,-1
+
+[SHUTDOWN]
+FF_DOF=E339,0
 
 [COMMANDS]
 Flipper_Left|ON|FF_B2S B2SSetData 1,1

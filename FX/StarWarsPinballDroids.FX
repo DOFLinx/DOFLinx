@@ -1,7 +1,7 @@
 ##################
 #
 # StarWarsPinballDroids
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_swdroids
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Medium_Blue,Yellow,Orange,Navy,Gold,Orange_Red
 BUTTON_COLOUR_CHANGE=BUT_LF,Medium_Blue,BUT_RF,Medium_Blue,BUT_ML,Yellow,BUT_MR,Yellow
+FF_DOF=E327,-1
+
+[SHUTDOWN]
+FF_DOF=E327,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation FX

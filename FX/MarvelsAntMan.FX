@@ -1,7 +1,7 @@
 ##################
 #
 # MarvelsAntMan
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_antman
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Medium_Blue,Dark_Red,Dodger_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Medium_Blue,BUT_RF,Medium_Blue,BUT_ML,Dark_Red,BUT_MR,Dark_Red
+FF_DOF=E361,-1
+
+[SHUTDOWN]
+FF_DOF=E361,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Marvel

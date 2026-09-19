@@ -1,7 +1,7 @@
 ##################
 #
 # GhostRider
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_ghostrider
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dodger_Blue,White,Yellow,Light_Salmon,Orange_Red
 BUTTON_COLOUR_CHANGE=BUT_LF,White,BUT_RF,White,BUT_ML,Orange_Red,BUT_MR,Orange_Red
+FF_DOF=E320,-1
+
+[SHUTDOWN]
+FF_DOF=E320,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Lightning2

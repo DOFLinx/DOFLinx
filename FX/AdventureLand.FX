@@ -1,7 +1,7 @@
 ##################
 #
 # Adventure Land
-# DOFLinx force feedback Pinball FX configuration file v3
+# DOFLinx force feedback Pinball FX configuration file v4
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_amusement
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Cyan,Yellow,White,Medium_orchid,Aqua,Dark_turquoise,Medium_purple,Orange,Dodger_Blue,Purple
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E368,-1
+
+[SHUTDOWN]
+FF_DOF=E368,0
 
 [COMMANDS]
 BUMPER01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Blue|FF_B2S B2SStartAnimation JackLeftHand

@@ -1,7 +1,7 @@
 ##################
 #
 # BallyTheatreOfMagic
-# DOFLinx force feedback PinBall FX configuration file v11
+# DOFLinx force feedback PinBall FX configuration file v12
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_tom
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Gold,Medium_Slate_Blue,Tomato,Light_Yellow,Plum,Orchid,Golden_Rod,Crimson,Silver
 BUTTON_COLOUR_CHANGE=BUT_LF,Medium_Slate_Blue,BUT_RF,Plum,BUT_ML,Light_Yellow,BUT_MR,Gold
+FF_DOF=E329,-1
+
+[SHUTDOWN]
+FF_DOF=E329,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Bally

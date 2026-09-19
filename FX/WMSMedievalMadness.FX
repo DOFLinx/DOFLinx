@@ -1,7 +1,7 @@
 ##################
 #
 # WMSMedievalMadness
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_mmadness
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Yellow,Amber,Rosy_brown,Firebrick,Forest_green,Gray,Dark_salmon,Dark_orange
 BUTTON_COLOUR_CHANGE=BUT_LF,Gray,BUT_RF,Forest_Green,BUT_ML,Dark_Orange,BUT_MR,Yellow
+FF_DOF=E321,-1
+
+[SHUTDOWN]
+FF_DOF=E321,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation castle

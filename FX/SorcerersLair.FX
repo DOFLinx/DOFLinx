@@ -1,7 +1,7 @@
 ##################
 #
 # Sorcerers Lair
-# DOFLinx force feedback Pinball FX configuration file v5
+# DOFLinx force feedback Pinball FX configuration file v6
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_sorcerers
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Blue,Blue_Violet,Dodger_Blue,Slate_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Blue_Violet,BUT_RF,Blue_Violet,BUT_ML,Orange,BUT_MR,Orange
+FF_DOF=E335,-1
+
+[SHUTDOWN]
+FF_DOF=E335,0
 
 [COMMANDS]
 LeftFlipper|On|FF_B2S B2SStartAnimation Flipper

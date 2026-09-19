@@ -1,7 +1,7 @@
 ##################
 #
 # GoatSimulator
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Gold,Lime,Magenta,Yellow,Gold,Golden_Rod,Dark_Golden_Rod,Light_Yellow,Corn_Silk,Dark_Violet,Orchid,Medium_Orchid,Blue_Violet,White
 BUTTON_COLOUR_CHANGE=BUT_LF,Magenta,BUT_RF,Magenta,BUT_ML,Yellow,BUT_MR,Yellow
+FF_DOF=E320,-1
+
+[SHUTDOWN]
+FF_DOF=E320,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

@@ -1,7 +1,7 @@
 ##################
 #
 # WMSAFM
-# DOFLinx force feedback Pinball FX configuration file v4
+# DOFLinx force feedback Pinball FX configuration file v5
 #
 ##################
 
@@ -46,3 +46,5 @@ target_41_martiAn|ON|FF_DEV DV_MC,-1|FF_DOF E416,-1
 target_42_martiaN|ON|FF_DEV DV_MC,-1|FF_DOF E416,-1
 rollover_72_right_loop_low|ON|FF_Dev DV_SH,500
 rollover_74_left_loop_low|ON|FF_Dev DV_SH,500
+sensor_dirty_pool|ON|FF_Dev DV_SH,500
+sensor_36_left_popper|ON|FF_Dev DV_SH,4000

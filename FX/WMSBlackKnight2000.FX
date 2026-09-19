@@ -1,7 +1,7 @@
 ##################
 #
 # Williams Black Knight 2000
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Aqua,Yellow,Blue,Orange_Red,Cyan,Crimson,Orange_Red,Silver,Deep_Sky_Blue,Medium_Blue,Beige
 BUTTON_COLOUR_CHANGE=BUT_LF,Yellow,BUT_RF,Yellow,BUT_ML,Aqua,BUT_MR,Aqua
+FF_DOF=E321,-1
+
+[SHUTDOWN]
+FF_DOF=E321,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

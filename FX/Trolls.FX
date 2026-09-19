@@ -1,7 +1,7 @@
 ##################
 #
 # Trolls
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Deep_Pink,Gold,Lime,Medium_Aqua_Marine,Medium_Orchid,Spring_Green,Aqua,Coral,Blue,Turquoise
 BUTTON_COLOUR_CHANGE=BUT_LF,Deep_Pink,BUT_RF,Deep_Pink,BUT_ML,Lime,BUT_MR,Lime
+FF_DOF=E3626,-1
+
+[SHUTDOWN]
+FF_DOF=E326,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

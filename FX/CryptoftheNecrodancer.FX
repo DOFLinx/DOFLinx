@@ -1,7 +1,7 @@
 ##################
 #
 # Crypt of the Necrodancer
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Amber,Gold,White,Medium_Blue,Blue,Firebrick,Orange_Red,Medium_Violet_Red,Steel_Blue,Silver,Orchid,Midnight_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Midnight_Blue,BUT_RF,Midnight_Blue,BUT_ML,Orchid,BUT_MR,Orchid
+FF_DOF=E329,-1
+
+[SHUTDOWN]
+FF_DOF=E329,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

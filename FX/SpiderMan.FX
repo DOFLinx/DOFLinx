@@ -1,7 +1,7 @@
 ##################
 #
 # SpiderMan
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -12,16 +12,15 @@ COLOUR_PALETTE=Dark_Red,Lime,Blue,Gold,Dark_Violet,Orange
 BUTTON_COLOUR_CHANGE=BUT_LF,Lime,BUT_RF,Lime,BUT_ML,Gold,BUT_MR,Gold
 
 [COMMANDS]
-Nudge_Left|On|FF_B2S StartAnimation MARVEL
-Nudge_Right|On|FF_B2S B2SStartAnimation MARVEL
-Nudge_Forward|On|FF_B2S B2SStartAnimation MARVEL
+Nudge_Left|On|FF_B2S B2SStartAnimation PUMPKIN
+Nudge_Right|On|FF_B2S B2SStartAnimation PUMPKIN
+Nudge_Forward|On|FF_B2S B2SStartAnimation PUMPKIN
 BUMPER01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Blue|FF_B2S B2SStartAnimation PINBALL
 BUMPER02|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Red|FF_B2S B2SStartAnimation BUILDING1
 BUMPER03|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Blue|FF_B2S B2SStartAnimation SPIDER
 LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour White,RGB_TT,125|FF_Flasher DV_FLOL,FL_TT,1,40,100,White|FF_B2S B2SStartAnimation LEFTEYE
 RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour White,RGB_TT,125|FF_Flasher DV_FLOR,FL_TT,1,40,100,White|FF_B2S B2SStartAnimation RIGHTEYE
-
-R1|ON|FF_Flasher DV_FLOL,FL_TT,1,200,100,Lime|FF_DOF E410,-1|FF_B2S B2SStartAnimation FINGER1
+R1|ON|FF_Flasher DV_FLOL,FL_TT,1,200,100,Lime|FF_DOF E410,-1|FF_B2S B2SStartAnimation GOBLIN
 sensor_orbit_left|ON|FF_Flasher DV_FLIL,FL_TT,1,200,100,Gold|FF_DOF E411,-1|FF_B2S B2SStartAnimation FINGER2
 sensor_orbit_head|ON|FF_Flasher DV_FLCN,FL_TT,1,200,100,Dark_violet|FF_DOF E412,-1|FF_B2S B2SStartAnimation FINGER3
 sensor_orbit_right|ON|FF_Flasher DV_FLIR,FL_TT,1,200,100,Gold|FF_DOF E413,-1|FF_B2S B2SStartAnimation FINGER4

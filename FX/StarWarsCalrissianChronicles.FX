@@ -1,7 +1,7 @@
 ##################
 #
 # Star Wars Calrissian Chronicles
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_swcalrissian
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Yellow,Silver,Light_Blue,Gold,White,Amber,Dark_Salmon,Navajo_White
 BUTTON_COLOUR_CHANGE=BUT_LF,White,BUT_RF,White,BUT_ML,Gold,BUT_MR,Gold
+FF_DOF=E324,-1
+
+[SHUTDOWN]
+FF_DOF=E324,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Boobs

@@ -1,7 +1,7 @@
 ##################
 #
 # WMSTwilightZone
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Gold,Red,Steel_Blue,Royal_Blue,Blue,Gray,Khaki,Sky_Blue,Light_Sky_Blue,Dark_Khaki
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Gold,BUT_MR,Gold
+FF_DOF=E369,-1
+
+[SHUTDOWN]
+FF_DOF=E369,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Bally

@@ -1,7 +1,7 @@
 ##################
 #
 # Williams White Water
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_whitewater
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Peru,Blue,Royal_Blue,Light_Steel_Blue,Sienna,Aqua,Turquoise,Yellow,Beige
 BUTTON_COLOUR_CHANGE=BUT_LF,Royal_Blue,BUT_RF,Royal_Blue,BUT_ML,Yellow,BUT_MR,Yellow
+FF_DOF=E360,-1
+
+[SHUTDOWN]
+FF_DOF=E360,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Williams

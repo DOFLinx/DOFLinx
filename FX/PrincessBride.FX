@@ -1,7 +1,7 @@
 ##################
 #
 # PrincessBride
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Tomato,Gold,Teal,Green,Olive_Drab,Sea_Green,Light_Sea_Green,Khaki,Golden_Rod,Light_Cyan,Powder_Blue,Cadet_Blue,Bisque,Sienna,Peru,Moccasin,Light_Steel_Blue,Dark_Gray,Amber
 BUTTON_COLOUR_CHANGE=BUT_LF,Teal,BUT_RF,Teal,BUT_ML,Golden_Rod,BUT_MR,Golden_Rod
+FF_DOF=E333,-1
+
+[SHUTDOWN]
+FF_DOF=E333,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

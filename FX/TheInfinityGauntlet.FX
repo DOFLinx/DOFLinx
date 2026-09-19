@@ -1,7 +1,7 @@
 ##################
 #
 # TheInfinityGauntlet
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_infinityg
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Blue,Gold,Dark_Violet,Orange,Dodger_Blue,Lime
 BUTTON_COLOUR_CHANGE=BUT_LF,Lime,BUT_RF,Dark_Violet,BUT_ML,Orange,BUT_MR,Gold
+FF_DOF=E374,-1
+
+[SHUTDOWN]
+FF_DOF=E374,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Fire

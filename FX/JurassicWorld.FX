@@ -1,7 +1,7 @@
 ##################
 #
 # Jurassic World
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_jurassicworld
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Light_steel_blue,Silver,Tan,Forest_green,Gray,Cadet_blue,Yellow_green,Teal,Bisque
 BUTTON_COLOUR_CHANGE=BUT_LF,Light_steel_blue,BUT_RF,Light_steel_blue,BUT_ML,Gray,BUT_MR,Gray
+FF_DOF=E339,-1
+
+[SHUTDOWN]
+FF_DOF=E339,0
 
 [COMMANDS]
 Nudge_Left|ON|FF_B2S B2SStartAnimation RedLight

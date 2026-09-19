@@ -1,7 +1,7 @@
 ##################
 #
 # Williams Earth Shaker
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Blue,Yellow,Gold,Green,Lime_Green,Forest_Green,Bisque,Orange_Red,Dark_Golden_Rod,Teal,Navy,Aqua,Orange,Sky_Blue,Deep_Sky_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Sky_Blue,BUT_RF,Sky_Blue,BUT_ML,Lime_Green,BUT_MR,Lime_Green
+FF_DOF=E324,-1
+
+[SHUTDOWN]
+FF_DOF=E324,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

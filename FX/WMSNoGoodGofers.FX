@@ -1,7 +1,7 @@
 ##################
 #
 # WMSNoGoodGofers
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_nogoodgofers
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Forest_Green,Peru,Blue,Turquoise,Orange,White,Green_Yellow,Golden_Rod,Sienna
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E322,-1
+
+[SHUTDOWN]
+FF_DOF=E322,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Williams

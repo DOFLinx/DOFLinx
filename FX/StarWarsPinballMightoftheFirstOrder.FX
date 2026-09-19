@@ -1,7 +1,7 @@
 ##################
 #
 # StarWarsPinballMightoftheFirstOrder
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_swmight
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Light_sky_blue,Dodger_Blue,Dark_Red,Cyan
 BUTTON_COLOUR_CHANGE=BUT_LF,Light_sky_blue,BUT_RF,Light_sky_blue,BUT_ML,Orange,BUT_MR,Orange
+FF_DOF=E339,-1
+
+[SHUTDOWN]
+FF_DOF=E339,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation WallLight

@@ -1,7 +1,7 @@
 ##################
 #
 # Dragons
-# DOFLinx force feedback Pinball FX configuration file v3
+# DOFLinx force feedback Pinball FX configuration file v4
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Gold,Red,Light_Sky_Blue,Rosy_Brown,Silver,Dark_Olive_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Silver,BUT_RF,Silver,BUT_ML,Gold,BUT_MR,Gold
+FF_DOF=E339,-1
+
+[SHUTDOWN]
+FF_DOF=E339,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

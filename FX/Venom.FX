@@ -1,7 +1,7 @@
 ##################
 #
 # Venom
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_venom
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Blue,Dark_Violet,Dodger_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Dodger_Blue,BUT_MR,Dodger_Blue
+FF_DOF=E371,-1
+
+[SHUTDOWN]
+FF_DOF=E371,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation,PinballSmall

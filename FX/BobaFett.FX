@@ -1,7 +1,7 @@
 ##################
 #
 # BobaFett
-# DOFLinx force feedback Pinball FX configuration file v3
+# DOFLinx force feedback Pinball FX configuration file v4
 #
 ##################
 
@@ -15,21 +15,21 @@ BUTTON_COLOUR_CHANGE=BUT_LF,Lime,BUT_RF,Lime,BUT_ML,Blue_Violet,BUT_MR,Blue_Viol
 Nudge_Left|On|FF_B2S B2SStopAnimation Bridge
 Nudge_Right|On|FF_B2S B2SStopAnimation Bridge
 Nudge_Forward|On|FF_B2S B2SStopAnimation Bridge
-bumper01|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Red|FF_B2S B2SStartAnimation SmallShip
-bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Red|FF_B2S B2SStartAnimation Bridge
-bumper03|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Red|FF_B2S B2SStartAnimation Window
+bumper01|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Red|FF_B2S B2SStartAnimation YELLOW
+bumper02|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Red|FF_B2S B2SStartAnimation ORANGE
+bumper03|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Red|FF_B2S B2SStartAnimation PINK
 LEFT_SLING_COLLISION_BOTTOM|ON|FF_Flasher DV_FLOL,FL_TT,1,40,100,Gold|FF_Colour Gold,RGB_TT,200|FF_B2S B2SStartAnimation Boba
-RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Flasher DV_FLOR,FL_TT,1,40,100,Gold|FF_Colour Gold,RGB_TT,200|FF_B2S B2SStartAnimation Window
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Flasher DV_FLOR,FL_TT,1,40,100,Gold|FF_Colour Gold,RGB_TT,200|FF_B2S B2SStartAnimation BALL
 
-sensor_left_ramp|ON|FF_Flasher DV_FLOL,FL_TT,40,200,100,Blue_Violet|FF_DOF E410,-1|FF_B2S B2SStartAnimation Star1
-sensor_left_loop01|ON|FF_Flasher DV_FLIL,FL_TT,1,40,100,Blue_Violet|FF_B2S B2SStartAnimation Star2|FF_DOF E411,-1
-sensor_slaver1_ramp|ON|FF_Flasher DV_FLCN,FL_TT,1,40,100,Blue_Violet|FF_B2S B2SStartAnimation Star3|FF_DOF E412,-1
-sensor_right_loop01|ON|FF_Flasher DV_FLIR,FL_TT,1,40,100,Blue_Violet|FF_B2S B2SStartAnimation Star4|FF_DOF E413,-1
-sensor_right_ramp01|ON|FF_Flasher DV_FLOR,FL_TT,1,40,100,Blue_Violet|FF_B2S B2SStartAnimation Star5|FF_DOF E414,-1
+sensor_left_ramp|ON|FF_Flasher DV_FLOL,FL_TT,1,40,100,Blue_Violet|FF_DOF E410,-1|FF_B2S B2SStartAnimation LASERLEFT1|FF_B2S B2SStartAnimation MAN1
+sensor_left_loop01|ON|FF_Flasher DV_FLIL,FL_TT,1,40,100,Blue_Violet|FF_DOF E411,-1|FF_B2S B2SStartAnimation LASERLEFT2|FF_B2S B2SStartAnimation MAN1
+sensor_slaver1_ramp|ON|FF_Flasher DV_FLCN,FL_TT,1,40,100,Blue_Violet|FF_DOF E412,-1|FF_B2S B2SStartAnimation LASER|FF_B2S B2SStartAnimation MAN2
+sensor_right_loop01|ON|FF_Flasher DV_FLIR,FL_TT,1,40,100,Blue_Violet|FF_DOF E413,-1|FF_B2S B2SStartAnimation LASERRIGHT1|FF_B2S B2SStartAnimation MAN1
+sensor_right_ramp01|ON|FF_Flasher DV_FLOR,FL_TT,1,40,100,Blue_Violet|FF_DOF E414,-1|FF_B2S B2SStartAnimation LASERRIGHT2|FF_B2S B2SStartAnimation MAN1
 S1|ON|FF_DEV DV_BK,1000|FF_DOF E415,-1
 S2|ON|FF_DEV DV_SR,1000|FF_DOF E416,-1
-S3|ON|FF_DOF E417,-1|FF_B2S B2SStartAnimation SmallShip
-S4|ON|FF_DOF E418,-1|FF_B2S B2SStartAnimation Window
+S3|ON|FF_DOF E417,-1|FF_B2S B2SStartAnimation BOBAFETT
+S4|ON|FF_DOF E418,-1|FF_B2S B2SStartAnimation FETTBOBA
 sensor_hole_01|ON|FF_DEV DV_GR,750|FF_DOF E419,-1
 sensor_hole_02|ON|FF_DEV DV_GR,750|FF_DOF E419,-1
 sensor_hole_03|ON|FF_DEV DV_GR,750|FF_DOF E419,-1

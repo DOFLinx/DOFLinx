@@ -1,7 +1,7 @@
 ##################
 #
 # FantasticFour
-# DOFLinx force feedback FX configuration file v4
+# DOFLinx force feedback FX configuration file v5
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_fantasticfour
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Blue,Yellow,Dodger_Blue,Orange_Red
 BUTTON_COLOUR_CHANGE=BUT_LF,BLue,BUT_RF,Blue,BUT_ML,Yellow,BUT_MR,Yellow
+FF_DOF=E369,-1
+
+[SHUTDOWN]
+FF_DOF=E369,0
 
 [COMMANDS]
 NudgeLeft|On|FF_B2S B2SStartAnimation CarFire

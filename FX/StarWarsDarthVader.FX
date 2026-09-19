@@ -1,7 +1,7 @@
 ##################
 #
 # STARWARSDARTHVADER
-# DOFLinx force feedback FX configuration file v1
+# DOFLinx force feedback FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_swdarth
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Light_sky_blue,Dark_Red,Cyan
 BUTTON_COLOUR_CHANGE=BUT_LF,Cyan,BUT_RF,Cyan,BUT_ML,Dark_Orange,BUT_MR,Dark_Orange
+FF_DOF=E321,-1
+
+[SHUTDOWN]
+FF_DOF=E321,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Explosion

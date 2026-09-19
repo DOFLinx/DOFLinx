@@ -1,7 +1,7 @@
 ##################
 #
 # Wolverine
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,24 +10,27 @@ FF_ROM=fx2_wolverine
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Medium_Blue,Yellow,Dark_Violet
 BUTTON_COLOUR_CHANGE=BUT_LF,Medium_Blue,BUT_RF,Medium_Blue,BUT_ML,Dark_Violet,BUT_MR,Dark_Violet
+FF_DOF=E324,-1
+
+[SHUTDOWN]
+FF_DOF=E324,0
 
 [COMMANDS]
-Nudge_Left|On|FF_B2S B2SStartAnimation Pinball2
-Nudge_Right|On|FF_B2S B2SStartAnimation Pinball2
-Nudge_Forward|On|FF_B2S B2SStartAnimation Pinball2
-LEFT_SLING_COLLISION_BOTTOM|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,White|FF_Flasher DV_FLIL,FL_TT,1,20,100,White|FF_Colour White,RGB_TT,200|FF_B2S B2SStartAnimation ArmLeft
-RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,White|FF_Flasher DV_FLIR,FL_TT,1,20,100,White|FF_Colour White,RGB_TT,200|FF_B2S B2SStartAnimation ArmRight
-Bumper01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Purple|FF_B2S B2SStartAnimation Head
-Bumper02|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Purple|FF_B2S B2SStartAnimation Shoulder
-Bumper03|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Purple|FF_B2S B2SStartAnimation Sparkle
-
-sensor_leftramp|ON|FF_Flasher DV_FLOL,FL_TT,1,40,100,Red|FF_B2S B2SStartAnimation Pinball1|FF_DOF E410,-1
+Nudge_Left|On|FF_B2S B2SStartAnimation SENTINEL
+Nudge_Right|On|FF_B2S B2SStartAnimation SENTINEL
+Nudge_Forward|On|FF_B2S B2SStartAnimation SENTINEL
+LEFT_SLING_COLLISION_BOTTOM|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,White|FF_Flasher DV_FLIL,FL_TT,1,20,100,White|FF_Colour White,RGB_TT,200|FF_B2S B2SStartAnimation HANDLEFT
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,White|FF_Flasher DV_FLIR,FL_TT,1,20,100,White|FF_Colour White,RGB_TT,200|FF_B2S B2SStartAnimation HANDRIGHT
+BUMPER01|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Purple|FF_B2S B2SStartAnimation RED
+BUMPER02|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Purple|FF_B2S B2SStartAnimation BLUE
+BUMPER03|ON|FF_Flasher DV_FLCN,FL_TT,1,15,100,Purple|FF_B2S B2SStartAnimation GREEN
+sensor_leftramp|ON|FF_Flasher DV_FLOL,FL_TT,1,40,100,Red|FF_B2S B2SStartAnimation PINBALLGIRL2|FF_DOF E410,-1
 sensor_dumpramp|ON|FF_Flasher DV_FLIL,FL_TT,1,40,100,Red|FF_B2S B2SStartAnimation BackLeft|FF_DOF E411,-1
 sensor_orbit01|ON|FF_Flasher DV_FLCN,FL_TT,1,40,100,Red|FF_B2S B2SStartAnimation BackRight|FF_DOF E412,-1
-sensor_rightramp_fastball|ON|FF_Flasher DV_FLIR,FL_TT,1,40,100,Red|FF_B2S B2SStartAnimation BackBase|FF_DOF E413,-1
-sensor_rightramp01|ON|FF_Flasher DV_FLOR,FL_TT,1,40,100,Red|FF_B2S B2SStartAnimation Head|FF_DOF E414,-1
-S1|ON|FF_B2S B2SStartAnimation Sparkle|FF_DOF E415,-1
-S2|ON|FF_B2S B2SStartAnimation Sparkle|FF_DOF E416,-1
+sensor_rightramp_fastball|ON|FF_Flasher DV_FLIR,FL_TT,1,40,100,Red|FF_B2S B2SStartAnimation BACKBOTTOM|FF_DOF E413,-1
+sensor_rightramp01|ON|FF_Flasher DV_FLOR,FL_TT,1,40,100,Red|FF_B2S B2SStartAnimation POSTER|FF_DOF E414,-1
+S1|ON|FF_B2S B2SStartAnimation BALL|FF_DOF E415,-1
+S2|ON|FF_B2S B2SStartAnimation BALL2|FF_DOF E416,-1
 S3|ON|FF_DOF E417,-1
 S4|ON|FF_DOF E418,-1
 S5|ON|FF_DOF E419,-1

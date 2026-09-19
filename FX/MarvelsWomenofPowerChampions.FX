@@ -1,7 +1,7 @@
 ##################
 #
 # MarvelsWomenofPowerChampions
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_champions
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dodger_Blue,Yellow,Red,Gray,Golden_Rod,Crimson,Orange
 BUTTON_COLOUR_CHANGE=BUT_LF,Orange,BUT_RF,Orange,BUT_ML,Yellow,BUT_MR,Yellow
+FF_DOF=E369,-1
+
+[SHUTDOWN]
+FF_DOF=E369,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Marvel

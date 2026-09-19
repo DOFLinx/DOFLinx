@@ -1,7 +1,7 @@
 ##################
 #
 # Knight Rider
-# DOFLinx force feedback Pinball FX configuration file v4
+# DOFLinx force feedback Pinball FX configuration file v5
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Gold,Dark_Golden_Rod,Orange,Orange_Red,Amber
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Red,BUT_RF,Dark_Red,BUT_ML,Dark_Golden_Rod,BUT_MR,Dark_Golden_Rod
+FF_DOF=E366,-1
+
+[SHUTDOWN]
+FF_DOF=E366,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation NUDGELEFT

@@ -1,7 +1,7 @@
 ##################
 #
 # WMSFishTales
-# DOFLinx force feedback Pinball FX configuration file v4
+# DOFLinx force feedback Pinball FX configuration file v5
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_fishtales
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Forest_green,Medium_spring_green,Pale_green,Aqua,Blue,Golden_Rod,Dark_turquoise,Gold,Deep_sky_blue,Sandy_brown,Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Forest_green,BUT_RF,Aqua,BUT_ML,Golden_Rod,BUT_MR,Gold
+FF_DOF=E323,-1
+
+[SHUTDOWN]
+FF_DOF=E323,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Background

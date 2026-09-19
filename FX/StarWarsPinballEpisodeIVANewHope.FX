@@ -1,7 +1,7 @@
 ##################
 #
 # StarWarsPinballEpisodeIVANewHope
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_swnewhope
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Cyan,Golden_Rod,Dodger_Blue,Yellow
 BUTTON_COLOUR_CHANGE=BUT_LF,Cyan,BUT_RF,Cyan,BUT_ML,Yellow,BUT_MR,Yellow
+FF_DOF=E339,-1
+
+[SHUTDOWN]
+FF_DOF=E339,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation SABER

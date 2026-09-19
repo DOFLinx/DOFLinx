@@ -1,7 +1,7 @@
 ##################
 #
-# StarWarsClassicCollectibles
-# DOFLinx force feedback Pinball FX configuration file v1
+# Star Wars Classic Collectibles
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Blue,Gold,Dark_Violet,Orange,Dodger_Blue,Lime
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Gold,BUT_MR,Gold
+FF_DOF=E320,-1
+
+[SHUTDOWN]
+FF_DOF=E320,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

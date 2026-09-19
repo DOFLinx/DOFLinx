@@ -1,7 +1,7 @@
 ##################
 #
 # GodzillavsKong
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Orange_Red,Gold,Dark_Turquoise,Steel_Blue,Orange
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Turquoise,BUT_RF,Dark_Turquoise,BUT_ML,Orange_Red,BUT_MR,Orange_Red
+FF_DOF=E327,-1
+
+[SHUTDOWN]
+FF_DOF=E327,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

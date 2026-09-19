@@ -1,7 +1,7 @@
 ##################
 #
 # WMSCirqusVoltaire
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_cirqusvoltaire
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Lime,Yellow,Blue,Red,Orange,Dark_Violet,Deep_Pink,Orchid,Lawn_Green,Gold
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E371,-1
+
+[SHUTDOWN]
+FF_DOF=E371,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Bally

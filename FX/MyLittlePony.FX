@@ -1,7 +1,7 @@
 ##################
 #
 # MyLittlePony
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Magenta,Violet,Light_Pink,Deep_Pink,Aqua,Aqua_Marine,Orange_Red,Silver,Coral,Cyan,Lawn_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Cyan,BUT_RF,Cyan,BUT_ML,Lawn_Green,BUT_MR,Lawn_Green
+FF_DOF=E326,-1
+
+[SHUTDOWN]
+FF_DOF=E326,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

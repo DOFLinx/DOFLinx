@@ -1,7 +1,7 @@
 ##################
 #
 # CastleStorm
-# DOFLinx force feedback PinballFX configuration file v2
+# DOFLinx force feedback PinballFX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_castle
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Blue,Gold,Lime,Dodger_Blue,Orange,Lime_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Lime,BUT_RF,Lime,BUT_ML,Dodger_Blue,BUT_MR,Dodger_Blue
+FF_DOF=E333,-1
+
+[SHUTDOWN]
+FF_DOF=E333,0
 
 [COMMANDS]
 NudgeLeft|On|FF_B2S B2SStartAnimation,Tower

@@ -1,7 +1,7 @@
 ##################
 #
 # BallyTheChampionPub
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_championpub
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Forest_Green,Gold,Orange_Red,Dark_Blue,Green,Red,Light_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,White,BUT_MR,White
+FF_DOF=E368,-1
+
+[SHUTDOWN]
+FF_DOF=E368,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Bally

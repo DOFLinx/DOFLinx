@@ -1,7 +1,7 @@
 ##################
 #
 # Williams Banzai Run
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=White,Orange,Red,Orange_Red,Green,Gray,Lime,Yellow,Spring_Green,Gold,Dark_Green,Forest_Green,Silver,Amber,Brown
 BUTTON_COLOUR_CHANGE=BUT_LF,Orange_Red,BUT_RF,Orange_Red,BUT_ML,Spring_Green,BUT_MR,Spring_Green
+FF_DOF=E327,-1
+
+[SHUTDOWN]
+FF_DOF=E327,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

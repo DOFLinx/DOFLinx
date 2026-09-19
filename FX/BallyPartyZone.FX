@@ -1,7 +1,7 @@
 ##################
 #
 # BallyPartyZone
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_partyzone
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Lime,Blue_violet,Orange,Purple,Aqua,Red,Medium_blue,Amber,Yellow,Sandy_brown,Deep_pink
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E372,-1
+
+[SHUTDOWN]
+FF_DOF=E372,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Bally

@@ -1,7 +1,7 @@
 ##################
 #
 # Jurassic Park
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_jurassicpark
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Lawn_green,Amber,Yellow,Light_slate_gray,Cadet_blue,Black,Rosy_brown,Light_steel_blue,Medium_sea_green,Silver
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E340,-1
+
+[SHUTDOWN]
+FF_DOF=E340,0
 
 [COMMANDS]
 Flipper_Left|ON|FF_B2S B2SSetData 1,1

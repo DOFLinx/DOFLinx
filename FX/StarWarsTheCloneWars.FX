@@ -1,7 +1,7 @@
 ##################
 #
 # StarWarsTheCloneWars
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_swclonewars
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Pink,Medium_Blue,Medium_Turquoise,Lime,Lime_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Pink,BUT_RF,Pink,BUT_ML,Medium_Turquoise,BUT_MR,Medium_Turquoise
+FF_DOF=E323,-1
+
+[SHUTDOWN]
+FF_DOF=E323,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation TROOPERS2

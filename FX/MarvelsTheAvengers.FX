@@ -1,7 +1,7 @@
 ##################
 #
 # MarvelsTheAvengers
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_avengers
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Blue,Dark_Red,Dodger_Blue,Gold
 BUTTON_COLOUR_CHANGE=BUT_LF,Blue,BUT_RF,Blue,BUT_ML,Gold,BUT_MR,Gold
+FF_DOF=E321,-1
+
+[SHUTDOWN]
+FF_DOF=E321,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Explosion

@@ -1,7 +1,7 @@
 ##################
 #
 # SouthParkSuperSweetPinball
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_spsweet
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Lime,Blue,Gold,Dark_Violet,Orange,Dodger_Blue,Lime_Green,Yellow_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Lime_Green,Yellow_Green,BUT_RF,Lime_Green,Yellow_Green,BUT_ML,Dark_Violet,BUT_MR,Dark_Violet
+FF_DOF=E325,-1
+
+[SHUTDOWN]
+FF_DOF=E325,0
 
 [COMMANDS]
 Nudge_Left|ON|FF_B2S B2SStartAnimation SkyShine

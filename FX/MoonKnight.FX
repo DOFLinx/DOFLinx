@@ -1,7 +1,7 @@
 ##################
 #
 # MoonKnight
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_moonknight
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dodger_Blue,Blue,Cyan,Royal_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Cyan,BUT_RF,Cyan,BUT_ML,Dodger_Blue,BUT_MR,Dodger_Blue
+FF_DOF=E360,-1
+
+[SHUTDOWN]
+FF_DOF=E360,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Moontitle

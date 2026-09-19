@@ -1,7 +1,7 @@
 ##################
 #
 # XMen
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_xmen
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Blue,Blue_Violet,Gold,Dodger_Blue,Slate_Blue,Orange
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E332,-1
+
+[SHUTDOWN]
+FF_DOF=E332,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Fire

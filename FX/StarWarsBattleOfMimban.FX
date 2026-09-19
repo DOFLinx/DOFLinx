@@ -1,7 +1,7 @@
 ##################
 #
 # Star Wars Battle Of Mimban
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_swmimban
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Coral,Gray,Dark_Orange,Salmon,Slate_Gray,Light_Steel_Blue,Peru,Tan
 BUTTON_COLOUR_CHANGE=BUT_LF,Light_Steel_Blue,BUT_RF,Light_Steel_Blue,BUT_ML,Salmon,BUT_MR,Salmon
+FF_DOF=E379,-1
+
+[SHUTDOWN]
+FF_DOF=E379,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Ship2

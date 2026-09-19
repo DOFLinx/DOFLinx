@@ -1,7 +1,7 @@
 ##################
 #
 # WMSWorldCupSoccer
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=White,Orange,Gold,Deep_Sky_Blue,Orange_Red,Golden_Rod,Beige,Burly_Wood
 BUTTON_COLOUR_CHANGE=BUT_LF,White,BUT_RF,White,BUT_ML,Gold,BUT_MR,Gold
+FF_DOF=E360,-1
+
+[SHUTDOWN]
+FF_DOF=E360,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Licensed

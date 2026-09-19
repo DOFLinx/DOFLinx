@@ -1,7 +1,7 @@
 ##################
 #
 # Williams Monster Bash
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_monsterbash
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Lime,Amber,Dark_Turquoise,Sky_Blue,Lawn_Green,Orchid,Deep_Pink,Thistle,Light_Sky_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E328,-1
+
+[SHUTDOWN]
+FF_DOF=E328,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Williams

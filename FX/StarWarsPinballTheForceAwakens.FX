@@ -1,7 +1,7 @@
 ##################
 #
 # StarWarsPinballTheForceAwakens
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_swforceaw
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Medium_Blue,Blue_Violet
 BUTTON_COLOUR_CHANGE=BUT_LF,Blue_Violet,BUT_RF,Blue_Violet,BUT_ML,Dark_Red,BUT_MR,Dark_Red
+FF_DOF=E376,-1
+
+[SHUTDOWN]
+FF_DOF=E376,0
 
 [COMMANDS]
 Flipper_Left|ON|FF_B2S B2SSetData 1,1

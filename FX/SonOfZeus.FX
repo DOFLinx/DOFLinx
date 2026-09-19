@@ -1,7 +1,7 @@
 ##################
 #
 # Son of Zeus
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_hercules
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_orange,Silver,Dark_salmon,Amber,Sienna,Light_steel_blue,Firebrick
 BUTTON_COLOUR_CHANGE=BUT_LF,Light_steel_blue,BUT_RF,Light_steel_blue,BUT_ML,Dark_orange,BUT_MR,Dark_orange
+FF_DOF=E365,-1
+
+[SHUTDOWN]
+FF_DOF=E365,0
 
 [COMMANDS]
 Nudge_Left|ON|FF_B2S B2SStartAnimation OrangeSpot

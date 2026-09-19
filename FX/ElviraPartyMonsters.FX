@@ -1,7 +1,7 @@
 ##################
 #
-# Scared Stiff
-# DOFLinx force feedback Pinball FX configuration file v1
+# Elvira and the PArty Monsters
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Lime,Lawn_Green,Orange_Red,Orange,Corn_Silk,Papaya_Whip,Chocolate,Amber,Red,Yellow_Green,Tan,Dark_Red,Purple,Lime_Green
 BUTTON_COLOUR_CHANGE=BUT_LF,Lawn_Green,BUT_RF,Lawn_Green,BUT_ML,Papaya_Whip,BUT_MR,Papaya_Whip
+FF_DOF=E372,-1
+
+[SHUTDOWN]
+FF_DOF=E372,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation NUDGE

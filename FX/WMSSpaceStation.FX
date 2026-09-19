@@ -1,7 +1,7 @@
 ##################
 #
 # WMSSpaceStation
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_spacestation
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Dim_gray,Orange,Dark_orange,Medium_blue,Silver
 BUTTON_COLOUR_CHANGE=BUT_LF,Medium_Blue,BUT_RF,Medium_Blue,BUT_ML,Orange,BUT_MR,Orange
+FF_DOF=E339,-1
+
+[SHUTDOWN]
+FF_DOF=E339,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Williams

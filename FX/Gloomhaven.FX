@@ -1,7 +1,7 @@
 ##################
 #
 # Gloomhaven
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Light_Steel_Blue,Dark_Golden_Rod,Dim_Gray,Steel_Blue,Slate_Gray
 BUTTON_COLOUR_CHANGE=BUT_LF,Golden_Rod,BUT_RF,Golden_Rod,BUT_ML,Light_Steel_Blue,BUT_MR,Light_Steel_Blue
+FF_DOF=E380,-1
+
+[SHUTDOWN]
+FF_DOF=E380,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

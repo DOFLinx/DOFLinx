@@ -1,7 +1,7 @@
 ##################
 #
 # GrimmTale
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Purple,Gold,Dark_Violet,Orange,Dark_Green,Red,Dark_Orange,Rosy_Brown
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Violet,BUT_RF,Dark_Violet,BUT_ML,Dark_Green,BUT_MR,Dark_Green
+FF_DOF=E336,-1
+
+[SHUTDOWN]
+FF_DOF=E336,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

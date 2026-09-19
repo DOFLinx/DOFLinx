@@ -1,7 +1,7 @@
 ##################
 #
-# StarWarsTheMandalorian
-# DOFLinx force feedback Pinball FX configuration file v2
+# Star Wars The Mandalorian
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dim_Gray,Light_Golden_Rod,Navajo_White,Golden_Rod,Olive_Drab,Medium_Sea_Green,Dark_Khaki,Gray,Silver,Orange_Red,Peru,Bisque,Teal
 BUTTON_COLOUR_CHANGE=BUT_LF,Teal,BUT_RF,Teal,BUT_ML,Olive_Drab,BUT_MR,Olive_Drab
+FF_DOF=E333,-1
+
+[SHUTDOWN]
+FF_DOF=E333,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Nudge

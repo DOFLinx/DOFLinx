@@ -1,7 +1,7 @@
 ##################
 #
 # Pacific Rim
-# DOFLinx force feedback Pinball FX configuration file v3
+# DOFLinx force feedback Pinball FX configuration file v4
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Red,Blue,Gold,Dark_Violet,Orange,Dodger_Blue,Lime,Royal_Blue,Light_Steel_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Dark_Red,BUT_RF,Dark_Redt,BUT_ML,Gold,BUT_MR,Gold
+FF_DOF=E323,-1
+
+[SHUTDOWN]
+FF_DOF=E323,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation NUDGELEFT

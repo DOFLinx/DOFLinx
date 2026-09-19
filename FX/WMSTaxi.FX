@@ -1,7 +1,7 @@
 ##################
 #
 # Taxi
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Yellow,Red,Amber,Green,Silver,Dark_Blue,Light_Green,Olive_Drab,Medium_Blue,Saddle_Brown
 BUTTON_COLOUR_CHANGE=BUT_LF,Yellow,BUT_RF,Yellow,BUT_ML,Medium_Blue,BUT_MR,Medium_Blue
+FF_DOF=E364,-1
+
+[SHUTDOWN]
+FF_DOF=E364,0
 
 [COMMANDS]
 Flipper_Left|ON|FF_B2S B2SSetData 1,1

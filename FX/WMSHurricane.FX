@@ -1,7 +1,7 @@
 ##################
 #
 # Williams Hurricane
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx3_wms_hurricane
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Gray,Lawn_Green,Slate_Gray,Dark_Orange,Dark_Blue,Medium_Blue,Cyan,Orange_Red,Papaya_Whip
 BUTTON_COLOUR_CHANGE=BUT_LF,Random,BUT_RF,Random,BUT_ML,Random,BUT_MR,Random
+FF_DOF=E333,-1
+
+[SHUTDOWN]
+FF_DOF=E333,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Williams

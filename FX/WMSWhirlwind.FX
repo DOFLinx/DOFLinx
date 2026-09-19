@@ -1,7 +1,7 @@
 ##################
 #
 # WMSWhirlwind
-# DOFLinx force feedback Pinball FX configuration file v1
+# DOFLinx force feedback Pinball FX configuration file v2
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=doflinx
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Red,Green,Yellow_Green,Lawn_Green,Pale_Turquoise,Spring_Green,Orange,Sky_Blue,Powder_Blue,Teal
 BUTTON_COLOUR_CHANGE=BUT_LF,Teal,BUT_RF,Teal,BUT_ML,Lawn_Green,BUT_MR,Lawn_Green
+FF_DOF=E379,-1
+
+[SHUTDOWN]
+FF_DOF=E379,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Williams

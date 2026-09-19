@@ -1,7 +1,7 @@
 ##################
 #
 # Pasha
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_pasha
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Dark_Violet,Golden_Rod,Dodger_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Golden_Rod,BUT_RF,Golden_Rod,BUT_ML,Dark_Violet,BUT_MR,Dark_Violet
+FF_DOF=E3632,-1
+
+[SHUTDOWN]
+FF_DOF=E332,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation NightGlow

@@ -1,7 +1,7 @@
 ##################
 #
 # WildWestRampage
-# DOFLinx force feedback Pinball FX configuration file v6
+# DOFLinx force feedback Pinball FX configuration file v7
 #
 ##################
 
@@ -10,6 +10,10 @@ FF_ROM=fx2_wildwest
 BACKGLASS_EXISTS=YES
 COLOUR_PALETTE=Yellow_Green,Dodger_Blue,Royal_Blue
 BUTTON_COLOUR_CHANGE=BUT_LF,Dodger_Blue,BUT_RF,Dodger_Blue,BUT_ML,Yellow,BUT_MR,Yellow
+FF_DOF=E334,-1
+
+[SHUTDOWN]
+FF_DOF=E334,0
 
 [COMMANDS]
 Nudge_Left|On|FF_B2S B2SStartAnimation Gun
