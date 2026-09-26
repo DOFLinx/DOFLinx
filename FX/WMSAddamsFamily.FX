@@ -1,7 +1,7 @@
 ##################
 #
 # Addams Family
-# DOFLinx force feedback Pinball FX configuration file v8
+# DOFLinx force feedback Pinball FX configuration file v9
 #
 ##################
 
@@ -25,7 +25,7 @@ bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Gold|FF_B2S B2SStartAnimation FEST
 Bumper04|ON|FF_Dev DV_MC,-1|FF_DOF E123,-1|FF_Flasher DV_FLOL,FL_TT,1,15,100,Dark_Violet|FF_B2S B2SStartAnimation WINDOW2
 Bumper05|ON|FF_Dev DV_ML,-1|FF_DOF E124,-1|FF_Flasher DV_FLOR,FL_TT,1,15,100,Beige|FF_B2S B2SStartAnimation THING
 LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour Cyan,RGB_TT,200|FF_Flasher DV_FLIL,FL_TT,1,15,100,Cyan|FF_B2S B2SStartAnimation MORTICIA
-RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour White,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Cyan|FF_B2S B2SStartAnimation LIGHTINING
+RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour White,RGB_TT,200|FF_Flasher DV_FLIR,FL_TT,1,15,100,Cyan|FF_B2S B2SStartAnimation LIGHTNING
 
 rollover_75_left_outlane|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Aqua|FF_B2S B2SStartAnimation KIDS|FF_DOF E23,-1
 Sensor_61_Left_Ramp_Enter|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Aqua|FF_B2S B2SStartAnimation LURCH|FF_DOF E24,-1

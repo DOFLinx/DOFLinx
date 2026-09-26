@@ -1,7 +1,7 @@
 ##################
 #
 # Bally Creature from the Black Lagoon
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -22,7 +22,7 @@ bumper02|ON|FF_Flasher DV_FLIL,FL_TT,1,15,100,Green_Yellow|FF_B2S B2SStartAnimat
 bumper03|ON|FF_Flasher DV_FLIR,FL_TT,1,15,100,Orange_Red|FF_B2S B2SStartAnimation Creature3
 
 rollover_62|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Lawn_Green|FF_DOF E410,-1|FF_B2S B2SStartAnimation Amazing
-rollover_64|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Light_Cyan|FF_DOF E411,-1|FF_B2S B2SStartAnimation Stertling
+rollover_64|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Light_Cyan|FF_DOF E411,-1|FF_B2S B2SStartAnimation Startling
 rollover_63|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Light_Pink|FF_DOF E412,-1|FF_B2S B2SStartAnimation Swimmer
 rollover_53|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Light_Cyan|FF_DOF E413,-1|FF_B2S B2SStartAnimation Woman
 rollover_61|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Lawn_Green|FF_DOF E414,-1|FF_B2S B2SStartAnimation Shocking
