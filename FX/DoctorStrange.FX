@@ -1,7 +1,7 @@
 ##################
 #
 # DoctorStrange
-# DOFLinx force feedback Pinball FX configuration file v2
+# DOFLinx force feedback Pinball FX configuration file v3
 #
 ##################
 
@@ -16,6 +16,8 @@ FF_DOF=E329,-1
 FF_DOF=E329,0
 
 [COMMANDS]
+
+# --- Nudges / Bumpers / Slings ---
 Nudge_Left|On|FF_B2S B2SStartAnimation Centre
 Nudge_Right|On|FF_B2S B2SStartAnimation Centre
 Nudge_Forward|On|FF_B2S B2SStartAnimation Centre
@@ -25,14 +27,19 @@ bumper03|ON|FF_Flasher DV_FLOL,FL_TT,1,15,100,Cyan|FF_B2S B2SStartAnimation Powe
 LEFT_SLING_COLLISION_BOTTOM|ON|FF_Colour White,RGB_TT,120|FF_Flasher DV_FLIL,FL_TT,1,20,100,White|FF_B2S B2SStartAnimation Nodes
 RIGHT_SLING_COLLISION_BOTTOM|ON|FF_Colour White,RGB_TT,120|FF_Flasher DV_FLIR,FL_TT,1,20,100,White|FF_B2S B2SStartAnimation Eye
 
+# --- Main shots: flasher + DOF + B2S; no added FF_Dev ---
 sensor_xramp_left_head|ON|FF_Flasher DV_FLOL,FL_TT,1,20,100,Lime_green|FF_DOF E410,-1|FF_B2S B2SStartAnimation Dr
 sensor_mini_orbit_head|ON|FF_Flasher DV_FLIL,FL_TT,1,20,100,Dark_violet|FF_DOF E411,-1|FF_B2S B2SStartAnimation Nodes
 sensor_cross_ramp_head|ON|FF_Flasher DV_FLCN,FL_TT,1,20,100,Orange|FF_DOF E412,-1|FF_B2S B2SStartAnimation Cape
 sensor_xramp_right_head|ON|FF_Flasher DV_FLIR,FL_TT,1,20,100,Dark_violet|FF_DOF E413,-1|FF_B2S B2SStartAnimation Eye
 sensor_right_ramp_head|ON|FF_Flasher DV_FLOR,FL_TT,1,20,100,Lime_green|FF_DOF E414,-1|FF_B2S B2SStartAnimation Power
+
+# --- Shared special-event outputs ---
 S1|ON|FF_DOF E416,-1
 S2|ON|FF_DOF E417,-1
 S3|ON|FF_DOF E418,-1
+
+# --- Mini-playfield and main-playfield drop targets ---
 mpf_target01|ON|FF_SSF DropTarget|FF_Dev DV_ML,-1|FF_DOF E415,-1
 mpf_target02|ON|FF_SSF DropTarget|FF_Dev DV_ML,-1|FF_DOF E415,-1
 mpf_target03|ON|FF_SSF DropTarget|FF_Dev DV_ML,-1|FF_DOF E415,-1
@@ -45,10 +52,16 @@ droptarget_06|ON|FF_SSF DropTarget|FF_Dev DV_ML,-1|FF_DOF E415,-1
 droptarget_07|ON|FF_SSF DropTarget|FF_Dev DV_ML,-1|FF_DOF E415,-1
 droptarget_03|ON|FF_SSF DropTarget|FF_Dev DV_ML,-1|FF_DOF E415,-1
 droptarget_04|ON|FF_SSF DropTarget|FF_Dev DV_ML,-1|FF_DOF E415,-1
+flipper_left_mpf|ALIAS|Flipper_Left
+flipper_right_mpf|ALIAS|Flipper_Right
+
+# --- Sinkholes ---
 sensor_hole_center|ON|FF_Dev DV_GR,500|FF_DOF E419,-1
 sensor_hole_left|ON|FF_Dev DV_GR,500|FF_DOF E419,-1
 sensor_hole_right|ON|FF_Dev DV_GR,500|FF_DOF E419,-1
 sensor_hole_top_right|ON|FF_Dev DV_GR,500|FF_DOF E419,-1
+
+# --- Event aliases ---
 sensor_cross_ramp_middle|ALIAS|sensor_cross_ramp_head
 sensor_cross_ramp_tail|ALIAS|sensor_cross_ramp_head
 sensor_eyehole|ALIAS|S2
@@ -70,7 +83,7 @@ sensor_mini_portal_12|ALIAS|S1
 sensor_mini_portal_13|ALIAS|S1
 sensor_mini_portal_14|ALIAS|S1
 sensor_orbit_left|ALIAS|sensor_xramp_left_head
-sensor_orbit_middlesensor_cross_ramp_head
+sensor_orbit_middle|ALIAS|sensor_cross_ramp_head
 sensor_orbit_right|ALIAS|sensor_right_ramp_head
 sensor_portal1|ALIAS|S3
 sensor_portal2|ALIAS|S3
